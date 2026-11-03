@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ALLCERT - Segnalazioni dei CERT europei</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --text: #1a2233; --muted: #5d6779;
+    --line: #dfe3ea; --accent: #1b5fd1; --ok: #1a7f4b; --err: #b42318; --warn: #a15c07;
+    --chip: #eaf0fb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #11151c; --card: #1a202b; --text: #e6e9ef; --muted: #98a2b3;
+      --line: #2b3340; --accent: #7aa7ff; --ok: #4cc38a; --err: #ff8a7a; --warn: #f0b35a;
+      --chip: #232c3b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { padding: 20px 16px 8px; max-width: 980px; margin: 0 auto; }
+  h1 { margin: 0; font-size: 22px; }
+  .sub { color: var(--muted); font-size: 13px; margin-top: 2px; }
+  main { max-width: 980px; margin: 0 auto; padding: 0 16px 48px; }
+  .filters { display: grid; gap: 8px; grid-template-columns: 1fr; margin: 12px 0; }
+  @media (min-width: 720px) { .filters { grid-template-columns: 2fr 1fr 1fr 1fr 1fr; } }
+  input, select { width: 100%; padding: 9px 10px; border: 1px solid var(--line); border-radius: 8px;
+                  background: var(--card); color: var(--text); font: inherit; }
+  .count { color: var(--muted); font-size: 13px; margin: 4px 0 10px; }
+  .item { background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+          padding: 12px 14px; margin-bottom: 8px; }
+  .item a.title { color: var(--text); font-weight: 600; text-decoration: none; }
+  .item a.title:hover { color: var(--accent); text-decoration: underline; }
+  .meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 6px;
+          font-size: 12.5px; color: var(--muted); }
+  .chip { background: var(--chip); border-radius: 999px; padding: 1px 9px; }
+  .cve { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--warn); }
+  .sum { margin: 6px 0 0; color: var(--muted); font-size: 13.5px; }
+  .empty { text-align: center; color: var(--muted); padding: 32px 0; }
+  details { margin-top: 24px; background: var(--card); border: 1px solid var(--line);
+            border-radius: 10px; padding: 10px 14px; }
+  summary { cursor: pointer; font-weight: 600; }
+  table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 13px; }
+  th, td { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .ok { color: var(--ok); } .err { color: var(--err); }
+  button { padding: 9px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--card);
+           color: var(--text); font: inherit; cursor: pointer; }
+</style>
+</head>
+<body>
+<header>
+  <h1>ALLCERT</h1>
+  <div class="sub" id="aggiornato">Caricamento…</div>
+</header>
+<main>
+  <div class="filters">
+    <input id="q" type="search" placeholder="Cerca titolo, testo o CVE (es. CVE-2026-1234)">
+    <select id="paese"><option value="">Tutti i Paesi</option></select>
+    <select id="fonte"><option value="">Tutte le fonti</option></select>
+    <select id="periodo">
+      <option value="1">Ultime 24 ore</option>
+      <option value="7" selected>Ultimi 7 giorni</option>
+      <option value="30">Ultimi 30 giorni</option>
+      <option value="0">Tutto lo storico</option>
+    </select>
+    <select id="solocve">
+      <option value="">Tutte le voci</option>
+      <option value="1">Solo con CVE</option>
+    </select>
+  </div>
+  <div class="count" id="conteggio"></div>
+  <div id="elenco"></div>
+  <button id="altre" hidden>Mostra altre voci</button>
+
+  <details>
+    <summary>Stato delle fonti</summary>
+    <table>
+      <thead><tr><th>Fonte</th><th>Paese</th><th>Esito</th><th>Voci</th><th>Note</th></tr></thead>
+      <tbody id="stato"></tbody>
+    </table>
+  </details>
+</main>
+
+<script>
+const PAGINA = 50;
+const NOMI_PAESE = { IT:"Italia", EU:"Unione europea", DE:"Germania", GB:"Regno Unito", FR:"Francia",
+  NL:"Paesi Bassi", ES:"Spagna", BE:"Belgio", AT:"Austria", CH:"Svizzera", FI:"Finlandia",
+  SE:"Svezia", NO:"Norvegia", DK:"Danimarca", PL:"Polonia", PT:"Portogallo", IE:"Irlanda",
+  CZ:"Cechia", GR:"Grecia", UA:"Ucraina" };
+const $ = id => document.getElementById(id);
+let dati = { items: [], sources: {} }, visibili = PAGINA, filtrati = [];
+
+const nomePaese = c => NOMI_PAESE[c] || c;
+const dataIt = iso => iso ? new Date(iso).toLocaleString("it-IT", { dateStyle: "medium", timeStyle: "short" }) : "data n.d.";
+const linkSicuro = u => /^https?:\/\//i.test(u) ? u : "#";
+
+function el(tag, props = {}, ...figli) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(props)) {
+    if (k === "class") e.className = v; else if (k === "text") e.textContent = v; else e.setAttribute(k, v);
+  }
+  figli.forEach(f => f && e.append(f));
+  return e;
+}
+
+function riempiFiltri() {
+  const paesi = new Set(), fonti = [];
+  for (const [id, s] of Object.entries(dati.sources)) { paesi.add(s.country); fonti.push([id, s.name]); }
+  [...paesi].sort((a, b) => nomePaese(a).localeCompare(nomePaese(b), "it"))
+    .forEach(c => $("paese").append(el("option", { value: c, text: nomePaese(c) })));
+  fonti.sort((a, b) => a[1].localeCompare(b[1], "it"))
+    .forEach(([id, n]) => $("fonte").append(el("option", { value: id, text: n })));
+}
+
+function filtra() {
+  const q = $("q").value.trim().toLowerCase();
+  const paese = $("paese").value, fonte = $("fonte").value, giorni = +$("periodo").value;
+  const soloCve = $("solocve").value === "1";
+  const limite = giorni ? Date.now() - giorni * 864e5 : 0;
+  filtrati = dati.items.filter(i => {
+    const s = dati.sources[i.source];
+    if (!s) return false;
+    if (paese && s.country !== paese) return false;
+    if (fonte && i.source !== fonte) return false;
+    if (soloCve && !i.cves.length) return false;
+    if (limite && new Date(i.published || i.first_seen).getTime() < limite) return false;
+    if (q && !(`${i.title} ${i.summary} ${i.cves.join(" ")}`.toLowerCase().includes(q))) return false;
+    return true;
+  });
+  visibili = PAGINA;
+  disegna();
+}
+
+function disegna() {
+  const box = $("elenco");
+  box.replaceChildren();
+  $("conteggio").textContent = `${filtrati.length} voci`;
+  if (!filtrati.length) box.append(el("div", { class: "empty", text: "Nessuna voce con questi filtri." }));
+  filtrati.slice(0, visibili).forEach(i => {
+    const s = dati.sources[i.source];
+    const meta = el("div", { class: "meta" },
+      el("span", { class: "chip", text: nomePaese(s.country) }),
+      el("span", { text: s.name }),
+      el("span", { text: "·" }),
+      el("span", { text: dataIt(i.published || i.first_seen) }),
+      ...i.cves.slice(0, 6).map(c => el("span", { class: "cve", text: c })),
+      i.cves.length > 6 ? el("span", { text: `+${i.cves.length - 6}` }) : null);
+    box.append(el("article", { class: "item" },
+      el("a", { class: "title", href: linkSicuro(i.link), target: "_blank", rel: "noopener noreferrer", text: i.title }),
+      meta,
+      i.summary ? el("p", { class: "sum", text: i.summary }) : null));
+  });
+  $("altre").hidden = filtrati.length <= visibili;
+}
+
+function disegnaStato(stato) {
+  const tb = $("stato");
+  stato.sources.forEach(s => tb.append(el("tr", {},
+    el("td", { text: s.name + (s.verified ? "" : " (da verificare)") }),
+    el("td", { text: nomePaese(s.country) }),
+    el("td", { class: s.ok ? "ok" : "err", text: s.ok ? "Funziona" : "Errore" }),
+    el("td", { text: String(s.count) }),
+    el("td", { text: s.error || "" }))));
+}
+
+async function avvia() {
+  try {
+    const [a, b] = await Promise.all([
+      fetch("data/items.json").then(r => r.json()),
+      fetch("data/status.json").then(r => r.json())]);
+    dati = a;
+    $("aggiornato").textContent = "Ultimo aggiornamento: " + dataIt(a.updated);
+    riempiFiltri(); disegnaStato(b); filtra();
+  } catch (e) {
+    $("aggiornato").textContent = "Dati non ancora disponibili: attendi la prima esecuzione del flusso automatico.";
+  }
+}
+
+["q", "paese", "fonte", "periodo", "solocve"].forEach(id => $(id).addEventListener("input", filtra));
+$("altre").addEventListener("click", () => { visibili += PAGINA; disegna(); });
+avvia();
+</script>
+</body>
+</html>

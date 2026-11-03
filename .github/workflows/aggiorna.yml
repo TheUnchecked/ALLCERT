@@ -1,0 +1,69 @@
+name: Aggiorna segnalazioni
+
+on:
+  schedule:
+    - cron: "17 */3 * * *"   # ogni 3 ore, al minuto 17
+  workflow_dispatch:          # avvio manuale dalla scheda Actions
+  push:
+    branches: [main]
+    paths:
+      - sources.yml
+      - scripts/**
+      - site/**
+      - .github/workflows/aggiorna.yml
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: allcert
+  cancel-in-progress: false
+
+jobs:
+  raccolta-e-pubblicazione:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Installa le dipendenze
+        run: pip install -r requirements.txt
+
+      - name: Raccogli i flussi
+        run: python scripts/collect.py
+
+      - name: Salva i dati nel repository
+        run: |
+          git config user.name "allcert-bot"
+          git config user.email "allcert-bot@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "Nessuna novità da salvare."
+          else
+            git commit -m "Aggiorna dati $(date -u +'%Y-%m-%d %H:%M') UTC"
+            git push
+          fi
+
+      - name: Prepara il sito
+        run: |
+          mkdir -p _site/data
+          cp -r site/. _site/
+          cp data/items.json data/status.json _site/data/
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deploy
+        uses: actions/deploy-pages@v4
