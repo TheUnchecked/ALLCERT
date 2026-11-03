@@ -1,0 +1,137 @@
+{
+ "updated": "2026-11-03T20:07:28+00:00",
+ "sources": [
+  {
+   "id": "csirt-it",
+   "name": "CSIRT Italia (ACN)",
+   "country": "IT",
+   "kind": "csirt",
+   "url": "https://www.acn.gov.it/portale/feedrss/-/journal/rss/20119/723192",
+   "verified": true,
+   "checked_at": "2026-11-03T20:07:28+00:00",
+   "ok": true,
+   "count": 50,
+   "error": null
+  },
+  {
+   "id": "acn-news",
+   "name": "ACN - Notizie",
+   "country": "IT",
+   "kind": "autorita",
+   "url": "https://www.acn.gov.it/portale/feedrss",
+   "verified": true,
+   "checked_at": "2026-11-03T20:07:28+00:00",
+   "ok": false,
+   "count": 0,
+   "error": "flusso non valido: <unknown>:122:85: not well-formed (invalid token)"
+  },
+  {
+   "id": "cert-eu",
+   "name": "CERT-EU - Avvisi di sicurezza",
+   "country": "EU",
+   "kind": "csirt",
+   "url": "https://cert.europa.eu/publications/security-advisories-rss",
+   "verified": true,
+   "checked_at": "2026-11-03T20:07:28+00:00",
+   "ok": true,
+   "count": 10,
+   "error": null
+  },
+  {
+   "id": "cert-bund",
+   "name": "CERT-Bund - Avvisi di sicurezza",
+   "country": "DE",
+   "kind": "csirt",
+   "url": "https://wid.cert-bund.de/content/public/securityAdvisory/rss",
+   "verified": true,
+   "checked_at": "2026-11-03T20:07:28+00:00",
+   "ok": true,
+   "count": 250,
+   "error": null
+  },
+  {
+   "id": "cert-bund-buerger",
+   "name": "CERT-Bund - Avvisi per i cittadini",
+   "country": "DE",
+   "kind": "csirt",
+   "url": "https://wid.cert-bund.de/content/public/buergercert/rss",
+   "verified": true,
+   "checked_at": "2026-11-03T20:07:28+00:00",
+   "ok": true,
+   "count": 100,
+   "error": null
+  },
+  {
+   "id": "bsi-news",
+   "name": "BSI - Stampa e notizie",
+   "country": "DE",
+   "kind": "autorita",
+   "url": "https://www.bsi.bund.de/SiteGlobals/Functions/RSSFeed/RSSNewsfeed/RSSNewsfeed_Presse_Veranstaltungen.xml?nn=910128",
+   "verified": true,
+   "checked_at": "2026-11-03T20:07:28+00:00",
+   "ok": true,
+   "count": 40,
+   "error": null
+  },
+  {
+   "id": "bsi-bits",
+   "name": "BSI - Comunicazioni di sicurezza IT",
+   "country": "DE",
+   "kind": "autorita",
+   "url": "https://www.bsi.bund.de/SiteGlobals/Functions/RSSFeed/RSSNewsfeed/RSSNewsfeed_CSW.xml?nn=910128",
+   "verified": true,
+   "checked_at": "2026-11-03T20:07:28+00:00",
+   "ok": true,
+   "count": 50,
+   "error": null
+  },
+  {
+   "id": "ncsc-uk-news",
+   "name": "NCSC UK - Notizie",
+   "country": "GB",
+   "kind": "autorita",
+   "url": "https://www.ncsc.gov.uk/api/1/services/v1/news-rss-feed.xml",
+   "verified": true,
+   "checked_at": "2026-11-03T20:07:28+00:00",
+   "ok": true,
+   "count": 20,
+   "error": null
+  },
+  {
+   "id": "ncsc-uk-reports",
+   "name": "NCSC UK - Rapporti sulle minacce",
+   "country": "GB",
+   "kind": "autorita",
+   "url": "https://www.ncsc.gov.uk/api/1/services/v1/report-rss-feed.xml",
+   "verified": true,
+   "checked_at": "2026-11-03T20:07:28+00:00",
+   "ok": true,
+   "count": 20,
+   "error": null
+  },
+  {
+   "id": "cert-fr",
+   "name": "CERT-FR",
+   "country": "FR",
+   "kind": "csirt",
+   "url": "https://www.cert.ssi.gouv.fr/feed/",
+   "verified": false,
+   "checked_at": "2026-11-03T20:07:28+00:00",
+   "ok": true,
+   "count": 40,
+   "error": null
+  },
+  {
+   "id": "ncsc-nl",
+   "name": "NCSC-NL - Avvisi",
+   "country": "NL",
+   "kind": "csirt",
+   "url": "https://advisories.ncsc.nl/rss/advisories",
+   "verified": false,
+   "checked_at": "2026-11-03T20:07:28+00:00",
+   "ok": true,
+   "count": 25,
+   "error": null
+  }
+ ]
+}
