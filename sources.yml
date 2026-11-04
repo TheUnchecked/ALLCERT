@@ -26,7 +26,10 @@ sources:
     country: IT
     kind: autorita
     url: https://www.acn.gov.it/portale/feedrss
-    verified: true
+    verified: false
+    enabled: false
+    # Sospesa: questo indirizzo e' la pagina HTML che elenca i flussi, non un flusso RSS
+    # (errore "not well-formed"). Sostituire con l'indirizzo del singolo flusso notizie ACN.
 
   # --- Istituzioni europee ---
   - id: cert-eu
