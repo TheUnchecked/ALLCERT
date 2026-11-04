@@ -4,166 +4,359 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ALLCERT - Segnalazioni dei CERT europei</title>
+<meta name="description" content="Segnalazioni e notizie dei CERT, dei CSIRT e delle agenzie di cybersicurezza europee, in un unico registro.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #f6f7f9; --card: #ffffff; --text: #1a2233; --muted: #5d6779;
-    --line: #dfe3ea; --accent: #1b5fd1; --ok: #1a7f4b; --err: #b42318; --warn: #a15c07;
-    --chip: #eaf0fb;
+    --bg: #e8ecf1;
+    --panel: #f6f8fb;
+    --ink: #0f1b2d;
+    --muted: #55627a;
+    --line: #cbd3de;
+    --accent: #2634d9;
+    --on-accent: #ffffff;
+    --cve-bg: #fbebcf;
+    --cve-ink: #7a4300;
+    --ok: #14703f;
+    --err: #b3261e;
+    --ui: "Titillium Web", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --serif: Lora, Georgia, "Times New Roman", serif;
   }
   @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #11151c; --card: #1a202b; --text: #e6e9ef; --muted: #98a2b3;
-      --line: #2b3340; --accent: #7aa7ff; --ok: #4cc38a; --err: #ff8a7a; --warn: #f0b35a;
-      --chip: #232c3b;
+    :root:not([data-theme="light"]) {
+      --bg: #0c121d; --panel: #131b2a; --ink: #e6ecf6; --muted: #9aa8bf; --line: #26324a;
+      --accent: #93a4ff; --on-accent: #0c121d; --cve-bg: #3a2a0e; --cve-ink: #f4c879;
+      --ok: #5bd39a; --err: #ff8f85;
     }
   }
+
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--text);
-         font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  header { padding: 20px 16px 8px; max-width: 980px; margin: 0 auto; }
-  h1 { margin: 0; font-size: 22px; }
-  .sub { color: var(--muted); font-size: 13px; margin-top: 2px; }
-  main { max-width: 980px; margin: 0 auto; padding: 0 16px 48px; }
-  .filters { display: grid; gap: 8px; grid-template-columns: 1fr; margin: 12px 0; }
-  @media (min-width: 720px) { .filters { grid-template-columns: 2fr 1fr 1fr 1fr 1fr; } }
-  input, select { width: 100%; padding: 9px 10px; border: 1px solid var(--line); border-radius: 8px;
-                  background: var(--card); color: var(--text); font: inherit; }
-  .count { color: var(--muted); font-size: 13px; margin: 4px 0 10px; }
-  .item { background: var(--card); border: 1px solid var(--line); border-radius: 10px;
-          padding: 12px 14px; margin-bottom: 8px; }
-  .item a.title { color: var(--text); font-weight: 600; text-decoration: none; }
-  .item a.title:hover { color: var(--accent); text-decoration: underline; }
-  .meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 6px;
-          font-size: 12.5px; color: var(--muted); }
-  .chip { background: var(--chip); border-radius: 999px; padding: 1px 9px; }
-  .cve { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--warn); }
-  .sum { margin: 6px 0 0; color: var(--muted); font-size: 13.5px; }
-  .empty { text-align: center; color: var(--muted); padding: 32px 0; }
-  details { margin-top: 24px; background: var(--card); border: 1px solid var(--line);
-            border-radius: 10px; padding: 10px 14px; }
-  summary { cursor: pointer; font-weight: 600; }
-  table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 13px; }
-  th, td { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--line); vertical-align: top; }
-  .ok { color: var(--ok); } .err { color: var(--err); }
-  button { padding: 9px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--card);
-           color: var(--text); font: inherit; cursor: pointer; }
+  html { scroll-padding-top: 72px; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 400 16px/1.5 var(--ui); }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+
+  /* ---------- struttura ---------- */
+  .page { max-width: 1120px; margin: 0 auto; padding: 0 20px 64px; }
+  .masthead { padding: 28px 0 20px; border-bottom: 2px solid var(--ink); }
+  .masthead h1 { margin: 0; font: 700 34px/1 var(--ui); letter-spacing: -0.01em; }
+  .masthead p { margin: 6px 0 0; color: var(--muted); max-width: 52ch; }
+  .vitals { display: flex; flex-wrap: wrap; gap: 4px 28px; margin: 16px 0 0; padding: 0; font-size: 14px; }
+  .vitals div { display: flex; gap: 6px; }
+  .vitals dt { color: var(--muted); }
+  .vitals dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+  .layout { display: grid; grid-template-columns: 1fr; gap: 0 40px; align-items: start; }
+  @media (min-width: 900px) { .layout { grid-template-columns: 280px 1fr; } }
+
+  /* ---------- filtri ---------- */
+  .filters { padding: 20px 0; }
+  @media (min-width: 900px) {
+    .filters { position: sticky; top: 0; max-height: 100vh; overflow-y: auto; padding-right: 4px; }
+  }
+  .filters-toggle { display: none; }
+  @media (max-width: 899px) {
+    .filters-toggle { display: block; width: 100%; margin-top: 16px; }
+    .filters[data-open="false"] .filters-body { display: none; }
+    .filters { padding-top: 0; }
+  }
+  .field { margin-bottom: 18px; }
+  .field > label, .field > .lbl, fieldset.field legend { display: block; font-weight: 600; font-size: 14px; margin-bottom: 6px; padding: 0; }
+  fieldset.field { border: 0; margin: 0 0 18px; padding: 0; min-width: 0; }
+  input[type="search"], select, button, .btn {
+    font: inherit; color: var(--ink); background: var(--panel);
+    border: 1.5px solid var(--line); border-radius: 6px; padding: 9px 11px; width: 100%;
+  }
+  input[type="search"]:hover, select:hover, button:hover { border-color: var(--ink); }
+  button { cursor: pointer; font-weight: 600; text-align: center; }
+
+  .seg { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; }
+  .seg label { position: relative; }
+  .seg input { position: absolute; opacity: 0; inset: 0; cursor: pointer; }
+  .seg span { display: block; text-align: center; padding: 8px 6px; border: 1.5px solid var(--line);
+              border-radius: 6px; background: var(--panel); font-size: 14px; }
+  .seg input:checked + span { background: var(--ink); color: var(--bg); border-color: var(--ink); font-weight: 600; }
+  .seg input:focus-visible + span { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+  .field > label.check { display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 15px; font-weight: 400; margin: 0; }
+  .check input { width: 18px; height: 18px; accent-color: var(--accent); margin: 0; }
+
+  .stamps { display: flex; flex-wrap: wrap; gap: 6px; }
+  .stamp-btn { width: auto; display: inline-flex; align-items: center; gap: 7px; padding: 5px 9px 5px 5px;
+               font-weight: 400; font-size: 14px; }
+  .stamp-btn b { font-weight: 700; }
+  .stamp-btn[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .stamp-btn .n { color: var(--muted); font-variant-numeric: tabular-nums; }
+  .stamp-btn[aria-pressed="true"] .n { color: inherit; opacity: .8; }
+
+  .stamp { display: inline-grid; place-items: center; width: 34px; height: 34px; flex: none;
+           border: 1.5px solid currentColor; border-radius: 4px; font: 700 14px/1 var(--ui); letter-spacing: .02em; }
+  .stamp-btn .stamp { width: 28px; height: 28px; font-size: 12px; }
+
+  .health { list-style: none; margin: 0; padding: 0; font-size: 14px; }
+  .health li { display: grid; grid-template-columns: 18px 1fr auto; gap: 0 8px; padding: 5px 0; border-bottom: 1px solid var(--line); }
+  .health .state { font-weight: 700; }
+  .health .ok { color: var(--ok); } .health .ko { color: var(--err); }
+  .health .num { color: var(--muted); font-variant-numeric: tabular-nums; }
+  .health .why { grid-column: 2 / 4; color: var(--err); font-size: 13px; overflow-wrap: anywhere; }
+  .health .todo { color: var(--muted); font-size: 13px; grid-column: 2 / 4; }
+
+  /* ---------- registro ---------- */
+  .feed { padding-top: 6px; min-width: 0; }
+  .feed-head { display: flex; justify-content: space-between; align-items: baseline; padding: 20px 0 4px; }
+  .feed-head h2 { margin: 0; font-size: 15px; font-weight: 600; color: var(--muted); }
+
+  .day { margin-top: 18px; }
+  .day-head { position: sticky; top: 0; z-index: 2; display: flex; justify-content: space-between; align-items: baseline;
+              background: var(--bg); border-top: 2px solid var(--ink); padding: 8px 0 6px; }
+  .day-head h3 { margin: 0; font: 700 22px/1.2 var(--ui); }
+  .day-head span { color: var(--muted); font-size: 14px; font-variant-numeric: tabular-nums; }
+
+  .entry { display: grid; grid-template-columns: 52px 34px 1fr; gap: 0 14px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .entry time { font-weight: 600; font-variant-numeric: tabular-nums; padding-top: 6px; color: var(--muted); }
+  .entry h4 { margin: 0; font: 600 18px/1.35 var(--serif); }
+  .entry h4 a { text-decoration: none; }
+  .entry h4 a:hover { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; color: var(--accent); }
+  .entry .src { margin: 3px 0 0; font-size: 14px; color: var(--muted); }
+  .entry .sum { margin: 6px 0 0; font-size: 15px; color: var(--ink); opacity: .85; max-width: 70ch;
+                display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .cves { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+  .cve { background: var(--cve-bg); color: var(--cve-ink); border-radius: 4px; padding: 1px 7px; font-size: 13px;
+         font-weight: 600; font-variant-numeric: tabular-nums; text-decoration: none; }
+  .cve:hover { text-decoration: underline; }
+  @media (max-width: 560px) {
+    .entry { grid-template-columns: 34px 1fr; }
+    .entry time { grid-column: 2; grid-row: 1; padding: 0; font-size: 13px; }
+    .entry .stamp { grid-column: 1; grid-row: 1 / span 2; }
+    .entry .body { grid-column: 1 / -1; grid-row: 3; margin-top: 8px; }
+  }
+
+  .empty { padding: 40px 0; max-width: 46ch; }
+  .empty p { margin: 0 0 12px; }
+  .more { margin-top: 20px; max-width: 280px; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 </style>
 </head>
 <body>
-<header>
-  <h1>ALLCERT</h1>
-  <div class="sub" id="aggiornato">Caricamento…</div>
-</header>
-<main>
-  <div class="filters">
-    <input id="q" type="search" placeholder="Cerca titolo, testo o CVE (es. CVE-2026-1234)">
-    <select id="paese"><option value="">Tutti i Paesi</option></select>
-    <select id="fonte"><option value="">Tutte le fonti</option></select>
-    <select id="periodo">
-      <option value="1">Ultime 24 ore</option>
-      <option value="7" selected>Ultimi 7 giorni</option>
-      <option value="30">Ultimi 30 giorni</option>
-      <option value="0">Tutto lo storico</option>
-    </select>
-    <select id="solocve">
-      <option value="">Tutte le voci</option>
-      <option value="1">Solo con CVE</option>
-    </select>
-  </div>
-  <div class="count" id="conteggio"></div>
-  <div id="elenco"></div>
-  <button id="altre" hidden>Mostra altre voci</button>
+<div class="page">
+  <header class="masthead">
+    <h1>ALLCERT</h1>
+    <p>Le segnalazioni dei CERT, dei CSIRT e delle agenzie di cybersicurezza europee, in un unico registro.</p>
+    <dl class="vitals" id="vitals" aria-live="polite"></dl>
+  </header>
 
-  <details>
-    <summary>Stato delle fonti</summary>
-    <table>
-      <thead><tr><th>Fonte</th><th>Paese</th><th>Esito</th><th>Voci</th><th>Note</th></tr></thead>
-      <tbody id="stato"></tbody>
-    </table>
-  </details>
-</main>
+  <div class="layout">
+    <aside class="filters" id="filtri" data-open="false" aria-label="Filtri">
+      <button class="filters-toggle" id="apri-filtri" type="button" aria-expanded="false" aria-controls="corpo-filtri">Mostra i filtri</button>
+      <div class="filters-body" id="corpo-filtri">
+        <div class="field">
+          <label for="q">Cerca</label>
+          <input id="q" type="search" placeholder="Titolo, testo o CVE" autocomplete="off">
+        </div>
+
+        <fieldset class="field">
+          <legend>Periodo</legend>
+          <div class="seg">
+            <label><input type="radio" name="periodo" value="1"><span>24 ore</span></label>
+            <label><input type="radio" name="periodo" value="7" checked><span>7 giorni</span></label>
+            <label><input type="radio" name="periodo" value="30"><span>30 giorni</span></label>
+            <label><input type="radio" name="periodo" value="0"><span>Tutto</span></label>
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <label class="check"><input type="checkbox" id="solocve"> Solo voci con CVE</label>
+        </div>
+
+        <div class="field">
+          <span class="lbl" id="lbl-paesi">Paese</span>
+          <div class="stamps" id="paesi" role="group" aria-labelledby="lbl-paesi"></div>
+        </div>
+
+        <div class="field">
+          <label for="fonte">Fonte</label>
+          <select id="fonte"><option value="">Tutte le fonti</option></select>
+        </div>
+
+        <div class="field">
+          <span class="lbl">Stato delle fonti</span>
+          <ul class="health" id="stato"></ul>
+        </div>
+
+        <button type="button" id="azzera">Azzera i filtri</button>
+      </div>
+    </aside>
+
+    <main class="feed">
+      <div class="feed-head"><h2 id="conteggio" aria-live="polite"></h2></div>
+      <div id="elenco"></div>
+      <button class="more" id="altre" type="button" hidden>Mostra altre voci</button>
+    </main>
+  </div>
+</div>
 
 <script>
-const PAGINA = 50;
-const NOMI_PAESE = { IT:"Italia", EU:"Unione europea", DE:"Germania", GB:"Regno Unito", FR:"Francia",
-  NL:"Paesi Bassi", ES:"Spagna", BE:"Belgio", AT:"Austria", CH:"Svizzera", FI:"Finlandia",
-  SE:"Svezia", NO:"Norvegia", DK:"Danimarca", PL:"Polonia", PT:"Portogallo", IE:"Irlanda",
-  CZ:"Cechia", GR:"Grecia", UA:"Ucraina" };
+const PAGINA = 60;
+const PAESI = { IT:"Italia", EU:"Unione europea", DE:"Germania", GB:"Regno Unito", FR:"Francia", NL:"Paesi Bassi",
+  ES:"Spagna", BE:"Belgio", AT:"Austria", CH:"Svizzera", FI:"Finlandia", SE:"Svezia", NO:"Norvegia",
+  DK:"Danimarca", PL:"Polonia", PT:"Portogallo", IE:"Irlanda", CZ:"Cechia", GR:"Grecia", UA:"Ucraina" };
 const $ = id => document.getElementById(id);
-let dati = { items: [], sources: {} }, visibili = PAGINA, filtrati = [];
+const stato = { q:"", paese:"", fonte:"", giorni:7, cve:false, visibili:PAGINA };
+let dati = { items:[], sources:{} }, filtrati = [];
 
-const nomePaese = c => NOMI_PAESE[c] || c;
-const dataIt = iso => iso ? new Date(iso).toLocaleString("it-IT", { dateStyle: "medium", timeStyle: "short" }) : "data n.d.";
-const linkSicuro = u => /^https?:\/\//i.test(u) ? u : "#";
+const nomePaese = c => PAESI[c] || c;
+const tempo = i => new Date(i.published || i.first_seen);
+const num = new Intl.NumberFormat("it-IT");
 
 function el(tag, props = {}, ...figli) {
   const e = document.createElement(tag);
   for (const [k, v] of Object.entries(props)) {
-    if (k === "class") e.className = v; else if (k === "text") e.textContent = v; else e.setAttribute(k, v);
+    if (k === "text") e.textContent = v; else if (k === "class") e.className = v; else e.setAttribute(k, v);
   }
-  figli.forEach(f => f && e.append(f));
+  figli.flat().forEach(f => { if (f) e.append(f); });
   return e;
 }
+const sicuro = u => /^https?:\/\//i.test(u) ? u : "#";
+const stampo = c => el("span", { class: "stamp", "aria-hidden": "true", text: c });
 
-function riempiFiltri() {
-  const paesi = new Set(), fonti = [];
-  for (const [id, s] of Object.entries(dati.sources)) { paesi.add(s.country); fonti.push([id, s.name]); }
-  [...paesi].sort((a, b) => nomePaese(a).localeCompare(nomePaese(b), "it"))
-    .forEach(c => $("paese").append(el("option", { value: c, text: nomePaese(c) })));
-  fonti.sort((a, b) => a[1].localeCompare(b[1], "it"))
-    .forEach(([id, n]) => $("fonte").append(el("option", { value: id, text: n })));
+function etichettaGiorno(d) {
+  const oggi = new Date(); oggi.setHours(0,0,0,0);
+  const g = new Date(d); g.setHours(0,0,0,0);
+  const diff = Math.round((oggi - g) / 864e5);
+  if (diff === 0) return "Oggi";
+  if (diff === 1) return "Ieri";
+  const t = g.toLocaleDateString("it-IT", { weekday: "long", day: "numeric", month: "long" });
+  return t.charAt(0).toUpperCase() + t.slice(1);
 }
 
-function filtra() {
-  const q = $("q").value.trim().toLowerCase();
-  const paese = $("paese").value, fonte = $("fonte").value, giorni = +$("periodo").value;
-  const soloCve = $("solocve").value === "1";
-  const limite = giorni ? Date.now() - giorni * 864e5 : 0;
-  filtrati = dati.items.filter(i => {
-    const s = dati.sources[i.source];
-    if (!s) return false;
-    if (paese && s.country !== paese) return false;
-    if (fonte && i.source !== fonte) return false;
-    if (soloCve && !i.cves.length) return false;
-    if (limite && new Date(i.published || i.first_seen).getTime() < limite) return false;
-    if (q && !(`${i.title} ${i.summary} ${i.cves.join(" ")}`.toLowerCase().includes(q))) return false;
-    return true;
-  });
-  visibili = PAGINA;
-  disegna();
+function corrisponde(i, ignora) {
+  const s = dati.sources[i.source];
+  if (!s) return false;
+  if (ignora !== "paese" && stato.paese && s.country !== stato.paese) return false;
+  if (stato.fonte && i.source !== stato.fonte) return false;
+  if (stato.cve && !i.cves.length) return false;
+  if (stato.giorni && tempo(i).getTime() < Date.now() - stato.giorni * 864e5) return false;
+  const q = stato.q.trim().toLowerCase();
+  if (q && !`${i.title} ${i.summary} ${i.cves.join(" ")}`.toLowerCase().includes(q)) return false;
+  return true;
 }
 
-function disegna() {
+function disegnaPaesi() {
+  const conteggi = {};
+  dati.items.forEach(i => { if (corrisponde(i, "paese")) { const c = dati.sources[i.source].country; conteggi[c] = (conteggi[c] || 0) + 1; } });
+  const codici = [...new Set(Object.values(dati.sources).map(s => s.country))]
+    .sort((a, b) => nomePaese(a).localeCompare(nomePaese(b), "it"));
+  $("paesi").replaceChildren(...codici.map(c => {
+    const b = el("button", { type: "button", class: "stamp-btn", "aria-pressed": String(stato.paese === c), "aria-label": `${nomePaese(c)}, ${conteggi[c] || 0} voci` },
+      stampo(c), el("span", { class: "n", text: num.format(conteggi[c] || 0) }));
+    b.title = nomePaese(c);
+    b.addEventListener("click", () => { stato.paese = stato.paese === c ? "" : c; aggiorna(); });
+    return b;
+  }));
+}
+
+function disegnaElenco() {
   const box = $("elenco");
   box.replaceChildren();
-  $("conteggio").textContent = `${filtrati.length} voci`;
-  if (!filtrati.length) box.append(el("div", { class: "empty", text: "Nessuna voce con questi filtri." }));
-  filtrati.slice(0, visibili).forEach(i => {
+  $("conteggio").textContent = filtrati.length === 1 ? "1 voce" : `${num.format(filtrati.length)} voci`;
+
+  if (!filtrati.length) {
+    box.append(el("div", { class: "empty" },
+      el("p", { text: "Nessuna voce corrisponde ai filtri scelti." }),
+      el("p", { text: "Allarga il periodo o togli un filtro per vedere più risultati." })));
+    $("altre").hidden = true;
+    return;
+  }
+
+  const perGiorno = {};
+  filtrati.forEach(i => { const k = tempo(i).toDateString(); perGiorno[k] = (perGiorno[k] || 0) + 1; });
+
+  let giorno = null, sezione = null;
+  for (const i of filtrati.slice(0, stato.visibili)) {
+    const d = tempo(i), chiave = d.toDateString();
+    if (chiave !== giorno) {
+      giorno = chiave;
+      const tot = perGiorno[chiave];
+      sezione = el("section", { class: "day" },
+        el("div", { class: "day-head" }, el("h3", { text: etichettaGiorno(d) }),
+          el("span", { text: tot === 1 ? "1 voce" : `${num.format(tot)} voci` })));
+      box.append(sezione);
+    }
     const s = dati.sources[i.source];
-    const meta = el("div", { class: "meta" },
-      el("span", { class: "chip", text: nomePaese(s.country) }),
-      el("span", { text: s.name }),
-      el("span", { text: "·" }),
-      el("span", { text: dataIt(i.published || i.first_seen) }),
-      ...i.cves.slice(0, 6).map(c => el("span", { class: "cve", text: c })),
-      i.cves.length > 6 ? el("span", { text: `+${i.cves.length - 6}` }) : null);
-    box.append(el("article", { class: "item" },
-      el("a", { class: "title", href: linkSicuro(i.link), target: "_blank", rel: "noopener noreferrer", text: i.title }),
-      meta,
-      i.summary ? el("p", { class: "sum", text: i.summary }) : null));
-  });
-  $("altre").hidden = filtrati.length <= visibili;
+    const ora = d.toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit" });
+    const t = el("time", { datetime: d.toISOString(), text: ora });
+    if (!i.published) t.title = "Ora in cui la voce è stata rilevata: la fonte non indica la data";
+    sezione.append(el("article", { class: "entry" },
+      t,
+      el("span", { class: "stamp", title: nomePaese(s.country), text: s.country }),
+      el("div", { class: "body" },
+        el("h4", {}, el("a", { href: sicuro(i.link), target: "_blank", rel: "noopener noreferrer", text: i.title })),
+        el("p", { class: "src", text: s.name }),
+        i.summary ? el("p", { class: "sum", text: i.summary }) : null,
+        i.cves.length ? el("div", { class: "cves" },
+          i.cves.slice(0, 8).map(c => el("a", { class: "cve", href: "https://nvd.nist.gov/vuln/detail/" + encodeURIComponent(c),
+            target: "_blank", rel: "noopener noreferrer", text: c })),
+          i.cves.length > 8 ? el("span", { class: "src", text: `e altre ${i.cves.length - 8}` }) : null) : null)));
+  }
+  $("altre").hidden = filtrati.length <= stato.visibili;
 }
 
-function disegnaStato(stato) {
-  const tb = $("stato");
-  stato.sources.forEach(s => tb.append(el("tr", {},
-    el("td", { text: s.name + (s.verified ? "" : " (da verificare)") }),
-    el("td", { text: nomePaese(s.country) }),
-    el("td", { class: s.ok ? "ok" : "err", text: s.ok ? "Funziona" : "Errore" }),
-    el("td", { text: String(s.count) }),
-    el("td", { text: s.error || "" }))));
+function disegnaVitali(stati) {
+  const ultime24 = dati.items.filter(i => tempo(i).getTime() >= Date.now() - 864e5).length;
+  const attive = stati.sources.filter(s => s.ok).length;
+  const aggiornato = new Date(dati.updated).toLocaleString("it-IT", { day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" });
+  const riga = (k, v) => el("div", {}, el("dt", { text: k }), el("dd", { text: v }));
+  $("vitals").replaceChildren(
+    riga("Aggiornato il", aggiornato),
+    riga("Nelle ultime 24 ore", num.format(ultime24)),
+    riga("Fonti attive", `${attive} su ${stati.sources.length}`));
 }
+
+function disegnaStato(stati) {
+  $("stato").replaceChildren(...stati.sources.map(s => {
+    const li = el("li", {},
+      el("span", { class: "state " + (s.ok ? "ok" : "ko"), "aria-hidden": "true", text: s.ok ? "✓" : "✕" }),
+      el("span", { text: s.name }),
+      el("span", { class: "num", text: s.ok ? num.format(s.count) : "errore" }));
+    if (!s.ok && s.error) li.append(el("span", { class: "why", text: s.error }));
+    if (!s.verified && s.ok) li.append(el("span", { class: "todo", text: "Indirizzo da confermare" }));
+    return li;
+  }));
+}
+
+function riempiFonti() {
+  Object.entries(dati.sources).sort((a, b) => a[1].name.localeCompare(b[1].name, "it"))
+    .forEach(([id, s]) => $("fonte").append(el("option", { value: id, text: s.name })));
+}
+
+function aggiorna() {
+  filtrati = dati.items.filter(i => corrisponde(i)).sort((a, b) => tempo(b) - tempo(a));
+  disegnaPaesi();
+  disegnaElenco();
+}
+
+function azzera() {
+  Object.assign(stato, { q:"", paese:"", fonte:"", giorni:7, cve:false, visibili:PAGINA });
+  $("q").value = ""; $("fonte").value = ""; $("solocve").checked = false;
+  document.querySelector('input[name="periodo"][value="7"]').checked = true;
+  aggiorna();
+}
+
+$("q").addEventListener("input", e => { stato.q = e.target.value; stato.visibili = PAGINA; aggiorna(); });
+$("fonte").addEventListener("change", e => { stato.fonte = e.target.value; stato.visibili = PAGINA; aggiorna(); });
+$("solocve").addEventListener("change", e => { stato.cve = e.target.checked; stato.visibili = PAGINA; aggiorna(); });
+document.querySelectorAll('input[name="periodo"]').forEach(r =>
+  r.addEventListener("change", e => { stato.giorni = +e.target.value; stato.visibili = PAGINA; aggiorna(); }));
+$("altre").addEventListener("click", () => { stato.visibili += PAGINA; disegnaElenco(); });
+$("azzera").addEventListener("click", azzera);
+$("apri-filtri").addEventListener("click", () => {
+  const box = $("filtri"), aperto = box.dataset.open !== "true";
+  box.dataset.open = String(aperto);
+  $("apri-filtri").setAttribute("aria-expanded", String(aperto));
+  $("apri-filtri").textContent = aperto ? "Nascondi i filtri" : "Mostra i filtri";
+});
 
 async function avvia() {
   try {
@@ -171,15 +364,13 @@ async function avvia() {
       fetch("data/items.json").then(r => r.json()),
       fetch("data/status.json").then(r => r.json())]);
     dati = a;
-    $("aggiornato").textContent = "Ultimo aggiornamento: " + dataIt(a.updated);
-    riempiFiltri(); disegnaStato(b); filtra();
+    riempiFonti(); disegnaVitali(b); disegnaStato(b); aggiorna();
   } catch (e) {
-    $("aggiornato").textContent = "Dati non ancora disponibili: attendi la prima esecuzione del flusso automatico.";
+    $("elenco").replaceChildren(el("div", { class: "empty" },
+      el("p", { text: "I dati non sono ancora disponibili." }),
+      el("p", { text: "Avvia il flusso “Aggiorna segnalazioni” dalla scheda Actions del repository e ricarica la pagina." })));
   }
 }
-
-["q", "paese", "fonte", "periodo", "solocve"].forEach(id => $(id).addEventListener("input", filtra));
-$("altre").addEventListener("click", () => { visibili += PAGINA; disegna(); });
 avvia();
 </script>
 </body>
