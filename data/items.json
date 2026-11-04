@@ -1,18 +1,11 @@
 {
- "updated": "2026-11-04T01:20:02+00:00",
+ "updated": "2026-11-04T06:24:57+00:00",
  "sources": {
   "csirt-it": {
    "name": "CSIRT Italia (ACN)",
    "country": "IT",
    "kind": "csirt",
    "url": "https://www.acn.gov.it/portale/feedrss/-/journal/rss/20119/723192",
-   "verified": true
-  },
-  "acn-news": {
-   "name": "ACN - Notizie",
-   "country": "IT",
-   "kind": "autorita",
-   "url": "https://www.acn.gov.it/portale/feedrss",
    "verified": true
   },
   "cert-eu": {
