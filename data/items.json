@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T06:43:51+00:00",
+ "updated": "2026-11-04T07:13:15+00:00",
  "sources": {
   "csirt-it": {
    "name": "CSIRT Italia (ACN)",
@@ -62,17 +62,48 @@
    "country": "FR",
    "kind": "csirt",
    "url": "https://www.cert.ssi.gouv.fr/feed/",
-   "verified": false
+   "verified": true
   },
   "ncsc-nl": {
    "name": "NCSC-NL - Avvisi",
    "country": "NL",
    "kind": "csirt",
    "url": "https://advisories.ncsc.nl/rss/advisories",
+   "verified": true
+  },
+  "cccs-alerts": {
+   "name": "Cyber Centre Canada - Avvisi",
+   "country": "CA",
+   "kind": "csirt",
+   "url": "https://www.cyber.gc.ca/api/cccs/rss/v1/get?feed=alerts_advisories&lang=en",
+   "verified": true
+  },
+  "cccs-news": {
+   "name": "Cyber Centre Canada - Notizie e guide",
+   "country": "CA",
+   "kind": "autorita",
+   "url": "https://www.cyber.gc.ca/api/cccs/rss/v1/get?feed=news_events_guidance&lang=en",
+   "verified": true
+  },
+  "cisa": {
+   "name": "CISA - Avvisi",
+   "country": "US",
+   "kind": "csirt",
+   "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
    "verified": false
   }
  },
  "items": [
+  {
+   "id": "06da5add7076a72e",
+   "source": "cccs-alerts",
+   "title": "WordPress security advisory (AV26-1117)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/wordpress-security-advisory-av26-1117",
+   "summary": "",
+   "published": "2026-11-03T21:36:07+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
   {
    "id": "501eba92e62d06a7",
    "source": "cert-bund",
@@ -514,6 +545,16 @@
    "cves": []
   },
   {
+   "id": "8bd26115c85f3212",
+   "source": "cccs-alerts",
+   "title": "Progress Software security advisory (AV26-1116)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/progress-software-security-advisory-av26-1116",
+   "summary": "",
+   "published": "2026-11-03T14:46:33+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
    "id": "2d5ed045096ab235",
    "source": "cert-bund",
    "title": "[UPDATE] [hoch] Linux Kernel: Mehrere Schwachstellen",
@@ -531,6 +572,16 @@
    "summary": "Ein lokaler Angreifer kann eine Schwachstelle im Linux Kernel ausnutzen, um einen Denial of Service Angriff durchzuführen.",
    "published": "2026-11-03T14:44:12+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "62bd66128af3c90f",
+   "source": "cccs-alerts",
+   "title": "[Control systems] Siemens security advisory (AV26-802) – Update 1",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/control-systems-siemens-security-advisory-av26-802",
+   "summary": "",
+   "published": "2026-11-03T14:39:43+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
    "cves": []
   },
   {
@@ -601,6 +652,16 @@
    "summary": "Ein Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen, möglicherweise um Daten zu manipulieren oder offenzulegen, Sicherheitsmaßnahmen zu umgehen oder einen Denial-of-Service-Zustand zu verursachen.",
    "published": "2026-11-03T14:34:18+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "36fa3cd63122c806",
+   "source": "cccs-alerts",
+   "title": "PostgreSQL security advisory (AV26-1115)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/postgresql-security-advisory-av26-1115",
+   "summary": "",
+   "published": "2026-11-03T14:24:43+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
    "cves": []
   },
   {
@@ -761,6 +822,16 @@
    "summary": "Ein Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um Sicherheitsmaßnahmen zu umgehen, Daten oder den Systemzustand zu manipulieren, Denial-of-Service-Zustände herbeizuführen oder andere, nicht näher spezifizierte Angriffe durchzuführen.",
    "published": "2026-11-03T14:19:04+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "2862c28156c7c5b7",
+   "source": "cccs-alerts",
+   "title": "Zyxel security advisory (AV26-1114)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/zyxel-security-advisory-av26-1114",
+   "summary": "",
+   "published": "2026-11-03T14:16:02+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
    "cves": []
   },
   {
@@ -1522,6 +1593,31 @@
    "published": "2026-11-03T12:00:00+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
    "cves": []
+  },
+  {
+   "id": "2d81f55f7713c673",
+   "source": "cisa",
+   "title": "Subnet Solutions PowerSYSTEM Center",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-307-01",
+   "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to execute unauthorized SQL commands and gain access to unauthorized resources. The following versions of Subnet Solutions PowerSYSTEM Center are affected: PowerSYSTEM Center 2020 <=5.29.x (CVE-2026-63017) PowerSYSTEM Center 2024 >=6.0.x|<=6.2.x (CVE-2026-63017, CVE-2026-63774) PowerSYSTEM Center 2026 >=7.0…",
+   "published": "2026-11-03T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": [
+    "CVE-2026-63017",
+    "CVE-2026-63774"
+   ]
+  },
+  {
+   "id": "18324131613572d5",
+   "source": "cisa",
+   "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/11/03/cisa-adds-one-known-exploited-vulnerability-catalog",
+   "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-119977 WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BO…",
+   "published": "2026-11-03T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": [
+    "CVE-2026-119977"
+   ]
   },
   {
    "id": "400758e3854bb53b",
@@ -2748,6 +2844,26 @@
    "cves": []
   },
   {
+   "id": "61fde89cd37b6fdc",
+   "source": "cccs-alerts",
+   "title": "SUSE Linux security advisory (AV26-1113)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/suse-linux-security-advisory-av26-1113",
+   "summary": "",
+   "published": "2026-11-02T18:25:26+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "459dc424574042bf",
+   "source": "cccs-alerts",
+   "title": "Barracuda Networks security advisory (AV26-1112)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/barracuda-networks-security-advisory-av26-1112",
+   "summary": "",
+   "published": "2026-11-02T16:16:10+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
    "id": "fab3d183233809b7",
    "source": "csirt-it",
    "title": "Rilevate vulnerabilità in SQLite",
@@ -2755,6 +2871,36 @@
    "summary": "Rilevate alcune vulnerabilità, di cui 4 con gravità \"alta\", in SQLite, libreria open source per la gestione di basi di dati relazionali incorporata in numerose applicazioni. Tali vulnerabilità potrebbero consentire a un attaccante di iniettare comandi di sistema, alterare la memoria dei processi interessati e compromettere la disponibilità del servizio sui sistemi coinvolti.",
    "published": "2026-11-02T15:06:31+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "a680ba9a6e070c41",
+   "source": "cccs-alerts",
+   "title": "Red Hat security advisory (AV26-1111)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/red-hat-security-advisory-av26-1111",
+   "summary": "",
+   "published": "2026-11-02T14:36:56+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "ea1ab8b49b9d10f3",
+   "source": "cccs-alerts",
+   "title": "Dell security advisory (AV26-1110)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/dell-security-advisory-av26-1110",
+   "summary": "",
+   "published": "2026-11-02T14:23:12+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "fb8430ea55360008",
+   "source": "cccs-alerts",
+   "title": "Google security advisory (AV26-1109)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/google-security-advisory-av26-1109",
+   "summary": "",
+   "published": "2026-11-02T14:12:04+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
    "cves": []
   },
   {
@@ -2922,6 +3068,26 @@
    "cves": []
   },
   {
+   "id": "7126d363a819d16a",
+   "source": "cccs-alerts",
+   "title": "Linux security advisory (AV26-1108)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/linux-security-advisory-av26-1108",
+   "summary": "",
+   "published": "2026-10-30T21:34:05+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "3652327220c90d62",
+   "source": "cccs-alerts",
+   "title": "Ivanti security advisory (AV26-1035) - Update 2",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/ivanti-security-advisory-av26-1035",
+   "summary": "",
+   "published": "2026-10-30T18:01:12+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
    "id": "aad85d49a7474b3a",
    "source": "csirt-it",
    "title": "Progress: risolte vulnerabilità in WS_FTP Server",
@@ -2929,6 +3095,36 @@
    "summary": "Aggiornamenti di sicurezza Progress risolvono molteplici vulnerabilità, di cui 6 con gravità “critica” e 3 con gravità “alta”, presenti in WS_FTP Server, soluzione software di file transfer sicuro utilizzata per trasferire, condividere e gestire file all'interno di organizzazioni e tra partner esterni.",
    "published": "2026-10-30T16:03:54+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "9860d0b3188132c0",
+   "source": "cccs-alerts",
+   "title": "MongoDB security advisory (AV26-1107)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/mongodb-security-advisory-av26-1107",
+   "summary": "",
+   "published": "2026-10-30T15:53:31+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "aea792887b6c2eb0",
+   "source": "cccs-alerts",
+   "title": "HashiCorp security advisory (AV26-1106)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/hashicorp-security-advisory-av26-1106",
+   "summary": "",
+   "published": "2026-10-30T15:49:12+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "ac7a138510802c25",
+   "source": "cccs-alerts",
+   "title": "Drupal security advisory (AV26-1105)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/drupal-security-advisory-av26-1105",
+   "summary": "",
+   "published": "2026-10-30T15:43:17+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
    "cves": []
   },
   {
@@ -3022,6 +3218,19 @@
    "published": "2026-10-30T12:08:35+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
    "cves": []
+  },
+  {
+   "id": "35bce90d7ceafca3",
+   "source": "cisa",
+   "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+   "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-111357 Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability CVE-2026-118527 Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability These types of vulnerabilities are a frequent attack vector for m…",
+   "published": "2026-10-30T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": [
+    "CVE-2026-111357",
+    "CVE-2026-118527"
+   ]
   },
   {
    "id": "7d882842bdc90533",
@@ -3224,6 +3433,36 @@
    "cves": []
   },
   {
+   "id": "5eadc66e090ea7cf",
+   "source": "cccs-news",
+   "title": "Managing security risks in vibe coding (ITSM.60.043)",
+   "link": "https://cyber.gc.ca/en/guidance/managing-security-risks-vibe-coding-itsm60043",
+   "summary": "This publication provides guidance to anyone in an organization who uses or oversees vibe coding, including those responsible for enterprise architecture and oversight, compliance and data security.",
+   "published": "2026-10-29T20:28:02+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "d93809dca8f6c34d",
+   "source": "cccs-alerts",
+   "title": "Cisco security advisory (AV26-1102) - Update 1",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/cisco-security-advisory-av26-1102",
+   "summary": "",
+   "published": "2026-10-29T20:20:34+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "21f8a38328439c1d",
+   "source": "cccs-alerts",
+   "title": "GitLab security advisory (AV26-1028) - Update 1",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/gitlab-security-advisory-av26-1028",
+   "summary": "",
+   "published": "2026-10-29T20:14:55+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
    "id": "93c66e787ea3f756",
    "source": "csirt-it",
    "title": "Rilevate vulnerabilità in prodotti Supermicro",
@@ -3251,6 +3490,16 @@
    "summary": "MongoDB ha rilasciato aggiornamenti di sicurezza per sanare alcune vulnerabilità, di cui 2 con gravità “alta”, nei prodotti Database Tools e Laravel. Tali vulnerabilità, qualora sfruttate, potrebbero consentire ad un utente malintenzionato di eludere i meccanismi di sicurezza e manipolare i dati sui sistemi interessati.",
    "published": "2026-10-29T14:21:34+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "35dc4fa91aa954db",
+   "source": "cccs-alerts",
+   "title": "Mattermost security advisory (AV26-1104)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/mattermost-security-advisory-av26-1104",
+   "summary": "",
+   "published": "2026-10-29T14:04:33+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
    "cves": []
   },
   {
@@ -3284,6 +3533,16 @@
    "cves": []
   },
   {
+   "id": "de42d2265a16e57f",
+   "source": "cccs-alerts",
+   "title": "n8n security advisory (AV26-1103)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/n8n-security-advisory-av26-1103",
+   "summary": "",
+   "published": "2026-10-29T13:55:57+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
    "id": "3c7cd32ba24eef0d",
    "source": "csirt-it",
    "title": "Risolte vulnerabilità in Grafana",
@@ -3291,6 +3550,69 @@
    "summary": "Rilasciati aggiornamenti di sicurezza per risolvere 5 vulnerabilità, di cui tre con gravità “alta”, presenti in Grafana, nota applicazione web per la visualizzazione e l’analisi interattiva di dati. Tali vulnerabilità, qualora sfruttate e in presenza di specifiche condizioni, potrebbero consentire a un utente malintenzionato l'elusione dei meccanismi di sicurezza, l'accesso a informazioni sensibi…",
    "published": "2026-10-29T13:42:22+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "fe5f7e0e988224f3",
+   "source": "cccs-news",
+   "title": "Cyber security and privacy risk management: A lifecycle approach",
+   "link": "https://cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management",
+   "summary": "",
+   "published": "2026-10-29T13:10:21+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "88cb47e175ba2172",
+   "source": "cccs-news",
+   "title": "Cyber security and privacy risk management: A lifecycle approach - Overview - ITSP.10.035",
+   "link": "https://cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management/cyber-security-privacy-risk-management-lifecycle-approach-overview-itsp10035",
+   "summary": "",
+   "published": "2026-10-29T13:09:28+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "b96a27569cb60b0d",
+   "source": "cisa",
+   "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+   "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-97229 GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound vulnerability CVE-2026-76418 Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability These type…",
+   "published": "2026-10-29T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": [
+    "CVE-2026-76418",
+    "CVE-2026-97229"
+   ]
+  },
+  {
+   "id": "e21f9aa19d0cbec5",
+   "source": "cisa",
+   "title": "Hitachi Energy TRO600 series products",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-02",
+   "summary": "View CSAF Summary Hitachi Energy is aware of multiple vulnerabilities that affect the TRO600 series product versions listed in this document. These vulnerabilities can be exploited for remote code execution (RCE) to carry out further attacks and disclosure of sensitive information. Please refer to the Recommended Immediate Actions section for information about the mitigation/remediation. The foll…",
+   "published": "2026-10-29T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "b5ac62161edf1291",
+   "source": "cisa",
+   "title": "Siemens Mendix SAML Module",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-01",
+   "summary": "View CSAF Summary Mendix SAML module contains an authentication bypass vulnerability that could allow an unauthenticated remote attacker to gain unauthorized access by replaying a valid SAML assertion in IdP-initiated authentication flows. Siemens has released new versions for the affected products and recommends to update to the latest versions. The following versions of Siemens Mendix SAML Modu…",
+   "published": "2026-10-29T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "17ae97b90d0a76a5",
+   "source": "cisa",
+   "title": "Hitachi Energy CoreTec Product",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-03",
+   "summary": "View CSAF Summary Hitachi Energy is aware of OS command injection and Dirty Frag vulnerabilities that affect CoreTec product versions listed in this document. Successful exploitation of these vulnerabilities could result in impact on confidentiality, integrity and availability of the product. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation. The f…",
+   "published": "2026-10-29T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
    "cves": []
   },
   {
@@ -3458,6 +3780,136 @@
    "cves": []
   },
   {
+   "id": "80a9fc05f42eb235",
+   "source": "cccs-alerts",
+   "title": "VMware security advisory (AV26-763) – Update 2",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/vmware-security-advisory-av26-763",
+   "summary": "",
+   "published": "2026-10-28T19:53:28+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "1079b096bc4f8557",
+   "source": "cccs-alerts",
+   "title": "Juniper Networks security advisory (AV26-1101)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/juniper-networks-security-advisory-av26-1101",
+   "summary": "",
+   "published": "2026-10-28T19:30:45+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "09219c4ff15ddfb0",
+   "source": "cccs-alerts",
+   "title": "Mozilla security advisory (AV26-1100)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/mozilla-security-advisory-av26-1100",
+   "summary": "",
+   "published": "2026-10-28T19:17:01+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "db9a62800e41260c",
+   "source": "cccs-alerts",
+   "title": "Apple security advisory (AV26-1099)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/apple-security-advisory-av26-1099",
+   "summary": "",
+   "published": "2026-10-28T19:05:56+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "c22cc8a569f156d0",
+   "source": "cccs-alerts",
+   "title": "AL26-028 – Ongoing Help Desk Voice Phishing Campaign Targeting Canadian Organizations",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/al26-028-ongoing-help-desk-voice-phishing-campaign-targeting-canadian-organizations",
+   "summary": "",
+   "published": "2026-10-28T18:49:45+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "782ecc106df91e22",
+   "source": "cccs-alerts",
+   "title": "Progress security advisory (AV26-1098)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/progress-security-advisory-av26-1098",
+   "summary": "",
+   "published": "2026-10-28T17:29:48+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "2cab6cce880d0a7f",
+   "source": "cccs-alerts",
+   "title": "Oracle Corporation security advisory (AV26-1071) – Update 1",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/oracle-corporation-security-advisory-av26-1071",
+   "summary": "",
+   "published": "2026-10-28T17:15:17+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "63dafb858d3a9171",
+   "source": "cccs-alerts",
+   "title": "Tanium security advisory (AV26-1097)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/tanium-security-advisory-av26-1097",
+   "summary": "",
+   "published": "2026-10-28T15:40:28+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "b42a3d595101df53",
+   "source": "cccs-alerts",
+   "title": "Veeam security advisory (AV26-1096)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/veeam-security-advisory-av26-1096",
+   "summary": "",
+   "published": "2026-10-28T15:28:22+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "d1bed61029d7d1a6",
+   "source": "cccs-alerts",
+   "title": "Google Chrome security advisory (AV26-1095)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/google-chrome-security-advisory-av26-1095",
+   "summary": "",
+   "published": "2026-10-28T14:50:37+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "c894b425a611c647",
+   "source": "cccs-alerts",
+   "title": "WatchGuard security advisory (AV26-1094)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/watchguard-security-advisory-av26-1094",
+   "summary": "",
+   "published": "2026-10-28T14:41:15+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "2313f2cba2a3aa28",
+   "source": "cccs-alerts",
+   "title": "TeamViewer security advisory (AV26-1093)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/teamviewer-security-advisory-av26-1093",
+   "summary": "",
+   "published": "2026-10-28T14:38:08+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "105d7becb1777c74",
+   "source": "cccs-alerts",
+   "title": "Adobe security advisory (AV26-1092)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/adobe-security-advisory-av26-1092",
+   "summary": "",
+   "published": "2026-10-28T14:26:34+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
    "id": "b149d0129c0281b1",
    "source": "ncsc-nl",
    "title": "NCSC-2026-0455 [1.01] [M/H] Kwetsbaarheden verholpen in Apple MacOS",
@@ -3490,6 +3942,18 @@
    "cves": []
   },
   {
+   "id": "cf0c53890cbd199b",
+   "source": "cccs-alerts",
+   "title": "AL26-027 - Critical vulnerability impacting Google Brotli – CVE-2026-111497",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/al26-027-critical-vulnerability-impacting-google-brotli-cve-2026-111497",
+   "summary": "",
+   "published": "2026-10-28T12:46:09+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": [
+    "CVE-2026-111497"
+   ]
+  },
+  {
    "id": "ec1e5ef223c96a49",
    "source": "csirt-it",
    "title": "PHP2Shell: verificare i prodotti che Integrano PHP",
@@ -3508,6 +3972,19 @@
    "published": "2026-10-28T12:20:04+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
    "cves": []
+  },
+  {
+   "id": "477d835951fc7d39",
+   "source": "cisa",
+   "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+   "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-41709 Broadcom VMWare ESX Insufficient Logging Vulnerability CVE-2026-46300 Linux Kernel Missing Initialization of a Variable Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks…",
+   "published": "2026-10-28T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": [
+    "CVE-2026-41709",
+    "CVE-2026-46300"
+   ]
   },
   {
    "id": "52e9d9404fadb3cf",
@@ -3602,6 +4079,89 @@
    "cves": []
   },
   {
+   "id": "c1c17ba7dd733f19",
+   "source": "cccs-alerts",
+   "title": "Adobe security advisory (AV26-697) – Update 1",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/adobe-security-advisory-av26-697",
+   "summary": "",
+   "published": "2026-10-27T20:41:21+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "a6e192dfa6aa296d",
+   "source": "cccs-alerts",
+   "title": "Google security advisory (AV26-1085) - Update 1",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/google-security-advisory-av26-1085",
+   "summary": "",
+   "published": "2026-10-27T20:32:57+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "24299898e47e3c12",
+   "source": "cccs-alerts",
+   "title": "AL26-026 - Critical vulnerabilities impacting PHP - CVE-2026-109618 and CVE-2026-109619 - Update 2",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/al26-026-critical-vulnerabilities-impacting-php-cve-2026-109618-cve-2026-109619",
+   "summary": "",
+   "published": "2026-10-27T17:20:09+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": [
+    "CVE-2026-109618",
+    "CVE-2026-109619"
+   ]
+  },
+  {
+   "id": "aeacb7e6d51495f2",
+   "source": "cccs-alerts",
+   "title": "[Control systems] Hitachi security advisory (AV26-1091)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/control-systems-hitachi-security-advisory-av26-1091",
+   "summary": "",
+   "published": "2026-10-27T16:21:17+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "a53168cd33fb8185",
+   "source": "cccs-alerts",
+   "title": "[Control systems] Johnson Controls security advisory (AV26-1090)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/control-systems-johnson-controls-security-advisory-av26-1090",
+   "summary": "",
+   "published": "2026-10-27T14:02:18+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "6bcdf5665e04219e",
+   "source": "cccs-alerts",
+   "title": "[Control Systems] Moxa security advisory (AV26-1089)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/control-systems-moxa-security-advisory-av26-1089",
+   "summary": "",
+   "published": "2026-10-27T13:24:14+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "2e19f5dd2ea6281d",
+   "source": "cccs-alerts",
+   "title": "PHP security advisory (AV26-1070) - Update 1",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/php-security-advisory-av26-1070",
+   "summary": "",
+   "published": "2026-10-27T13:16:18+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "bc2e0a64b3160b19",
+   "source": "cccs-alerts",
+   "title": "Esri security advisory (AV26-1088)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/esri-security-advisory-av26-1088",
+   "summary": "",
+   "published": "2026-10-27T13:10:25+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
    "id": "88f4320960424f67",
    "source": "cert-bund-buerger",
    "title": "Dell BIOS: Mehrere Schwachstellen",
@@ -3632,6 +4192,49 @@
    "cves": []
   },
   {
+   "id": "9b246ea97ae64eaa",
+   "source": "cisa",
+   "title": "EPICS Base",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-01",
+   "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to cause a denial-of-service condition, corrupt memory, disclose sensitive information, or potentially execute arbitrary code. The following versions of EPICS Base are affected: EPICS Base release <=7.0.10 (CVE-2026-114595, CVE-2026-114596, CVE-2026-114597, CVE-2026-114598) CVSS Vendor Equipment v3 9.8 The…",
+   "published": "2026-10-27T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": [
+    "CVE-2026-114595",
+    "CVE-2026-114596",
+    "CVE-2026-114597",
+    "CVE-2026-114598"
+   ]
+  },
+  {
+   "id": "5b300f3fcbe0dc97",
+   "source": "cisa",
+   "title": "Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions GENESIS, GENESIS64, ICONICS Suite, Hyper Historian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32 and BizViz",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-02",
+   "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code (CVE-2023-4863), bypass authentication (CVE-2026-16436 and CVE-2026-16437), or perform arbitrary operations (CVE-2026-16438), resulting in information disclosure, tampering with, destruction, or deletion of information, and a denial-of-service (DoS) condition of the system. The fol…",
+   "published": "2026-10-27T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": [
+    "CVE-2023-4863",
+    "CVE-2026-16436",
+    "CVE-2026-16437",
+    "CVE-2026-16438"
+   ]
+  },
+  {
+   "id": "a5957355534f9b22",
+   "source": "cisa",
+   "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/10/27/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+   "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-48356 Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability CVE-2026-111497 Google Brotli Unchecked Return Value Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and p…",
+   "published": "2026-10-27T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": [
+    "CVE-2026-111497",
+    "CVE-2026-48356"
+   ]
+  },
+  {
    "id": "82c01cb438c00ab5",
    "source": "csirt-it",
    "title": "Aggiornamenti di sicurezza Apple",
@@ -3652,6 +4255,46 @@
    "cves": []
   },
   {
+   "id": "0f6dc545f791830b",
+   "source": "cccs-alerts",
+   "title": "HashiCorp security advisory (AV26-1087)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/hashicorp-security-advisory-av26-1087",
+   "summary": "",
+   "published": "2026-10-26T19:04:16+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "ef8e861e39e9df17",
+   "source": "cccs-alerts",
+   "title": "Craft CMS security advisory (AV26-1086)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/craft-cms-security-advisory-av26-1086",
+   "summary": "",
+   "published": "2026-10-26T15:48:04+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "2923425626d43b10",
+   "source": "cccs-news",
+   "title": "Cyber threat bulletin: Agentic artificial intelligence is accelerating cyber attacks",
+   "link": "https://cyber.gc.ca/en/guidance/cyber-threat-bulletin-agentic-artificial-intelligence-accelerating-cyber-attacks",
+   "summary": "",
+   "published": "2026-10-26T14:01:03+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "3e08baf2ec3262ac",
+   "source": "cccs-alerts",
+   "title": "Red Hat security advisory (AV26-1084)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/red-hat-security-advisory-av26-1084",
+   "summary": "",
+   "published": "2026-10-26T13:50:35+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
    "id": "d98f41fd4ab56bfa",
    "source": "ncsc-nl",
    "title": "NCSC-2026-0454 [1.00] [M/H] Kwetsbaarheden verholpen in HPE Networking AOS",
@@ -3659,6 +4302,26 @@
    "summary": "HPE heeft 72 kwetsbaarheden verholpen in HPE Networking AOS-8 en AOS-10, waaronder Mobility Conductors, Mobility Controllers, Mobility Gateways en Access Points. De kwetsbaarheden betreffen verschillende beveiligingsproblemen, waaronder authenticatieomzeiling, command- en SQL-injectie, buffer-overflows en onvoldoende toegangscontrole. Van de in totaal 72 kwetsbaarheden zijn 33 als kritiek aangeme…",
    "published": "2026-10-26T13:43:17+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "67db09fd920b32a7",
+   "source": "cccs-alerts",
+   "title": "[Control Systems] Siemens security advisory (AV26-1083)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/control-systems-siemens-security-advisory-av26-1083",
+   "summary": "",
+   "published": "2026-10-26T13:38:01+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "66e75445ebdafb59",
+   "source": "cccs-alerts",
+   "title": "IBM security advisory (AV26-1082)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/ibm-security-advisory-av26-1082",
+   "summary": "",
+   "published": "2026-10-26T13:29:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
    "cves": []
   },
   {
@@ -3682,6 +4345,39 @@
    "cves": []
   },
   {
+   "id": "0ac0a847018c8a1a",
+   "source": "cisa",
+   "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+   "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog and updated the PHP Alert, Critical Vulnerabilities in PHP Require Immediate Patching : CVE-2026-109618 – PHP Memory Corruption Vulnerability CVE-2026-109619 – PHP Stale Internal Request-State Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose sign…",
+   "published": "2026-10-26T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": [
+    "CVE-2026-109618",
+    "CVE-2026-109619"
+   ]
+  },
+  {
+   "id": "78694f49540dde6e",
+   "source": "cccs-alerts",
+   "title": "Arista Networks security advisory (AV26-1080) – Update 1",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/arista-networks-security-advisory-av26-1080",
+   "summary": "",
+   "published": "2026-10-23T18:07:53+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "b660bdb8d8998539",
+   "source": "cccs-news",
+   "title": "The cyber threat to aviation",
+   "link": "https://cyber.gc.ca/en/guidance/cyber-threat-aviation",
+   "summary": "",
+   "published": "2026-10-23T18:06:10+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
    "id": "59d8268a41bfcd75",
    "source": "cert-eu",
    "title": "2026-018: Critical Vulnerabilities in PHP",
@@ -3690,6 +4386,60 @@
    "published": "2026-10-23T16:36:26+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
    "cves": []
+  },
+  {
+   "id": "b4c32977d586393f",
+   "source": "cccs-alerts",
+   "title": "Fortinet security advisory (AV26-1081)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/fortinet-security-advisory-av26-1081",
+   "summary": "",
+   "published": "2026-10-23T14:16:11+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "c6794c69741b182c",
+   "source": "cccs-alerts",
+   "title": "Fortinet security advisory (AV26-1037) - Update 1",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/fortinet-security-advisory-av26-1037",
+   "summary": "",
+   "published": "2026-10-23T13:34:25+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "52829729a836fb48",
+   "source": "cccs-alerts",
+   "title": "HPE security advisory (AV26-1079)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/hpe-security-advisory-av26-1079",
+   "summary": "",
+   "published": "2026-10-23T13:19:05+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "bdf3f70a36af1319",
+   "source": "cisa",
+   "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog-0",
+   "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-110447 Collabora Online – Built-in CODE Server OS Command Injection Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 2…",
+   "published": "2026-10-23T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": [
+    "CVE-2026-110447"
+   ]
+  },
+  {
+   "id": "0472d6fa848709a6",
+   "source": "cisa",
+   "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog",
+   "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-114625 Arista VeloCloud Orchestrator SQL Injection Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizin…",
+   "published": "2026-10-23T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": [
+    "CVE-2026-114625"
+   ]
   },
   {
    "id": "54b10b11434fc543",
@@ -3742,6 +4492,16 @@
    "cves": []
   },
   {
+   "id": "f7ea9fbe5971493a",
+   "source": "cccs-news",
+   "title": "Managing AI token consumption for operational resilience - ITSM.00.125",
+   "link": "https://cyber.gc.ca/en/guidance/managing-ai-token-consumption-operational-resilience-itsm00125",
+   "summary": "",
+   "published": "2026-10-22T14:14:02+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
    "id": "3f2cafdf199b6878",
    "source": "ncsc-nl",
    "title": "NCSC-2026-0452 [1.00] [M/H] Kwetsbaarheden verholpen in FreeBSD bhyve hypervisor",
@@ -3780,6 +4540,178 @@
    "published": "2026-10-22T12:04:56+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
    "cves": []
+  },
+  {
+   "id": "55bb3a95f4bd57a4",
+   "source": "cisa",
+   "title": "Siemens WinCC",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-13",
+   "summary": "View CSAF Summary Multiple SIMATIC WinCC versions are affected by a database privilege escalation vulnerability that could allow an authenticated user with access to the database to execute commands on the underlying host system. Siemens has released new versions for several affected products and recommends to update to the latest versions. Siemens is preparing further fixes and recommends mitiga…",
+   "published": "2026-10-22T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "d5afe8afdf67c3d3",
+   "source": "cisa",
+   "title": "Siemens SIMATIC IPCs",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-07",
+   "summary": "View CSAF Summary The products listed below contain a vulnerability that could allow an attacker to boot an operating system or UEFI application signed with that test key, bypassing UEFI Secure Boot protections even when Secure Boot is enabled. Siemens has released new versions for the affected products and recommends to update to the latest versions. The following versions of Siemens SIMATIC IPC…",
+   "published": "2026-10-22T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "7e8a746b03a74cd6",
+   "source": "cisa",
+   "title": "Siemens SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-11",
+   "summary": "View CSAF Summary Multiple vulnerabilities have been identified in the additional GNU/Linux subsystem of the firmware version V3.1.7 for the SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP (incl. SIPLUS variant). Siemens is preparing fixes and recommends specific mitigations for products where fixes are not or not yet available. The following versions of Siemens SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP ar…",
+   "published": "2026-10-22T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "8ab4777270a69eb9",
+   "source": "cisa",
+   "title": "Siemens SIMATIC S7 Webserver API",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-10",
+   "summary": "View CSAF Summary .NET Client Library for SIMATIC S7 Webserver API contains multiple vulnerabilities that could allow an attacker to obtain sensitive information or write arbitrary files outside the intended download directory. Siemens has released a new version for .NET Client Library for SIMATIC S7 Webserver API and recommends to update to the latest version. The following versions of Siemens S…",
+   "published": "2026-10-22T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "a4440624a74641f4",
+   "source": "cisa",
+   "title": "Siemens RUGGEDCOM APE1808 Devices",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-18",
+   "summary": "View CSAF Summary Nozomi Networks has published information on vulnerabilities in Nozomi Guardian/CMC. This advisory lists the related Siemens Industrial products affected by these vulnerabilities. Siemens recommends to contact customer support to receive patch and update information. The following versions of Siemens RUGGEDCOM APE1808 Devices are affected: RUGGEDCOM APE1808 vers:all/* (CVE-2026-…",
+   "published": "2026-10-22T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "1f0df7bfb5d07183",
+   "source": "cisa",
+   "title": "Siemens RUGGEDCOM CROSSBOW",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-12",
+   "summary": "View CSAF Summary RUGGEDCOM CROSSBOW contains multiple vulnerabilities that could allow an attacker to execute arbitrary SQL commands on the underlying database, retrieve sensitive administrative credentials, escalate privileges, and perform unauthorized operations such as modifying system configurations or causing a denial of service. Siemens has released a new version for RUGGEDCOM CROSSBOW and…",
+   "published": "2026-10-22T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "903f0ebc1b14b9be",
+   "source": "cisa",
+   "title": "Siemens APOGEE, TALON and Desigo PXC/PXM Products",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-08",
+   "summary": "View CSAF Summary The products listed below contain multiple vulnerabilities that could allow an attacker to cause a denial of service and potentially impact the availability of the affected device. Siemens has released new versions for several affected products and recommends to update to the latest versions. Siemens recommends specific mitigations for products where fixes are not or not yet ava…",
+   "published": "2026-10-22T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "1758d28edc8cf735",
+   "source": "cisa",
+   "title": "Siemens Industrial Edge Device Kit",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-09",
+   "summary": "View CSAF Summary Users of Industrial Edge Devices are advised to consult the respective Security Advisories for their devices (for Siemens Industrial Edge devices see Additional Information). Industrial Edge Device Kit contains multiple path traversal vulnerabilities that could facilitate an authenticated remote attacker to access sensitive internal information. Siemens has released new versions…",
+   "published": "2026-10-22T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "4b2b714d4bf4e60b",
+   "source": "cisa",
+   "title": "Siemens Capital Embedded AR Classic",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-04",
+   "summary": "View CSAF Summary The products listed below contain an out-of-bounds read vulnerability that could allow an attacker to cause abnormal product behavior, instability, or denial of service. Siemens has released a new version for Capital Embedded AR Classic R20-11 and recommends updating to the latest version. Siemens is preparing further fix versions and recommends specific countermeasures for prod…",
+   "published": "2026-10-22T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "54d5c58b39eac2da",
+   "source": "cisa",
+   "title": "InterSystems Corporation InterSystems IRIS for Health",
+   "link": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-295-01",
+   "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to view transmitted data and use that data to log into the device. The following versions of InterSystems Corporation InterSystems IRIS for Health are affected: InterSystems IRIS for Health 2026.2.0.221, 2026.1.0.235, 2025.3.0.226 (CVE-2026-111594, CVE-2026-111594, CVE-2026-111594) CVSS Vendor Equipment v3 8.1…",
+   "published": "2026-10-22T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": [
+    "CVE-2026-111594"
+   ]
+  },
+  {
+   "id": "4b84d282ba0836fc",
+   "source": "cisa",
+   "title": "Managing AI Token Consumption for Operational Resilience",
+   "link": "https://www.cisa.gov/resources-tools/resources/managing-ai-token-consumption-operational-resilience",
+   "summary": "CISA, the Canadian Centre for Cyber Security (Cyber Centre), and partners are releasing joint guidance, Managing AI Token Consumption for Operational Resilience , to help organizations understand and manage token usage in support of operations. As organizations adopt third-party super intelligence (SI) services, token-based usage models can affect cost, performance, and access to critical service…",
+   "published": "2026-10-22T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "254ef0674c633b19",
+   "source": "cisa",
+   "title": "Siemens Software Center",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-03",
+   "summary": "View CSAF Summary The affected application loads dynamic-link libraries (DLLs) from an uncontrolled search path. This could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application. Siemens has released a new version for Siemens Software Center and recomm…",
+   "published": "2026-10-22T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "7a7a6ad72080f0c6",
+   "source": "cisa",
+   "title": "Siemens RUGGEDCOM CROSSBOW Station Access Controller",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-15",
+   "summary": "View CSAF Summary RUGGEDCOM CROSSBOW Station Access Controller (SAC) contains multiple vulnerabilities in the integrated SQLite component that could allow an attacker to execute arbitrary code, cause a denial of service, or obtain sensitive information. Siemens has released a new version for RUGGEDCOM CROSSBOW Station Access Controller (SAC) and recommends to update to the latest version. The fol…",
+   "published": "2026-10-22T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "a3a96149be6f8812",
+   "source": "cisa",
+   "title": "Siemens SIMATIC S7 PLCs Web Server",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-14",
+   "summary": "View CSAF Summary SIMATIC S7-1500 devices contain multiple vulnerabilities in the web server that could allow an attacker to execute malicious code in an authorized user’s browser session and perform PLC operations within the scope of that user’s authorization. Siemens is preparing fixes and recommends specific mitigations for products where fixes are not or not yet available. The following versi…",
+   "published": "2026-10-22T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "e13a529eddb44df4",
+   "source": "cisa",
+   "title": "Siemens SENTRON 3NA COM Fuse",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-05",
+   "summary": "View CSAF Summary SENTRON 3NA COM Fuse contains a Denial-of-Service vulnerability. Improper handling of a network management message could allow an attacker to trigger a denial-of-service (DoS) condition. Successful exploitation may require the affected network to be re-established to restore normal operation. The following versions of Siemens SENTRON 3NA COM Fuse are affected: SENTRON 3NA COM Fu…",
+   "published": "2026-10-22T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "3d890583d2965156",
+   "source": "cisa",
+   "title": "Kiloview E3 NDI Encoder",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-01",
+   "summary": "View CSAF Summary Successful exploitation of this these vulnerabilities could allow an attacker to fully compromise the device. The following versions of Kiloview E3 NDI Encoder are affected: E3 Firmware <1.30 (CVE-2026-109122, CVE-2026-111100, CVE-2026-96616, CVE-2026-105265, CVE-2026-110491, CVE-2026-107861, CVE-2026-110243, CVE-2026-92450, CVE-2026-110825) CVSS Vendor Equipment v3 9.9 Kiloview…",
+   "published": "2026-10-22T12:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": [
+    "CVE-2026-105265",
+    "CVE-2026-107861",
+    "CVE-2026-109122",
+    "CVE-2026-110243",
+    "CVE-2026-110491",
+    "CVE-2026-110825",
+    "CVE-2026-111100",
+    "CVE-2026-92450",
+    "CVE-2026-96616"
+   ]
   },
   {
    "id": "2d18d461ff1cd33c",
@@ -3821,6 +4753,16 @@
    "summary": "Oracle heeft meerdere kwetsbaarheden verholpen in Oracle JD Edwards EnterpriseOne Tools, specifiek in versies 9.2.0.0 tot en met 9.2.26.5. De kwetsbaarheden in Oracle JD Edwards EnterpriseOne Tools stellen een aanvaller in staat om via verschillende netwerkprotocollen zoals HTTP, HTTPS, SMTP zonder authenticatie of met lage privileges toegang te verkrijgen tot het systeem. Hierdoor kan een aanval…",
    "published": "2026-10-22T09:02:46+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "af7f893a6937e45a",
+   "source": "cccs-news",
+   "title": "Statement regarding critical vulnerabilities in PHP affecting websites and online services",
+   "link": "https://cyber.gc.ca/en/news-events/statement-regarding-critical-vulnerabilities-php-affecting-websites-online-services",
+   "summary": "",
+   "published": "2026-10-21T22:28:15+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
    "cves": []
   },
   {
@@ -4019,6 +4961,16 @@
    "cves": []
   },
   {
+   "id": "db2b3ba915574d69",
+   "source": "cccs-news",
+   "title": "How to use online banking securely - ITSAP.00.080",
+   "link": "https://cyber.gc.ca/en/guidance/how-use-online-banking-securely-itsap00080",
+   "summary": "",
+   "published": "2026-10-15T13:39:42+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
    "id": "ee73f11ca2b8b127",
    "source": "cert-bund-buerger",
    "title": "7-Zip: Schwachstelle ermöglicht Offenlegung von Informationen",
@@ -4156,6 +5108,16 @@
    ]
   },
   {
+   "id": "d1d089f31d4b7d11",
+   "source": "cccs-news",
+   "title": "Joint guidance on PRC government-linked cyber threat actors combining automated and hands-on hacking tools to steal sensitive data",
+   "link": "https://cyber.gc.ca/en/news-events/joint-guidance-prc-government-linked-cyber-threat-actors-combining-automated-hands-hacking-tools-steal-sensitive-data",
+   "summary": "",
+   "published": "2026-10-13T18:47:11+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
    "id": "feb7d091521e3a79",
    "source": "cert-bund-buerger",
    "title": "Dell BIOS: Schwachstelle ermöglicht Codeausführung",
@@ -4218,6 +5180,16 @@
    "cves": []
   },
   {
+   "id": "41d0d163aef8d39a",
+   "source": "cccs-news",
+   "title": "How the Canadian Centre for Cyber Security uses frontier AI to accelerate malware reverse engineering",
+   "link": "https://cyber.gc.ca/en/guidance/canadian-centre-cyber-security-uses-frontier-ai-accelerate-malware-reverse-engineering",
+   "summary": "This technical article is the second in a series on the work of the Frontier AI Lab. This second article focuses on malware reverse engineering, the process of deconstructing malicious software without its original source code to help cyber defenders understand its functionality and purpose.",
+   "published": "2026-10-09T17:03:01+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
    "id": "cee7f619e9e0dee2",
    "source": "cert-bund-buerger",
    "title": "Google Chrome / Microsoft Edge: Mehrere Schwachstellen",
@@ -4245,6 +5217,16 @@
    "summary": "Joint advisory with international partners highlights malicious targeting of organisations from a range of sectors across the globe.",
    "published": "2026-10-08T12:00:00+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "ffd3bd0d1714a0b0",
+   "source": "cccs-news",
+   "title": "Shopping online safely – ITSAP.00.071",
+   "link": "https://cyber.gc.ca/en/guidance/shopping-online-safely-itsap00071",
+   "summary": "",
+   "published": "2026-10-07T13:27:23+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
    "cves": []
   },
   {
@@ -4370,6 +5352,16 @@
    ]
   },
   {
+   "id": "a5f75ebf325080d2",
+   "source": "cccs-news",
+   "title": "Cyber security considerations for submarine cables (ITSP.20.001)",
+   "link": "https://cyber.gc.ca/en/guidance/cyber-security-considerations-submarine-cables-itsp20001",
+   "summary": "This publication provides insight into the threat landscape and outlines corresponding mitigation strategies to safeguard the integrity and reliability of cable infrastructure.",
+   "published": "2026-10-01T17:39:57+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
    "id": "e040ddb5e2d04cd6",
    "source": "bsi-bits",
    "title": "Version 1.1: Citrix NetScaler - Systeme werden über ZeroDay-Schwachstellen angegriffen",
@@ -4427,6 +5419,16 @@
    "summary": "In Google Chrome existieren mehrere Schwachstellen. Ein Angreifer kann diese Schwachstellen ausnutzen, um seine Berechtigungen zu erweitern, Sicherheitsmaßnahmen zu umgehen, vertrauliche Informationen offenzulegen, Daten zu manipulieren, den Benutzer zu täuschen, sowie Schadcode auszuführen oder einen Systemabsturz auszulösen. Für die erfolgreiche Ausnutzung einiger dieser Schwachstellen sind mög…",
    "published": "2026-09-30T10:26:30+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "e6c2262656266b24",
+   "source": "cccs-news",
+   "title": "Statement regarding reported activity targeting Government of Canada websites",
+   "link": "https://cyber.gc.ca/en/news-events/statement-regarding-reported-activity-targeting-government-canada-websites",
+   "summary": "",
+   "published": "2026-09-29T23:10:19+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
    "cves": []
   },
   {
@@ -4610,6 +5612,16 @@
    "cves": []
   },
   {
+   "id": "39b6480025edce61",
+   "source": "cccs-news",
+   "title": "Critical infrastructure resilience and escalated threat navigation initiative",
+   "link": "https://cyber.gc.ca/en/cyber-security-readiness/critical-infrastructure-resilience-escalated-threat-navigation-initiative",
+   "summary": "The time to act is now: Strengthening critical infrastructure cyber readiness for a resilient Canada.",
+   "published": "2026-09-18T13:18:10+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
    "id": "cb42f4389e54609a",
    "source": "cert-bund-buerger",
    "title": "Synology DiskStation Manager: Mehrere Schwachstellen",
@@ -4637,6 +5649,16 @@
    "summary": "In Google Chrome / Microsoft Edge existieren mehrere Schwachstellen. Ein Angreifer kann diese Schwachstellen ausnutzen, um Schadcode auszuführen, Berechtigungen zu erweitern, Sicherheitsmaßnahmen zu umgehen, sensible Informationen offenzulegen, Daten zu modifizieren oder einen Systemabsturz zu erzeugen. Für die erfolgreiche Ausnutzung einiger dieser Schwachstellen sind möglicherweise bestimmte Be…",
    "published": "2026-09-18T07:11:31+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "e8749d60098b6125",
+   "source": "cccs-news",
+   "title": "Best practices for setting up a SOC (ITSAP.00.500)",
+   "link": "https://cyber.gc.ca/en/guidance/best-practices-setting-security-operations-centre-soc-itsap00500",
+   "summary": "As cyber threats become more complex and threat actors more sophisticated, many security operations centres are being set up.",
+   "published": "2026-09-16T19:06:09+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
    "cves": []
   },
   {
@@ -4677,6 +5699,16 @@
    "summary": "In Mozilla Firefox, Mozilla Firefox ESR und Mozilla Thunderbird existieren mehrere Schwachstellen. Ein Angreifer kann diese Schwachstellen ausnutzen, um Berechtigungen zu erlangen, Sicherheitsmaßnahmen zu umgehen, vertrauliche Daten offenzulegen und zu manipulieren, oder einen Systemabsturz auszulösen. Für die erfolgreiche Ausnutzung einiger dieser Schwachstellen sind möglicherweise bestimmte Ber…",
    "published": "2026-09-16T10:51:31+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "dd8bdbc6fdf0955a",
+   "source": "cccs-news",
+   "title": "Joint guidance on detecting and mitigating Active Directory compromises",
+   "link": "https://cyber.gc.ca/en/news-events/joint-guidance-detecting-and-mitigating-active-directory-compromises",
+   "summary": "This guidance provides strategies to prevent, detect and mitigate prevalent Active Directory compromises",
+   "published": "2026-09-15T13:39:46+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
    "cves": []
   },
   {
@@ -4750,6 +5782,26 @@
    "cves": []
   },
   {
+   "id": "1b51f95376e9bd2d",
+   "source": "cccs-news",
+   "title": "Cyber threat actors use artificial intelligence in an active global campaign to disrupt internet-exposed programmable logic controllers",
+   "link": "https://cyber.gc.ca/en/news-events/cyber-threat-actors-use-artificial-intelligence-active-global-campaign-disrupt-internet-exposed-programmable-logic-controllers",
+   "summary": "",
+   "published": "2026-09-14T17:35:01+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "2dbf5f5b8df0e2c3",
+   "source": "cccs-news",
+   "title": "Organizational cyber security and privacy risk management activities - ITSP.10.036",
+   "link": "https://cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management/organizational-cyber-security-privacy-risk-management-activities-itsp10036",
+   "summary": "",
+   "published": "2026-09-14T17:16:42+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
    "id": "6304ed3ca787e866",
    "source": "bsi-bits",
    "title": "Version 1.0: GitLab - Schwachstellen bereits kurz nach Veröffentlichung im Fokus von Angreifern",
@@ -4787,6 +5839,16 @@
    "summary": "In Dell-Computern sind mehrere Schwachstellen vorhanden, die den Intel-NPU-Treiber betreffen. Ein Angreifer mit geringen Berechtigungen kann diese ausnutzen, um das Gerät zum Absturz zu bringen.",
    "published": "2026-09-10T12:46:31+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "423b7daab5431a1b",
+   "source": "cccs-news",
+   "title": "Careful adoption of agentic AI",
+   "link": "https://cyber.gc.ca/en/guidance/careful-adoption-agentic-ai",
+   "summary": "",
+   "published": "2026-09-10T12:14:14+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
    "cves": []
   },
   {
@@ -4922,6 +5984,16 @@
    "cves": []
   },
   {
+   "id": "3459f30aaeb41d49",
+   "source": "cccs-news",
+   "title": "The Cyber Centre urges heightened vigilance amid global tensions and high-profile events",
+   "link": "https://cyber.gc.ca/en/news-events/cyber-centre-urges-heightened-vigilance-amid-global-tensions-high-profile-events",
+   "summary": "",
+   "published": "2026-09-04T18:43:39+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
    "id": "c59e62551cafc7d5",
    "source": "bsi-bits",
    "title": "Version 1.0: Deutsche Institutionen über TerminalFix-Kampagne kompromittiert",
@@ -4932,6 +6004,16 @@
    "cves": []
   },
   {
+   "id": "845b87c196335c00",
+   "source": "cccs-news",
+   "title": "G7 Cybersecurity Working Group call to action on preparing for the post-quantum era",
+   "link": "https://cyber.gc.ca/en/news-events/g7-cybersecurity-working-group-call-action-preparing-post-quantum-era",
+   "summary": "",
+   "published": "2026-09-03T14:26:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
    "id": "d79b34848895bb36",
    "source": "cert-bund-buerger",
    "title": "VMware Fusion und Workstation: Mehrere Schwachstellen ermöglichen Codeausführung",
@@ -4939,6 +6021,16 @@
    "summary": "In VMware Workstation und VMware Fusion existieren mehrere Schwachstellen. Ein lokaler Angreifer aus einer virtuellen Maschine kann mehrere Schwachstellen in VMware Workstation und VMware Fusion ausnutzen, um beliebigen Programmcode auf dem Rechner auszuführen, auf dem VMware läuft.",
    "published": "2026-09-03T11:26:06+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "b905b8e586f5524c",
+   "source": "cccs-news",
+   "title": "Joint guidance on best practices for service providers when communicating under pressure",
+   "link": "https://cyber.gc.ca/en/news-events/joint-guidance-best-practices-service-providers-when-communicating-under-pressure",
+   "summary": "This joint guidance explains why effective communications during outages is critical to minimize operational impacts, maintain credibility and situational awareness, and support response efforts.",
+   "published": "2026-09-02T14:51:37+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
    "cves": []
   },
   {
@@ -5132,6 +6224,26 @@
    "cves": []
   },
   {
+   "id": "d58e17d9523a59a7",
+   "source": "cccs-news",
+   "title": "Joint guidance on opportunities for artificial intelligence in cyber defence",
+   "link": "https://cyber.gc.ca/en/news-events/joint-guidance-opportunities-artificial-intelligence-cyber-defence",
+   "summary": "",
+   "published": "2026-08-12T14:00:00+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "b6254f28764268a2",
+   "source": "cccs-news",
+   "title": "Security considerations for electronic vote tabulators - ITSM.10.102",
+   "link": "https://cyber.gc.ca/en/guidance/security-considerations-electronic-vote-tabulators-itsm10102",
+   "summary": "",
+   "published": "2026-08-06T12:48:35+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
    "id": "d7ac653505f0879a",
    "source": "bsi-news",
    "title": "Nur 1,8 Prozent der Webseitenbetreiber nutzen security.txt – BSI und ACS raten zur Umsetzung",
@@ -5139,6 +6251,26 @@
    "summary": "Nur 1,8 Prozent der Webseitenbetreiber in Deutschland stellen bislang eine security.txt bereit. Das zeigen Messungen des Bundesamt für Sicherheit in der Informationstechnik (BSI) im Rahmen des Cyberdome-Projekts.",
    "published": "2026-08-06T08:15:00+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "b9bfa1b10772afa7",
+   "source": "cccs-news",
+   "title": "How the Canadian Centre for Cyber Security used frontier AI to accelerate detection engineering",
+   "link": "https://cyber.gc.ca/en/guidance/canadian-centre-cyber-security-used-frontier-ai-accelerate-detection-engineering",
+   "summary": "Discover how CSE's Frontier AI Lab is exploring the ways artificial intelligence can strengthen cyber defence, beginning with detection engineering.",
+   "published": "2026-08-05T13:04:04+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "dc8fb74cd6c38238",
+   "source": "cccs-news",
+   "title": "Protect your organization from malware - ITSAP.00.057",
+   "link": "https://cyber.gc.ca/en/guidance/protect-your-organization-malware-itsap00057",
+   "summary": "",
+   "published": "2026-08-04T19:05:52+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
    "cves": []
   },
   {
@@ -5152,6 +6284,36 @@
    "cves": []
   },
   {
+   "id": "7330611a369bd7f3",
+   "source": "cccs-news",
+   "title": "Cyber threat bulletin: Non-state activity targeting Canadian operational technology",
+   "link": "https://cyber.gc.ca/en/guidance/cyber-threat-bulletin-non-state-activity-targeting-canadian-operational-technology",
+   "summary": "",
+   "published": "2026-07-30T15:02:13+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "76405535a8b716df",
+   "source": "cccs-news",
+   "title": "Joint guidance on minimum elements for a software bill of materials",
+   "link": "https://cyber.gc.ca/en/news-events/joint-guidance-minimum-elements-software-bill-materials",
+   "summary": "This publication updates and replaces the 2021 Minimum Elements for a Software Bill of Materials published by the United States’ National Telecommunications and Information Administration.",
+   "published": "2026-07-29T15:26:54+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "67ec7ce8eb258e01",
+   "source": "cccs-news",
+   "title": "Joint guidance on isolating vital systems",
+   "link": "https://cyber.gc.ca/en/news-events/joint-guidance-isolating-vital-systems",
+   "summary": "This joint guidance is intended to support senior decision-makers within CI organizations.",
+   "published": "2026-07-28T18:01:28+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
    "id": "df51f011aa707fc3",
    "source": "bsi-news",
    "title": "Sichere Ladeinfrastruktur: BSI veröffentlicht Eckpunktepapier und startet mit beteiligten Ressorts die Maßnahmenumsetzung",
@@ -5159,6 +6321,26 @@
    "summary": "Die Elektromobilität in Deutschland entwickelt sich immer dynamischer. Damit steigen auch die Anforderungen an Cybersicherheit und Resilienz. Das BSI hat aufbauend auf einer Studie ein Eckpunktepapier mit konkreten Maßnahmen für eine resiliente und vertrauenswürdige Ladeinfrastruktur erarbeitet.",
    "published": "2026-07-28T08:00:00+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "144c18dfed813fe4",
+   "source": "cccs-news",
+   "title": "Protect your devices from SMS blasters (ITSAP.00.104)",
+   "link": "https://cyber.gc.ca/en/guidance/protect-your-devices-sms-blasters-itsap00104",
+   "summary": "",
+   "published": "2026-07-27T12:40:29+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "61b4280f3af3e617",
+   "source": "cccs-news",
+   "title": "Joint cyber security advisory on Russian state-sponsored phishing campaign targeting Zimbra webmail",
+   "link": "https://cyber.gc.ca/en/news-events/joint-cyber-security-advisory-russian-state-sponsored-phishing-campaign-targeting-zimbra-webmail",
+   "summary": "The joint advisory warns that Russia-sponsored threat actors associated with an advanced persistent threat group, known as Laundry Bear, are exploiting a known vulnerability in Zimbra webmail.",
+   "published": "2026-07-23T18:01:36+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
    "cves": []
   },
   {
@@ -5192,6 +6374,26 @@
    "cves": []
   },
   {
+   "id": "0ce49e31c4187c21",
+   "source": "cccs-news",
+   "title": "What is voice phishing (vishing)? - ITSAP.00.102",
+   "link": "https://cyber.gc.ca/en/what-voice-phishing-vishing-itsap00102",
+   "summary": "",
+   "published": "2026-07-21T12:41:53+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "e2bb95cfe34cb2f7",
+   "source": "cccs-news",
+   "title": "Social engineering – ITSAP.00.166",
+   "link": "https://cyber.gc.ca/en/guidance/social-engineering-itsap00166",
+   "summary": "Social engineering attacks occur when a threat actor uses social connection and manipulation to pressure users into providing sensitive details.",
+   "published": "2026-07-20T18:49:06+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
    "id": "3bff1547d76507df",
    "source": "bsi-bits",
    "title": "Version 1.1: WordPress - Schwachstellen erlauben Remote Code Execution",
@@ -5199,6 +6401,16 @@
    "summary": "",
    "published": "2026-07-20T12:05:00+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "63cdbf57d4fc21e5",
+   "source": "cccs-news",
+   "title": "Securely deploying AI at the network edge - ITSP.80.101",
+   "link": "https://cyber.gc.ca/en/guidance/securely-deploying-ai-network-edge-itsp80101",
+   "summary": "",
+   "published": "2026-07-15T18:56:02+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
    "cves": []
   },
   {
@@ -5242,6 +6454,26 @@
    "cves": []
   },
   {
+   "id": "6a0e283ce10e8819",
+   "source": "cccs-news",
+   "title": "Guidance on securely configuring authorization and authentication frameworks - ITSP.40.063",
+   "link": "https://cyber.gc.ca/en/guidance/guidance-securely-configuring-authorization-authentication-frameworks-itsp40063",
+   "summary": "",
+   "published": "2026-07-13T18:57:43+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "a8d2092b982c31df",
+   "source": "cccs-news",
+   "title": "Joint guidance on improving router hygiene to protect against Russian state-sponsored targeting",
+   "link": "https://cyber.gc.ca/en/news-events/joint-guidance-improving-router-hygiene-protect-against-russian-state-sponsored-targeting",
+   "summary": "",
+   "published": "2026-07-13T17:41:21+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
    "id": "434c8d020880b3ac",
    "source": "ncsc-uk-news",
    "title": "UK and Allies urge critical sectors to improve defences against Russian intelligence targeting",
@@ -5249,6 +6481,16 @@
    "summary": "New advisory highlights Russian state cyber actors’ global exploitation of poorly configured routers",
    "published": "2026-07-13T12:00:00+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "8f348a37d5d2322a",
+   "source": "cccs-news",
+   "title": "SharpViewStateKing: The stealthy implant framework",
+   "link": "https://cyber.gc.ca/en/news-events/sharpviewstateking-stealthy-implant-framework",
+   "summary": "",
+   "published": "2026-07-10T14:29:31+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
    "cves": []
   },
   {
@@ -5262,6 +6504,16 @@
    "cves": []
   },
   {
+   "id": "6aab3ce856c50a24",
+   "source": "cccs-news",
+   "title": "Obsolete products - ITSAP.00.095",
+   "link": "https://cyber.gc.ca/en/guidance/obsolete-products-itsap00095",
+   "summary": "Although obsolete products may still meet functional requirements, their continued use can introduce security and operational risks that are not always obvious. This publication provides guidance to help your organization identify obsolete products, manage associated risks and transition safely to supported alternatives.",
+   "published": "2026-07-07T19:17:52+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
    "id": "ee21853847fba91a",
    "source": "bsi-news",
    "title": "Prüfkatalog vertrauenswürdige KI-Systeme: BSI veröffentlicht Community Draft des A5",
@@ -5272,6 +6524,16 @@
    "cves": []
   },
   {
+   "id": "12ad29879062327b",
+   "source": "cccs-news",
+   "title": "Statement from the Canadian Centre for Cyber Security on frontier artificial intelligence models and their impact on cyber security",
+   "link": "https://www.canada.ca/en/communications-security/news/2026/06/statement-from-the-canadian-centre-for-cyber-security-on-frontier-ai-models-and-their-impact-on-cyber-security.html",
+   "summary": "",
+   "published": "2026-06-24T17:24:10+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
    "id": "e9654e70ec2997f4",
    "source": "bsi-news",
    "title": "Operation Endgame: BSI an internationaler Aktion gegen Schadsoftware-Familien beteiligt",
@@ -5279,6 +6541,16 @@
    "summary": "Im Rahmen der Operation Endgame konnten in einer international koordinierten Aktion mehrere Schadsoftware-Familien durch deutsche und internationale Polizeibehörden, BSI und in Zusammenarbeit mit dem Privatsektor vom Netz genommen werden.",
    "published": "2026-06-24T11:00:00+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "54d2c8a9722daafb",
+   "source": "cccs-news",
+   "title": "Five Eyes cyber security agencies statement on the AI shift in cyber risk: why leaders must act now",
+   "link": "https://cyber.gc.ca/en/news-events/five-eyes-cyber-security-agencies-statement-ai-shift-cyber-risk-why-leaders-must-act-now",
+   "summary": "",
+   "published": "2026-06-22T13:01:01+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
    "cves": []
   },
   {
@@ -5352,6 +6624,16 @@
    "cves": []
   },
   {
+   "id": "5d07c99d92fe9e27",
+   "source": "cccs-news",
+   "title": "Cyber threat bulletin: FIFA World Cup 2026™",
+   "link": "https://cyber.gc.ca/en/guidance/cyber-threat-bulletin-fifa-world-cup-2026tm",
+   "summary": "",
+   "published": "2026-06-03T17:26:56+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
    "id": "c08c77eaf24d7ba8",
    "source": "bsi-bits",
    "title": "Gemeinsamer Sicherheitshinweis (BfV und BSI) - Auskundschaftung schlecht geschützter PV-Anlagen durch staatliche Cyberakteure",
@@ -5362,6 +6644,46 @@
    "cves": []
   },
   {
+   "id": "c30dc31b8d83256d",
+   "source": "cccs-news",
+   "title": "G7 Cybersecurity Working Group Statement on preparing for a post-quantum cryptography migration",
+   "link": "https://cyber.gc.ca/en/news-events/g7-cybersecurity-working-group-statement-preparing-post-quantum-cryptography-migration",
+   "summary": "",
+   "published": "2026-06-01T14:03:25+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "0b841ab645e606d7",
+   "source": "cccs-news",
+   "title": "Cryptographic algorithms for UNCLASSIFIED, PROTECTED A, and PROTECTED B information - ITSP.40.111",
+   "link": "https://cyber.gc.ca/en/guidance/cryptographic-algorithms-unclassified-protected-protected-b-information-itsp40111",
+   "summary": "",
+   "published": "2026-05-29T18:46:03+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "dcb756c59afe25b0",
+   "source": "cccs-news",
+   "title": "Top 10 artificial intelligence security actions: A primer - ITSAP.10.049",
+   "link": "https://cyber.gc.ca/en/guidance/top-10-artificial-intelligence-security-actions-primer-itsap10049",
+   "summary": "Our top AI security actions are designed to help organizations of all sizes and sectors strengthen their cyber resilience.",
+   "published": "2026-05-29T18:05:58+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "1072f6cce7043b1c",
+   "source": "cccs-news",
+   "title": "Frontier artificial intelligence (ITSAP.10.050)",
+   "link": "https://cyber.gc.ca/en/guidance/frontier-artificial-intelligence-itsap10050",
+   "summary": "This publication provides your organization with additional details on frontier AI, the associated risks and suggested mitigation measures to enhance your cyber security posture.",
+   "published": "2026-05-29T15:03:56+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
    "id": "6c6850cb4ae5aff0",
    "source": "bsi-news",
    "title": "Sicher aufwachsen im digitalen Zeitalter: Wie Eltern ihre Kinder und Jugendliche schützen können",
@@ -5369,6 +6691,26 @@
    "summary": "Zum Weltkindertag am 01. Juni 2026 informiert das BSI über einfache technische Schutzmaßnahmen und gibt Eltern sowie Pädagoginnen und Pädagogen konkrete Hilfestellungen für mehr Sicherheit von Kindern und Jugendlichen im digitalen Alltag.",
    "published": "2026-05-28T09:00:00+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "8b36f510ce201a5c",
+   "source": "cccs-news",
+   "title": "Protect your devices from IMSI catchers (ITSAP.00.106)",
+   "link": "https://cyber.gc.ca/en/guidance/protect-your-devices-imsi-catchers-itsap00106",
+   "summary": "An international mobile subscriber identity (IMSI) catcher is a type of cell site simulator (CSS) that impersonates a legitimate cell tower to exploit connected mobile devices. It is important to understand how IMSI catchers work in order to detect them and protect your sensitive information from being compromised.",
+   "published": "2026-05-19T18:50:39+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "f31816a60d376ada",
+   "source": "cccs-news",
+   "title": "Cell site simulators - ITSM.00.108",
+   "link": "https://cyber.gc.ca/en/guidance/cell-site-simulators-itsm00108",
+   "summary": "This publication provides information on how CSS devices work, the security risks you should consider, and the mitigation actions you can take to better protect from CSS exploitations.",
+   "published": "2026-05-19T18:48:09+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
    "cves": []
   },
   {
@@ -5391,6 +6733,16 @@
    "summary": "Das BSI und das Land Mecklenburg-Vorpommern arbeiten im Bereich der Cybersicherheit künftig enger zusammen. Ziel ist, die Zusammenarbeit zwischen Bund und Land mit Blick auf Cybersicherheit zu stärken, um so einen entscheidenden Beitrag zur digitalen Resilienz Deutschlands zu leisten.",
    "published": "2026-05-13T05:00:00+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "5d2dd15e75d3fbc5",
+   "source": "cccs-news",
+   "title": "Certifications in the field of cyber security",
+   "link": "https://cyber.gc.ca/en/guidance/certifications-field-cyber-security",
+   "summary": "",
+   "published": "2026-05-12T19:59:37+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
    "cves": []
   },
   {
@@ -5421,6 +6773,26 @@
    "summary": "",
    "published": "2026-05-07T15:45:00+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "4b54944655679766",
+   "source": "cccs-news",
+   "title": "Security configurations and best practices to protect your mobile device (ITSM.80.002)",
+   "link": "https://cyber.gc.ca/en/guidance/security-configurations-best-practices-protect-your-mobile-device-itsm80002",
+   "summary": "",
+   "published": "2026-05-07T15:17:45+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "f985defaf034fd51",
+   "source": "cccs-news",
+   "title": "Securing the enterprise for mobility (ITSM.80.001)",
+   "link": "https://cyber.gc.ca/en/guidance/securing-enterprise-mobility-itsm80001",
+   "summary": "",
+   "published": "2026-05-07T14:06:33+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
    "cves": []
   },
   {
