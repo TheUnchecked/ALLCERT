@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T07:13:50+00:00",
+ "updated": "2026-11-04T10:54:28+00:00",
  "sources": {
   "csirt-it": {
    "name": "CSIRT Italia (ACN)",
@@ -94,6 +94,229 @@
   }
  },
  "items": [
+  {
+   "id": "17cb975a71861220",
+   "source": "cert-bund",
+   "title": "[NEU] [mittel] IBM WebSphere Application Server Liberty: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4314",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in IBM WebSphere Application Server Liberty ausnutzen, um einen Denial of Service Angriff durchzuführen, um falsche Informationen darzustellen und um Informationen offenzulegen.",
+   "published": "2026-11-04T10:24:01+00:00",
+   "first_seen": "2026-11-04T10:54:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "a91f8175f1e16d37",
+   "source": "cert-bund",
+   "title": "[NEU] [hoch] Emerson Ovation: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4313",
+   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Emerson Ovation ausnutzen, um Sicherheitsvorkehrungen zu umgehen, Daten zu manipulieren, beliebigen Programmcode auszuführen, oder einen Denial of Service Angriff durchzuführen.",
+   "published": "2026-11-04T10:19:01+00:00",
+   "first_seen": "2026-11-04T10:54:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "1a85a5ceceac3cda",
+   "source": "cert-bund",
+   "title": "[NEU] [mittel] IBM AIX und VIOS (Perl): Schwachstelle ermöglicht Denial of Service",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4312",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in IBM AIX und IBM VIOS ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+   "published": "2026-11-04T10:19:01+00:00",
+   "first_seen": "2026-11-04T10:54:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "ab9343cdabf3d477",
+   "source": "cert-bund",
+   "title": "[NEU] [hoch] SolarWinds Dameware: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4311",
+   "summary": "Ein lokaler Angreifer kann mehrere Schwachstellen in SolarWinds Dameware ausnutzen, um beliebigen Programmcode auszuführen oder Sicherheitsvorkehrungen zu umgehen.",
+   "published": "2026-11-04T10:19:01+00:00",
+   "first_seen": "2026-11-04T10:54:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "f2aab7e443711ee6",
+   "source": "cert-bund",
+   "title": "[NEU] [hoch] Docker Desktop: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4310",
+   "summary": "Ein lokaler Angreifer kann eine Schwachstelle in Docker Desktop ausnutzen, um Sicherheitsvorkehrungen zu umgehen.",
+   "published": "2026-11-04T10:14:01+00:00",
+   "first_seen": "2026-11-04T10:54:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "954ac4fa121418a7",
+   "source": "cert-bund",
+   "title": "[NEU] [mittel] IBM TXSeries: Mehrere Schwachstellen ermöglichen Denial of Service",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4309",
+   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in IBM TXSeries ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+   "published": "2026-11-04T10:09:02+00:00",
+   "first_seen": "2026-11-04T10:54:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "028655829ce52107",
+   "source": "cert-bund",
+   "title": "[NEU] [hoch] Xen: Mehrere Schwachstellen ermöglichen Umgehen von Sicherheitsvorkehrungen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4308",
+   "summary": "Ein lokaler Angreifer kann mehrere Schwachstellen in Xen ausnutzen, um Sicherheitsvorkehrungen zu umgehen und beliebigen Speicher anderer Domänen zu lesen und zu überschreiben.",
+   "published": "2026-11-04T10:09:02+00:00",
+   "first_seen": "2026-11-04T10:54:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "ee9b1d12de0e2e04",
+   "source": "cert-bund",
+   "title": "[NEU] [mittel] PostgreSQL ODBC Treiber: Mehrere Schwachstellen ermöglichen Manipulation von Daten",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4307",
+   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen im PostgreSQL ODBC Treiber ausnutzen, um Daten zu manipulieren.",
+   "published": "2026-11-04T10:04:02+00:00",
+   "first_seen": "2026-11-04T10:54:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "256b174718c422f8",
+   "source": "cert-bund",
+   "title": "[NEU] [hoch] Devolutions Server: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4306",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Devolutions Server ausnutzen, um Informationen offenzulegen, und um Sicherheitsvorkehrungen zu umgehen.",
+   "published": "2026-11-04T10:04:01+00:00",
+   "first_seen": "2026-11-04T10:54:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "04338732c86157f0",
+   "source": "csirt-it",
+   "title": "Vulnerabilità in prodotti ASUS",
+   "link": "https://www.acn.gov.it/portale/w/vulnerabilita-in-prodotti-asus-5",
+   "summary": "Rilevate 4 nuove vulnerabilità, di cui 3 con gravità “alta”, in alcuni prodotti ASUS. Tali vulnerabilità potrebbero consentire a un attaccante, in alcuni casi non autenticato, di elevare i propri privilegi, eseguire codice arbitrario o compromettere la disponibilità del servizio sui sistemi interessati.",
+   "published": "2026-11-04T10:01:20+00:00",
+   "first_seen": "2026-11-04T10:54:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "fbfecb9ee6eb5e2d",
+   "source": "ncsc-nl",
+   "title": "NCSC-2026-0466 [1.00] [L/H] Kwetsbaarheid verholpen in WordPress Core",
+   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0466",
+   "summary": "WordPress heeft een kwetsbaarheid verholpen in WordPress Core versies 4.7 tot en met 7.1.3. De kwetsbaarheid maakt misbruik mogelijk van een TOCTOU-racecondition (Time-of-Check to Time-of-Use) tijdens volledige WordPress Core-upgrades. Hierdoor kan een niet-geauthenticeerde aanvaller op afstand code uitvoeren op de server door het korte upgradevenster te misbruiken waarin de stagingdirectories vi…",
+   "published": "2026-11-04T09:45:39+00:00",
+   "first_seen": "2026-11-04T10:54:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "66944bfb23b59694",
+   "source": "ncsc-nl",
+   "title": "NCSC-2026-0465 [1.00] [M/H] Kwetsbaarheden verholpen in Barracuda Email Security Gateway",
+   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0465",
+   "summary": "Barracuda heeft kwetsbaarheden verholpen in Barracuda Email Security Gateway. Barracuda heeft twee kwetsbaarheden vastgesteld in verschillende Barracuda-producten: een kwetsbaarheid voor het omzeilen van autorisatiecontroles (CVE-2026-116606) en een kwetsbaarheid voor command injection (CVE-2026-111560). De eerste kwetsbaarheid betreft een pre-authentication authorization bypass in Barracuda Emai…",
+   "published": "2026-11-04T09:41:25+00:00",
+   "first_seen": "2026-11-04T10:54:28+00:00",
+   "cves": [
+    "CVE-2026-111560",
+    "CVE-2026-116606"
+   ]
+  },
+  {
+   "id": "c5491a2c22a3b9bc",
+   "source": "cert-bund",
+   "title": "[NEU] [hoch] Red Hat Enterprise Linux (dpdk, raptor2, dnspython): Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4305",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux ausnutzen, um den Speicher zu beschädigen, Sicherheitsmaßnahmen zu umgehen, einen Denial-of-Service-Zustand auszulösen, beliebigen Code auszuführen, Daten zu manipulieren oder offenzulegen oder andere, nicht näher spezifizierte Angriffe durchzuführen.",
+   "published": "2026-11-04T09:34:01+00:00",
+   "first_seen": "2026-11-04T10:54:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "f55ba089833d902d",
+   "source": "csirt-it",
+   "title": "Risolte vulnerabilità in prodotti Docker",
+   "link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-docker",
+   "summary": "Rilasciati aggiornamenti di sicurezza per sanare alcune vulnerabilità, di cui una con gravità “critica” e 3 con gravità “alta”, nei prodotti Docker Sandboxes, Docker Buildx e Docker Desktop. Tali vulnerabilità potrebbero consentire a un utente malintenzionato locale di eseguire codice arbitrario sul sistema host al di fuori dell'ambiente isolato ed eludere le restrizioni applicate ai container pe…",
+   "published": "2026-11-04T09:31:06+00:00",
+   "first_seen": "2026-11-04T10:54:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "2cc1a714075f3b27",
+   "source": "cert-bund-buerger",
+   "title": "Mozilla Firefox: Schwachstelle ermöglicht nicht spezifizierten Angriff",
+   "link": "https://wid.cert-bund.de/portal/wid/buergercert/details?uuid=baccc09b-16c4-4c88-8416-5c49237f84ad",
+   "summary": "Ein entfernter, nicht angemeldeter Angreifer kann eine Schwachstelle in Mozilla Firefox ausnutzen. Die möglichen Folgen des Angriffs sind derzeit noch nicht bekannt.",
+   "published": "2026-11-04T09:29:03+00:00",
+   "first_seen": "2026-11-04T10:54:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "90177bb0b7e69506",
+   "source": "cert-bund-buerger",
+   "title": "Google Chrome: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/buergercert/details?uuid=6a77fe73-54b8-4aca-adde-a7b997e2c90e",
+   "summary": "In verschiedenen Komponenten von Google Chrome bestehen mehrere Schwachstellen. Ein Angreifer kann diese Schwachstellen ausnutzen, um Schadcode auszuführen, Berechtigungen zu erweitern, Sicherheitsmaßnahmen zu umgehen, sensible Informationen offenzulegen, Daten zu modifizieren, Opfer zu täuschen oder einen Systemabsturz zu verursachen. Für die erfolgreiche Ausnutzung einiger dieser Schwachstellen…",
+   "published": "2026-11-04T09:29:03+00:00",
+   "first_seen": "2026-11-04T10:54:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "37ec1c217b08ebfe",
+   "source": "cert-bund",
+   "title": "[NEU] [hoch] Mozilla Firefox: Schwachstelle ermöglicht nicht spezifizierten Angriff",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4304",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Mozilla Firefox ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen.",
+   "published": "2026-11-04T09:29:02+00:00",
+   "first_seen": "2026-11-04T10:54:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "fbfafd1cf84bb923",
+   "source": "cert-bund",
+   "title": "[NEU] [hoch] Google Chrome: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4303",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Google Chrome ausnutzen, um möglicherweise beliebigen Code auszuführen, Berechtigungen zu erweitern, Sicherheitsmaßnahmen zu umgehen, Daten offenzulegen oder zu manipulieren, einen Denial-of-Service-Zustand auszulösen, Spoofing-Angriffe durchzuführen oder andere, nicht näher spezifizierte Angriffe auszuführen.",
+   "published": "2026-11-04T09:29:01+00:00",
+   "first_seen": "2026-11-04T10:54:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "d1873aad00ff55f0",
+   "source": "csirt-it",
+   "title": "Risolte vulnerabilità in SolarWinds Dameware",
+   "link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-solarwinds-dameware",
+   "summary": "Aggiornamenti di sicurezza risolvono tre vulnerabilità, di cui una con gravità \"critica\" e due con gravità \"alta\", presenti in SolarWinds Dameware, nota soluzione di amministrazione remota e supporto IT utilizzata per la gestione, il controllo e l'assistenza di sistemi informatici. Tali vulnerabilità, qualora sfruttate, potrebbero consentire ad un utente autenticato malintenzionato, anche da remo…",
+   "published": "2026-11-04T09:21:15+00:00",
+   "first_seen": "2026-11-04T10:54:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "2831d9c3db0671f3",
+   "source": "csirt-it",
+   "title": "Risolta vulnerabilità in Mozilla Firefox",
+   "link": "https://www.acn.gov.it/portale/w/risolta-vulnerabilita-in-mozilla-firefox",
+   "summary": "Aggiornamenti di sicurezza risolvono una vulnerabilità con gravità “alta” in Mozilla Firefox. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un utente malintenzionato di eseguire codice arbitrario, compromettere la disponibilità del servizio e/o accedere ad informazioni sensibili sui sistemi interessati.",
+   "published": "2026-11-04T09:17:15+00:00",
+   "first_seen": "2026-11-04T10:54:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "43690711703199a8",
+   "source": "csirt-it",
+   "title": "Rilevate vulnerabilità in prodotti CompuGroup Medical",
+   "link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-compugroup-medical",
+   "summary": "Nell’ambito del processo di divulgazione coordinata delle vulnerabilità (Coordinated Vulnerability Disclosure – CVD), si rendono note le vulnerabilità individuate da ricercatori di sicurezza, e coordinate da questo CSIRT in collaborazione con il vendor interessato, presenti in diverse soluzioni software di CompuGroup Medical per la gestione e l'efficienza operativa dei processi relativi a profess…",
+   "published": "2026-11-04T08:15:58+00:00",
+   "first_seen": "2026-11-04T10:54:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "3e240315b0e7d930",
+   "source": "csirt-it",
+   "title": "Risolte vulnerabilità in Google Chrome",
+   "link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-google-chrome-84",
+   "summary": "Google ha rilasciato un aggiornamento per il browser Chrome al fine di correggere 213 nuove vulnerabilità di sicurezza, di cui 21 con gravità “critica” e 63 con gravità “alta”.",
+   "published": "2026-11-04T08:06:48+00:00",
+   "first_seen": "2026-11-04T10:54:28+00:00",
+   "cves": []
+  },
   {
    "id": "06da5add7076a72e",
    "source": "cccs-alerts",
@@ -6232,6 +6455,18 @@
    "published": "2026-08-12T14:00:00+00:00",
    "first_seen": "2026-11-04T07:13:15+00:00",
    "cves": []
+  },
+  {
+   "id": "d6fccdf17542234f",
+   "source": "csirt-it",
+   "title": "Aggiornamenti per prodotti Siemens",
+   "link": "https://www.acn.gov.it/portale/w/aggiornamenti-per-prodotti-siemens-25",
+   "summary": "Siemens ha rilasciato aggiornamenti di sicurezza per sanare molteplici vulnerabilità nei propri prodotti, di cui 1 con gravità “critica” e 13 con gravità “alta”. Tali vulnerabilità, qualora sfruttate, potrebbero consentire ad un utente malintenzionato di eseguire codice arbitrario e di leggere file arbitrari sul filesystem dei sistemi interessati. Tra queste si evidenzia la CVE-2026-58115 per la…",
+   "published": "2026-08-11T14:03:30+00:00",
+   "first_seen": "2026-11-04T10:54:28+00:00",
+   "cves": [
+    "CVE-2026-58115"
+   ]
   },
   {
    "id": "b6254f28764268a2",
