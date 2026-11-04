@@ -16,19 +16,26 @@
     --muted: #55627a;
     --line: #cbd3de;
     --accent: #2634d9;
-    --on-accent: #ffffff;
     --cve-bg: #fbebcf;
     --cve-ink: #7a4300;
     --ok: #14703f;
     --err: #b3261e;
+    /* grafici: una sola tinta (blu), dal chiaro allo scuro = da poche a molte */
+    --seq-0: #d2d9e3;
+    --seq-1: #9ec5f4; --seq-2: #6da7ec; --seq-3: #3987e5; --seq-4: #1c5cab; --seq-5: #0d366b;
+    --bar: #2a78d6;
+    --sev-1: #86b6ef; --sev-2: #3987e5; --sev-3: #1c5cab; --sev-4: #0d366b;
     --ui: "Titillium Web", system-ui, -apple-system, "Segoe UI", sans-serif;
     --serif: Lora, Georgia, "Times New Roman", serif;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
       --bg: #0c121d; --panel: #131b2a; --ink: #e6ecf6; --muted: #9aa8bf; --line: #26324a;
-      --accent: #93a4ff; --on-accent: #0c121d; --cve-bg: #3a2a0e; --cve-ink: #f4c879;
-      --ok: #5bd39a; --err: #ff8f85;
+      --accent: #93a4ff; --cve-bg: #3a2a0e; --cve-ink: #f4c879; --ok: #5bd39a; --err: #ff8f85;
+      --seq-0: #1b2434;
+      --seq-1: #184f95; --seq-2: #256abf; --seq-3: #3987e5; --seq-4: #6da7ec; --seq-5: #9ec5f4;
+      --bar: #3987e5;
+      --sev-1: #184f95; --sev-2: #2a78d6; --sev-3: #6da7ec; --sev-4: #9ec5f4;
     }
   }
 
@@ -36,6 +43,7 @@
   html { scroll-padding-top: 72px; }
   body { margin: 0; background: var(--bg); color: var(--ink); font: 400 16px/1.5 var(--ui); }
   a { color: inherit; }
+  [hidden] { display: none !important; }
   :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
 
   /* ---------- struttura ---------- */
@@ -49,7 +57,7 @@
   .vitals dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; }
 
   .layout { display: grid; grid-template-columns: 1fr; gap: 0 40px; align-items: start; }
-  @media (min-width: 900px) { .layout { grid-template-columns: 280px 1fr; } }
+  @media (min-width: 900px) { .layout { grid-template-columns: 280px minmax(0, 1fr); } }
 
   /* ---------- filtri ---------- */
   .filters { padding: 20px 0; }
@@ -65,12 +73,13 @@
   .field { margin-bottom: 18px; }
   .field > label, .field > .lbl, fieldset.field legend { display: block; font-weight: 600; font-size: 14px; margin-bottom: 6px; padding: 0; }
   fieldset.field { border: 0; margin: 0 0 18px; padding: 0; min-width: 0; }
-  input[type="search"], select, button, .btn {
+  input[type="search"], select, button.btn, .stamp-btn {
     font: inherit; color: var(--ink); background: var(--panel);
     border: 1.5px solid var(--line); border-radius: 6px; padding: 9px 11px; width: 100%;
   }
-  input[type="search"]:hover, select:hover, button:hover { border-color: var(--ink); }
-  button { cursor: pointer; font-weight: 600; text-align: center; }
+  input[type="search"]:hover, select:hover, button.btn:hover, .stamp-btn:hover { border-color: var(--ink); }
+  button { cursor: pointer; font-family: inherit; }
+  button.btn { font-weight: 600; text-align: center; }
 
   .seg { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; }
   .seg label { position: relative; }
@@ -80,13 +89,11 @@
   .seg input:checked + span { background: var(--ink); color: var(--bg); border-color: var(--ink); font-weight: 600; }
   .seg input:focus-visible + span { outline: 3px solid var(--accent); outline-offset: 2px; }
 
-  .field > label.check { display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 15px; font-weight: 400; margin: 0; }
-  .check input { width: 18px; height: 18px; accent-color: var(--accent); margin: 0; }
+  .field > label.check { display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 15px; font-weight: 400; margin: 0 0 8px; }
+  .check input { width: 18px; height: 18px; accent-color: var(--accent); margin: 0; flex: none; }
 
   .stamps { display: flex; flex-wrap: wrap; gap: 6px; }
-  .stamp-btn { width: auto; display: inline-flex; align-items: center; gap: 7px; padding: 5px 9px 5px 5px;
-               font-weight: 400; font-size: 14px; }
-  .stamp-btn b { font-weight: 700; }
+  .stamp-btn { width: auto; display: inline-flex; align-items: center; gap: 7px; padding: 5px 9px 5px 5px; font-size: 14px; }
   .stamp-btn[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
   .stamp-btn .n { color: var(--muted); font-variant-numeric: tabular-nums; }
   .stamp-btn[aria-pressed="true"] .n { color: inherit; opacity: .8; }
@@ -103,11 +110,16 @@
   .health .why { grid-column: 2 / 4; color: var(--err); font-size: 13px; overflow-wrap: anywhere; }
   .health .todo { color: var(--muted); font-size: 13px; grid-column: 2 / 4; }
 
-  /* ---------- registro ---------- */
+  /* ---------- schede Registro / Quadro ---------- */
   .feed { padding-top: 6px; min-width: 0; }
-  .feed-head { display: flex; justify-content: space-between; align-items: baseline; padding: 20px 0 4px; }
-  .feed-head h2 { margin: 0; font-size: 15px; font-weight: 600; color: var(--muted); }
+  .tabs { display: flex; align-items: baseline; gap: 22px; padding: 18px 0 0; border-bottom: 1px solid var(--line); }
+  .tab { background: none; border: 0; border-bottom: 3px solid transparent; padding: 4px 0 8px; margin-bottom: -1px;
+         font: 700 20px/1.2 var(--ui); color: var(--muted); }
+  .tab:hover { color: var(--ink); }
+  .tab[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--ink); }
+  .tabs .count { margin-left: auto; color: var(--muted); font-size: 14px; text-align: right; }
 
+  /* ---------- registro ---------- */
   .day { margin-top: 18px; }
   .day-head { position: sticky; top: 0; z-index: 2; display: flex; justify-content: space-between; align-items: baseline;
               background: var(--bg); border-top: 2px solid var(--ink); padding: 8px 0 6px; }
@@ -120,12 +132,18 @@
   .entry h4 a { text-decoration: none; }
   .entry h4 a:hover { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; color: var(--accent); }
   .entry .src { margin: 3px 0 0; font-size: 14px; color: var(--muted); }
-  .entry .sum { margin: 6px 0 0; font-size: 15px; color: var(--ink); opacity: .85; max-width: 70ch;
+  .entry .sum { margin: 6px 0 0; font-size: 15px; opacity: .85; max-width: 70ch;
                 display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-  .cves { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 5px 6px; margin-top: 8px; align-items: center; }
   .cve { background: var(--cve-bg); color: var(--cve-ink); border-radius: 4px; padding: 1px 7px; font-size: 13px;
          font-weight: 600; font-variant-numeric: tabular-nums; text-decoration: none; }
   .cve:hover { text-decoration: underline; }
+  .grav { border: 1.5px solid var(--ink); border-radius: 4px; padding: 0 7px; font-size: 13px; font-weight: 600; }
+  .grav[data-l="4"] { background: var(--ink); color: var(--bg); }
+  .versions-btn { background: none; border: 0; padding: 0; color: var(--accent); font-size: 14px; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+  .versions { margin: 8px 0 0; padding: 0 0 0 14px; border-left: 2px solid var(--line); list-style: none; font-size: 14px; }
+  .versions li { padding: 2px 0; }
+  .versions time { color: var(--muted); margin-right: 8px; font-variant-numeric: tabular-nums; }
   @media (max-width: 560px) {
     .entry { grid-template-columns: 34px 1fr; }
     .entry time { grid-column: 2; grid-row: 1; padding: 0; font-size: 13px; }
@@ -136,7 +154,63 @@
   .empty { padding: 40px 0; max-width: 46ch; }
   .empty p { margin: 0 0 12px; }
   .more { margin-top: 20px; max-width: 280px; }
-  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+  /* ---------- quadro ---------- */
+  .quadro-intro { margin: 16px 0 0; color: var(--muted); max-width: 70ch; }
+  .sezione { margin-top: 28px; border-top: 2px solid var(--ink); padding-top: 10px; }
+  .sezione h3 { margin: 0; font: 700 22px/1.2 var(--ui); }
+  .sezione .nota { margin: 4px 0 14px; color: var(--muted); font-size: 14.5px; max-width: 68ch; }
+  .coppia { display: grid; gap: 22px; grid-template-columns: minmax(0, 1fr); align-items: start; }
+  @media (min-width: 1040px) { .coppia { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); } }
+  @media (min-width: 1040px) { .coppia.gp { grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); } }
+
+  #mappa { width: 100%; height: auto; display: block; }
+  .paese { fill: var(--seq-0); stroke: var(--bg); stroke-width: .8; }
+  .paese.attivo { cursor: pointer; }
+  .paese.c1 { fill: var(--seq-1); } .paese.c2 { fill: var(--seq-2); } .paese.c3 { fill: var(--seq-3); }
+  .paese.c4 { fill: var(--seq-4); } .paese.c5 { fill: var(--seq-5); }
+  .paese.attivo:hover, .paese.attivo:focus-visible { stroke: var(--ink); stroke-width: 2; outline: none; }
+  .paese.sel { stroke: var(--ink); stroke-width: 3; }
+  .punto { stroke: var(--bg); stroke-width: 2; cursor: pointer; }
+  .legenda { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; font-size: 13.5px; color: var(--muted); margin-top: 8px; }
+  .legenda .sw { display: inline-block; width: 22px; height: 12px; border-radius: 2px; vertical-align: -1px; margin-right: 6px; }
+  .legenda .scala { display: inline-flex; gap: 2px; align-items: center; }
+  .legenda .scala .sw { margin: 0; border-radius: 0; width: 20px; }
+
+  .classifica { list-style: none; margin: 0; padding: 0; }
+  .classifica li { margin: 0; }
+  .riga { display: grid; grid-template-columns: minmax(110px, 44%) minmax(0, 1fr); gap: 10px; align-items: center; width: 100%;
+          padding: 3px 0; background: none; border: 0; color: inherit; text-align: left; font: inherit; border-radius: 4px; }
+  button.riga:hover { background: color-mix(in srgb, var(--ink) 7%, transparent); }
+  .riga[aria-pressed="true"] { background: color-mix(in srgb, var(--ink) 12%, transparent); font-weight: 600; }
+  .riga .et { font-size: 15px; line-height: 1.25; overflow-wrap: anywhere; }
+  .riga .et small { display: block; color: var(--muted); font-weight: 400; font-size: 12.5px; }
+  .traccia { position: relative; height: 24px; }
+  .asta { position: absolute; left: 0; top: 5px; height: 14px; border-radius: 0 4px 4px 0; background: var(--bar);
+          width: calc((100% - 44px) * var(--p)); min-width: 2px; }
+  .val { position: absolute; top: 0; line-height: 24px; font-size: 14px; font-weight: 600; font-variant-numeric: tabular-nums;
+         left: calc((100% - 44px) * var(--p) + 8px); }
+  .classifica[data-tipo="gravita"] .asta { background: var(--c); }
+
+  .trend { position: relative; width: 100%; }
+  .trend svg { display: block; width: 100%; }
+  .trend .griglia { stroke: var(--line); stroke-width: 1; }
+  .trend .assi { fill: var(--muted); font: 400 12px var(--ui); }
+  .trend .colonna { fill: var(--bar); }
+  .trend .colonna.hot { fill: var(--accent); }
+  .trend .picco { fill: var(--ink); font: 600 13px var(--ui); }
+
+  details.dati { margin-top: 12px; }
+  details.dati summary { cursor: pointer; font-size: 14px; font-weight: 600; color: var(--accent); width: fit-content; }
+  details.dati table { border-collapse: collapse; margin-top: 8px; font-size: 14px; min-width: 260px; }
+  details.dati th, details.dati td { text-align: left; padding: 4px 18px 4px 0; border-bottom: 1px solid var(--line); }
+  details.dati td.n { font-variant-numeric: tabular-nums; text-align: right; padding-right: 0; }
+
+  .tip { position: fixed; z-index: 50; pointer-events: none; background: var(--ink); color: var(--bg); border-radius: 6px;
+         padding: 6px 10px; font-size: 13.5px; line-height: 1.3; max-width: 240px; box-shadow: 0 2px 10px rgba(0,0,0,.25); }
+  .tip strong { display: block; font-size: 16px; }
+
+  @media (prefers-reduced-motion: no-preference) { .asta { transition: width .25s ease; } }
 </style>
 </head>
 <body>
@@ -149,11 +223,11 @@
 
   <div class="layout">
     <aside class="filters" id="filtri" data-open="false" aria-label="Filtri">
-      <button class="filters-toggle" id="apri-filtri" type="button" aria-expanded="false" aria-controls="corpo-filtri">Mostra i filtri</button>
+      <button class="btn filters-toggle" id="apri-filtri" type="button" aria-expanded="false" aria-controls="corpo-filtri">Mostra i filtri</button>
       <div class="filters-body" id="corpo-filtri">
         <div class="field">
           <label for="q">Cerca</label>
-          <input id="q" type="search" placeholder="Titolo, testo o CVE" autocomplete="off">
+          <input id="q" type="search" placeholder="Titolo, testo, prodotto o CVE" autocomplete="off">
         </div>
 
         <fieldset class="field">
@@ -168,6 +242,7 @@
 
         <div class="field">
           <label class="check"><input type="checkbox" id="solocve"> Solo voci con CVE</label>
+          <label class="check"><input type="checkbox" id="raggruppa" checked> Unisci le voci con lo stesso titolo</label>
         </div>
 
         <div class="field">
@@ -185,30 +260,84 @@
           <ul class="health" id="stato"></ul>
         </div>
 
-        <button type="button" id="azzera">Azzera i filtri</button>
+        <button class="btn" type="button" id="azzera">Azzera i filtri</button>
       </div>
     </aside>
 
     <main class="feed">
-      <div class="feed-head"><h2 id="conteggio" aria-live="polite"></h2></div>
-      <div id="elenco"></div>
-      <button class="more" id="altre" type="button" hidden>Mostra altre voci</button>
+      <div class="tabs" role="tablist" aria-label="Vista">
+        <button class="tab" role="tab" id="tab-registro" aria-selected="true" aria-controls="vista-registro" type="button">Registro</button>
+        <button class="tab" role="tab" id="tab-quadro" aria-selected="false" aria-controls="vista-quadro" tabindex="-1" type="button">Quadro</button>
+        <span class="count" id="conteggio" aria-live="polite"></span>
+      </div>
+
+      <section id="vista-registro" role="tabpanel" aria-labelledby="tab-registro">
+        <div id="elenco"></div>
+        <button class="btn more" id="altre" type="button" hidden>Mostra altre voci</button>
+      </section>
+
+      <section id="vista-quadro" role="tabpanel" aria-labelledby="tab-quadro" hidden>
+        <p class="quadro-intro" id="quadro-ambito"></p>
+
+        <div class="sezione">
+          <h3>Segnalazioni per Paese</h3>
+          <p class="nota">La mappa indica quale CERT ha pubblicato le segnalazioni, non dove si trova la vulnerabilità: un software vulnerabile non ha un Paese. Un colore più scuro significa che i CERT di quel Paese hanno pubblicato di più.</p>
+          <div class="coppia">
+            <div>
+              <svg id="mappa" role="group" aria-label="Mappa dell'Europa con le segnalazioni per Paese" viewBox="0 0 720 640"></svg>
+              <div class="legenda" id="legenda-mappa"></div>
+            </div>
+            <div>
+              <ul class="classifica" id="classifica-paesi"></ul>
+              <details class="dati" id="dati-paesi"><summary>Mostra i dati in tabella</summary></details>
+            </div>
+          </div>
+        </div>
+
+        <div class="sezione">
+          <h3 id="titolo-trend">Segnalazioni nel tempo</h3>
+          <p class="nota" id="nota-trend"></p>
+          <div class="trend" id="trend"></div>
+          <details class="dati" id="dati-trend"><summary>Mostra i dati in tabella</summary></details>
+        </div>
+
+        <div class="coppia gp">
+          <div class="sezione" style="margin-top:28px">
+            <h3>Gravità</h3>
+            <p class="nota" id="nota-gravita"></p>
+            <ul class="classifica" id="classifica-gravita" data-tipo="gravita"></ul>
+            <details class="dati" id="dati-gravita"><summary>Mostra i dati in tabella</summary></details>
+          </div>
+          <div class="sezione" style="margin-top:28px">
+            <h3>Prodotti più citati</h3>
+            <p class="nota" id="nota-prodotti"></p>
+            <ul class="classifica" id="classifica-prodotti"></ul>
+            <details class="dati" id="dati-prodotti"><summary>Mostra i dati in tabella</summary></details>
+          </div>
+        </div>
+      </section>
     </main>
   </div>
 </div>
+<div class="tip" id="tip" role="tooltip" hidden></div>
 
+<script src="analisi.js"></script>
 <script>
 const PAGINA = 60;
-const PAESI = { IT:"Italia", EU:"Unione europea", DE:"Germania", GB:"Regno Unito", FR:"Francia", NL:"Paesi Bassi",
+const PAESI = { IT:"Italia", EU:"Istituzioni dell'UE", DE:"Germania", GB:"Regno Unito", FR:"Francia", NL:"Paesi Bassi",
   ES:"Spagna", BE:"Belgio", AT:"Austria", CH:"Svizzera", FI:"Finlandia", SE:"Svezia", NO:"Norvegia",
-  DK:"Danimarca", PL:"Polonia", PT:"Portogallo", IE:"Irlanda", CZ:"Cechia", GR:"Grecia", UA:"Ucraina" };
+  DK:"Danimarca", PL:"Polonia", PT:"Portogallo", IE:"Irlanda", CZ:"Cechia", GR:"Grecia", UA:"Ucraina",
+  LU:"Lussemburgo", MT:"Malta", LI:"Liechtenstein", HU:"Ungheria", RO:"Romania", BG:"Bulgaria", HR:"Croazia",
+  SI:"Slovenia", SK:"Slovacchia", EE:"Estonia", LV:"Lettonia", LT:"Lituania", CY:"Cipro", IS:"Islanda" };
+const SVG = "http://www.w3.org/2000/svg";
 const $ = id => document.getElementById(id);
-const stato = { q:"", paese:"", fonte:"", giorni:7, cve:false, visibili:PAGINA };
-let dati = { items:[], sources:{} }, filtrati = [];
+const stato = { q:"", paese:"", fonte:"", giorni:7, cve:false, raggruppa:true, vista:"registro", visibili:PAGINA };
+let dati = { items:[], sources:{} }, geo = null, gruppi = [], vociFiltrate = [], gruppiSenzaPaese = [];
 
 const nomePaese = c => PAESI[c] || c;
 const tempo = i => new Date(i.published || i.first_seen);
 const num = new Intl.NumberFormat("it-IT");
+const plurale = (n, s, p) => `${num.format(n)} ${n === 1 ? s : p}`;
 
 function el(tag, props = {}, ...figli) {
   const e = document.createElement(tag);
@@ -218,19 +347,15 @@ function el(tag, props = {}, ...figli) {
   figli.flat().forEach(f => { if (f) e.append(f); });
   return e;
 }
+function svgEl(tag, props = {}) {
+  const e = document.createElementNS(SVG, tag);
+  for (const [k, v] of Object.entries(props)) e.setAttribute(k, v);
+  return e;
+}
 const sicuro = u => /^https?:\/\//i.test(u) ? u : "#";
 const stampo = c => el("span", { class: "stamp", "aria-hidden": "true", text: c });
 
-function etichettaGiorno(d) {
-  const oggi = new Date(); oggi.setHours(0,0,0,0);
-  const g = new Date(d); g.setHours(0,0,0,0);
-  const diff = Math.round((oggi - g) / 864e5);
-  if (diff === 0) return "Oggi";
-  if (diff === 1) return "Ieri";
-  const t = g.toLocaleDateString("it-IT", { weekday: "long", day: "numeric", month: "long" });
-  return t.charAt(0).toUpperCase() + t.slice(1);
-}
-
+/* ---------- filtri e dati ---------- */
 function corrisponde(i, ignora) {
   const s = dati.sources[i.source];
   if (!s) return false;
@@ -242,14 +367,34 @@ function corrisponde(i, ignora) {
   if (q && !`${i.title} ${i.summary} ${i.cves.join(" ")}`.toLowerCase().includes(q)) return false;
   return true;
 }
+const unisci = voci => Analisi.raggruppa(voci, tempo, stato.raggruppa);
+const paeseDi = g => dati.sources[g.main.source].country;
 
+function conteggiPerPaese(lista) {
+  const c = {};
+  lista.forEach(g => { const p = paeseDi(g); c[p] = (c[p] || 0) + 1; });
+  return c;
+}
+
+/* ---------- descrizioni di giorni e tempo ---------- */
+function etichettaGiorno(d) {
+  const oggi = new Date(); oggi.setHours(0,0,0,0);
+  const g = new Date(d); g.setHours(0,0,0,0);
+  const diff = Math.round((oggi - g) / 864e5);
+  if (diff === 0) return "Oggi";
+  if (diff === 1) return "Ieri";
+  const t = g.toLocaleDateString("it-IT", { weekday: "long", day: "numeric", month: "long" });
+  return t.charAt(0).toUpperCase() + t.slice(1);
+}
+
+/* ---------- chip dei Paesi (filtro laterale) ---------- */
 function disegnaPaesi() {
-  const conteggi = {};
-  dati.items.forEach(i => { if (corrisponde(i, "paese")) { const c = dati.sources[i.source].country; conteggi[c] = (conteggi[c] || 0) + 1; } });
+  const conteggi = conteggiPerPaese(gruppiSenzaPaese);
   const codici = [...new Set(Object.values(dati.sources).map(s => s.country))]
     .sort((a, b) => nomePaese(a).localeCompare(nomePaese(b), "it"));
   $("paesi").replaceChildren(...codici.map(c => {
-    const b = el("button", { type: "button", class: "stamp-btn", "aria-pressed": String(stato.paese === c), "aria-label": `${nomePaese(c)}, ${conteggi[c] || 0} voci` },
+    const b = el("button", { type: "button", class: "stamp-btn", "aria-pressed": String(stato.paese === c),
+      "aria-label": `${nomePaese(c)}: ${plurale(conteggi[c] || 0, "segnalazione", "segnalazioni")}` },
       stampo(c), el("span", { class: "n", text: num.format(conteggi[c] || 0) }));
     b.title = nomePaese(c);
     b.addEventListener("click", () => { stato.paese = stato.paese === c ? "" : c; aggiorna(); });
@@ -257,50 +402,332 @@ function disegnaPaesi() {
   }));
 }
 
+/* ---------- registro ---------- */
 function disegnaElenco() {
   const box = $("elenco");
   box.replaceChildren();
-  $("conteggio").textContent = filtrati.length === 1 ? "1 voce" : `${num.format(filtrati.length)} voci`;
-
-  if (!filtrati.length) {
+  if (!gruppi.length) {
     box.append(el("div", { class: "empty" },
       el("p", { text: "Nessuna voce corrisponde ai filtri scelti." }),
       el("p", { text: "Allarga il periodo o togli un filtro per vedere più risultati." })));
     $("altre").hidden = true;
     return;
   }
-
   const perGiorno = {};
-  filtrati.forEach(i => { const k = tempo(i).toDateString(); perGiorno[k] = (perGiorno[k] || 0) + 1; });
+  gruppi.forEach(g => { const k = g.tempo.toDateString(); perGiorno[k] = (perGiorno[k] || 0) + 1; });
 
   let giorno = null, sezione = null;
-  for (const i of filtrati.slice(0, stato.visibili)) {
-    const d = tempo(i), chiave = d.toDateString();
+  for (const g of gruppi.slice(0, stato.visibili)) {
+    const i = g.main, d = g.tempo, chiave = d.toDateString();
     if (chiave !== giorno) {
       giorno = chiave;
-      const tot = perGiorno[chiave];
       sezione = el("section", { class: "day" },
         el("div", { class: "day-head" }, el("h3", { text: etichettaGiorno(d) }),
-          el("span", { text: tot === 1 ? "1 voce" : `${num.format(tot)} voci` })));
+          el("span", { text: plurale(perGiorno[chiave], "voce", "voci") })));
       box.append(sezione);
     }
     const s = dati.sources[i.source];
-    const ora = d.toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit" });
-    const t = el("time", { datetime: d.toISOString(), text: ora });
+    const t = el("time", { datetime: d.toISOString(), text: d.toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit" }) });
     if (!i.published) t.title = "Ora in cui la voce è stata rilevata: la fonte non indica la data";
-    sezione.append(el("article", { class: "entry" },
-      t,
-      el("span", { class: "stamp", title: nomePaese(s.country), text: s.country }),
-      el("div", { class: "body" },
-        el("h4", {}, el("a", { href: sicuro(i.link), target: "_blank", rel: "noopener noreferrer", text: i.title })),
-        el("p", { class: "src", text: s.name }),
-        i.summary ? el("p", { class: "sum", text: i.summary }) : null,
-        i.cves.length ? el("div", { class: "cves" },
-          i.cves.slice(0, 8).map(c => el("a", { class: "cve", href: "https://nvd.nist.gov/vuln/detail/" + encodeURIComponent(c),
-            target: "_blank", rel: "noopener noreferrer", text: c })),
-          i.cves.length > 8 ? el("span", { class: "src", text: `e altre ${i.cves.length - 8}` }) : null) : null)));
+
+    const tag = [];
+    if (g.gravita) tag.push(el("span", { class: "grav", "data-l": String(g.gravita), text: "Gravità " + Analisi.NOMI_LIVELLO[g.gravita].toLowerCase() }));
+    g.cves.slice(0, 8).forEach(c => tag.push(el("a", { class: "cve", href: "https://nvd.nist.gov/vuln/detail/" + encodeURIComponent(c),
+      target: "_blank", rel: "noopener noreferrer", text: c })));
+    if (g.cves.length > 8) tag.push(el("span", { class: "src", text: `e altre ${g.cves.length - 8}` }));
+
+    const corpo = el("div", { class: "body" },
+      el("h4", {}, el("a", { href: sicuro(i.link), target: "_blank", rel: "noopener noreferrer", text: i.title })),
+      el("p", { class: "src", text: s.name }),
+      i.summary ? el("p", { class: "sum", text: i.summary }) : null);
+
+    const altri = g.membri.slice(1);
+    if (altri.length || tag.length) {
+      const riga = el("div", { class: "tags" }, tag);
+      if (altri.length) {
+        const lista = el("ul", { class: "versions", hidden: "" },
+          altri.map(m => el("li", {}, el("time", { text: tempo(m).toLocaleString("it-IT", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }) }),
+            el("a", { href: sicuro(m.link), target: "_blank", rel: "noopener noreferrer", text: m.title }))));
+        const testo = apri => (apri ? "Nascondi " : "Mostra ") +
+          (altri.length === 1 ? "1 altra voce con lo stesso titolo" : `altre ${num.format(altri.length)} voci con lo stesso titolo`);
+        const bottone = el("button", { type: "button", class: "versions-btn", "aria-expanded": "false", text: testo(false) });
+        bottone.addEventListener("click", () => {
+          const apri = lista.hidden;
+          lista.hidden = !apri;
+          bottone.setAttribute("aria-expanded", String(apri));
+          bottone.textContent = testo(apri);
+        });
+        riga.append(bottone);
+        corpo.append(riga, lista);
+      } else corpo.append(riga);
+    }
+    sezione.append(el("article", { class: "entry" }, t,
+      el("span", { class: "stamp", title: nomePaese(s.country), text: s.country }), corpo));
   }
-  $("altre").hidden = filtrati.length <= stato.visibili;
+  $("altre").hidden = gruppi.length <= stato.visibili;
+}
+
+/* ---------- tooltip ---------- */
+const tip = $("tip");
+function mostraTip(x, y, valore, testo) {
+  tip.replaceChildren(el("strong", { text: valore }), el("span", { text: testo }));
+  tip.hidden = false;
+  const w = tip.offsetWidth, h = tip.offsetHeight;
+  tip.style.left = Math.max(8, Math.min(x + 14, innerWidth - w - 8)) + "px";
+  tip.style.top = Math.max(8, Math.min(y + 14, innerHeight - h - 8)) + "px";
+}
+const nascondiTip = () => { tip.hidden = true; };
+function tipDaElemento(e, valore, testo) {
+  const r = e.getBoundingClientRect();
+  mostraTip(r.left + r.width / 2, r.top + r.height / 2, valore, testo);
+}
+
+/* ---------- tabelle accessibili ---------- */
+function tabella(dettagli, intestazioni, righe) {
+  dettagli.querySelector("table")?.remove();
+  dettagli.append(el("table", {},
+    el("thead", {}, el("tr", {}, intestazioni.map((h, k) => el("th", { text: h, scope: "col" })))),
+    el("tbody", {}, righe.map(r => el("tr", {}, r.map((c, k) => el("td", { class: typeof c === "number" ? "n" : "", text: typeof c === "number" ? num.format(c) : c })))))));
+}
+
+/* ---------- classifica a barre orizzontali ---------- */
+function classifica(ul, righe, { onClick, selezionato, vuoto } = {}) {
+  ul.replaceChildren();
+  if (!righe.length) { ul.append(el("li", { class: "src", text: vuoto || "Nessun dato per i filtri scelti." })); return; }
+  const max = Math.max(1, ...righe.map(r => r.valore));
+  righe.forEach(r => {
+    const traccia = el("span", { class: "traccia" },
+      el("span", { class: "asta" }), el("span", { class: "val", text: num.format(r.valore) }));
+    traccia.style.setProperty("--p", (r.valore / max).toFixed(4));
+    if (r.colore) traccia.firstChild.style.setProperty("--c", r.colore);
+    const et = el("span", { class: "et" }, r.etichetta, r.sotto ? el("small", { text: r.sotto }) : null);
+    let riga;
+    if (onClick) {
+      riga = el("button", { type: "button", class: "riga", "aria-pressed": String(selezionato === r.id),
+        "aria-label": `${r.etichetta}: ${num.format(r.valore)}` }, et, traccia);
+      riga.addEventListener("click", () => onClick(r.id));
+    } else {
+      riga = el("div", { class: "riga" }, et, traccia);
+    }
+    ul.append(el("li", {}, riga));
+  });
+}
+
+/* ---------- mappa ---------- */
+function classeColore(n, max) { return n <= 0 ? 0 : 1 + Math.min(4, Math.floor(4 * Math.sqrt(n / max))); }
+
+function disegnaMappa(conteggi) {
+  const svg = $("mappa");
+  svg.replaceChildren();
+  if (!geo) return;
+  const max = Math.max(1, ...Object.values(conteggi));
+  const conFonte = new Set(Object.values(dati.sources).map(s => s.country));
+
+  const attiva = (nodo, c) => {
+    const n = conteggi[c] || 0;
+    const testo = plurale(n, "segnalazione", "segnalazioni");
+    nodo.setAttribute("tabindex", "0");
+    nodo.setAttribute("role", "button");
+    nodo.setAttribute("aria-pressed", String(stato.paese === c));
+    nodo.setAttribute("aria-label", `${nomePaese(c)}: ${testo}`);
+    nodo.addEventListener("pointermove", e => mostraTip(e.clientX, e.clientY, num.format(n), `${nomePaese(c)}: ${n === 1 ? "segnalazione" : "segnalazioni"}`));
+    nodo.addEventListener("pointerleave", nascondiTip);
+    nodo.addEventListener("focus", () => tipDaElemento(nodo, num.format(n), `${nomePaese(c)}: ${n === 1 ? "segnalazione" : "segnalazioni"}`));
+    nodo.addEventListener("blur", nascondiTip);
+    nodo.addEventListener("click", () => { stato.paese = stato.paese === c ? "" : c; aggiorna(); });
+    nodo.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); nodo.dispatchEvent(new Event("click")); } });
+  };
+
+  // ordine di disegno: prima i Paesi senza fonti, poi quelli con fonti, in fondo quello selezionato (cosi' il bordo non viene coperto)
+  const codici = Object.keys(geo.countries).sort((a, b) =>
+    (conFonte.has(a) - conFonte.has(b)) || ((a === stato.paese) - (b === stato.paese)));
+  for (const c of codici) {
+    const p = svgEl("path", { d: geo.countries[c], class: "paese" });
+    if (conFonte.has(c)) {
+      p.classList.add("attivo", "c" + classeColore(conteggi[c] || 0, max));
+      if (c === stato.paese) p.classList.add("sel");
+      attiva(p, c);
+    } else p.setAttribute("aria-hidden", "true");
+    svg.append(p);
+  }
+  for (const [c, [x, y]] of Object.entries(geo.dots || {})) {
+    if (!conFonte.has(c)) continue;
+    const d = svgEl("circle", { cx: x, cy: y, r: 7, class: "paese punto attivo c" + classeColore(conteggi[c] || 0, max) });
+    if (c === stato.paese) d.classList.add("sel");
+    attiva(d, c);
+    svg.append(d);
+  }
+
+  // legenda
+  const scala = el("span", { class: "scala", "aria-hidden": "true" },
+    [1, 2, 3, 4, 5].map(k => { const s = el("span", { class: "sw" }); s.style.background = `var(--seq-${k})`; return s; }));
+  const nessuna = el("span", {}, el("span", { class: "sw", style: "background:var(--seq-0)" }), "Nessuna");
+  $("legenda-mappa").replaceChildren(nessuna, el("span", {}, "1 "), scala, el("span", { text: `${num.format(max)} segnalazioni` }));
+}
+
+function disegnaClassificaPaesi(conteggi) {
+  const codici = [...new Set(Object.values(dati.sources).map(s => s.country))];
+  const righe = codici.map(c => ({ id: c, etichetta: nomePaese(c), valore: conteggi[c] || 0,
+    sotto: c === "EU" ? "non è un Paese: non compare sulla mappa" : null }))
+    .sort((a, b) => b.valore - a.valore || a.etichetta.localeCompare(b.etichetta, "it"));
+  classifica($("classifica-paesi"), righe, { onClick: c => { stato.paese = stato.paese === c ? "" : c; aggiorna(); }, selezionato: stato.paese });
+  tabella($("dati-paesi"), ["Paese", "Segnalazioni"], righe.map(r => [r.etichetta, r.valore]));
+}
+
+/* ---------- andamento nel tempo ---------- */
+function inizioGiorno(d) { const x = new Date(d); x.setHours(0, 0, 0, 0); return x; }
+function costruisciSecchi(lista) {
+  const ora = new Date();
+  let passo, inizio, n;
+  if (stato.giorni === 1) {
+    passo = "ora"; const fine = new Date(ora); fine.setMinutes(0, 0, 0);
+    inizio = new Date(fine.getTime() - 23 * 36e5); n = 24;
+  } else {
+    const oggi = inizioGiorno(ora);
+    let giorni = stato.giorni;
+    if (!giorni) {
+      const primo = lista.length ? inizioGiorno(lista[lista.length - 1].tempo) : oggi;
+      giorni = Math.max(7, Math.round((oggi - primo) / 864e5) + 1);
+    }
+    passo = giorni > 120 ? "settimana" : "giorno";
+    inizio = new Date(oggi); inizio.setDate(inizio.getDate() - (giorni - 1));
+    if (passo === "settimana") inizio.setDate(inizio.getDate() - ((inizio.getDay() + 6) % 7));
+    n = passo === "giorno" ? giorni : Math.ceil((Math.round((oggi - inizio) / 864e5) + 1) / 7);
+  }
+  const secchi = Array.from({ length: n }, (_, k) => {
+    const d = new Date(inizio);
+    if (passo === "ora") d.setTime(inizio.getTime() + k * 36e5);
+    else d.setDate(d.getDate() + k * (passo === "settimana" ? 7 : 1));
+    return { inizio: d, n: 0 };
+  });
+  lista.forEach(g => {
+    let k;
+    if (passo === "ora") k = Math.floor((g.tempo - inizio) / 36e5);
+    else { const dd = Math.round((inizioGiorno(g.tempo) - inizio) / 864e5); k = passo === "settimana" ? Math.floor(dd / 7) : dd; }
+    if (k >= 0 && k < n) secchi[k].n++;
+  });
+  return { passo, secchi };
+}
+function etichettaSecchio(s, passo, lunga) {
+  if (passo === "ora") return lunga ? s.inizio.toLocaleString("it-IT", { day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" }) : s.inizio.toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit" });
+  const t = s.inizio.toLocaleDateString("it-IT", lunga ? { weekday: "long", day: "numeric", month: "long" } : { day: "numeric", month: "short" });
+  return passo === "settimana" && lunga ? "Settimana dal " + s.inizio.toLocaleDateString("it-IT", { day: "numeric", month: "long" }) : t;
+}
+function passoScala(max) {
+  for (const p of [1, 2, 5, 10, 20, 25, 50, 100, 200, 250, 500, 1000, 2000, 5000]) if (max / p <= 4) return p;
+  return 10000;
+}
+
+function disegnaTrend() {
+  const box = $("trend");
+  const { passo, secchi } = costruisciSecchi(gruppi);
+  const unita = { ora: "per ora", giorno: "per giorno", settimana: "per settimana" }[passo];
+  $("titolo-trend").textContent = "Segnalazioni nel tempo";
+  $("nota-trend").textContent = `Numero di segnalazioni ${unita}` + (stato.raggruppa ? "; le voci con lo stesso titolo contano una volta, alla data della più recente." : ".");
+  const W = Math.max(280, box.clientWidth || 600), H = 230;
+  const m = { l: 34, r: 8, t: 22, b: 26 };
+  const iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const maxVal = Math.max(1, ...secchi.map(s => s.n));
+  const step = passoScala(maxVal), top = Math.ceil(maxVal / step) * step;
+  const y = v => m.t + ih - (v / top) * ih;
+  const banda = iw / secchi.length, larghezza = Math.max(1, Math.min(24, banda - 2));
+
+  const svg = svgEl("svg", { viewBox: `0 0 ${W} ${H}`, role: "img",
+    "aria-label": `Grafico a colonne delle segnalazioni ${unita}. Picco: ${maxVal}. I valori sono nella tabella sotto il grafico.` });
+  for (let v = 0; v <= top; v += step) {
+    svg.append(svgEl("line", { x1: m.l, x2: W - m.r, y1: y(v), y2: y(v), class: "griglia" }));
+    const t = svgEl("text", { x: m.l - 6, y: y(v) + 4, "text-anchor": "end", class: "assi" }); t.textContent = num.format(v); svg.append(t);
+  }
+  const ogni = Math.max(1, Math.ceil(64 / banda));
+  const imax = secchi.findIndex(s => s.n === maxVal);
+  secchi.forEach((s, k) => {
+    const cx = m.l + banda * k + banda / 2, x0 = cx - larghezza / 2, h = (s.n / top) * ih;
+    let colonna = null;
+    if (s.n > 0) {
+      const r = Math.min(4, h, larghezza / 2), yb = m.t + ih, yt = yb - h;
+      colonna = svgEl("path", { class: "colonna",
+        d: `M${x0},${yb}V${yt + r}Q${x0},${yt} ${x0 + r},${yt}H${x0 + larghezza - r}Q${x0 + larghezza},${yt} ${x0 + larghezza},${yt + r}V${yb}Z` });
+      svg.append(colonna);
+    }
+    if ((secchi.length - 1 - k) % ogni === 0) {
+      const t = svgEl("text", { x: cx, y: H - 8, "text-anchor": "middle", class: "assi" });
+      t.textContent = etichettaSecchio(s, passo, false); svg.append(t);
+    }
+    if (k === imax && s.n > 0) {
+      const t = svgEl("text", { x: Math.min(Math.max(cx, m.l + 10), W - m.r - 10), y: y(s.n) - 6, "text-anchor": "middle", class: "picco" });
+      t.textContent = num.format(s.n); svg.append(t);
+    }
+    // area sensibile: tutta la banda in altezza, piu' ampia del segno
+    const area = svgEl("rect", { x: m.l + banda * k, y: m.t, width: banda, height: ih, fill: "transparent" });
+    const testo = `${etichettaSecchio(s, passo, true)}: ${s.n === 1 ? "segnalazione" : "segnalazioni"}`;
+    area.addEventListener("pointermove", e => { colonna?.classList.add("hot"); mostraTip(e.clientX, e.clientY, num.format(s.n), testo); });
+    area.addEventListener("pointerleave", () => { colonna?.classList.remove("hot"); nascondiTip(); });
+    svg.append(area);
+  });
+  svg.append(svgEl("line", { x1: m.l, x2: W - m.r, y1: y(0), y2: y(0), stroke: "var(--muted)", "stroke-width": 1 }));
+  box.replaceChildren(svg);
+  tabella($("dati-trend"), [passo === "ora" ? "Ora" : passo === "settimana" ? "Settimana" : "Giorno", "Segnalazioni"],
+    secchi.map(s => [etichettaSecchio(s, passo, true), s.n]).reverse());
+}
+
+/* ---------- gravità e prodotti ---------- */
+function disegnaGravita() {
+  const perBund = gruppi.filter(g => g.main.source.startsWith("cert-bund"));
+  const conLivello = perBund.filter(g => g.gravita > 0);
+  const conteggi = { 4: 0, 3: 0, 2: 0, 1: 0 };
+  conLivello.forEach(g => conteggi[g.gravita]++);
+  $("nota-gravita").textContent = `Solo CERT-Bund indica la gravità in modo strutturato: ${num.format(conLivello.length)} segnalazioni su ${num.format(gruppi.length)} la riportano. Per le altre fonti non è disponibile.`;
+  const righe = [4, 3, 2, 1].map(l => ({ id: l, etichetta: Analisi.NOMI_LIVELLO[l], valore: conteggi[l], colore: `var(--sev-${l})` }));
+  classifica($("classifica-gravita"), conLivello.length ? righe : [], { vuoto: "Nessuna segnalazione con gravità indicata nei filtri scelti." });
+  tabella($("dati-gravita"), ["Gravità", "Segnalazioni"], righe.map(r => [r.etichetta, r.valore]));
+}
+
+function disegnaProdotti() {
+  const per = new Map();
+  let conProdotto = 0;
+  gruppi.forEach(g => {
+    const p = Analisi.prodotto(g.main);
+    if (!p) return;
+    conProdotto++;
+    const k = p.toLowerCase();
+    const e = per.get(k) || { nome: p, n: 0, fonti: new Set() };
+    e.n++; e.fonti.add(g.main.source);
+    per.set(k, e);
+  });
+  $("nota-prodotti").textContent = `Ricavati dai titoli di CERT-Bund, CSIRT Italia, CERT-FR e CERT-EU: ${num.format(conProdotto)} segnalazioni su ${num.format(gruppi.length)}. È un'indicazione, non un conteggio esatto.`;
+  const righe = [...per.values()].sort((a, b) => b.n - a.n || a.nome.localeCompare(b.nome, "it")).slice(0, 10)
+    .map(e => ({ id: e.nome, etichetta: e.nome, valore: e.n, sotto: e.fonti.size > 1 ? `citato da ${e.fonti.size} fonti` : null }));
+  classifica($("classifica-prodotti"), righe, {
+    onClick: nome => { stato.q = nome; $("q").value = nome; impostaVista("registro"); aggiorna(); window.scrollTo({ top: 0, behavior: "smooth" }); },
+    vuoto: "Nessun prodotto riconosciuto nei filtri scelti." });
+  tabella($("dati-prodotti"), ["Prodotto", "Segnalazioni", "Fonti"],
+    righe.map(r => [r.etichetta, r.valore, per.get(r.etichetta.toLowerCase()).fonti.size]));
+}
+
+function disegnaQuadro() {
+  const periodo = { 1: "nelle ultime 24 ore", 7: "negli ultimi 7 giorni", 30: "negli ultimi 30 giorni", 0: "in tutto lo storico" }[stato.giorni];
+  const unite = vociFiltrate.length - gruppi.length;
+  $("quadro-ambito").textContent = `${plurale(gruppi.length, "segnalazione", "segnalazioni")} ${periodo}` +
+    (stato.paese ? `, solo ${nomePaese(stato.paese)}` : "") + (stato.fonte ? `, solo ${dati.sources[stato.fonte].name}` : "") +
+    (stato.raggruppa && unite > 0 ? `. ${plurale(unite, "voce con lo stesso titolo è stata unita", "voci con lo stesso titolo sono state unite")} a una già presente.` : ".");
+  const conteggi = conteggiPerPaese(gruppiSenzaPaese);
+  disegnaMappa(conteggi);
+  disegnaClassificaPaesi(conteggi);
+  disegnaTrend();
+  disegnaGravita();
+  disegnaProdotti();
+}
+
+/* ---------- vista, vitali, stato fonti ---------- */
+function impostaVista(v) {
+  stato.vista = v;
+  ["registro", "quadro"].forEach(n => {
+    const sel = n === v;
+    $("tab-" + n).setAttribute("aria-selected", String(sel));
+    $("tab-" + n).tabIndex = sel ? 0 : -1;
+    $("vista-" + n).hidden = !sel;
+  });
+  if (location.hash !== "#" + v) history.replaceState(null, "", v === "quadro" ? "#quadro" : location.pathname + location.search);
 }
 
 function disegnaVitali(stati) {
@@ -310,7 +737,7 @@ function disegnaVitali(stati) {
   const riga = (k, v) => el("div", {}, el("dt", { text: k }), el("dd", { text: v }));
   $("vitals").replaceChildren(
     riga("Aggiornato il", aggiornato),
-    riga("Nelle ultime 24 ore", num.format(ultime24)),
+    riga("Voci nelle ultime 24 ore", num.format(ultime24)),
     riga("Fonti attive", `${attive} su ${stati.sources.length}`));
 }
 
@@ -331,15 +758,21 @@ function riempiFonti() {
     .forEach(([id, s]) => $("fonte").append(el("option", { value: id, text: s.name })));
 }
 
+/* ---------- aggiornamento generale ---------- */
 function aggiorna() {
-  filtrati = dati.items.filter(i => corrisponde(i)).sort((a, b) => tempo(b) - tempo(a));
+  vociFiltrate = dati.items.filter(i => corrisponde(i));
+  gruppi = unisci(vociFiltrate);
+  gruppiSenzaPaese = stato.paese ? unisci(dati.items.filter(i => corrisponde(i, "paese"))) : gruppi;
+  const unite = vociFiltrate.length - gruppi.length;
+  $("conteggio").textContent = plurale(gruppi.length, "segnalazione", "segnalazioni") +
+    (stato.raggruppa && unite > 0 ? ` (${plurale(unite, "voce unita", "voci unite")})` : "");
   disegnaPaesi();
-  disegnaElenco();
+  if (stato.vista === "registro") disegnaElenco(); else disegnaQuadro();
 }
 
 function azzera() {
-  Object.assign(stato, { q:"", paese:"", fonte:"", giorni:7, cve:false, visibili:PAGINA });
-  $("q").value = ""; $("fonte").value = ""; $("solocve").checked = false;
+  Object.assign(stato, { q:"", paese:"", fonte:"", giorni:7, cve:false, raggruppa:true, visibili:PAGINA });
+  $("q").value = ""; $("fonte").value = ""; $("solocve").checked = false; $("raggruppa").checked = true;
   document.querySelector('input[name="periodo"][value="7"]').checked = true;
   aggiorna();
 }
@@ -347,6 +780,7 @@ function azzera() {
 $("q").addEventListener("input", e => { stato.q = e.target.value; stato.visibili = PAGINA; aggiorna(); });
 $("fonte").addEventListener("change", e => { stato.fonte = e.target.value; stato.visibili = PAGINA; aggiorna(); });
 $("solocve").addEventListener("change", e => { stato.cve = e.target.checked; stato.visibili = PAGINA; aggiorna(); });
+$("raggruppa").addEventListener("change", e => { stato.raggruppa = e.target.checked; stato.visibili = PAGINA; aggiorna(); });
 document.querySelectorAll('input[name="periodo"]').forEach(r =>
   r.addEventListener("change", e => { stato.giorni = +e.target.value; stato.visibili = PAGINA; aggiorna(); }));
 $("altre").addEventListener("click", () => { stato.visibili += PAGINA; disegnaElenco(); });
@@ -357,6 +791,18 @@ $("apri-filtri").addEventListener("click", () => {
   $("apri-filtri").setAttribute("aria-expanded", String(aperto));
   $("apri-filtri").textContent = aperto ? "Nascondi i filtri" : "Mostra i filtri";
 });
+["registro", "quadro"].forEach(n => {
+  $("tab-" + n).addEventListener("click", () => { impostaVista(n); aggiorna(); });
+  $("tab-" + n).addEventListener("keydown", e => {
+    if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+      const altro = n === "registro" ? "quadro" : "registro";
+      impostaVista(altro); aggiorna(); $("tab-" + altro).focus();
+    }
+  });
+});
+addEventListener("hashchange", () => { const v = location.hash === "#quadro" ? "quadro" : "registro"; if (v !== stato.vista) { impostaVista(v); aggiorna(); } });
+let attesa;
+addEventListener("resize", () => { clearTimeout(attesa); attesa = setTimeout(() => { if (stato.vista === "quadro" && dati.items.length) disegnaTrend(); }, 120); });
 
 async function avvia() {
   try {
@@ -364,7 +810,10 @@ async function avvia() {
       fetch("data/items.json").then(r => r.json()),
       fetch("data/status.json").then(r => r.json())]);
     dati = a;
-    riempiFonti(); disegnaVitali(b); disegnaStato(b); aggiorna();
+    fetch("europe.json").then(r => r.json()).then(g => { geo = g; if (stato.vista === "quadro") disegnaQuadro(); }).catch(() => {});
+    riempiFonti(); disegnaVitali(b); disegnaStato(b);
+    impostaVista(location.hash === "#quadro" ? "quadro" : "registro");
+    aggiorna();
   } catch (e) {
     $("elenco").replaceChildren(el("div", { class: "empty" },
       el("p", { text: "I dati non sono ancora disponibili." }),

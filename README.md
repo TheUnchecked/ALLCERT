@@ -12,7 +12,9 @@ Un flusso GitHub Actions scarica ogni 3 ore i feed elencati in `sources.yml`, li
 | `scripts/collect.py` | Scarica, normalizza e unisce i dati allo storico. |
 | `data/items.json` | Elenco unificato delle segnalazioni (storico di 365 giorni). |
 | `data/status.json` | Esito dell'ultimo controllo di ogni fonte. |
-| `site/index.html` | Pagina di consultazione con filtri per Paese, fonte, periodo, CVE e testo. |
+| `site/index.html` | Pagina di consultazione: scheda Registro (elenco per giorno) e scheda Quadro (mappa, andamento, gravità, prodotti). |
+| `site/analisi.js` | Logica di analisi: unione delle voci con stesso titolo, gravità e prodotto ricavati dai titoli. |
+| `site/europe.json` | Geometria della mappa (Natural Earth), generata da `scripts/build-map.mjs`. Non va rigenerata a ogni aggiornamento. |
 | `.github/workflows/aggiorna.yml` | Raccolta pianificata e pubblicazione. |
 
 ## Attivazione (una sola volta)
@@ -20,6 +22,14 @@ Un flusso GitHub Actions scarica ogni 3 ore i feed elencati in `sources.yml`, li
 1. Nel repository: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 2. Scheda **Actions → Aggiorna segnalazioni → Run workflow** per la prima esecuzione.
 3. La pagina sarà disponibile su `https://theunchecked.github.io/ALLCERT/`.
+
+## Cosa mostra il Quadro
+
+- **Segnalazioni per Paese**: indica quale CERT ha pubblicato, non dove si trova la vulnerabilità. Un Paese con più segnalazioni è un Paese i cui CERT pubblicano di più.
+- **Gravità**: disponibile solo per CERT-Bund, che la scrive nel titolo (`[kritisch]`, `[hoch]`, `[mittel]`, `[niedrig]`).
+- **Prodotti più citati**: ricavati dai titoli con una regola per fonte (CERT-Bund, CSIRT Italia, CERT-FR, CERT-EU). È un'indicazione, non un conteggio esatto. Per aggiungere una fonte si modifica `prodotto()` in `site/analisi.js`.
+
+Tutti i grafici seguono i filtri della colonna laterale e hanno una tabella dei dati.
 
 ## Fonti da verificare
 
