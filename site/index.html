@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ALLCERT - Segnalazioni dei CERT europei</title>
-<meta name="description" content="Segnalazioni e notizie dei CERT, dei CSIRT e delle agenzie di cybersicurezza europee, in un unico registro.">
+<title>ALLCERT - Segnalazioni dei CERT</title>
+<meta name="description" content="Segnalazioni e notizie dei CERT, dei CSIRT e delle agenzie di cybersicurezza europee e nordamericane, in un unico registro.">
+<link rel="alternate" type="application/atom+xml" title="ALLCERT" href="data/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
@@ -140,6 +141,15 @@
   .cve:hover { text-decoration: underline; }
   .grav { border: 1.5px solid var(--ink); border-radius: 4px; padding: 0 7px; font-size: 13px; font-weight: 600; }
   .grav[data-l="4"] { background: var(--ink); color: var(--bg); }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .barra { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 16px;
+           padding: 10px 0; border-bottom: 1px solid var(--line); font-size: 14.5px; }
+  .barra .versions-btn { font-size: 14.5px; }
+  .entry { position: relative; }
+  .badge-nuova { background: var(--accent); color: var(--bg); border-radius: 4px; padding: 0 7px; font-size: 13px; font-weight: 700; }
+  .entry.nuova::before { content: ""; position: absolute; left: -13px; top: 27px; width: 8px; height: 8px;
+                         border-radius: 50%; background: var(--accent); }
+  @media (max-width: 560px) { .entry.nuova::before { left: -11px; } }
   .versions-btn { background: none; border: 0; padding: 0; color: var(--accent); font-size: 14px; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
   .versions { margin: 8px 0 0; padding: 0 0 0 14px; border-left: 2px solid var(--line); list-style: none; font-size: 14px; }
   .versions li { padding: 2px 0; }
@@ -217,7 +227,7 @@
 <div class="page">
   <header class="masthead">
     <h1>ALLCERT</h1>
-    <p>Le segnalazioni dei CERT, dei CSIRT e delle agenzie di cybersicurezza europee, in un unico registro.</p>
+    <p>Le segnalazioni dei CERT, dei CSIRT e delle agenzie di cybersicurezza europee e nordamericane, in un unico registro.</p>
     <dl class="vitals" id="vitals" aria-live="polite"></dl>
   </header>
 
@@ -241,6 +251,7 @@
         </fieldset>
 
         <div class="field">
+          <label class="check" id="riga-nonlette" hidden><input type="checkbox" id="nonlette"> Solo voci non lette</label>
           <label class="check"><input type="checkbox" id="solocve"> Solo voci con CVE</label>
           <label class="check"><input type="checkbox" id="raggruppa" checked> Unisci le voci con lo stesso titolo</label>
         </div>
@@ -269,6 +280,11 @@
         <button class="tab" role="tab" id="tab-registro" aria-selected="true" aria-controls="vista-registro" type="button">Registro</button>
         <button class="tab" role="tab" id="tab-quadro" aria-selected="false" aria-controls="vista-quadro" tabindex="-1" type="button">Quadro</button>
         <span class="count" id="conteggio" aria-live="polite"></span>
+      </div>
+
+      <div class="barra" id="barra-nonlette" hidden>
+        <span id="testo-nonlette" aria-live="polite"></span>
+        <button type="button" class="versions-btn" id="segna-tutte">Segna tutto come letto</button>
       </div>
 
       <section id="vista-registro" role="tabpanel" aria-labelledby="tab-registro">
@@ -328,10 +344,31 @@ const PAESI = { IT:"Italia", EU:"Istituzioni dell'UE", DE:"Germania", GB:"Regno 
   ES:"Spagna", BE:"Belgio", AT:"Austria", CH:"Svizzera", FI:"Finlandia", SE:"Svezia", NO:"Norvegia",
   DK:"Danimarca", PL:"Polonia", PT:"Portogallo", IE:"Irlanda", CZ:"Cechia", GR:"Grecia", UA:"Ucraina",
   LU:"Lussemburgo", MT:"Malta", LI:"Liechtenstein", HU:"Ungheria", RO:"Romania", BG:"Bulgaria", HR:"Croazia",
-  SI:"Slovenia", SK:"Slovacchia", EE:"Estonia", LV:"Lettonia", LT:"Lituania", CY:"Cipro", IS:"Islanda" };
+  SI:"Slovenia", SK:"Slovacchia", EE:"Estonia", LV:"Lettonia", LT:"Lituania", CY:"Cipro", IS:"Islanda",
+  US:"Stati Uniti", CA:"Canada" };
 const SVG = "http://www.w3.org/2000/svg";
 const $ = id => document.getElementById(id);
-const stato = { q:"", paese:"", fonte:"", giorni:7, cve:false, raggruppa:true, vista:"registro", visibili:PAGINA };
+const stato = { q:"", paese:"", fonte:"", giorni:7, cve:false, raggruppa:true, nonLette:false, vista:"registro", visibili:PAGINA };
+
+/* ---------- memoria delle voci lette (solo in questo browser) ---------- */
+const CHIAVE_MEMORIA = "allcert:letti:v1";
+const MAX_LETTI = 5000;
+let memoria = { base: new Date().toISOString(), letti: [] };   // base: data della prima visita (o dell'ultimo "segna tutto")
+let letti = new Set(), memoriaDisponibile = true;
+function leggiMemoria() {
+  try {
+    const m = JSON.parse(localStorage.getItem(CHIAVE_MEMORIA));
+    if (m && m.base && Array.isArray(m.letti)) memoria = m;
+    else localStorage.setItem(CHIAVE_MEMORIA, JSON.stringify(memoria));   // prima visita: nulla risulta "nuovo"
+  } catch (e) { memoriaDisponibile = false; }
+  letti = new Set(memoria.letti);
+}
+function salvaMemoria() {
+  memoria.letti = [...letti].slice(-MAX_LETTI);
+  try { localStorage.setItem(CHIAVE_MEMORIA, JSON.stringify(memoria)); } catch (e) { /* memoria non disponibile: si continua senza */ }
+}
+// Una voce e' "nuova" se il raccoglitore l'ha vista dopo la base e non e' stata aperta.
+const nuova = i => memoriaDisponibile && new Date(i.first_seen) > new Date(memoria.base) && !letti.has(i.id);
 let dati = { items:[], sources:{} }, geo = null, gruppi = [], vociFiltrate = [], gruppiSenzaPaese = [];
 
 const nomePaese = c => PAESI[c] || c;
@@ -362,6 +399,7 @@ function corrisponde(i, ignora) {
   if (ignora !== "paese" && stato.paese && s.country !== stato.paese) return false;
   if (stato.fonte && i.source !== stato.fonte) return false;
   if (stato.cve && !i.cves.length) return false;
+  if (stato.nonLette && !nuova(i)) return false;
   if (stato.giorni && tempo(i).getTime() < Date.now() - stato.giorni * 864e5) return false;
   const q = stato.q.trim().toLowerCase();
   if (q && !`${i.title} ${i.summary} ${i.cves.join(" ")}`.toLowerCase().includes(q)) return false;
@@ -430,14 +468,21 @@ function disegnaElenco() {
     const t = el("time", { datetime: d.toISOString(), text: d.toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit" }) });
     if (!i.published) t.title = "Ora in cui la voce è stata rilevata: la fonte non indica la data";
 
+    const eNuova = g.membri.some(nuova);
     const tag = [];
+    if (eNuova) tag.push(el("span", { class: "badge-nuova", text: "Nuova" }));
     if (g.gravita) tag.push(el("span", { class: "grav", "data-l": String(g.gravita), text: "Gravità " + Analisi.NOMI_LIVELLO[g.gravita].toLowerCase() }));
     g.cves.slice(0, 8).forEach(c => tag.push(el("a", { class: "cve", href: "https://nvd.nist.gov/vuln/detail/" + encodeURIComponent(c),
       target: "_blank", rel: "noopener noreferrer", text: c })));
     if (g.cves.length > 8) tag.push(el("span", { class: "src", text: `e altre ${g.cves.length - 8}` }));
 
+    let articolo;
+    const apertura = () => marcaLetta(g, articolo);
+    const titolo = el("a", { href: sicuro(i.link), target: "_blank", rel: "noopener noreferrer", text: i.title });
+    titolo.addEventListener("click", apertura);
+    titolo.addEventListener("auxclick", apertura);   // clic con la rotella
     const corpo = el("div", { class: "body" },
-      el("h4", {}, el("a", { href: sicuro(i.link), target: "_blank", rel: "noopener noreferrer", text: i.title })),
+      el("h4", {}, titolo),
       el("p", { class: "src", text: s.name }),
       i.summary ? el("p", { class: "sum", text: i.summary }) : null);
 
@@ -448,6 +493,7 @@ function disegnaElenco() {
         const lista = el("ul", { class: "versions", hidden: "" },
           altri.map(m => el("li", {}, el("time", { text: tempo(m).toLocaleString("it-IT", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }) }),
             el("a", { href: sicuro(m.link), target: "_blank", rel: "noopener noreferrer", text: m.title }))));
+        lista.addEventListener("click", e => { if (e.target.closest("a")) apertura(); });
         const testo = apri => (apri ? "Nascondi " : "Mostra ") +
           (altri.length === 1 ? "1 altra voce con lo stesso titolo" : `altre ${num.format(altri.length)} voci con lo stesso titolo`);
         const bottone = el("button", { type: "button", class: "versions-btn", "aria-expanded": "false", text: testo(false) });
@@ -461,10 +507,36 @@ function disegnaElenco() {
         corpo.append(riga, lista);
       } else corpo.append(riga);
     }
-    sezione.append(el("article", { class: "entry" }, t,
-      el("span", { class: "stamp", title: nomePaese(s.country), text: s.country }), corpo));
+    articolo = el("article", { class: "entry" + (eNuova ? " nuova" : "") }, t,
+      el("span", { class: "stamp", title: nomePaese(s.country), text: s.country }), corpo);
+    sezione.append(articolo);
   }
   $("altre").hidden = gruppi.length <= stato.visibili;
+}
+
+/* ---------- voci lette ---------- */
+function aggiornaNonLette() {
+  const n = memoriaDisponibile ? dati.items.filter(nuova).length : 0;
+  $("barra-nonlette").hidden = n === 0;
+  $("riga-nonlette").hidden = !memoriaDisponibile || (n === 0 && !stato.nonLette);
+  $("testo-nonlette").textContent = n === 1 ? "1 voce non letta dall'ultima visita" : `${num.format(n)} voci non lette dall'ultima visita`;
+  document.title = (n > 0 ? `(${n}) ` : "") + "ALLCERT - Segnalazioni dei CERT";
+}
+function marcaLetta(gruppo, articolo) {
+  gruppo.membri.forEach(m => letti.add(m.id));
+  salvaMemoria();
+  if (articolo) {
+    articolo.classList.remove("nuova");
+    articolo.querySelector(".badge-nuova")?.remove();
+  }
+  aggiornaNonLette();
+}
+function segnaTutteLette() {
+  memoria.base = new Date().toISOString();
+  letti.clear();
+  salvaMemoria();
+  stato.nonLette = false; $("nonlette").checked = false;
+  aggiorna();
 }
 
 /* ---------- tooltip ---------- */
@@ -568,7 +640,8 @@ function disegnaMappa(conteggi) {
 function disegnaClassificaPaesi(conteggi) {
   const codici = [...new Set(Object.values(dati.sources).map(s => s.country))];
   const righe = codici.map(c => ({ id: c, etichetta: nomePaese(c), valore: conteggi[c] || 0,
-    sotto: c === "EU" ? "non è un Paese: non compare sulla mappa" : null }))
+    sotto: c === "EU" ? "non è un Paese: non compare sulla mappa"
+      : (geo && !geo.countries[c] && !(geo.dots || {})[c]) ? "fuori dall'area della mappa" : null }))
     .sort((a, b) => b.valore - a.valore || a.etichetta.localeCompare(b.etichetta, "it"));
   classifica($("classifica-paesi"), righe, { onClick: c => { stato.paese = stato.paese === c ? "" : c; aggiorna(); }, selezionato: stato.paese });
   tabella($("dati-paesi"), ["Paese", "Segnalazioni"], righe.map(r => [r.etichetta, r.valore]));
@@ -738,7 +811,8 @@ function disegnaVitali(stati) {
   $("vitals").replaceChildren(
     riga("Aggiornato il", aggiornato),
     riga("Voci nelle ultime 24 ore", num.format(ultime24)),
-    riga("Fonti attive", `${attive} su ${stati.sources.length}`));
+    riga("Fonti attive", `${attive} su ${stati.sources.length}`),
+    el("div", {}, el("dt", { text: "Flusso RSS" }), el("dd", {}, el("a", { href: "data/feed.xml", text: "abbonati" }))));
 }
 
 function disegnaStato(stati) {
@@ -767,12 +841,13 @@ function aggiorna() {
   $("conteggio").textContent = plurale(gruppi.length, "segnalazione", "segnalazioni") +
     (stato.raggruppa && unite > 0 ? ` (${plurale(unite, "voce unita", "voci unite")})` : "");
   disegnaPaesi();
+  aggiornaNonLette();
   if (stato.vista === "registro") disegnaElenco(); else disegnaQuadro();
 }
 
 function azzera() {
-  Object.assign(stato, { q:"", paese:"", fonte:"", giorni:7, cve:false, raggruppa:true, visibili:PAGINA });
-  $("q").value = ""; $("fonte").value = ""; $("solocve").checked = false; $("raggruppa").checked = true;
+  Object.assign(stato, { q:"", paese:"", fonte:"", giorni:7, cve:false, raggruppa:true, nonLette:false, visibili:PAGINA });
+  $("q").value = ""; $("fonte").value = ""; $("solocve").checked = false; $("raggruppa").checked = true; $("nonlette").checked = false;
   document.querySelector('input[name="periodo"][value="7"]').checked = true;
   aggiorna();
 }
@@ -780,6 +855,8 @@ function azzera() {
 $("q").addEventListener("input", e => { stato.q = e.target.value; stato.visibili = PAGINA; aggiorna(); });
 $("fonte").addEventListener("change", e => { stato.fonte = e.target.value; stato.visibili = PAGINA; aggiorna(); });
 $("solocve").addEventListener("change", e => { stato.cve = e.target.checked; stato.visibili = PAGINA; aggiorna(); });
+$("nonlette").addEventListener("change", e => { stato.nonLette = e.target.checked; stato.visibili = PAGINA; aggiorna(); });
+$("segna-tutte").addEventListener("click", segnaTutteLette);
 $("raggruppa").addEventListener("change", e => { stato.raggruppa = e.target.checked; stato.visibili = PAGINA; aggiorna(); });
 document.querySelectorAll('input[name="periodo"]').forEach(r =>
   r.addEventListener("change", e => { stato.giorni = +e.target.value; stato.visibili = PAGINA; aggiorna(); }));
@@ -810,6 +887,7 @@ async function avvia() {
       fetch("data/items.json").then(r => r.json()),
       fetch("data/status.json").then(r => r.json())]);
     dati = a;
+    leggiMemoria();
     fetch("europe.json").then(r => r.json()).then(g => { geo = g; if (stato.vista === "quadro") disegnaQuadro(); }).catch(() => {});
     riempiFonti(); disegnaVitali(b); disegnaStato(b);
     impostaVista(location.hash === "#quadro" ? "quadro" : "registro");

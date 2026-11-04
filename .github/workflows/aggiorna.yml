@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - sources.yml
+      - notify.yml
       - scripts/**
       - site/**
       - .github/workflows/aggiorna.yml
@@ -53,11 +54,17 @@ jobs:
             git push
           fi
 
+      - name: Invia le notifiche (se configurate)
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python scripts/notify.py
+
       - name: Prepara il sito
         run: |
           mkdir -p _site/data
           cp -r site/. _site/
-          cp data/items.json data/status.json _site/data/
+          cp data/items.json data/status.json data/feed.xml _site/data/
 
       - uses: actions/configure-pages@v5
 

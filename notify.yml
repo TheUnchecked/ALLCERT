@@ -1,0 +1,16 @@
+# Regole delle notifiche Telegram.
+# Le notifiche partono solo se nel repository sono impostati i segreti
+# TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_ID (vedi README). Senza segreti non succede nulla.
+
+telegram:
+  # Gravità minima indicata dalla fonte: 4 = critica, 3 = alta, 2 = media, 1 = bassa.
+  # Oggi solo CERT-Bund indica la gravità nel titolo.
+  min_gravita: 3
+
+  # Fonti da cui arriva ogni voce nuova, qualunque sia la gravità.
+  sempre_da:
+    - csirt-it
+    - cert-eu
+
+  # Massimo di messaggi per ogni esecuzione (ogni 3 ore). Il resto viene riassunto in un solo messaggio.
+  max_per_esecuzione: 10

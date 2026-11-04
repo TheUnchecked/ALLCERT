@@ -83,17 +83,44 @@ sources:
     url: https://www.ncsc.gov.uk/api/1/services/v1/report-rss-feed.xml
     verified: true
 
-  # --- Candidati da controllare ---
+  # --- Francia ---
   - id: cert-fr
     name: CERT-FR
     country: FR
     kind: csirt
     url: https://www.cert.ssi.gouv.fr/feed/
-    verified: false
+    verified: true   # restituisce voci a ogni controllo
 
+  # --- Paesi Bassi ---
   - id: ncsc-nl
     name: NCSC-NL - Avvisi
     country: NL
     kind: csirt
     url: https://advisories.ncsc.nl/rss/advisories
+    verified: true   # restituisce voci a ogni controllo
+
+  # --- Canada ---
+  # Indirizzi presi dalla pagina ufficiale https://cyber.gc.ca/en/rss-feeds
+  - id: cccs-alerts
+    name: Cyber Centre Canada - Avvisi
+    country: CA
+    kind: csirt
+    url: https://www.cyber.gc.ca/api/cccs/rss/v1/get?feed=alerts_advisories&lang=en
+    verified: true
+
+  - id: cccs-news
+    name: Cyber Centre Canada - Notizie e guide
+    country: CA
+    kind: autorita
+    url: https://www.cyber.gc.ca/api/cccs/rss/v1/get?feed=news_events_guidance&lang=en
+    verified: true
+
+  # --- Stati Uniti: candidati da controllare ---
+  - id: cisa
+    name: CISA - Avvisi
+    country: US
+    kind: csirt
+    url: https://www.cisa.gov/cybersecurity-advisories/all.xml
     verified: false
+    # Indirizzo non confermato da una pagina ufficiale. Nel maggio 2025 CISA ha annunciato la fine degli
+    # avvisi via RSS (poi sospesa il giorno dopo): se risulta in errore, disattivare con enabled: false.

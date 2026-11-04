@@ -3,6 +3,8 @@
 
   data/items.json   elenco unificato e deduplicato delle segnalazioni
   data/status.json  esito dell'ultimo controllo per ogni fonte
+  data/feed.xml     flusso Atom unico con le ultime voci
+  data/new.json     identificativi delle voci comparse in questa esecuzione (per le notifiche)
 
 Uso:  python scripts/collect.py [--sources sources.yml] [--out data]
 """
@@ -21,9 +23,15 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+import xml.etree.ElementTree as ET
+
 import feedparser
 import yaml
 
+from common import chiave_titolo
+
+SITE_URL = "https://theunchecked.github.io/ALLCERT/"
+FEED_ITEMS = 100     # voci nel flusso RSS unico
 USER_AGENT = "ALLCERT-aggregator/1.0 (+https://github.com/TheUnchecked/ALLCERT)"
 TIMEOUT = 30
 RETRIES = 2
@@ -143,6 +151,53 @@ def sort_key(item: dict) -> str:
     return item.get("published") or item["first_seen"]
 
 
+def scrivi_feed(path: Path, voci: list[dict], sources_meta: dict, updated: str) -> None:
+    """Scrive un flusso Atom con le ultime voci, senza ripetizioni dello stesso titolo."""
+    ns = "http://www.w3.org/2005/Atom"
+    ET.register_namespace("", ns)
+
+    def sub(parent, tag, text=None, **attrs):
+        e = ET.SubElement(parent, f"{{{ns}}}{tag}", attrs)
+        if text is not None:
+            e.text = text
+        return e
+
+    feed = ET.Element(f"{{{ns}}}feed")
+    sub(feed, "title", "ALLCERT - Segnalazioni dei CERT")
+    sub(feed, "subtitle", "Segnalazioni e notizie dei CERT, dei CSIRT e delle agenzie di cybersicurezza")
+    sub(feed, "id", SITE_URL)
+    sub(feed, "updated", updated)
+    sub(feed, "link", href=SITE_URL)
+    sub(feed, "link", href=SITE_URL + "data/feed.xml", rel="self")
+    sub(sub(feed, "author"), "name", "ALLCERT")
+
+    viste, scelte = set(), []
+    for v in voci:  # voci gia' ordinate dalla piu' recente
+        chiave = chiave_titolo(v)
+        if chiave in viste:
+            continue
+        viste.add(chiave)
+        scelte.append(v)
+        if len(scelte) >= FEED_ITEMS:
+            break
+
+    for v in scelte:
+        meta = sources_meta.get(v["source"], {})
+        entry = sub(feed, "entry")
+        sub(entry, "title", f"[{meta.get('country', '?')}] {v['title']}")
+        sub(entry, "link", href=v["link"])
+        sub(entry, "id", "urn:allcert:" + v["id"])
+        sub(entry, "updated", v.get("published") or v["first_seen"])
+        sub(entry, "category", term=meta.get("name", v["source"]))
+        riassunto = f"Fonte: {meta.get('name', v['source'])}."
+        if v.get("summary"):
+            riassunto += " " + v["summary"]
+        sub(entry, "summary", riassunto)
+
+    ET.indent(feed)
+    ET.ElementTree(feed).write(path, encoding="utf-8", xml_declaration=True)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--sources", default="sources.yml")
@@ -164,6 +219,7 @@ def main() -> int:
 
     # Unione con lo storico: le voci gia' note mantengono il loro first_seen.
     existing = {i["id"]: i for i in load_json(out_dir / "items.json", {}).get("items", [])}
+    previous_ids = set(existing)
     active_ids = {s["id"] for s in sources}
     for status, items in results:
         for item in items:
@@ -185,13 +241,19 @@ def main() -> int:
         json.dumps({"updated": seen_at, "sources": sources_meta, "items": merged}, ensure_ascii=False, indent=1),
         encoding="utf-8",
     )
+    # Voci comparse in questa esecuzione. Alla primissima esecuzione (nessuno storico) l'elenco resta vuoto,
+    # cosi' le notifiche non partono per centinaia di voci vecchie.
+    nuove = [i["id"] for i in merged if i["id"] not in previous_ids] if previous_ids else []
+    (out_dir / "new.json").write_text(json.dumps({"updated": seen_at, "ids": nuove}), encoding="utf-8")
+    scrivi_feed(out_dir / "feed.xml", merged, sources_meta, seen_at)
+
     (out_dir / "status.json").write_text(
         json.dumps({"updated": seen_at, "sources": [st for st, _ in results]}, ensure_ascii=False, indent=1),
         encoding="utf-8",
     )
 
     ok = sum(1 for st, _ in results if st["ok"])
-    print(f"Fonti riuscite: {ok}/{len(results)} - voci totali: {len(merged)}")
+    print(f"Fonti riuscite: {ok}/{len(results)} - voci totali: {len(merged)} - nuove: {len(nuove)}")
     for st, _ in results:
         mark = "OK " if st["ok"] else "ERR"
         detail = f"{st['count']} voci" if st["ok"] else st["error"]

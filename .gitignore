@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 _site/
 .venv/
+
+# file di lavoro della singola esecuzione, non va salvato
+data/new.json
