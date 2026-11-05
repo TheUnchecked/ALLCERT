@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T19:44:38+00:00",
+ "updated": "2026-11-05T01:28:06+00:00",
  "sources": {
   "csirt-it": {
    "name": "CSIRT Italia (ACN)",
@@ -94,6 +94,36 @@
   }
  },
  "items": [
+  {
+   "id": "2270e33a45c1a796",
+   "source": "cccs-alerts",
+   "title": "Android security advisory – November 2026 monthly rollup (AV26-1128)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/android-security-advisory-november-2026-monthly-rollup-av26-1128",
+   "summary": "",
+   "published": "2026-11-04T20:03:06+00:00",
+   "first_seen": "2026-11-05T01:28:06+00:00",
+   "cves": []
+  },
+  {
+   "id": "6572a79c965159ff",
+   "source": "cccs-alerts",
+   "title": "Cisco security advisory (AV26-1127)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/cisco-security-advisory-av26-1127",
+   "summary": "",
+   "published": "2026-11-04T19:57:39+00:00",
+   "first_seen": "2026-11-05T01:28:06+00:00",
+   "cves": []
+  },
+  {
+   "id": "c109f4f8262e69b8",
+   "source": "cccs-alerts",
+   "title": "GitHub security advisory (AV26-1126)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/github-security-advisory-av26-1126",
+   "summary": "",
+   "published": "2026-11-04T19:50:51+00:00",
+   "first_seen": "2026-11-05T01:28:06+00:00",
+   "cves": []
+  },
   {
    "id": "abf381a4cb4de0dc",
    "source": "cccs-alerts",

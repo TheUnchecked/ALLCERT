@@ -3,12 +3,36 @@
   <title>ALLCERT - Segnalazioni dei CERT</title>
   <subtitle>Segnalazioni e notizie dei CERT, dei CSIRT e delle agenzie di cybersicurezza</subtitle>
   <id>https://theunchecked.github.io/ALLCERT/</id>
-  <updated>2026-11-04T19:44:38+00:00</updated>
+  <updated>2026-11-05T01:28:06+00:00</updated>
   <link href="https://theunchecked.github.io/ALLCERT/" />
   <link href="https://theunchecked.github.io/ALLCERT/data/feed.xml" rel="self" />
   <author>
     <name>ALLCERT</name>
   </author>
+  <entry>
+    <title>[CA] Android security advisory – November 2026 monthly rollup (AV26-1128)</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/android-security-advisory-november-2026-monthly-rollup-av26-1128" />
+    <id>urn:allcert:2270e33a45c1a796</id>
+    <updated>2026-11-04T20:03:06+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
+  <entry>
+    <title>[CA] Cisco security advisory (AV26-1127)</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/cisco-security-advisory-av26-1127" />
+    <id>urn:allcert:6572a79c965159ff</id>
+    <updated>2026-11-04T19:57:39+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
+  <entry>
+    <title>[CA] GitHub security advisory (AV26-1126)</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/github-security-advisory-av26-1126" />
+    <id>urn:allcert:c109f4f8262e69b8</id>
+    <updated>2026-11-04T19:50:51+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
   <entry>
     <title>[CA] WatchGuard security advisory (AV26-1125)</title>
     <link href="https://cyber.gc.ca/en/alerts-advisories/watchguard-security-advisory-av26-1125" />
@@ -784,29 +808,5 @@
     <updated>2026-11-04T12:41:19+00:00</updated>
     <category term="CERT-Bund - Avvisi di sicurezza" />
     <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein Angreifer kann mehrere Schwachstellen in GNU tar ausnutzen, um Dateien zu manipulieren.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [hoch] Bouncy Castle: Mehrere Schwachstellen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2622" />
-    <id>urn:allcert:66339771310a56c6</id>
-    <updated>2026-11-04T12:41:19+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Bouncy Castle ausnutzen, um Sicherheitsvorkehrungen zu umgehen, Daten zu manipulieren, sensible Informationen offenzulegen oder einen Denial-of-Service-Zustand auszulösen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [mittel] Linux Kernel: Mehrere Schwachstellen ermöglichen Denial of Service</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2570" />
-    <id>urn:allcert:99ef0c76cac2e5a4</id>
-    <updated>2026-11-04T12:41:18+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein lokaler Angreifer kann mehrere Schwachstellen in Linux Kernel ausnutzen, um einen Denial of Service Angriff durchzuführen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [hoch] Red Hat OpenShift für Windows Containers (WMCO): Mehrere Schwachstellen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2552" />
-    <id>urn:allcert:45787c2fb9ebef14</id>
-    <updated>2026-11-04T12:41:17+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein Angreifer kann mehrere Schwachstellen in Red Hat OpenShift für Windows Containers ausnutzen, um Administratorrechte zu erlangen und vertrauliche Informationen offenzulegen.</summary>
   </entry>
 </feed>
