@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T19:56:16+00:00",
+ "updated": "2026-11-06T01:32:23+00:00",
  "sources": {
   "csirt-it": {
    "name": "CSIRT Italia (ACN)",
@@ -342,6 +342,26 @@
    "summary": "Ein lokaler Angreifer kann eine Schwachstelle in Apple Safari ausnutzen, um Sicherheitsvorkehrungen zu umgehen.",
    "published": "2026-11-05T12:09:56+00:00",
    "first_seen": "2026-11-05T19:56:16+00:00",
+   "cves": []
+  },
+  {
+   "id": "77f40fd040bae563",
+   "source": "cisa",
+   "title": "Post-Quantum Questions to Ask Your Vendors",
+   "link": "https://www.cisa.gov/resources-tools/resources/post-quantum-questions-ask-your-vendors",
+   "summary": "CISA, the Australian Signals Directorate’s Australian Cyber Security Centre (ASD’s ACSC) and the National Security Agency (NSA) released joint guidance and an accompanying quick-reference list to help organizations assess vendor readiness for transitioning to post-quantum cryptography (PQC). As quantum computing advances, widely used public-key cryptography will become vulnerable to compromise fr…",
+   "published": "2026-11-05T12:00:00+00:00",
+   "first_seen": "2026-11-06T01:32:23+00:00",
+   "cves": []
+  },
+  {
+   "id": "0c13ef90a9d47b3a",
+   "source": "cisa",
+   "title": "US Government Partners Urge Hardening Industrial Refrigeration and Cold Chain Monitoring Systems",
+   "link": "https://www.cisa.gov/resources-tools/resources/us-government-partners-urge-hardening-industrial-refrigeration-and-cold-chain-monitoring-systems",
+   "summary": "Overview The Cybersecurity and Infrastructure Security Agency (CISA), Federal Bureau of Investigation (FBI), Health and Human Services (HHS), U.S. Department of Agriculture (USDA), and the Department of Transportation (DoT)—hereafter referred to as “the authoring organizations”—are aware of malicious cyber activity targeting industrial refrigeration and cold chain monitoring systems globally. Org…",
+   "published": "2026-11-05T12:00:00+00:00",
+   "first_seen": "2026-11-06T01:32:23+00:00",
    "cves": []
   },
   {
@@ -3639,6 +3659,18 @@
    "published": "2026-11-04T12:39:01+00:00",
    "first_seen": "2026-11-04T19:44:38+00:00",
    "cves": []
+  },
+  {
+   "id": "d72c855b1cc9309c",
+   "source": "cisa",
+   "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/11/04/cisa-adds-one-known-exploited-vulnerability-catalog",
+   "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2024-27834 Apple Multiple Products Improper Authentication Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioriti…",
+   "published": "2026-11-04T12:00:00+00:00",
+   "first_seen": "2026-11-06T01:32:23+00:00",
+   "cves": [
+    "CVE-2024-27834"
+   ]
   },
   {
    "id": "c55cd8793c7cdac1",
@@ -7851,6 +7883,16 @@
     "CVE-2026-92450",
     "CVE-2026-96616"
    ]
+  },
+  {
+   "id": "1625e18df96127cd",
+   "source": "cisa",
+   "title": "Siemens SIMATIC S7-1500 TM MFP",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-16",
+   "summary": "View CSAF Summary Multiple vulnerabilities have been identified in the additional GNU/Linux subsystem of the SIMATIC S7-1500 TM MFP V1.1.1. Siemens is preparing fixes and recommends specific mitigations for products where fixes are not or not yet available. The following versions of Siemens SIMATIC S7-1500 TM MFP are affected: SIMATIC S7-1500 TM MFP - GNU/Linux subsystem vers:all/* CVSS Vendor Eq…",
+   "published": "2026-10-22T12:00:00+00:00",
+   "first_seen": "2026-11-06T01:32:23+00:00",
+   "cves": []
   },
   {
    "id": "2d18d461ff1cd33c",
