@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T01:32:23+00:00",
+ "updated": "2026-11-06T10:51:26+00:00",
  "sources": {
   "csirt-it": {
    "name": "CSIRT Italia (ACN)",
@@ -94,6 +94,106 @@
   }
  },
  "items": [
+  {
+   "id": "04f3eb85cb82607c",
+   "source": "cert-bund",
+   "title": "[UPDATE] [kritisch] SignalWire FreeSWITCH: Schwachstelle ermöglicht Codeausführung",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4364",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in SignalWire FreeSWITCH ausnutzen, um beliebigen Programmcode auszuführen.",
+   "published": "2026-11-06T10:29:56+00:00",
+   "first_seen": "2026-11-05T19:56:16+00:00",
+   "cves": []
+  },
+  {
+   "id": "61835098c869288f",
+   "source": "cert-bund",
+   "title": "[NEU] [hoch] OpenSSH: Schwachstelle ermöglicht Erlangen von Administratorrechten",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4365",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in OpenSSH (in Kombination mit musl libc und ohne PAM) ausnutzen, um Administratorrechte zu erlangen.",
+   "published": "2026-11-06T10:29:56+00:00",
+   "first_seen": "2026-11-06T10:51:26+00:00",
+   "cves": []
+  },
+  {
+   "id": "7e929a0b14d8c77c",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Apache OFBiz: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4357",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Apache OFBiz ausnutzen, um Code auszuführen, Sicherheitsmaßnahmen zu umgehen, Daten offenzulegen, Bestell- und Zahlungsdaten zu manipulieren oder einen DoS auszulösen.",
+   "published": "2026-11-06T10:29:55+00:00",
+   "first_seen": "2026-11-05T19:56:16+00:00",
+   "cves": []
+  },
+  {
+   "id": "75012610d1b96b5a",
+   "source": "csirt-it",
+   "title": "OpenAI: risolta vulnerabilità in Codex",
+   "link": "https://www.acn.gov.it/portale/w/openai-risolta-vulnerabilita-in-codex",
+   "summary": "OpenAI ha rilasciato aggiornamenti di sicurezza per sanare una vulnerabilità con gravità “alta” in Codex Desktop. Tale vulnerabilità, in determinate condizioni, potrebbe consentire a un attaccante di eseguire codice arbitrario sui sistemi interessati.",
+   "published": "2026-11-06T10:09:02+00:00",
+   "first_seen": "2026-11-06T10:51:26+00:00",
+   "cves": []
+  },
+  {
+   "id": "fbfafd1cf84bb923",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Google Chrome / Microsoft Edge: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4303",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Google Chrome / Microsoft Edge ausnutzen, um möglicherweise beliebigen Code auszuführen, Berechtigungen zu erweitern, Sicherheitsmaßnahmen zu umgehen, Daten offenzulegen oder zu manipulieren, einen Denial-of-Service-Zustand auszulösen, Spoofing-Angriffe durchzuführen oder andere, nicht näher spezifizierte Angriffe auszuführen.",
+   "published": "2026-11-06T09:54:56+00:00",
+   "first_seen": "2026-11-04T10:54:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "a36c305b686fa4b7",
+   "source": "csirt-it",
+   "title": "Rilevata campagna di smishing/phishing a tema PagoPA",
+   "link": "https://www.acn.gov.it/portale/w/rilevata-campagna-di-smishing/phishing-a-tema-pagopa",
+   "summary": "Questo CSIRT Italia ha rilevato il riacutizzarsi della campagna malevola a tema SEND (Servizio Notifiche Digitali) e PagoPA, già oggetto di precedente segnalazione, veicolata tramite messaggi SMS (smishing). L'attività malevola mira a indurre gli utenti a visitare risorse web opportunamente predisposte al fine di sottrarre dati personali, credenziali di accesso e informazioni relative a strumenti…",
+   "published": "2026-11-06T09:08:52+00:00",
+   "first_seen": "2026-11-06T10:51:26+00:00",
+   "cves": []
+  },
+  {
+   "id": "6b29ff3cf886f531",
+   "source": "ncsc-nl",
+   "title": "NCSC-2026-0470 [1.00] [M/H] Kwetsbaarheid verholpen in Windows Paint van Microsoft",
+   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0470",
+   "summary": "Microsoft heeft een kwetsbaarheid verholpen in Windows Paint. De kwetsbaarheid betreft een out-of-bounds read in Microsoft Windows Paint (CWE-125), waardoor een aanvaller onder specifieke omstandigheden willekeurige code kan uitvoeren op het getroffen systeem.",
+   "published": "2026-11-06T08:10:35+00:00",
+   "first_seen": "2026-11-06T10:51:26+00:00",
+   "cves": []
+  },
+  {
+   "id": "883aa452684d79e8",
+   "source": "ncsc-nl",
+   "title": "NCSC-2026-0469 [1.00] [M/H] Kwetsbaarheid verholpen in OpenSSH door OpenSSH Project",
+   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0469",
+   "summary": "Het OpenSSH project heeft een kwetsbaarheid verholpen in sshd van OpenSSH versies ouder dan 10.6p2. De kwetsbaarheid treft Linux systemen die gebruikmaken van musl libc en waarop PAM niet wordt gebruikt. De kwetsbaarheid betreft een bypass van de SSH-wachtwoordauthenticatie bij gebruik van wachtwoorden met een lengte van 257 tot 1024 bytes. De oorzaak ligt in de interactie tussen de authenticatie…",
+   "published": "2026-11-06T07:54:37+00:00",
+   "first_seen": "2026-11-06T10:51:26+00:00",
+   "cves": []
+  },
+  {
+   "id": "89ad6f98a4899337",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Barracuda Networks Email Security Gateway und Web Application Firewall: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4295",
+   "summary": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in Barracuda Networks Email Security Gateway und Barracuda Networks Web Application Firewall ausnutzen, um beliebigen Programmcode mit Administratorrechten auszuführen und die Authentifizierung zu umgehen. Durch die Kombination dieser Schwachstellen kann der Angreifer Root-Zugriff auf das Gerät erlangen.",
+   "published": "2026-11-06T06:54:56+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "d0edfe61a22c5c21",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] IBM MQ: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4343",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in IBM MQ ausnutzen, um beliebigen Programmcode auszuführen, um einen Denial of Service Angriff durchzuführen, um Informationen offenzulegen und um Daten zu manipulieren.",
+   "published": "2026-11-06T06:44:56+00:00",
+   "first_seen": "2026-11-05T19:56:16+00:00",
+   "cves": []
+  },
   {
    "id": "deb3b90d07fa5004",
    "source": "csirt-it",
@@ -275,16 +375,6 @@
    "cves": []
   },
   {
-   "id": "04f3eb85cb82607c",
-   "source": "cert-bund",
-   "title": "[NEU] [kritisch] SignalWire FreeSWITCH: Schwachstelle ermöglicht Codeausführung",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4364",
-   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in SignalWire FreeSWITCH ausnutzen, um beliebigen Programmcode auszuführen.",
-   "published": "2026-11-05T12:24:56+00:00",
-   "first_seen": "2026-11-05T19:56:16+00:00",
-   "cves": []
-  },
-  {
    "id": "3a923b22bccd183d",
    "source": "cert-bund",
    "title": "[UPDATE] [hoch] Red Hat Enterprise Linux: Mehrere Schwachstellen",
@@ -400,16 +490,6 @@
    "title": "[NEU] [mittel] Mattermost Desktop, Server, Plugins: Mehrere Schwachstellen ermöglichen nicht spezifizierten Angriff",
    "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4358",
    "summary": "Ein Angreifer kann mehrere Schwachstellen in Mattermost ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen.",
-   "published": "2026-11-05T11:49:56+00:00",
-   "first_seen": "2026-11-05T19:56:16+00:00",
-   "cves": []
-  },
-  {
-   "id": "7e929a0b14d8c77c",
-   "source": "cert-bund",
-   "title": "[NEU] [hoch] Apache OFBiz: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4357",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Apache OFBiz ausnutzen, um Code auszuführen, Sicherheitsmaßnahmen zu umgehen, Daten offenzulegen, Bestell- und Zahlungsdaten zu manipulieren oder einen DoS auszulösen.",
    "published": "2026-11-05T11:49:56+00:00",
    "first_seen": "2026-11-05T19:56:16+00:00",
    "cves": []
@@ -553,16 +633,6 @@
    "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4344",
    "summary": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in OpenCTI ausnutzen, um seine Privilegien zu erhöhen oder Cross-Site-Scripting-Angriffe durchzuführen.",
    "published": "2026-11-05T11:09:56+00:00",
-   "first_seen": "2026-11-05T19:56:16+00:00",
-   "cves": []
-  },
-  {
-   "id": "d0edfe61a22c5c21",
-   "source": "cert-bund",
-   "title": "[NEU] [hoch] IBM MQ: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4343",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in IBM MQ ausnutzen, um beliebigen Programmcode auszuführen, um einen Denial of Service Angriff durchzuführen, um Informationen offenzulegen und um Daten zu manipulieren.",
-   "published": "2026-11-05T11:09:55+00:00",
    "first_seen": "2026-11-05T19:56:16+00:00",
    "cves": []
   },
@@ -2365,7 +2435,7 @@
    "source": "csirt-it",
    "title": "Risolte vulnerabilità in prodotti Elastic",
    "link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-elastic-4",
-   "summary": "Elastic ha rilasciato aggiornamenti di sicurezza per sanare molteplici vulnerabilità, di cui 2 con gravità “alta”, nei prodotti Elasticsearch e Kibana. Tali vulnerabilità potrebbero consentire a un utente malintenzionato remoto di causare la cancellazione di risorse senza autorizzazione o di compromettere la disponibilità del servizio sui sistemi interessati.",
+   "summary": "Elastic ha rilasciato aggiornamenti di sicurezza per sanare molteplici vulnerabilità, di cui 2 con gravità “alta”, nei prodotti Elasticsearch e Kibana. Tali vulnerabilità potrebbero consentire a un utente malintenzionato remoto, in determinate condizioni, di causare la cancellazione di risorse senza autorizzazione o di compromettere la disponibilità del servizio sui sistemi interessati. Tra quest…",
    "published": "2026-11-04T13:40:49+00:00",
    "first_seen": "2026-11-04T19:44:38+00:00",
    "cves": []
@@ -4236,16 +4306,6 @@
    "cves": []
   },
   {
-   "id": "fbfafd1cf84bb923",
-   "source": "cert-bund",
-   "title": "[NEU] [hoch] Google Chrome: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4303",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Google Chrome ausnutzen, um möglicherweise beliebigen Code auszuführen, Berechtigungen zu erweitern, Sicherheitsmaßnahmen zu umgehen, Daten offenzulegen oder zu manipulieren, einen Denial-of-Service-Zustand auszulösen, Spoofing-Angriffe durchzuführen oder andere, nicht näher spezifizierte Angriffe auszuführen.",
-   "published": "2026-11-04T09:29:01+00:00",
-   "first_seen": "2026-11-04T10:54:28+00:00",
-   "cves": []
-  },
-  {
    "id": "d1873aad00ff55f0",
    "source": "csirt-it",
    "title": "Risolte vulnerabilità in SolarWinds Dameware",
@@ -5377,16 +5437,6 @@
    "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-0234",
    "summary": "Ein Angreifer kann mehrere Schwachstellen in OpenSSL ausnutzen, um beliebigen Programmcode auszuführen, einen Denial-of-Service-Zustand zu verursachen oder vertrauliche Informationen offenzulegen.",
    "published": "2026-11-03T11:47:35+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
-   "id": "89ad6f98a4899337",
-   "source": "cert-bund",
-   "title": "[NEU] [hoch] Barracuda Networks Email Security Gateway und Web Application Firewall: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4295",
-   "summary": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in Barracuda Networks Email Security Gateway und Barracuda Networks Web Application Firewall ausnutzen, um beliebigen Programmcode mit Administratorrechten auszuführen und die Authentifizierung zu umgehen. Durch die Kombination dieser Schwachstellen kann der Angreifer Root-Zugriff auf das Gerät erlangen.",
-   "published": "2026-11-03T11:47:34+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
    "cves": []
   },
