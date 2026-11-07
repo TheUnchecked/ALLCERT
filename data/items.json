@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T19:24:04+00:00",
+ "updated": "2026-11-07T00:56:59+00:00",
  "sources": {
   "csirt-it": {
    "name": "CSIRT Italia (ACN)",
@@ -94,6 +94,26 @@
   }
  },
  "items": [
+  {
+   "id": "6b1b68a416f98a40",
+   "source": "cccs-alerts",
+   "title": "SonicWall security advisory (AV26-1133)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/sonicwall-security-advisory-av26-1133",
+   "summary": "",
+   "published": "2026-11-06T21:00:51+00:00",
+   "first_seen": "2026-11-07T00:56:59+00:00",
+   "cves": []
+  },
+  {
+   "id": "1873ccdcf7cf24fa",
+   "source": "cccs-alerts",
+   "title": "JetBrains security advisory (AV26-1132)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/jetbrains-security-advisory-av26-1132",
+   "summary": "",
+   "published": "2026-11-06T19:23:12+00:00",
+   "first_seen": "2026-11-07T00:56:59+00:00",
+   "cves": []
+  },
   {
    "id": "1a56b3589816c8ae",
    "source": "csirt-it",
@@ -1816,6 +1836,18 @@
    "published": "2026-11-06T12:00:00+00:00",
    "first_seen": "2026-11-06T19:24:04+00:00",
    "cves": []
+  },
+  {
+   "id": "cef5c01807b5b737",
+   "source": "cisa",
+   "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog",
+   "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-19868 SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26…",
+   "published": "2026-11-06T12:00:00+00:00",
+   "first_seen": "2026-11-07T00:56:59+00:00",
+   "cves": [
+    "CVE-2026-19868"
+   ]
   },
   {
    "id": "fda8ca62bfb83fa7",

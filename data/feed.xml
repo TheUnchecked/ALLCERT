@@ -3,12 +3,28 @@
   <title>ALLCERT - Segnalazioni dei CERT</title>
   <subtitle>Segnalazioni e notizie dei CERT, dei CSIRT e delle agenzie di cybersicurezza</subtitle>
   <id>https://theunchecked.github.io/ALLCERT/</id>
-  <updated>2026-11-06T19:24:04+00:00</updated>
+  <updated>2026-11-07T00:56:59+00:00</updated>
   <link href="https://theunchecked.github.io/ALLCERT/" />
   <link href="https://theunchecked.github.io/ALLCERT/data/feed.xml" rel="self" />
   <author>
     <name>ALLCERT</name>
   </author>
+  <entry>
+    <title>[CA] SonicWall security advisory (AV26-1133)</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/sonicwall-security-advisory-av26-1133" />
+    <id>urn:allcert:6b1b68a416f98a40</id>
+    <updated>2026-11-06T21:00:51+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
+  <entry>
+    <title>[CA] JetBrains security advisory (AV26-1132)</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/jetbrains-security-advisory-av26-1132" />
+    <id>urn:allcert:1873ccdcf7cf24fa</id>
+    <updated>2026-11-06T19:23:12+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
   <entry>
     <title>[IT] Risolte vulnerabilità in prodotti JetBrains</title>
     <link href="https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-jetbrains-4" />
@@ -778,35 +794,19 @@
     <summary>Fonte: BSI - Comunicazioni di sicurezza IT.</summary>
   </entry>
   <entry>
+    <title>[US] CISA Adds One Known Exploited Vulnerability to Catalog</title>
+    <link href="https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog" />
+    <id>urn:allcert:cef5c01807b5b737</id>
+    <updated>2026-11-06T12:00:00+00:00</updated>
+    <category term="CISA - Avvisi" />
+    <summary>Fonte: CISA - Avvisi. CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-19868 SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26…</summary>
+  </entry>
+  <entry>
     <title>[DE] [UPDATE] [mittel] Rsync: Schwachstelle ermöglicht Denial of Service</title>
     <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4324" />
     <id>urn:allcert:fda8ca62bfb83fa7</id>
     <updated>2026-11-06T10:57:21+00:00</updated>
     <category term="CERT-Bund - Avvisi di sicurezza" />
     <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Rsync ausnutzen, um einen Denial of Service Angriff durchzuführen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [mittel] IBM WebSphere Application Server: Mehrere Schwachstellen ermöglichen Denial of Service</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4320" />
-    <id>urn:allcert:85924b47a8fe8401</id>
-    <updated>2026-11-06T10:57:21+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein Angreifer kann mehrere Schwachstellen in IBM WebSphere Application Server ausnutzen, um einen Denial of Service Angriff durchzuführen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [hoch] Xen: Mehrere Schwachstellen ermöglichen Umgehen von Sicherheitsvorkehrungen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4308" />
-    <id>urn:allcert:028655829ce52107</id>
-    <updated>2026-11-06T10:57:20+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein lokaler Angreifer kann mehrere Schwachstellen in Xen ausnutzen, um Sicherheitsvorkehrungen zu umgehen und beliebigen Speicher anderer Domänen zu lesen und zu überschreiben.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [mittel] ImageMagick: Mehrere Schwachstellen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4267" />
-    <id>urn:allcert:3e065568fd8233d6</id>
-    <updated>2026-11-06T10:57:20+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein Angreifer kann mehrere Schwachstellen in ImageMagick ausnutzen, um Sicherheitsmaßnahmen zu umgehen, Informationen auszuspähen, einen Denial-of-Service-Zustand zu verursachen oder Daten zu manipulieren.</summary>
   </entry>
 </feed>
