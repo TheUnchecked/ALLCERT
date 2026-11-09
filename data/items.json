@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T00:54:42+00:00",
+ "updated": "2026-11-09T11:29:36+00:00",
  "sources": {
   "csirt-it": {
    "name": "CSIRT Italia (ACN)",
@@ -95,6 +95,1200 @@
  },
  "items": [
   {
+   "id": "0b7c943e8df1ad62",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Moodle: Schwachstelle ermöglicht Offenlegung von Informationen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4385",
+   "summary": "Ein Angreifer kann eine Schwachstelle in Moodle ausnutzen, um Informationen offenzulegen.",
+   "published": "2026-11-09T11:15:22+00:00",
+   "first_seen": "2026-11-06T19:24:04+00:00",
+   "cves": []
+  },
+  {
+   "id": "482b430cf1dd0154",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Keycloak: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4375",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Keycloak ausnutzen, um Sicherheitsvorkehrungen zu umgehen, um einen Denial of Service Angriff durchzuführen und um einen Cross-Site Scripting Angriff durchzuführen.",
+   "published": "2026-11-09T11:15:22+00:00",
+   "first_seen": "2026-11-06T19:24:04+00:00",
+   "cves": []
+  },
+  {
+   "id": "be0bf5ad8468282b",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] LibreOffice: Schwachstelle ermöglicht Denial-of-Service",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4371",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in LibreOffice ausnutzen, um einen Denial-of-Service-Angriff durchzuführen.",
+   "published": "2026-11-09T11:15:22+00:00",
+   "first_seen": "2026-11-06T19:24:04+00:00",
+   "cves": []
+  },
+  {
+   "id": "6d767decb4504f9a",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] MariaDB: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4367",
+   "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in MariaDB ausnutzen, um Sicherheitsvorkehrungen zu umgehen, und Dateien zu manipulieren oder Informationen offenzulegen.",
+   "published": "2026-11-09T11:15:22+00:00",
+   "first_seen": "2026-11-06T19:24:04+00:00",
+   "cves": []
+  },
+  {
+   "id": "14d143df9a4f89f0",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Red Hat Enterprise Linux (tesseract): Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4345",
+   "summary": "Ein lokaler Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux ausnutzen, um beliebigen Programmcode auszuführen, Daten zu manipulieren und offenzulegen oder einen Denial-of-Service-Zustand auszulösen.",
+   "published": "2026-11-09T11:15:21+00:00",
+   "first_seen": "2026-11-05T19:56:16+00:00",
+   "cves": []
+  },
+  {
+   "id": "fda8ca62bfb83fa7",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Rsync: Schwachstelle ermöglicht Denial of Service",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4324",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Rsync ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+   "published": "2026-11-09T11:15:21+00:00",
+   "first_seen": "2026-11-04T19:44:38+00:00",
+   "cves": []
+  },
+  {
+   "id": "ef1fac33e5cc2d7a",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] IBM QRadar SIEM: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4331",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in IBM QRadar SIEM ausnutzen, um einen Cross-Site Scripting Angriff durchzuführen, und um falsche Informationen darzustellen.",
+   "published": "2026-11-09T11:15:21+00:00",
+   "first_seen": "2026-11-04T19:44:38+00:00",
+   "cves": []
+  },
+  {
+   "id": "17cb975a71861220",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] IBM WebSphere Application Server Liberty: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4314",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in IBM WebSphere Application Server Liberty ausnutzen, um einen Denial of Service Angriff durchzuführen, um falsche Informationen darzustellen und um Informationen offenzulegen.",
+   "published": "2026-11-09T11:15:21+00:00",
+   "first_seen": "2026-11-04T10:54:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "9ba5fc435df2f347",
+   "source": "cert-bund",
+   "title": "[UPDATE] [niedrig] IBM i: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen und Denial of Service",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4291",
+   "summary": "Ein lokaler Angreifer kann eine Schwachstelle in IBM i ausnutzen, um Sicherheitsvorkehrungen zu umgehen, und um einen Denial of Service Angriff durchzuführen.",
+   "published": "2026-11-09T11:15:01+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "c55cd8793c7cdac1",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Red Hat Enterprise Linux (perl-yaml, pillow): Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4285",
+   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux ausnutzen, um Dateien zu manipulieren, beliebigen Code auszuführen, Informationen offenzulegen und Denial-of-Service-Angriffe zu starten.",
+   "published": "2026-11-09T11:15:00+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "5160e05c09123805",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Google Chrome / Microsoft Edge: Mehrere Schwachstellen ermöglichen nicht spezifizierten Angriff",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4244",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Google Chrome / Microsoft Edge ausnutzen, um nicht näher spezifizierte Angriffe durchzuführen, potenziell beliebigen Code auszuführen, Berechtigungen zu erweitern, Sicherheitsmaßnahmen zu umgehen, Daten offenzulegen und zu manipulieren oder einen Denial-of-Service-Zustand auszulösen.",
+   "published": "2026-11-09T11:15:00+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "caeb6a9fe3b65cb4",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Red Hat Enterprise Linux (pillow and aspell): Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4243",
+   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux (pillow and aspell) ausnutzen, um einen Denial of Service Angriff durchzuführen oder beliebigen Programmcode auszuführen.",
+   "published": "2026-11-09T11:15:00+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "00f7b363633f391f",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Red Hat Enterprise Linux (PyJWT): Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4264",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Red Hat Enterprise Linux (PyJWT) ausnutzen, um Sicherheitsvorkehrungen zu umgehen.",
+   "published": "2026-11-09T11:15:00+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "94d7f95d78cee110",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] IBM Storage Scale: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4293",
+   "summary": "Ein lokaler Angreifer kann eine Schwachstelle in IBM Storage Scale und IBM Storage Scale System ausnutzen, um Sicherheitsvorkehrungen zu umgehen.",
+   "published": "2026-11-09T11:15:00+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "93b55bace50fd57d",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Red Hat WildFly: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4229",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Red Hat WildFly ausnutzen, um Sicherheitsvorkehrungen zu umgehen und Daten zu manipulieren.",
+   "published": "2026-11-09T11:15:00+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "8a8cc687486af139",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Python: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4189",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Python ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen, Sicherheitsvorkehrungen zu umgehen oder Dateien zu manipulieren.",
+   "published": "2026-11-09T11:15:00+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "fca743ec72d55299",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Mozilla Firefox, Firefox ESR, und Thunderbird: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4216",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Mozilla Firefox, Mozilla Firefox ESR und Mozilla Thunderbird ausnutzen, um seine Privilegien zu erhöhen, um einen Denial of Service Angriff durchzuführen, um Informationen offenzulegen, um Dateien zu manipulieren und um Sicherheitsvorkehrungen zu umgehen.",
+   "published": "2026-11-09T11:14:59+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "a9a3ebb10b211ea4",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] rsyslog: Schwachstelle ermöglicht Manipulation von Dateien",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4119",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in rsyslog ausnutzen, um Dateien zu manipulieren.",
+   "published": "2026-11-09T11:14:59+00:00",
+   "first_seen": "2026-11-04T19:44:38+00:00",
+   "cves": []
+  },
+  {
+   "id": "0b784ded56ef5640",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Google Chrome: Mehrere Schwachstellen ermöglichen nicht spezifizierten Angriff",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4210",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Google Chrome ausnutzen, um nicht näher spezifizierte Angriffe durchzuführen, potenziell beliebigen Code auszuführen, Berechtigungen zu erweitern, Sicherheitsmaßnahmen zu umgehen, Daten offenzulegen und zu manipulieren oder einen Denial-of-Service-Zustand auszulösen.",
+   "published": "2026-11-09T11:14:59+00:00",
+   "first_seen": "2026-11-05T10:54:48+00:00",
+   "cves": []
+  },
+  {
+   "id": "8122e05b963c6483",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] IBM i: Schwachstelle ermöglicht Offenlegung von Informationen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4197",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in IBM i ausnutzen, um Informationen offenzulegen.",
+   "published": "2026-11-09T11:14:59+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "1e530c445b924446",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Red Hat Enterprise Linux Libreswan: Mehrere Schwachstellen ermöglichen Denial of Service",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4183",
+   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux Libreswan ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+   "published": "2026-11-09T11:14:59+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "3baa1f049e5be2a8",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] IBM App Connect Enterprise: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4131",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in IBM App Connect Enterprise ausnutzen, um Dateien zu manipulieren, um einen Denial of Service Angriff durchzuführen und um einen Cross-Site Scripting Angriff durchzuführen.",
+   "published": "2026-11-09T11:14:59+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "79da67b7cdf6684c",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Red Hat Enterprise Linux ca-certificates: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4120",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Red Hat Enterprise Linux ca-certificates ausnutzen, um Sicherheitsvorkehrungen zu umgehen, vertrauliche Informationen auszulesen oder Daten zu manipulieren",
+   "published": "2026-11-09T11:14:58+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "4f9b5ec9f05562cc",
+   "source": "cert-bund",
+   "title": "[UPDATE] [kritisch] Node.js: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4117",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Node.js ausnutzen, um einen Denial of Service Angriff durchzuführen, um Sicherheitsvorkehrungen zu umgehen und um beliebigen Programmcode auszuführen.",
+   "published": "2026-11-09T11:14:38+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "e8cf36c056134b11",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Internet Systems Consortium BIND: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4116",
+   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Internet Systems Consortium BIND ausnutzen, um einen Denial of Service Angriff durchzuführen oder möglicherweise beliebigen Code auszuführen.",
+   "published": "2026-11-09T11:14:38+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "1aab9806fe322c1a",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Mozilla Produkte (Thunderbird, Firefox ESR und Firefox): Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4064",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Mozilla Thunderbird, Mozilla Firefox ESR und Mozilla Firefox ausnutzen, um Sicherheitsvorkehrungen zu umgehen, um einen Denial of Service Angriff durchzuführen, um Informationen offenzulegen und um Daten zu manipulieren.",
+   "published": "2026-11-09T11:14:38+00:00",
+   "first_seen": "2026-11-05T10:54:48+00:00",
+   "cves": []
+  },
+  {
+   "id": "e1cc56461b90abeb",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Checkmk: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4113",
+   "summary": "Ein lokaler Angreifer kann mehrere Schwachstellen in Checkmk ausnutzen, um seine Privilegien zu erhöhen oder Monitoring-Daten für Hosts zu übermitteln, die das jeweilige Relay nicht überwachen darf.",
+   "published": "2026-11-09T11:14:38+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "e423cd2754b031cf",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] GitLab: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4115",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in GitLab ausnutzen, um beliebigen Code auszuführen, Sicherheitsmaßnahmen zu umgehen, erweiterte Berechtigungen zu erlangen, Daten zu manipulieren oder Informationen offenzulegen.",
+   "published": "2026-11-09T11:14:38+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "a8637177f443afa9",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Golang Go: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4049",
+   "summary": "Ein Angreifer kann eine Schwachstelle in Golang Go ausnutzen, um Sicherheitsvorkehrungen zu umgehen.",
+   "published": "2026-11-09T11:14:37+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "8e55a7392de43a73",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Atlassian Produkte (Bamboo, Bitbucket, Confluence, Crucible, Fisheye und Jira): Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4056",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Atlassian Bamboo, Bitbucket, Confluence, Crucible, Fisheye und Jira ausnutzen, um Daten zu manipulieren, um seine Privilegien zu erhöhen, um einen Denial of Service Angriff durchzuführen, um Informationen offenzulegen, um einen Cross-Site Scripting Angriff durchzuführen, um Sicherheitsvorkehrungen zu umgehen und um beliebigen Programmcode auszuführen.",
+   "published": "2026-11-09T11:14:37+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "04cd3a94e8fb15a2",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Oracle Java SE: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4079",
+   "summary": "Ein entfernter, anonymer oder authentisierter Angreifer kann mehrere Schwachstellen in Oracle Java SE ausnutzen, um die Vertraulichkeit, Integrität und Verfügbarkeit zu gefährden.",
+   "published": "2026-11-09T11:14:37+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "add663b302ff1972",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Red Hat Enterprise Linux (python-tornado, resteasy-core, bubblewrap, pgvector): Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4029",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux ausnutzen, um Sicherheitsvorkehrungen zu umgehen, beliebigen Code auszuführen, Daten zu manipulieren und offenzulegen oder einen Denial-of-Service-Angriff auszulösen.",
+   "published": "2026-11-09T11:14:37+00:00",
+   "first_seen": "2026-11-04T19:44:38+00:00",
+   "cves": []
+  },
+  {
+   "id": "969de2d1bc8cd068",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Google Chrome / Microsoft Edge: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4067",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Google Chrome / Microsoft Edge ausnutzen, um beliebigen Code auszuführen, Berechtigungen zu erweitern, Sicherheitsmaßnahmen zu umgehen, Daten offenzulegen oder zu manipulieren, einen Denial-of-Service-Zustand auszulösen oder andere, nicht näher spezifizierte Angriffe durchzuführen.",
+   "published": "2026-11-09T11:14:37+00:00",
+   "first_seen": "2026-11-05T10:54:48+00:00",
+   "cves": []
+  },
+  {
+   "id": "bcb6c39cdb10fb1f",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Oracle Communications: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4090",
+   "summary": "Ein entfernter, anonymer oder authentisierter Angreifer kann mehrere Schwachstellen in Oracle Communications ausnutzen, um die Vertraulichkeit, Integrität und Verfügbarkeit zu gefährden.",
+   "published": "2026-11-09T11:14:37+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "90665cd19400a094",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] IBM App Connect Enterprise: Schwachstelle ermöglicht Manipulation von Dateien",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4027",
+   "summary": "Ein lokaler Angreifer kann eine Schwachstelle in IBM App Connect Enterprise ausnutzen, um Dateien zu manipulieren.",
+   "published": "2026-11-09T11:14:37+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "0852743a9fb0abb8",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Linux Kernel: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4019",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen, möglicherweise einen Denial-of-Service-Angriff auszulösen, Daten zu manipulieren oder offenzulegen oder Sicherheitsmaßnahmen zu umgehen.",
+   "published": "2026-11-09T11:14:36+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "9f69bd74880554c2",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] DBeaver: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4013",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in DBeaver ausnutzen, um beliebigen Programmcode auszuführen oder einen Denial-of-Service-Zustand auszulösen.",
+   "published": "2026-11-09T11:14:36+00:00",
+   "first_seen": "2026-11-04T19:44:38+00:00",
+   "cves": []
+  },
+  {
+   "id": "9c9c047932b507b1",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] MariaDB: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4018",
+   "summary": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in MariaDB ausnutzen, um beliebigen Programmcode auszuführen, SQL-Injection durchzuführen, Sicherheitsmaßnahmen zu umgehen, Daten zu manipulieren oder offenzulegen oder einen Denial-of-Service-Zustand auszulösen.",
+   "published": "2026-11-09T11:14:36+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "3b13c8dc9158a111",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Linux Kernel: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4008",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um einen Denial of Service Angriff durchzuführen oder Root-Rechte zu erlangen.",
+   "published": "2026-11-09T11:14:16+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "2bae57be7dee4159",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Mozilla Firefox und Thunderbrid: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3942",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Mozilla Firefox und Mozilla Thunderbrid ausnutzen, um seine Privilegien zu erhöhen, Sicherheitsmaßnahmen zu umgehen, Spoofing-Angriffe durchzuführen, Daten offenzulegen oder zu manipulieren, Denial-of-Service-Zustände zu verursachen oder andere, nicht näher spezifizierte Angriffe durchzuführen.",
+   "published": "2026-11-09T11:14:15+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "f8cb6e3be671a9a1",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] cURL: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3904",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in cURL ausnutzen, um beliebigen Programmcode auszuführen, Sicherheitsmaßnahmen zu umgehen, vertrauliche Informationen offenzulegen, Daten zu manipulieren oder einen Denial-of-Service-Zustand auszulösen.",
+   "published": "2026-11-09T11:14:15+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "b8284bdc16799bcb",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] FreeBSD Project FreeBSD OS: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3967",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in FreeBSD Project FreeBSD OS ausnutzen, um beliebigen Programmcode auszuführen, um seine Privilegien zu erhöhen, um einen Denial of Service Angriff durchzuführen und um Sicherheitsvorkehrungen zu umgehen.",
+   "published": "2026-11-09T11:14:15+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "0ce35ac5f8a04402",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Red Hat Enterprise Linux (goose, environment-modules, tornado): Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3883",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux ausnutzen, um Sicherheitsmaßnahmen zu umgehen, vertrauliche Informationen offenzulegen, beliebigen Code auszuführen oder Denial-of-Service-Zustände herbeizuführen.",
+   "published": "2026-11-09T11:14:14+00:00",
+   "first_seen": "2026-11-05T10:54:48+00:00",
+   "cves": []
+  },
+  {
+   "id": "bd3f18a248fcc1b0",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Red Hat Enterprise Linux (python-tornado): Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3870",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in python-tornado in Red Hat Enterprise Linux ausnutzen, um Informationen offenzulegen oder einen Denial of Service zu verursachen",
+   "published": "2026-11-09T11:14:14+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "cb21098756340a50",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Red Hat Enterprise Linux (cjose): Schwachstelle ermöglicht Manipulation von Daten",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3863",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Red Hat Enterprise Linux (cjose) ausnutzen, um Daten zu manipulieren.",
+   "published": "2026-11-09T11:14:14+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "98c8329816c38b59",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Red Hat Enterprise Linux (flatpak): Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3861",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux ausnutzen, um Administratorrechte zu erlangen, beliebigen Code auszuführen, Daten zu manipulieren oder beliebige Dateien auf dem Host zu schreiben oder zu überschreiben, was möglicherweise zur vollständigen Kompromittierung des Systems führen kann.",
+   "published": "2026-11-09T11:14:13+00:00",
+   "first_seen": "2026-11-05T10:54:48+00:00",
+   "cves": []
+  },
+  {
+   "id": "aa2d4b57012e7f70",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] MariaDB: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3856",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in MariaDB ausnutzen, um beliebigen Programmcode auszuführen, um seine Privilegien zu erhöhen, um einen Denial of Service Angriff durchzuführen, um Informationen offenzulegen und um Sicherheitsvorkehrungen zu umgehen.",
+   "published": "2026-11-09T11:14:13+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "58fe472cdd06ef10",
+   "source": "cert-bund",
+   "title": "[UPDATE] [kritisch] GitLab: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3858",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in GitLab ausnutzen, um beliebigen Programmcode auszuführen, um Informationen offenzulegen, um Daten zu manipulieren, um einen Cross-Site Scripting Angriff durchzuführen und um Sicherheitsvorkehrungen zu umgehen.",
+   "published": "2026-11-09T11:14:12+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "64f4d993cd955e9d",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] IBM App Connect Enterprise: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3831",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in IBM App Connect Enterprise ausnutzen, um Sicherheitsvorkehrungen zu umgehen, um einen Denial of Service Angriff durchzuführen, und um Informationen offenzulegen.",
+   "published": "2026-11-09T11:14:12+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "27f0347cab855ccc",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Golang Go: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3841",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Golang Go ausnutzen, um einen Denial of Service Angriff durchzuführen, um Informationen offenzulegen, um Daten zu manipulieren und um Sicherheitsvorkehrungen zu umgehen.",
+   "published": "2026-11-09T11:14:11+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "e4939ac8359b1b75",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Keycloak: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3849",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Keycloak ausnutzen, um Informationen offenzulegen, um Sicherheitsvorkehrungen zu umgehen, und um einen Cross-Site Scripting Angriff durchzuführen.",
+   "published": "2026-11-09T11:14:11+00:00",
+   "first_seen": "2026-11-06T19:24:04+00:00",
+   "cves": []
+  },
+  {
+   "id": "e49664175098165d",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] IBM DB2: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3837",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in IBM DB2 ausnutzen, um seine Privilegien zu erhöhen, um einen Denial of Service Angriff durchzuführen und um Informationen offenzulegen.",
+   "published": "2026-11-09T11:14:11+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "9ba02808dea3bb98",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Red Hat Enterprise Linux (resteasy): Schwachstelle ermöglicht Offenlegung von Informationen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3814",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Red Hat Enterprise Linux in resteasy ausnutzen, um Informationen offenzulegen.",
+   "published": "2026-11-09T11:14:10+00:00",
+   "first_seen": "2026-11-05T10:54:48+00:00",
+   "cves": []
+  },
+  {
+   "id": "efcb01bfe08b9cba",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] expat: Schwachstelle ermöglicht Offenlegung von Informationen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3796",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in expat ausnutzen, um Informationen offenzulegen, was möglicherweise weitere Angriffe ermöglicht.",
+   "published": "2026-11-09T11:13:50+00:00",
+   "first_seen": "2026-11-04T19:44:38+00:00",
+   "cves": []
+  },
+  {
+   "id": "6ee787cc5164791f",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] IBM SPSS: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3791",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in IBM SPSS ausnutzen, um einen Denial of Service Angriff durchzuführen, um Informationen offenzulegen und um Dateien zu manipulieren.",
+   "published": "2026-11-09T11:13:49+00:00",
+   "first_seen": "2026-11-04T19:44:38+00:00",
+   "cves": []
+  },
+  {
+   "id": "ff3182e3403173f1",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Google Chrome / Microsoft Edge: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3761",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Google Chrome / Microsoft Edge ausnutzen, um beliebigen Programmcode auszuführen, erweiterte Berechtigungen zu erlangen, Sicherheitsmaßnahmen zu umgehen, Daten zu manipulieren oder offenzulegen, einen Denial-of-Service-Zustand auszulösen oder andere, nicht näher spezifizierte Angriffe durchzuführen.",
+   "published": "2026-11-09T11:13:48+00:00",
+   "first_seen": "2026-11-05T10:54:48+00:00",
+   "cves": []
+  },
+  {
+   "id": "37e034ea1ffe60ff",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Keycloak: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3749",
+   "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in Keycloak ausnutzen, um Sicherheitsvorkehrungen zu umgehen.",
+   "published": "2026-11-09T11:13:47+00:00",
+   "first_seen": "2026-11-06T19:24:04+00:00",
+   "cves": []
+  },
+  {
+   "id": "128c3978f39d3789",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Linux Kernel: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3743",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen, möglicherweise einen Denial-of-Service-Angriff auszulösen, Daten zu manipulieren oder offenzulegen oder Sicherheitsmaßnahmen zu umgehen.",
+   "published": "2026-11-09T11:13:47+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "363b76e5a248ff8e",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Red Hat Enterprise Linux (libgd): Schwachstelle ermöglicht Codeausführung",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3747",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Red Hat Enterprise Linux ausnutzen, um einen Denial-of-Service-Zustand zu verursachen oder möglicherweise beliebigen Code auszuführen.",
+   "published": "2026-11-09T11:13:46+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "5288f723c9a0ebbe",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Langflow: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3728",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Langflow ausnutzen, um beliebigen Programmcode auszuführen, um einen Denial of Service Angriff durchzuführen, um Informationen offenzulegen und um Dateien zu manipulieren.",
+   "published": "2026-11-09T11:13:46+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "136c875ec9348bb0",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Google Chrome / Microsoft Edge: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3737",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Google Chrome / Microsoft Edge ausnutzen, um beliebigen Programmcode auszuführen, Sicherheitsmaßnahmen zu umgehen, Informationen offenzulegen, Daten zu verfälschen oder zu manipulieren oder Denial-of-Service-Zustände zu verursachen.",
+   "published": "2026-11-09T11:13:45+00:00",
+   "first_seen": "2026-11-05T10:54:48+00:00",
+   "cves": []
+  },
+  {
+   "id": "9588d6b1192f4599",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] CPython: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3716",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Python ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen, um einen Denial of Service Angriff durchzuführen, und um Sicherheitsvorkehrungen zu umgehen.",
+   "published": "2026-11-09T11:13:45+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "3058bd655ef8a30c",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Google Chrome: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3648",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Google Chrome ausnutzen, um beliebigen Programmcode auszuführen, Berechtigungen zu erweitern, Sicherheitsmaßnahmen zu umgehen, Daten offenzulegen oder zu manipulieren, einen Denial-of-Service-Zustand auszulösen oder Cross-Site-Scripting- und Spoofing-Angriffe durchzuführen.",
+   "published": "2026-11-09T11:13:44+00:00",
+   "first_seen": "2026-11-05T10:54:48+00:00",
+   "cves": []
+  },
+  {
+   "id": "ac2d94528c35d3e6",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Red Hat Enterprise Linux (gdb): Schwachstelle ermöglicht Codeausführung",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3650",
+   "summary": "Ein lokaler Angreifer kann eine Schwachstelle in Red Hat Enterprise Linux ausnutzen, um beliebigen Programmcode auszuführen.",
+   "published": "2026-11-09T11:13:44+00:00",
+   "first_seen": "2026-11-04T19:44:38+00:00",
+   "cves": []
+  },
+  {
+   "id": "51748cb380bd21bd",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Mozilla Firefox, Firefox ESR und Thunderbird: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3654",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Mozilla Firefox ESR, Mozilla Firefox und Thunderbird ausnutzen, um beliebigen Programmcode auszuführen, Berechtigungen zu erweitern, Sicherheitsmaßnahmen zu umgehen, Daten offenzulegen oder zu manipulieren, einen Denial-of-Service-Zustand auszulösen oder andere, nicht näher spezifizierte Angriffe zu starten.",
+   "published": "2026-11-09T11:13:44+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "791ce689d4da69b3",
+   "source": "cert-bund",
+   "title": "[UPDATE] [niedrig] Keycloak (Micrometer): Schwachstelle ermöglicht Denial of Service",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3614",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Keycloak ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+   "published": "2026-11-09T11:13:43+00:00",
+   "first_seen": "2026-11-06T19:24:04+00:00",
+   "cves": []
+  },
+  {
+   "id": "ddf8fe90c1542ddd",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] OpenSSL: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3638",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in OpenSSL ausnutzen, um Sicherheitsvorkehrungen zu umgehen, vertrauliche Informationen offenzulegen, Daten zu manipulieren und einen Denial-of-Service-Zustand zu verursachen.",
+   "published": "2026-11-09T11:13:43+00:00",
+   "first_seen": "2026-11-05T10:54:48+00:00",
+   "cves": []
+  },
+  {
+   "id": "3567e0fbbe5e98e7",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Red Hat Enterprise Linux (cjose): Schwachstelle ermöglicht Denial of Service und Manipulation von Daten",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3626",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Red Hat Enterprise Linux (cjose) ausnutzen, um einen Denial of Service Angriff durchzuführen, und um Daten zu manipulieren.",
+   "published": "2026-11-09T11:13:43+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "cd6fdc6b609b2603",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Keycloak: Schwachstelle ermöglicht Erlangen von Administratorrechten",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3577",
+   "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in Keycloak ausnutzen, um Administratorrechte zu erlangen.",
+   "published": "2026-11-09T11:13:22+00:00",
+   "first_seen": "2026-11-06T19:24:04+00:00",
+   "cves": []
+  },
+  {
+   "id": "a2e4503a08f1428d",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] libsndfile: Mehrere Schwachstellen ermöglichen Denial of Service",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3580",
+   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in libsndfile ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+   "published": "2026-11-09T11:13:22+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "06e5dec2343d4dd5",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Keycloak: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3569",
+   "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in Keycloak ausnutzen, um Sicherheitsvorkehrungen zu umgehen.",
+   "published": "2026-11-09T11:13:21+00:00",
+   "first_seen": "2026-11-06T19:24:04+00:00",
+   "cves": []
+  },
+  {
+   "id": "b36315e3a34b04f1",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Keycloak: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3558",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Keycloak ausnutzen, um Sicherheitsvorkehrungen zu umgehen und um seine Privilegien zu erhöhen.",
+   "published": "2026-11-09T11:13:21+00:00",
+   "first_seen": "2026-11-06T19:24:04+00:00",
+   "cves": []
+  },
+  {
+   "id": "c3a2c302610d2783",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Keycloak: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3484",
+   "summary": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in Keycloak ausnutzen, um seine Privilegien zu erhöhen, um Sicherheitsmechanismen zu umgehen und um Informationen offenzulegen.",
+   "published": "2026-11-09T11:13:20+00:00",
+   "first_seen": "2026-11-06T19:24:04+00:00",
+   "cves": []
+  },
+  {
+   "id": "d6e51f264f458b00",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] GNU libc: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3522",
+   "summary": "Ein lokaler Angreifer kann mehrere Schwachstellen in GNU libc ausnutzen, um beliebigen Programmcode mit den Rechten des Dienstes auszuführen, vertrauliche Informationen offenzulegen, den Speicher zu beschädigen oder einen Denial-of-Service-Zustand herbeizuführen.",
+   "published": "2026-11-09T11:13:20+00:00",
+   "first_seen": "2026-11-06T19:24:04+00:00",
+   "cves": []
+  },
+  {
+   "id": "742ed43c1de4577c",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] GitLab: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3556",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in GitLab ausnutzen, um beliebigen Programmcode auszuführen, um Informationen offenzulegen, um Daten zu manipulieren, um einen Cross-Site Scripting Angriff durchzuführen und um Sicherheitsvorkehrungen zu umgehen.",
+   "published": "2026-11-09T11:13:20+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "fbbc9f3704be5f32",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Netty: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3477",
+   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Netty ausnutzen, um Sicherheitsvorkehrungen zu umgehen, Daten zu manipulieren, vertrauliche Informationen offenzulegen oder einen Denial-of-Service-Zustand herbeizuführen.",
+   "published": "2026-11-09T11:13:19+00:00",
+   "first_seen": "2026-11-05T10:54:48+00:00",
+   "cves": []
+  },
+  {
+   "id": "0b98ea1f6314428a",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] GNU libc: Schwachstelle ermöglicht Denial of Service",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3452",
+   "summary": "Ein Angreifer aus einem angrenzenden Netzwerk kann eine Schwachstelle in GNU libc ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+   "published": "2026-11-09T11:13:18+00:00",
+   "first_seen": "2026-11-05T10:54:48+00:00",
+   "cves": []
+  },
+  {
+   "id": "3757f9122ce07c7a",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Linux Kernel: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3438",
+   "summary": "Ein lokaler Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um einen Denial of Service zu verursachen oder eine nicht näher spezifizierte Auswirkung zu erzielen.",
+   "published": "2026-11-09T11:13:17+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "2d348b5c685ae4e1",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Google Chrome / Microsoft Edge: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3443",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Google Chrome / Microsoft Edge ausnutzen, um potenziell beliebigen Code auszuführen, Sicherheitsmaßnahmen zu umgehen, Server-Side Request Forgery (SSRF) durchzuführen, sensible Informationen offenzulegen, Daten zu manipulieren, Denial-of-Service-Zustände zu verursachen oder Spoofing-Angriffe zu starten.",
+   "published": "2026-11-09T11:13:17+00:00",
+   "first_seen": "2026-11-05T10:54:48+00:00",
+   "cves": []
+  },
+  {
+   "id": "2ba9c4dc2af8d0a2",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Linux Kernel: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3412",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um Speicher zu beschädigen oder offenzulegen, den Kernel oder den Systemzustand zu manipulieren oder Denial-of-Service-Zustände, einschließlich Kernel-Abstürzen, zu verursachen.",
+   "published": "2026-11-09T11:13:16+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "adf31d5f242ad16a",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Keycloak: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3371",
+   "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in Keycloak ausnutzen, um Sicherheitsvorkehrungen zu umgehen.",
+   "published": "2026-11-09T11:13:16+00:00",
+   "first_seen": "2026-11-06T19:24:04+00:00",
+   "cves": []
+  },
+  {
+   "id": "178f8bdf8f8b364a",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Atlassian Bamboo, Bitbucket, Confluence, Fisheye/Crucible, Jira Software und Jira Service Management: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3376",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Atlassian Bamboo, Bitbucket, Confluence, Fisheye/Crucible, Jira Software und Jira Service Management ausnutzen, um beliebigen Programmcode auszuführen, Sicherheitsmaßnahmen zu umgehen, serverseitige Request-Forgery-Angriffe (SSRF) durchzuführen, Cross-Site-Scripting-Angriffe zu starten, sensible Informationen offenzulegen, Daten zu manipulieren oder De…",
+   "published": "2026-11-09T11:13:15+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "1e6ebba9c526be24",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Mozilla Firefox und Thunderbird: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3375",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Mozilla Firefox, Firefox ESR und Thunderbird ausnutzen, um seine Privilegien zu erhöhen, Sicherheitsmaßnahmen zu umgehen, Daten offenzulegen oder zu manipulieren, den Speicher zu beschädigen, Denial-of-Service-Zustände zu verursachen oder andere, nicht näher spezifizierte Angriffe durchzuführen.",
+   "published": "2026-11-09T11:13:15+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "f2c9beb20ff9a022",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Google Chrome / Microsoft Edge: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3380",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Google Chrome / Microsoft Edge ausnutzen, um beliebigen Programmcode auszuführen, Sicherheitsmaßnahmen zu umgehen, erweiterte Berechtigungen zu erlangen, Daten zu manipulieren oder offenzulegen oder Denial-of-Service-Zustände herbeizuführen.",
+   "published": "2026-11-09T11:12:54+00:00",
+   "first_seen": "2026-11-05T10:54:48+00:00",
+   "cves": []
+  },
+  {
+   "id": "e07712eec649fe24",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Squid: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3329",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Squid ausnutzen, um einen Denial of Service Angriff durchzuführen, um beliebigen Programmcode auszuführen und um Sicherheitsvorkehrungen zu umgehen.",
+   "published": "2026-11-09T11:12:54+00:00",
+   "first_seen": "2026-11-04T19:44:38+00:00",
+   "cves": []
+  },
+  {
+   "id": "ea408a98604d2a21",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] QT: Schwachstelle ermöglicht Denial of Service",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3332",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in QT ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+   "published": "2026-11-09T11:12:53+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "4247301add7f49b7",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Red Hat Enterprise Linux (libkcapi): Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3322",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux ausnutzen, um Informationen offenzulegen, Daten zu manipulieren, Speicherbeschädigungen zu verursachen oder einen Denial-of-Service-Zustand auszulösen.",
+   "published": "2026-11-09T11:12:53+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "fccb8f269159de0b",
+   "source": "cert-bund",
+   "title": "[UPDATE] [niedrig] GNU libc: Schwachstelle ermöglicht Denial of Service",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3317",
+   "summary": "Ein Angreifer aus einem angrenzenden Netzwerk kann eine Schwachstelle in GNU libc ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+   "published": "2026-11-09T11:12:52+00:00",
+   "first_seen": "2026-11-06T19:24:04+00:00",
+   "cves": []
+  },
+  {
+   "id": "7d0a68ce856a399e",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Linux Kernel: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3321",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um Sicherheitsmaßnahmen zu umgehen, Daten oder den Systemzustand zu manipulieren, Denial-of-Service-Zustände herbeizuführen oder andere, nicht näher spezifizierte Angriffe durchzuführen.",
+   "published": "2026-11-09T11:12:52+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "bfc2dce9366d9435",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] QT: Schwachstelle ermöglicht Denial of Service",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3227",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in QT ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+   "published": "2026-11-09T11:12:51+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "05d90dae6661400f",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Netty: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3291",
+   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Netty ausnutzen, um Denial-of-Service-Zustände zu verursachen, Sicherheitsmaßnahmen zu umgehen, Request- oder Response-Smuggling durchzuführen sowie Daten offenzulegen oder zu manipulieren.",
+   "published": "2026-11-09T11:12:51+00:00",
+   "first_seen": "2026-11-04T19:44:38+00:00",
+   "cves": []
+  },
+  {
+   "id": "39cd41a8629241c0",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Linux Kernel: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3211",
+   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Linux Kernel ausnutzen, um Speicherfehler und Kernel-Abstürze beziehungsweise Denial-of-Service-Zustände auszulösen, Speicher außerhalb vorgesehener Grenzen auszulesen sowie in einzelnen Fällen weitere Sicherheitsauswirkungen zu verursachen.",
+   "published": "2026-11-09T11:12:50+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "f4b0b8b09bfac1d8",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Google Chrome / Microsoft Edge: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3175",
+   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Google Chrome / Microsoft Edge ausnutzen, um beliebigen Programmcode auszuführen, um Informationen offenzulegen und um Sicherheitsmechanismen zu umgehen.",
+   "published": "2026-11-09T11:12:50+00:00",
+   "first_seen": "2026-11-05T10:54:48+00:00",
+   "cves": []
+  },
+  {
+   "id": "a8ed31f015030ede",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Mozilla Firefox und Thunderbird: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3132",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Mozilla Firefox und Thunderbird ausnutzen, um Berechtigungen zu erweitern, Sicherheitsmaßnahmen zu umgehen, sensible Informationen offenzulegen, Daten zu manipulieren, Spoofing-Angriffe durchzuführen, möglicherweise durch Speicherbeschädigungen beliebigen Code auszuführen oder Denial-of-Service-Zustände herbeizuführen.",
+   "published": "2026-11-09T11:12:49+00:00",
+   "first_seen": "2026-11-06T19:24:04+00:00",
+   "cves": []
+  },
+  {
+   "id": "86d90ff177a7e4fc",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] zlib: Schwachstelle ermöglicht Denial of Service und Integritätsverlust",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3153",
+   "summary": "Ein Angreifer kann eine Schwachstelle in zlib ausnutzen, um einen Denial of Service Angriff durchzuführen oder um Speicher zu überschreiben.",
+   "published": "2026-11-09T11:12:49+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "9625b9f102a93fed",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Google Chrome und Microsoft Edge: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3133",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Google Chrome und Microsoft Edge ausnutzen, um beliebigen Programmcode auszuführen, Berechtigungen zu erweitern, Sicherheitsmaßnahmen zu umgehen, sensible Informationen offenzulegen, Spoofing-Angriffe durchzuführen, Daten zu manipulieren oder Denial-of-Service-Zustände zu verursachen.",
+   "published": "2026-11-09T11:12:48+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "e4697a4e874e144f",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] rsyslog: Schwachstelle ermöglicht Denial of Service",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3094",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in rsyslog ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+   "published": "2026-11-09T11:12:47+00:00",
+   "first_seen": "2026-11-06T19:24:04+00:00",
+   "cves": []
+  },
+  {
+   "id": "a9dbfb3d92cbd2b7",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] GNU libc: Schwachstelle ermöglicht nicht spezifizierten Angriff",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3063",
+   "summary": "Ein lokaler Angreifer kann eine Schwachstelle in GNU libc ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen.",
+   "published": "2026-11-09T11:12:47+00:00",
+   "first_seen": "2026-11-04T19:44:38+00:00",
+   "cves": []
+  },
+  {
+   "id": "c2748f40f69e30d0",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] GNU libc: Schwachstelle ermöglicht Denial of Service",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3051",
+   "summary": "Ein Angreifer kann eine Schwachstelle in GNU libc ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+   "published": "2026-11-09T11:12:26+00:00",
+   "first_seen": "2026-11-04T19:44:38+00:00",
+   "cves": []
+  },
+  {
+   "id": "449a3807e42777e3",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Ruby: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3053",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Ruby ausnutzen, um einen Denial of Service Angriff durchzuführen, und um Sicherheitsvorkehrungen zu umgehen.",
+   "published": "2026-11-09T11:12:26+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "6453e36e0003f346",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] OpenSSL: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3005",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in OpenSSL ausnutzen, um Sicherheitsvorkehrungen zu umgehen, Daten zu manipulieren oder offenzulegen oder einen Denial-of-Service-Zustand herbeizuführen.",
+   "published": "2026-11-09T11:12:26+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "b347d5a3f213d895",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Linux Kernel: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2970",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen, möglicherweise Sicherheitsmaßnahmen zu umgehen, einen Denial-of-Service-Zustand herbeizuführen, vertrauliche Informationen offenlegen oder Root-Rechte erlangen.",
+   "published": "2026-11-09T11:12:25+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "fab108a654603e55",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] GNU libc: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3014",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in GNU libc ausnutzen, um beliebigen Programmcode auszuführen, vertrauliche Informationen offenzulegen, Daten zu manipulieren, einen Denial-of-Service-Zustand auszulösen oder andere, nicht näher bezeichnete Angriffe durchzuführen.",
+   "published": "2026-11-09T11:12:25+00:00",
+   "first_seen": "2026-11-04T19:44:38+00:00",
+   "cves": []
+  },
+  {
+   "id": "6b673e90ce8d0fe3",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Atlassian Produkte (Bamboo, Bitbucket, Confluence, Crucible, Fisheye, und Jira): Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2923",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Atlassian Bamboo, Atlassian Bitbucket, Atlassian Confluence, Atlassian Crucible, Atlassian Fisheye und Atlassian Jira ausnutzen, um beliebigen Programmcode auszuführen, um einen Denial of Service Angriff durchzuführen, um Informationen offenzulegen, um Dateien zu manipulieren, um einen Cross-Site Scripting Angriff durchzuführen, um einen SQL-Injection…",
+   "published": "2026-11-09T11:12:24+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "8e7a442f0ee635e8",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Mozilla Firefox, Firefox ESR und Thunderbird: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2911",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Mozilla Firefox, Firefox ESR und Thunderbird ausnutzen, um seine Privilegien zu erhöhen, Sicherheitsmaßnahmen zu umgehen, vertrauliche Informationen offenzulegen, Spoofing- oder Clickjacking-Angriffe durchzuführen oder Denial-of-Service-Zustände herbeizuführen.",
+   "published": "2026-11-09T11:12:04+00:00",
+   "first_seen": "2026-11-06T19:24:04+00:00",
+   "cves": []
+  },
+  {
+   "id": "6f8dc6d5e49b1f68",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Golang Go: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2850",
+   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Golang Go ausnutzen, um einen Denial of Service zu verursachen, ein Cross Site Scripting durchzuführen, Sicherheitsmaßnahmen zu umgehen oder Daten zu manipulieren.",
+   "published": "2026-11-09T11:12:03+00:00",
+   "first_seen": "2026-11-03T20:07:28+00:00",
+   "cves": []
+  },
+  {
+   "id": "0493ee5cfccc0e35",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] OpenSSL: Schwachstelle ermöglicht Denial of Service",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2843",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in OpenSSL ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+   "published": "2026-11-09T11:12:03+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "f1c59dac618fbb4a",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Rsync: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2817",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Rsync ausnutzen, um seine Privilegien zu erhöhen, beliebigen Code auszuführen, Daten offenzulegen oder zu manipulieren, Sicherheitsmaßnahmen zu umgehen oder Denial-of-Service-Zustände herbeizuführen.",
+   "published": "2026-11-09T11:12:02+00:00",
+   "first_seen": "2026-11-04T19:44:38+00:00",
+   "cves": []
+  },
+  {
+   "id": "9233d04d4950fb00",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Red Hat Build of Apache Camel for Quarkus (sshd-core, libthrift, org.hl7.fhir.utilities): Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2834",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux und Apache Camel ausnutzen, um einen Denial of Service Angriff durchzuführen, Sicherheitsmaßnahmen zu umgehen, Daten zu manipulieren und offenzulegen oder beliebigen Code auszuführen.",
+   "published": "2026-11-09T11:12:02+00:00",
+   "first_seen": "2026-11-04T19:44:38+00:00",
+   "cves": []
+  },
+  {
+   "id": "3116ca2baf687a51",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Red Hat Enterprise Linux (nodejs:24): Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2816",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux ausnutzen, um SSRF-Angriffe durchzuführen, Sicherheitsmaßnahmen zu umgehen, Daten offenzulegen oder zu manipulieren, möglicherweise beliebigen Code auszuführen oder einen Denial-of-Service-Zustand herbeizuführen.",
+   "published": "2026-11-09T11:12:02+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "be26ff0909b387f4",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] GNU libc: Schwachstelle ermöglicht Denial of Service",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2740",
+   "summary": "Ein lokaler Angreifer kann eine Schwachstelle in GNU libc ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+   "published": "2026-11-09T11:12:01+00:00",
+   "first_seen": "2026-11-04T19:44:38+00:00",
+   "cves": []
+  },
+  {
+   "id": "1f074ab402548b5a",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Intel Prozessor: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2772",
+   "summary": "Ein lokaler Angreifer kann mehrere Schwachstellen in Intel Prozessor ausnutzen, um erweiterte Rechte zu erlangen, Daten zu manipulieren, vertrauliche Informationen offenzulegen oder einen Denial-of-Service-Zustand auszulösen.",
+   "published": "2026-11-09T11:12:01+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "22b804444017c282",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] nmap: Schwachstelle ermöglicht Denial of Service",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2787",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in nmap ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+   "published": "2026-11-09T11:12:01+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "8afb9fcda3f4d745",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] JetBrains You Track: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4378",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in JetBrains You Track ausnutzen, um Sicherheitsvorkehrungen zu umgehen, um seine Privilegien zu erhöhen, um einen Denial of Service Angriff durchzuführen, um Informationen offenzulegen, um Dateien zu manipulieren und um beliebigen Programmcode auszuführen.",
+   "published": "2026-11-09T10:42:02+00:00",
+   "first_seen": "2026-11-06T19:24:04+00:00",
+   "cves": []
+  },
+  {
+   "id": "3ab065fda0155e43",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Wazuh: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4377",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Wazuh ausnutzen, um Sicherheitsmaßnahmen zu umgehen, Informationen auszuspähen, Daten zu manipulieren, beliebigen Programmcode mit Administratorrechten auszuführen oder einen Denial-of-Service-Zustand zu verursachen.",
+   "published": "2026-11-09T10:42:02+00:00",
+   "first_seen": "2026-11-06T19:24:04+00:00",
+   "cves": []
+  },
+  {
+   "id": "775f205f9c481933",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] IBM App Connect Enterprise: Schwachstelle ermöglicht Offenlegung von Informationen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4383",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in IBM App Connect Enterprise ausnutzen, um Sicherheitsmaßnahmen zu umgehen und Informationen auszuspähen.",
+   "published": "2026-11-09T10:42:01+00:00",
+   "first_seen": "2026-11-06T19:24:04+00:00",
+   "cves": []
+  },
+  {
+   "id": "bc7e8f6aef1ba816",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] JetBrains IntelliJ IDEA: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4379",
+   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in JetBrains IntelliJ IDEA ausnutzen, um Sicherheitsmaßnahmen zu umgehen, Informationen auszuspähen, Dateien zu manipulieren, Cross-Site-Scripting-Angriffe durchzuführen oder beliebigen Programmcode auszuführen.",
+   "published": "2026-11-09T10:42:01+00:00",
+   "first_seen": "2026-11-06T19:24:04+00:00",
+   "cves": []
+  },
+  {
+   "id": "c0efd150b940c14b",
+   "source": "ncsc-nl",
+   "title": "NCSC-2026-0471 [1.00] [M/H] Kwetsbaarheden verholpen in SonicOS van SonicWall",
+   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0471",
+   "summary": "SonicWall heeft zeven kwetsbaarheden verholpen in SonicOS voor Gen7- en Gen8-firewalls. De kwetsbaarheid met kenmerk CVE-2026-19868 heeft een CVSS-score van 7.1 en betreft een fout in de authenticatiehandhaving binnen de SSL-VPN-functionaliteit. Een kwaadwillende met geldige inloggegevens voor een alternatieve authenticatiemethode kan de kwetsbaarheid op afstand misbruiken om de SAML-authenticati…",
+   "published": "2026-11-09T09:52:29+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": [
+    "CVE-2026-19868"
+   ]
+  },
+  {
+   "id": "bc7c10879326a3f4",
+   "source": "csirt-it",
+   "title": "SonicWall: rilevato sfruttamento in rete della CVE-2026-19868",
+   "link": "https://www.acn.gov.it/portale/w/sonicwall-rilevato-sfruttamento-in-rete-della-cve-2026-19868",
+   "summary": "Rilasciati aggiornamenti di sicurezza per risolvere 7 vulnerabilità, di cui 4 con gravità \"alta\", che interessano SonicOS, sistema operativo utilizzato nei firewall e negli appliance di sicurezza di SonicWall. Tra queste si evidenzia la CVE-2026-19868 per la quale sono stati osservati tentativi di sfruttamento attivo in rete.",
+   "published": "2026-11-09T08:49:41+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": [
+    "CVE-2026-19868"
+   ]
+  },
+  {
    "id": "6b1b68a416f98a40",
    "source": "cccs-alerts",
    "title": "SonicWall security advisory (AV26-1133)",
@@ -119,7 +1313,7 @@
    "source": "csirt-it",
    "title": "Risolte vulnerabilità in prodotti JetBrains",
    "link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-jetbrains-4",
-   "summary": "JetBrains ha rilasciato aggiornamenti di sicurezza per risolvere molteplici vulnerabilità, di cui due con gravità \"critica\" e 20 con gravità “alta” nei prodotti YouTrack, WebStorm, Ktor, Junie CLI, IntelliJ IDEA, Hub, Datalore e CLion.",
+   "summary": "JetBrains ha rilasciato aggiornamenti di sicurezza per risolvere molteplici vulnerabilità, di cui tre con gravità \"critica\" e 31 con gravità “alta” nei prodotti YouTrack, WebStorm, Ktor, Junie CLI, Junie GitHub Action, IntelliJ IDEA, Hub, Datalore, CLion e Toolbox App.",
    "published": "2026-11-06T15:16:38+00:00",
    "first_seen": "2026-11-06T19:24:04+00:00",
    "cves": []
@@ -135,31 +1329,11 @@
    "cves": []
   },
   {
-   "id": "0b7c943e8df1ad62",
-   "source": "cert-bund",
-   "title": "[NEU] [mittel] Moodle: Schwachstelle ermöglicht Offenlegung von Informationen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4385",
-   "summary": "Ein Angreifer kann eine Schwachstelle in Moodle ausnutzen, um Informationen offenzulegen.",
-   "published": "2026-11-06T13:41:18+00:00",
-   "first_seen": "2026-11-06T19:24:04+00:00",
-   "cves": []
-  },
-  {
    "id": "6c6e7e220a76e510",
    "source": "cert-bund",
    "title": "[NEU] [mittel] SmarterTools SmarterMail: Mehrere Schwachstellen ermöglichen Umgehen von Sicherheitsvorkehrungen",
    "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4384",
    "summary": "Ein Angreifer kann mehrere Schwachstellen in SmarterTools SmarterMail ausnutzen, um Sicherheitsmaßnahmen zu umgehen und nicht näher spezifizierte Auswirkungen zu verursachen.",
-   "published": "2026-11-06T13:41:17+00:00",
-   "first_seen": "2026-11-06T19:24:04+00:00",
-   "cves": []
-  },
-  {
-   "id": "775f205f9c481933",
-   "source": "cert-bund",
-   "title": "[NEU] [mittel] IBM App Connect Enterprise: Schwachstelle ermöglicht Offenlegung von Informationen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4383",
-   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in IBM App Connect Enterprise ausnutzen, um Sicherheitsmaßnahmen zu umgehen und Informationen auszuspähen.",
    "published": "2026-11-06T13:41:17+00:00",
    "first_seen": "2026-11-06T19:24:04+00:00",
    "cves": []
@@ -195,26 +1369,6 @@
    "cves": []
   },
   {
-   "id": "791ce689d4da69b3",
-   "source": "cert-bund",
-   "title": "[UPDATE] [niedrig] Keycloak (Micrometer): Schwachstelle ermöglicht Denial of Service",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3614",
-   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Keycloak ausnutzen, um einen Denial of Service Angriff durchzuführen.",
-   "published": "2026-11-06T13:40:55+00:00",
-   "first_seen": "2026-11-06T19:24:04+00:00",
-   "cves": []
-  },
-  {
-   "id": "06e5dec2343d4dd5",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] Keycloak: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3569",
-   "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in Keycloak ausnutzen, um Sicherheitsvorkehrungen zu umgehen.",
-   "published": "2026-11-06T13:40:54+00:00",
-   "first_seen": "2026-11-06T19:24:04+00:00",
-   "cves": []
-  },
-  {
    "id": "74cbb6519d937eaf",
    "source": "cert-bund",
    "title": "[UPDATE] [mittel] FasterXML Jackson: Mehrere Schwachstellen ermöglichen Denial of Service",
@@ -222,26 +1376,6 @@
    "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in FasterXML Jackson ausnutzen, um einen Denial of Service Angriff durchzuführen.",
    "published": "2026-11-06T13:40:53+00:00",
    "first_seen": "2026-11-04T19:44:38+00:00",
-   "cves": []
-  },
-  {
-   "id": "b36315e3a34b04f1",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] Keycloak: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3558",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Keycloak ausnutzen, um Sicherheitsvorkehrungen zu umgehen und um seine Privilegien zu erhöhen.",
-   "published": "2026-11-06T13:40:53+00:00",
-   "first_seen": "2026-11-06T19:24:04+00:00",
-   "cves": []
-  },
-  {
-   "id": "c3a2c302610d2783",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] Keycloak: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3484",
-   "summary": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in Keycloak ausnutzen, um seine Privilegien zu erhöhen, um Sicherheitsmechanismen zu umgehen und um Informationen offenzulegen.",
-   "published": "2026-11-06T13:40:53+00:00",
-   "first_seen": "2026-11-06T19:24:04+00:00",
    "cves": []
   },
   {
@@ -375,36 +1509,6 @@
    "cves": []
   },
   {
-   "id": "bc7e8f6aef1ba816",
-   "source": "cert-bund",
-   "title": "[NEU] [hoch] JetBrains IntelliJ IDEA: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4379",
-   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in JetBrains IntelliJ IDEA ausnutzen, um Sicherheitsmaßnahmen zu umgehen, Informationen auszuspähen, Dateien zu manipulieren, Cross-Site-Scripting-Angriffe durchzuführen oder beliebigen Programmcode auszuführen.",
-   "published": "2026-11-06T13:40:23+00:00",
-   "first_seen": "2026-11-06T19:24:04+00:00",
-   "cves": []
-  },
-  {
-   "id": "8afb9fcda3f4d745",
-   "source": "cert-bund",
-   "title": "[NEU] [hoch] JetBrains You Track: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4378",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in JetBrains You Track ausnutzen, um Sicherheitsvorkehrungen zu umgehen, um seine Privilegien zu erhöhen, um einen Denial of Service Angriff durchzuführen, um Informationen offenzulegen, um Dateien zu manipulieren und um beliebigen Programmcode auszuführen.",
-   "published": "2026-11-06T13:40:21+00:00",
-   "first_seen": "2026-11-06T19:24:04+00:00",
-   "cves": []
-  },
-  {
-   "id": "3ab065fda0155e43",
-   "source": "cert-bund",
-   "title": "[NEU] [hoch] Wazuh: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4377",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Wazuh ausnutzen, um Sicherheitsmaßnahmen zu umgehen, Informationen auszuspähen, Daten zu manipulieren, beliebigen Programmcode mit Administratorrechten auszuführen oder einen Denial-of-Service-Zustand zu verursachen.",
-   "published": "2026-11-06T13:40:01+00:00",
-   "first_seen": "2026-11-06T19:24:04+00:00",
-   "cves": []
-  },
-  {
    "id": "5fa2124a1cc41bdd",
    "source": "cert-bund",
    "title": "[UPDATE] [mittel] X.Org X11 und Xwayland: Mehrere Schwachstellen",
@@ -495,36 +1599,6 @@
    "cves": []
   },
   {
-   "id": "39cd41a8629241c0",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Linux Kernel: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3211",
-   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Linux Kernel ausnutzen, um Speicherfehler und Kernel-Abstürze beziehungsweise Denial-of-Service-Zustände auszulösen, Speicher außerhalb vorgesehener Grenzen auszulesen sowie in einzelnen Fällen weitere Sicherheitsauswirkungen zu verursachen.",
-   "published": "2026-11-06T13:30:08+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
-   "id": "fccb8f269159de0b",
-   "source": "cert-bund",
-   "title": "[UPDATE] [niedrig] GNU libc: Schwachstelle ermöglicht Denial of Service",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3317",
-   "summary": "Ein Angreifer aus einem angrenzenden Netzwerk kann eine Schwachstelle in GNU libc ausnutzen, um einen Denial of Service Angriff durchzuführen.",
-   "published": "2026-11-06T13:30:08+00:00",
-   "first_seen": "2026-11-06T19:24:04+00:00",
-   "cves": []
-  },
-  {
-   "id": "b347d5a3f213d895",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] Linux Kernel: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2970",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen, möglicherweise Sicherheitsmaßnahmen zu umgehen, einen Denial-of-Service-Zustand herbeizuführen, vertrauliche Informationen offenlegen oder Root-Rechte erlangen.",
-   "published": "2026-11-06T13:30:07+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
    "id": "ddac6e8d97a85d8f",
    "source": "cert-bund",
    "title": "[UPDATE] [hoch] Linux Kernel: Mehrere Schwachstellen",
@@ -541,26 +1615,6 @@
    "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3444",
    "summary": "Ein Angreifer kann mehrere Schwachstellen im Linux Kernel möglicherweise ausnutzen, um Berechtigungen zu erweitern, Sicherheitsmaßnahmen zu umgehen, Daten offenzulegen oder zu manipulieren, den Speicher zu beschädigen, Denial-of-Service-Zustände zu verursachen oder andere, nicht näher spezifizierte Angriffe durchzuführen.",
    "published": "2026-11-06T13:25:09+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
-   "id": "2ba9c4dc2af8d0a2",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] Linux Kernel: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3412",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um Speicher zu beschädigen oder offenzulegen, den Kernel oder den Systemzustand zu manipulieren oder Denial-of-Service-Zustände, einschließlich Kernel-Abstürzen, zu verursachen.",
-   "published": "2026-11-06T13:25:09+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
-   "id": "7d0a68ce856a399e",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Linux Kernel: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3321",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um Sicherheitsmaßnahmen zu umgehen, Daten oder den Systemzustand zu manipulieren, Denial-of-Service-Zustände herbeizuführen oder andere, nicht näher spezifizierte Angriffe durchzuführen.",
-   "published": "2026-11-06T13:25:08+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
    "cves": []
   },
@@ -595,16 +1649,6 @@
    "cves": []
   },
   {
-   "id": "27f0347cab855ccc",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] Golang Go: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3841",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Golang Go ausnutzen, um einen Denial of Service Angriff durchzuführen, um Informationen offenzulegen, um Daten zu manipulieren und um Sicherheitsvorkehrungen zu umgehen.",
-   "published": "2026-11-06T13:15:13+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
    "id": "92b4673a41b56e02",
    "source": "cert-bund",
    "title": "[UPDATE] [mittel] Red Hat Enterprise Linux (rhc): Schwachstelle ermöglicht Denial of Service",
@@ -615,52 +1659,12 @@
    "cves": []
   },
   {
-   "id": "0b98ea1f6314428a",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] GNU libc: Schwachstelle ermöglicht Denial of Service",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3452",
-   "summary": "Ein Angreifer aus einem angrenzenden Netzwerk kann eine Schwachstelle in GNU libc ausnutzen, um einen Denial of Service Angriff durchzuführen.",
-   "published": "2026-11-06T13:15:10+00:00",
-   "first_seen": "2026-11-05T10:54:48+00:00",
-   "cves": []
-  },
-  {
-   "id": "d6e51f264f458b00",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] GNU libc: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3522",
-   "summary": "Ein lokaler Angreifer kann mehrere Schwachstellen in GNU libc ausnutzen, um beliebigen Programmcode mit den Rechten des Dienstes auszuführen, vertrauliche Informationen offenzulegen, den Speicher zu beschädigen oder einen Denial-of-Service-Zustand herbeizuführen.",
-   "published": "2026-11-06T13:15:10+00:00",
-   "first_seen": "2026-11-06T19:24:04+00:00",
-   "cves": []
-  },
-  {
-   "id": "14d143df9a4f89f0",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Red Hat Enterprise Linux (tesseract): Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4345",
-   "summary": "Ein lokaler Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux ausnutzen, um beliebigen Programmcode auszuführen, Daten zu manipulieren und offenzulegen oder einen Denial-of-Service-Zustand auszulösen.",
-   "published": "2026-11-06T13:10:17+00:00",
-   "first_seen": "2026-11-05T19:56:16+00:00",
-   "cves": []
-  },
-  {
    "id": "8385ea8aa683b5d0",
    "source": "cert-bund",
    "title": "[UPDATE] [mittel] Linux Kernel: Mehrere Schwachstellen",
    "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4152",
    "summary": "Ein Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen, möglicherweise einen Denial-of-Service-Angriff auszulösen, Daten zu manipulieren oder offenzulegen oder Sicherheitsmaßnahmen zu umgehen.",
    "published": "2026-11-06T13:10:16+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
-   "id": "a8637177f443afa9",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Golang Go: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4049",
-   "summary": "Ein Angreifer kann eine Schwachstelle in Golang Go ausnutzen, um Sicherheitsvorkehrungen zu umgehen.",
-   "published": "2026-11-06T13:10:15+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
    "cves": []
   },
@@ -675,26 +1679,6 @@
    "cves": []
   },
   {
-   "id": "3757f9122ce07c7a",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] Linux Kernel: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3438",
-   "summary": "Ein lokaler Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um einen Denial of Service zu verursachen oder eine nicht näher spezifizierte Auswirkung zu erzielen.",
-   "published": "2026-11-06T12:50:07+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
-   "id": "adf31d5f242ad16a",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] Keycloak: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3371",
-   "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in Keycloak ausnutzen, um Sicherheitsvorkehrungen zu umgehen.",
-   "published": "2026-11-06T12:50:07+00:00",
-   "first_seen": "2026-11-06T19:24:04+00:00",
-   "cves": []
-  },
-  {
    "id": "f931bc15c49beb87",
    "source": "cert-bund",
    "title": "[UPDATE] [mittel] Linux Kernel: Mehrere Schwachstellen",
@@ -705,36 +1689,6 @@
    "cves": []
   },
   {
-   "id": "4f9b5ec9f05562cc",
-   "source": "cert-bund",
-   "title": "[UPDATE] [kritisch] Node.js: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4117",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Node.js ausnutzen, um einen Denial of Service Angriff durchzuführen, um Sicherheitsvorkehrungen zu umgehen und um beliebigen Programmcode auszuführen.",
-   "published": "2026-11-06T12:48:22+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
-   "id": "e4939ac8359b1b75",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] Keycloak: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3849",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Keycloak ausnutzen, um Informationen offenzulegen, um Sicherheitsvorkehrungen zu umgehen, und um einen Cross-Site Scripting Angriff durchzuführen.",
-   "published": "2026-11-06T12:48:20+00:00",
-   "first_seen": "2026-11-06T19:24:04+00:00",
-   "cves": []
-  },
-  {
-   "id": "37e034ea1ffe60ff",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] Keycloak: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3749",
-   "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in Keycloak ausnutzen, um Sicherheitsvorkehrungen zu umgehen.",
-   "published": "2026-11-06T12:48:20+00:00",
-   "first_seen": "2026-11-06T19:24:04+00:00",
-   "cves": []
-  },
-  {
    "id": "f80aac20b1a734af",
    "source": "cert-bund",
    "title": "[UPDATE] [hoch] Linux Kernel: Mehrere Schwachstellen",
@@ -742,16 +1696,6 @@
    "summary": "Ein lokaler Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um einen Denial of Service Zustand herbeizuführen oder nicht näher spezifizierten Angriff durchzuführen.",
    "published": "2026-11-06T12:47:59+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
-   "id": "cd6fdc6b609b2603",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] Keycloak: Schwachstelle ermöglicht Erlangen von Administratorrechten",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3577",
-   "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in Keycloak ausnutzen, um Administratorrechte zu erlangen.",
-   "published": "2026-11-06T12:47:59+00:00",
-   "first_seen": "2026-11-06T19:24:04+00:00",
    "cves": []
   },
   {
@@ -785,16 +1729,6 @@
    "cves": []
   },
   {
-   "id": "bfc2dce9366d9435",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] QT: Schwachstelle ermöglicht Denial of Service",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3227",
-   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in QT ausnutzen, um einen Denial of Service Angriff durchzuführen.",
-   "published": "2026-11-06T12:47:57+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
    "id": "259e7fdd187e5b40",
    "source": "cert-bund",
    "title": "[UPDATE] [mittel] Grafana Enterprise: Mehrere Schwachstellen ermöglichen Erlangen von Benutzer- oder Administratorrechten",
@@ -805,32 +1739,12 @@
    "cves": []
   },
   {
-   "id": "a8ed31f015030ede",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Mozilla Firefox und Thunderbird: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3132",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Mozilla Firefox und Thunderbird ausnutzen, um Berechtigungen zu erweitern, Sicherheitsmaßnahmen zu umgehen, sensible Informationen offenzulegen, Daten zu manipulieren, Spoofing-Angriffe durchzuführen, möglicherweise durch Speicherbeschädigungen beliebigen Code auszuführen oder Denial-of-Service-Zustände herbeizuführen.",
-   "published": "2026-11-06T12:47:56+00:00",
-   "first_seen": "2026-11-06T19:24:04+00:00",
-   "cves": []
-  },
-  {
    "id": "61a2117085b072e2",
    "source": "cert-bund",
    "title": "[UPDATE] [mittel] CoreDNS: Schwachstelle ermöglicht Denial of Service",
    "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3104",
    "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in CoreDNS ausnutzen, um einen Denial of Service Angriff durchzuführen.",
    "published": "2026-11-06T12:47:56+00:00",
-   "first_seen": "2026-11-06T19:24:04+00:00",
-   "cves": []
-  },
-  {
-   "id": "e4697a4e874e144f",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] rsyslog: Schwachstelle ermöglicht Denial of Service",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3094",
-   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in rsyslog ausnutzen, um einen Denial of Service Angriff durchzuführen.",
-   "published": "2026-11-06T12:47:55+00:00",
    "first_seen": "2026-11-06T19:24:04+00:00",
    "cves": []
   },
@@ -891,26 +1805,6 @@
    "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2930",
    "summary": "Ein lokaler Angreifer kann eine Schwachstelle in expat ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen.",
    "published": "2026-11-06T12:47:34+00:00",
-   "first_seen": "2026-11-06T19:24:04+00:00",
-   "cves": []
-  },
-  {
-   "id": "6f8dc6d5e49b1f68",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Golang Go: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2850",
-   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Golang Go ausnutzen, um einen Denial of Service zu verursachen, ein Cross Site Scripting durchzuführen, Sicherheitsmaßnahmen zu umgehen oder Daten zu manipulieren.",
-   "published": "2026-11-06T12:47:33+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
-   "id": "8e7a442f0ee635e8",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Mozilla Firefox, Firefox ESR und Thunderbird: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2911",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Mozilla Firefox, Firefox ESR und Thunderbird ausnutzen, um seine Privilegien zu erhöhen, Sicherheitsmaßnahmen zu umgehen, vertrauliche Informationen offenzulegen, Spoofing- oder Clickjacking-Angriffe durchzuführen oder Denial-of-Service-Zustände herbeizuführen.",
-   "published": "2026-11-06T12:47:33+00:00",
    "first_seen": "2026-11-06T19:24:04+00:00",
    "cves": []
   },
@@ -1705,16 +2599,6 @@
    "cves": []
   },
   {
-   "id": "482b430cf1dd0154",
-   "source": "cert-bund",
-   "title": "[NEU] [mittel] Keycloak: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4375",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Keycloak ausnutzen, um Sicherheitsvorkehrungen zu umgehen, um einen Denial of Service Angriff durchzuführen und um einen Cross-Site Scripting Angriff durchzuführen.",
-   "published": "2026-11-06T12:44:58+00:00",
-   "first_seen": "2026-11-06T19:24:04+00:00",
-   "cves": []
-  },
-  {
    "id": "b5ec2d87f7dc690f",
    "source": "cert-bund",
    "title": "[NEU] [mittel] Apache Sling: Mehrere Schwachstellen",
@@ -1740,16 +2624,6 @@
    "title": "[NEU] [mittel] Angular: Schwachstelle ermöglicht Offenlegung von Informationen",
    "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4372",
    "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Angular ausnutzen, um Informationen offenzulegen.",
-   "published": "2026-11-06T12:44:57+00:00",
-   "first_seen": "2026-11-06T19:24:04+00:00",
-   "cves": []
-  },
-  {
-   "id": "be0bf5ad8468282b",
-   "source": "cert-bund",
-   "title": "[NEU] [mittel] LibreOffice: Schwachstelle ermöglicht Denial-of-Service",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4371",
-   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in LibreOffice ausnutzen, um einen Denial-of-Service-Angriff durchzuführen.",
    "published": "2026-11-06T12:44:57+00:00",
    "first_seen": "2026-11-06T19:24:04+00:00",
    "cves": []
@@ -1790,16 +2664,6 @@
    "title": "[NEU] [mittel] Langflow: Schwachstelle ermöglicht Denial of Service",
    "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4368",
    "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in Langflow ausnutzen, um einen Denial of Service Angriff durchzuführen.",
-   "published": "2026-11-06T12:44:56+00:00",
-   "first_seen": "2026-11-06T19:24:04+00:00",
-   "cves": []
-  },
-  {
-   "id": "6d767decb4504f9a",
-   "source": "cert-bund",
-   "title": "[NEU] [hoch] MariaDB: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4367",
-   "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in MariaDB ausnutzen, um Sicherheitsvorkehrungen zu umgehen, und Dateien zu manipulieren oder Informationen offenzulegen.",
    "published": "2026-11-06T12:44:56+00:00",
    "first_seen": "2026-11-06T19:24:04+00:00",
    "cves": []
@@ -1850,16 +2714,6 @@
    ]
   },
   {
-   "id": "fda8ca62bfb83fa7",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] Rsync: Schwachstelle ermöglicht Denial of Service",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4324",
-   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Rsync ausnutzen, um einen Denial of Service Angriff durchzuführen.",
-   "published": "2026-11-06T10:57:21+00:00",
-   "first_seen": "2026-11-04T19:44:38+00:00",
-   "cves": []
-  },
-  {
    "id": "85924b47a8fe8401",
    "source": "cert-bund",
    "title": "[UPDATE] [mittel] IBM WebSphere Application Server: Mehrere Schwachstellen ermöglichen Denial of Service",
@@ -1890,16 +2744,6 @@
    "cves": []
   },
   {
-   "id": "c55cd8793c7cdac1",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Red Hat Enterprise Linux (perl-yaml, pillow): Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4285",
-   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux ausnutzen, um Dateien zu manipulieren, beliebigen Code auszuführen, Informationen offenzulegen und Denial-of-Service-Angriffe zu starten.",
-   "published": "2026-11-06T10:57:19+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
    "id": "3f71f85769da4015",
    "source": "cert-bund",
    "title": "[UPDATE] [mittel] ProFTPD: Mehrere Schwachstellen ermöglichen Manipulation von Dateien",
@@ -1907,36 +2751,6 @@
    "summary": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in ProFTPD ausnutzen, um Dateien zu manipulieren.",
    "published": "2026-11-06T10:57:18+00:00",
    "first_seen": "2026-11-06T19:24:04+00:00",
-   "cves": []
-  },
-  {
-   "id": "5160e05c09123805",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Google Chrome / Microsoft Edge: Mehrere Schwachstellen ermöglichen nicht spezifizierten Angriff",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4244",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Google Chrome / Microsoft Edge ausnutzen, um nicht näher spezifizierte Angriffe durchzuführen, potenziell beliebigen Code auszuführen, Berechtigungen zu erweitern, Sicherheitsmaßnahmen zu umgehen, Daten offenzulegen und zu manipulieren oder einen Denial-of-Service-Zustand auszulösen.",
-   "published": "2026-11-06T10:57:17+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
-   "id": "caeb6a9fe3b65cb4",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] Red Hat Enterprise Linux (pillow and aspell): Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4243",
-   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux (pillow and aspell) ausnutzen, um einen Denial of Service Angriff durchzuführen oder beliebigen Programmcode auszuführen.",
-   "published": "2026-11-06T10:57:17+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
-   "id": "fca743ec72d55299",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Mozilla Firefox, Firefox ESR, und Thunderbird: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4216",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Mozilla Firefox, Mozilla Firefox ESR und Mozilla Thunderbird ausnutzen, um seine Privilegien zu erhöhen, um einen Denial of Service Angriff durchzuführen, um Informationen offenzulegen, um Dateien zu manipulieren und um Sicherheitsvorkehrungen zu umgehen.",
-   "published": "2026-11-06T10:57:16+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
    "cves": []
   },
   {
@@ -1990,16 +2804,6 @@
    "cves": []
   },
   {
-   "id": "a9a3ebb10b211ea4",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] rsyslog: Schwachstelle ermöglicht Manipulation von Dateien",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4119",
-   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in rsyslog ausnutzen, um Dateien zu manipulieren.",
-   "published": "2026-11-06T10:56:53+00:00",
-   "first_seen": "2026-11-04T19:44:38+00:00",
-   "cves": []
-  },
-  {
    "id": "75c196aa31016d2f",
    "source": "cert-bund",
    "title": "[UPDATE] [mittel] HAProxy: Mehrere Schwachstellen ermöglichen Denial of Service",
@@ -2010,42 +2814,12 @@
    "cves": []
   },
   {
-   "id": "e8cf36c056134b11",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Internet Systems Consortium BIND: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4116",
-   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Internet Systems Consortium BIND ausnutzen, um einen Denial of Service Angriff durchzuführen oder möglicherweise beliebigen Code auszuführen.",
-   "published": "2026-11-06T10:56:52+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
    "id": "d2d82e3b6dd729d3",
    "source": "cert-bund",
    "title": "[UPDATE] [kritisch] PHP: Mehrere Schwachstellen ermöglichen Codeausführung",
    "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4055",
    "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in PHP ausnutzen, um Speicherinhalte offenzulegen, einen Denial-of-Service-Zustand auszulösen oder beliebigen Code auszuführen.",
    "published": "2026-11-06T10:56:51+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
-   "id": "8e55a7392de43a73",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Atlassian Produkte (Bamboo, Bitbucket, Confluence, Crucible, Fisheye und Jira): Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4056",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Atlassian Bamboo, Bitbucket, Confluence, Crucible, Fisheye und Jira ausnutzen, um Daten zu manipulieren, um seine Privilegien zu erhöhen, um einen Denial of Service Angriff durchzuführen, um Informationen offenzulegen, um einen Cross-Site Scripting Angriff durchzuführen, um Sicherheitsvorkehrungen zu umgehen und um beliebigen Programmcode auszuführen.",
-   "published": "2026-11-06T10:56:50+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
-   "id": "04cd3a94e8fb15a2",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] Oracle Java SE: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4079",
-   "summary": "Ein entfernter, anonymer oder authentisierter Angreifer kann mehrere Schwachstellen in Oracle Java SE ausnutzen, um die Vertraulichkeit, Integrität und Verfügbarkeit zu gefährden.",
-   "published": "2026-11-06T10:56:49+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
    "cves": []
   },
@@ -2070,42 +2844,12 @@
    "cves": []
   },
   {
-   "id": "add663b302ff1972",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Red Hat Enterprise Linux (python-tornado, resteasy-core, bubblewrap, pgvector): Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4029",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux ausnutzen, um Sicherheitsvorkehrungen zu umgehen, beliebigen Code auszuführen, Daten zu manipulieren und offenzulegen oder einen Denial-of-Service-Angriff auszulösen.",
-   "published": "2026-11-06T10:56:46+00:00",
-   "first_seen": "2026-11-04T19:44:38+00:00",
-   "cves": []
-  },
-  {
-   "id": "0852743a9fb0abb8",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] Linux Kernel: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4019",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen, möglicherweise einen Denial-of-Service-Angriff auszulösen, Daten zu manipulieren oder offenzulegen oder Sicherheitsmaßnahmen zu umgehen.",
-   "published": "2026-11-06T10:56:46+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
    "id": "c906c482e1c401d0",
    "source": "cert-bund",
    "title": "[UPDATE] [mittel] Red Hat Quay und Enterprise Linux (pypdf, urllib3, URI): Mehrere Schwachstellen",
    "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4024",
    "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Red Hat Quay und Red Hat Enterprise Linux ausnutzen, um einen Denial of Service Angriff durchzuführen oder Sicherheitsmaßnahmen zu umgehen.",
    "published": "2026-11-06T10:56:45+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
-   "id": "3b13c8dc9158a111",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Linux Kernel: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4008",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um einen Denial of Service Angriff durchzuführen oder Root-Rechte zu erlangen.",
-   "published": "2026-11-06T10:56:25+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
    "cves": []
   },
@@ -2150,16 +2894,6 @@
    "cves": []
   },
   {
-   "id": "2bae57be7dee4159",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Mozilla Firefox und Thunderbrid: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3942",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Mozilla Firefox und Mozilla Thunderbrid ausnutzen, um seine Privilegien zu erhöhen, Sicherheitsmaßnahmen zu umgehen, Spoofing-Angriffe durchzuführen, Daten offenzulegen oder zu manipulieren, Denial-of-Service-Zustände zu verursachen oder andere, nicht näher spezifizierte Angriffe durchzuführen.",
-   "published": "2026-11-06T10:56:21+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
    "id": "cb99790b79bc1816",
    "source": "cert-bund",
    "title": "[UPDATE] [hoch] Apache CXF: Mehrere Schwachstellen",
@@ -2186,26 +2920,6 @@
    "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3804",
    "summary": "Ein Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen.",
    "published": "2026-11-06T10:56:18+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
-   "id": "efcb01bfe08b9cba",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] expat: Schwachstelle ermöglicht Offenlegung von Informationen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3796",
-   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in expat ausnutzen, um Informationen offenzulegen, was möglicherweise weitere Angriffe ermöglicht.",
-   "published": "2026-11-06T10:56:17+00:00",
-   "first_seen": "2026-11-04T19:44:38+00:00",
-   "cves": []
-  },
-  {
-   "id": "128c3978f39d3789",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] Linux Kernel: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3743",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen, möglicherweise einen Denial-of-Service-Angriff auszulösen, Daten zu manipulieren oder offenzulegen oder Sicherheitsmaßnahmen zu umgehen.",
-   "published": "2026-11-06T10:56:17+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
    "cves": []
   },
@@ -2247,16 +2961,6 @@
    "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in expat ausnutzen, um einen Denial of Service Angriff durchzuführen.",
    "published": "2026-11-06T10:55:54+00:00",
    "first_seen": "2026-11-04T19:44:38+00:00",
-   "cves": []
-  },
-  {
-   "id": "ddf8fe90c1542ddd",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] OpenSSL: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3638",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in OpenSSL ausnutzen, um Sicherheitsvorkehrungen zu umgehen, vertrauliche Informationen offenzulegen, Daten zu manipulieren und einen Denial-of-Service-Zustand zu verursachen.",
-   "published": "2026-11-06T10:55:54+00:00",
-   "first_seen": "2026-11-05T10:54:48+00:00",
    "cves": []
   },
   {
@@ -2370,16 +3074,6 @@
    "cves": []
   },
   {
-   "id": "f2c9beb20ff9a022",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Google Chrome / Microsoft Edge: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3380",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Google Chrome / Microsoft Edge ausnutzen, um beliebigen Programmcode auszuführen, Sicherheitsmaßnahmen zu umgehen, erweiterte Berechtigungen zu erlangen, Daten zu manipulieren oder offenzulegen oder Denial-of-Service-Zustände herbeizuführen.",
-   "published": "2026-11-06T10:54:57+00:00",
-   "first_seen": "2026-11-05T10:54:48+00:00",
-   "cves": []
-  },
-  {
    "id": "879fb99efcb22729",
    "source": "cert-bund",
    "title": "[UPDATE] [hoch] GIMP: Schwachstelle ermöglicht Codeausführung und Denial of Service",
@@ -2387,16 +3081,6 @@
    "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in GIMP ausnutzen, um beliebigen Programmcode auszuführen und um einen Denial of Service Angriff durchzuführen.",
    "published": "2026-11-06T10:54:57+00:00",
    "first_seen": "2026-11-06T19:24:04+00:00",
-   "cves": []
-  },
-  {
-   "id": "ea408a98604d2a21",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] QT: Schwachstelle ermöglicht Denial of Service",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3332",
-   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in QT ausnutzen, um einen Denial of Service Angriff durchzuführen.",
-   "published": "2026-11-06T10:54:56+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
    "cves": []
   },
   {
@@ -3012,106 +3696,6 @@
    "cves": []
   },
   {
-   "id": "98c8329816c38b59",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Red Hat Enterprise Linux (flatpak): Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3861",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux ausnutzen, um Administratorrechte zu erlangen, beliebigen Code auszuführen, Daten zu manipulieren oder beliebige Dateien auf dem Host zu schreiben oder zu überschreiben, was möglicherweise zur vollständigen Kompromittierung des Systems führen kann.",
-   "published": "2026-11-05T10:29:58+00:00",
-   "first_seen": "2026-11-05T10:54:48+00:00",
-   "cves": []
-  },
-  {
-   "id": "ff3182e3403173f1",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Google Chrome / Microsoft Edge: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3761",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Google Chrome / Microsoft Edge ausnutzen, um beliebigen Programmcode auszuführen, erweiterte Berechtigungen zu erlangen, Sicherheitsmaßnahmen zu umgehen, Daten zu manipulieren oder offenzulegen, einen Denial-of-Service-Zustand auszulösen oder andere, nicht näher spezifizierte Angriffe durchzuführen.",
-   "published": "2026-11-05T10:25:06+00:00",
-   "first_seen": "2026-11-05T10:54:48+00:00",
-   "cves": []
-  },
-  {
-   "id": "136c875ec9348bb0",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Google Chrome / Microsoft Edge: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3737",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Google Chrome / Microsoft Edge ausnutzen, um beliebigen Programmcode auszuführen, Sicherheitsmaßnahmen zu umgehen, Informationen offenzulegen, Daten zu verfälschen oder zu manipulieren oder Denial-of-Service-Zustände zu verursachen.",
-   "published": "2026-11-05T10:25:05+00:00",
-   "first_seen": "2026-11-05T10:54:48+00:00",
-   "cves": []
-  },
-  {
-   "id": "3058bd655ef8a30c",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Google Chrome: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3648",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Google Chrome ausnutzen, um beliebigen Programmcode auszuführen, Berechtigungen zu erweitern, Sicherheitsmaßnahmen zu umgehen, Daten offenzulegen oder zu manipulieren, einen Denial-of-Service-Zustand auszulösen oder Cross-Site-Scripting- und Spoofing-Angriffe durchzuführen.",
-   "published": "2026-11-05T10:25:04+00:00",
-   "first_seen": "2026-11-05T10:54:48+00:00",
-   "cves": []
-  },
-  {
-   "id": "2d348b5c685ae4e1",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Google Chrome / Microsoft Edge: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3443",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Google Chrome / Microsoft Edge ausnutzen, um potenziell beliebigen Code auszuführen, Sicherheitsmaßnahmen zu umgehen, Server-Side Request Forgery (SSRF) durchzuführen, sensible Informationen offenzulegen, Daten zu manipulieren, Denial-of-Service-Zustände zu verursachen oder Spoofing-Angriffe zu starten.",
-   "published": "2026-11-05T10:25:03+00:00",
-   "first_seen": "2026-11-05T10:54:48+00:00",
-   "cves": []
-  },
-  {
-   "id": "f4b0b8b09bfac1d8",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Google Chrome / Microsoft Edge: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3175",
-   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Google Chrome / Microsoft Edge ausnutzen, um beliebigen Programmcode auszuführen, um Informationen offenzulegen und um Sicherheitsmechanismen zu umgehen.",
-   "published": "2026-11-05T10:25:01+00:00",
-   "first_seen": "2026-11-05T10:54:48+00:00",
-   "cves": []
-  },
-  {
-   "id": "969de2d1bc8cd068",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Google Chrome / Microsoft Edge: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4067",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Google Chrome / Microsoft Edge ausnutzen, um beliebigen Code auszuführen, Berechtigungen zu erweitern, Sicherheitsmaßnahmen zu umgehen, Daten offenzulegen oder zu manipulieren, einen Denial-of-Service-Zustand auszulösen oder andere, nicht näher spezifizierte Angriffe durchzuführen.",
-   "published": "2026-11-05T10:20:09+00:00",
-   "first_seen": "2026-11-05T10:54:48+00:00",
-   "cves": []
-  },
-  {
-   "id": "0b784ded56ef5640",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Google Chrome: Mehrere Schwachstellen ermöglichen nicht spezifizierten Angriff",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4210",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Google Chrome ausnutzen, um nicht näher spezifizierte Angriffe durchzuführen, potenziell beliebigen Code auszuführen, Berechtigungen zu erweitern, Sicherheitsmaßnahmen zu umgehen, Daten offenzulegen und zu manipulieren oder einen Denial-of-Service-Zustand auszulösen.",
-   "published": "2026-11-05T10:19:56+00:00",
-   "first_seen": "2026-11-05T10:54:48+00:00",
-   "cves": []
-  },
-  {
-   "id": "f1c59dac618fbb4a",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Rsync: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2817",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Rsync ausnutzen, um seine Privilegien zu erhöhen, beliebigen Code auszuführen, Daten offenzulegen oder zu manipulieren, Sicherheitsmaßnahmen zu umgehen oder Denial-of-Service-Zustände herbeizuführen.",
-   "published": "2026-11-05T10:10:58+00:00",
-   "first_seen": "2026-11-04T19:44:38+00:00",
-   "cves": []
-  },
-  {
-   "id": "be26ff0909b387f4",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] GNU libc: Schwachstelle ermöglicht Denial of Service",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2740",
-   "summary": "Ein lokaler Angreifer kann eine Schwachstelle in GNU libc ausnutzen, um einen Denial of Service Angriff durchzuführen.",
-   "published": "2026-11-05T10:10:58+00:00",
-   "first_seen": "2026-11-04T19:44:38+00:00",
-   "cves": []
-  },
-  {
    "id": "f0b20571ccffa9db",
    "source": "cert-bund",
    "title": "[UPDATE] [mittel] Netty: Mehrere Schwachstellen",
@@ -3502,16 +4086,6 @@
    "cves": []
   },
   {
-   "id": "79da67b7cdf6684c",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] Red Hat Enterprise Linux ca-certificates: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4120",
-   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Red Hat Enterprise Linux ca-certificates ausnutzen, um Sicherheitsvorkehrungen zu umgehen, vertrauliche Informationen auszulesen oder Daten zu manipulieren",
-   "published": "2026-11-05T09:52:42+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
    "id": "e83768d36086ed1d",
    "source": "cert-bund",
    "title": "[UPDATE] [hoch] TianoCore EDK2 PXE Treiber: Schwachstelle ermöglicht Ausführen von beliebigem Programmcode und DoS",
@@ -3538,16 +4112,6 @@
    "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4096",
    "summary": "Ein Angreifer kann mehrere Schwachstellen in Kyverno ausnutzen, um seine Privilegien zu erhöhen, um einen Denial of Service Angriff durchzuführen, um Informationen offenzulegen, um Dateien zu manipulieren und um Sicherheitsvorkehrungen zu umgehen.",
    "published": "2026-11-05T09:52:41+00:00",
-   "first_seen": "2026-11-05T10:54:48+00:00",
-   "cves": []
-  },
-  {
-   "id": "1aab9806fe322c1a",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Mozilla Produkte (Thunderbird, Firefox ESR und Firefox): Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4064",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Mozilla Thunderbird, Mozilla Firefox ESR und Mozilla Firefox ausnutzen, um Sicherheitsvorkehrungen zu umgehen, um einen Denial of Service Angriff durchzuführen, um Informationen offenzulegen und um Daten zu manipulieren.",
-   "published": "2026-11-05T09:52:40+00:00",
    "first_seen": "2026-11-05T10:54:48+00:00",
    "cves": []
   },
@@ -3592,16 +4156,6 @@
    "cves": []
   },
   {
-   "id": "0ce35ac5f8a04402",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Red Hat Enterprise Linux (goose, environment-modules, tornado): Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3883",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux ausnutzen, um Sicherheitsmaßnahmen zu umgehen, vertrauliche Informationen offenzulegen, beliebigen Code auszuführen oder Denial-of-Service-Zustände herbeizuführen.",
-   "published": "2026-11-05T09:52:13+00:00",
-   "first_seen": "2026-11-05T10:54:48+00:00",
-   "cves": []
-  },
-  {
    "id": "a5dff2291f76e409",
    "source": "cert-bund",
    "title": "[UPDATE] [hoch] ImageMagick: Mehrere Schwachstellen",
@@ -3609,16 +4163,6 @@
    "summary": "Ein Angreifer kann mehrere Schwachstellen in ImageMagick ausnutzen, um beliebigen Programmcode mit den Rechten des Dienstes auszuführen, den Speicher zu beschädigen, Cross-Site-Scripting-Angriffe durchzuführen, einen Denial-of-Service-Angriff auszulösen, Daten zu manipulieren und vertrauliche Informationen offenzulegen.",
    "published": "2026-11-05T09:52:12+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
-   "id": "9ba02808dea3bb98",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] Red Hat Enterprise Linux (resteasy): Schwachstelle ermöglicht Offenlegung von Informationen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3814",
-   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Red Hat Enterprise Linux in resteasy ausnutzen, um Informationen offenzulegen.",
-   "published": "2026-11-05T09:52:11+00:00",
-   "first_seen": "2026-11-05T10:54:48+00:00",
    "cves": []
   },
   {
@@ -3649,16 +4193,6 @@
    "summary": "Ein lokaler Angreifer kann eine Schwachstelle in ImageMagick ausnutzen, um Sicherheitsvorkehrungen zu umgehen.",
    "published": "2026-11-05T09:51:47+00:00",
    "first_seen": "2026-11-05T10:54:48+00:00",
-   "cves": []
-  },
-  {
-   "id": "9588d6b1192f4599",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] CPython: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3716",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Python ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen, um einen Denial of Service Angriff durchzuführen, und um Sicherheitsvorkehrungen zu umgehen.",
-   "published": "2026-11-05T09:51:46+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
    "cves": []
   },
   {
@@ -3722,26 +4256,6 @@
    "cves": []
   },
   {
-   "id": "ac2d94528c35d3e6",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] Red Hat Enterprise Linux (gdb): Schwachstelle ermöglicht Codeausführung",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3650",
-   "summary": "Ein lokaler Angreifer kann eine Schwachstelle in Red Hat Enterprise Linux ausnutzen, um beliebigen Programmcode auszuführen.",
-   "published": "2026-11-05T09:51:39+00:00",
-   "first_seen": "2026-11-04T19:44:38+00:00",
-   "cves": []
-  },
-  {
-   "id": "51748cb380bd21bd",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Mozilla Firefox, Firefox ESR und Thunderbird: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3654",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Mozilla Firefox ESR, Mozilla Firefox und Thunderbird ausnutzen, um beliebigen Programmcode auszuführen, Berechtigungen zu erweitern, Sicherheitsmaßnahmen zu umgehen, Daten offenzulegen oder zu manipulieren, einen Denial-of-Service-Zustand auszulösen oder andere, nicht näher spezifizierte Angriffe zu starten.",
-   "published": "2026-11-05T09:51:18+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
    "id": "1a92a1b7d09ecdf5",
    "source": "cert-bund",
    "title": "[UPDATE] [hoch] WebKitGTK: Mehrere Schwachstellen",
@@ -3802,16 +4316,6 @@
    "cves": []
   },
   {
-   "id": "fbbc9f3704be5f32",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Netty: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3477",
-   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Netty ausnutzen, um Sicherheitsvorkehrungen zu umgehen, Daten zu manipulieren, vertrauliche Informationen offenzulegen oder einen Denial-of-Service-Zustand herbeizuführen.",
-   "published": "2026-11-05T09:51:12+00:00",
-   "first_seen": "2026-11-05T10:54:48+00:00",
-   "cves": []
-  },
-  {
    "id": "b2a835ee856e3307",
    "source": "cert-bund",
    "title": "[UPDATE] [hoch] Red Hat Enterprise Linux (corosync, libevent, libsoup): Mehrere Schwachstellen",
@@ -3829,16 +4333,6 @@
    "summary": "Ein Angreifer kann mehrere Schwachstellen in PCRE2 (Perl Compatible Regular Expressions) ausnutzen, um Sicherheitsvorkehrungen zu umgehen, Speicher zu beschädigen, Informationen offenzulegen oder Denial-of-Service-Zustände herbeizuführen.",
    "published": "2026-11-05T09:50:50+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
-   "id": "e07712eec649fe24",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Squid: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3329",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Squid ausnutzen, um einen Denial of Service Angriff durchzuführen, um beliebigen Programmcode auszuführen und um Sicherheitsvorkehrungen zu umgehen.",
-   "published": "2026-11-05T09:50:50+00:00",
-   "first_seen": "2026-11-04T19:44:38+00:00",
    "cves": []
   },
   {
@@ -3929,36 +4423,6 @@
    "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in WebKitGTK ausnutzen, um eine Speicherbeschädigung zu verursachen und möglicherweise beliebigen Code auszuführen oder einen Denial-of-Service-Zustand auszulösen.",
    "published": "2026-11-05T09:50:26+00:00",
    "first_seen": "2026-11-05T10:54:48+00:00",
-   "cves": []
-  },
-  {
-   "id": "a9dbfb3d92cbd2b7",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] GNU libc: Schwachstelle ermöglicht nicht spezifizierten Angriff",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3063",
-   "summary": "Ein lokaler Angreifer kann eine Schwachstelle in GNU libc ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen.",
-   "published": "2026-11-05T09:50:25+00:00",
-   "first_seen": "2026-11-04T19:44:38+00:00",
-   "cves": []
-  },
-  {
-   "id": "c2748f40f69e30d0",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] GNU libc: Schwachstelle ermöglicht Denial of Service",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3051",
-   "summary": "Ein Angreifer kann eine Schwachstelle in GNU libc ausnutzen, um einen Denial of Service Angriff durchzuführen.",
-   "published": "2026-11-05T09:50:24+00:00",
-   "first_seen": "2026-11-04T19:44:38+00:00",
-   "cves": []
-  },
-  {
-   "id": "fab108a654603e55",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] GNU libc: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3014",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in GNU libc ausnutzen, um beliebigen Programmcode auszuführen, vertrauliche Informationen offenzulegen, Daten zu manipulieren, einen Denial-of-Service-Zustand auszulösen oder andere, nicht näher bezeichnete Angriffe durchzuführen.",
-   "published": "2026-11-05T09:50:01+00:00",
-   "first_seen": "2026-11-04T19:44:38+00:00",
    "cves": []
   },
   {
@@ -4428,16 +4892,6 @@
    "cves": []
   },
   {
-   "id": "ef1fac33e5cc2d7a",
-   "source": "cert-bund",
-   "title": "[NEU] [hoch] IBM QRadar SIEM: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4331",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in IBM QRadar SIEM ausnutzen, um einen Cross-Site Scripting Angriff durchzuführen, und um falsche Informationen darzustellen.",
-   "published": "2026-11-04T12:49:02+00:00",
-   "first_seen": "2026-11-04T19:44:38+00:00",
-   "cves": []
-  },
-  {
    "id": "8c1379374fef6218",
    "source": "cert-bund",
    "title": "[NEU] [kritisch] Zyxel Switch: Schwachstelle ermöglicht Codeausführung",
@@ -4628,16 +5082,6 @@
    "cves": []
   },
   {
-   "id": "05d90dae6661400f",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Netty: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3291",
-   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Netty ausnutzen, um Denial-of-Service-Zustände zu verursachen, Sicherheitsmaßnahmen zu umgehen, Request- oder Response-Smuggling durchzuführen sowie Daten offenzulegen oder zu manipulieren.",
-   "published": "2026-11-04T12:42:49+00:00",
-   "first_seen": "2026-11-04T19:44:38+00:00",
-   "cves": []
-  },
-  {
    "id": "d22793c49b46ab83",
    "source": "cert-bund",
    "title": "[UPDATE] [mittel] vllm: Schwachstelle ermöglicht Denial of Service",
@@ -4723,16 +5167,6 @@
    "title": "[UPDATE] [hoch] vllm: Mehrere Schwachstellen",
    "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2842",
    "summary": "Ein Angreifer kann mehrere Schwachstellen in vllm ausnutzen, um Informationen offenzulegen, Daten zu manipulieren, Sicherheitsmaßnahmen zu umgehen oder einen Denial-of-Service-Zustand herbeizuführen.",
-   "published": "2026-11-04T12:41:47+00:00",
-   "first_seen": "2026-11-04T19:44:38+00:00",
-   "cves": []
-  },
-  {
-   "id": "9233d04d4950fb00",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] Red Hat Build of Apache Camel for Quarkus (sshd-core, libthrift, org.hl7.fhir.utilities): Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2834",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux und Apache Camel ausnutzen, um einen Denial of Service Angriff durchzuführen, Sicherheitsmaßnahmen zu umgehen, Daten zu manipulieren und offenzulegen oder beliebigen Code auszuführen.",
    "published": "2026-11-04T12:41:47+00:00",
    "first_seen": "2026-11-04T19:44:38+00:00",
    "cves": []
@@ -5310,16 +5744,6 @@
    "cves": []
   },
   {
-   "id": "9f69bd74880554c2",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] DBeaver: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4013",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in DBeaver ausnutzen, um beliebigen Programmcode auszuführen oder einen Denial-of-Service-Zustand auszulösen.",
-   "published": "2026-11-04T11:39:57+00:00",
-   "first_seen": "2026-11-04T19:44:38+00:00",
-   "cves": []
-  },
-  {
    "id": "0a0919f7b5dbd647",
    "source": "cert-bund",
    "title": "[UPDATE] [niedrig] FreeRDP: Mehrere Schwachstellen ermöglichen Denial of Service",
@@ -5327,16 +5751,6 @@
    "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in FreeRDP ausnutzen, um einen Denial of Service Angriff durchzuführen.",
    "published": "2026-11-04T11:39:57+00:00",
    "first_seen": "2026-11-04T19:44:38+00:00",
-   "cves": []
-  },
-  {
-   "id": "f8cb6e3be671a9a1",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] cURL: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3904",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in cURL ausnutzen, um beliebigen Programmcode auszuführen, Sicherheitsmaßnahmen zu umgehen, vertrauliche Informationen offenzulegen, Daten zu manipulieren oder einen Denial-of-Service-Zustand auszulösen.",
-   "published": "2026-11-04T11:39:54+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
    "cves": []
   },
   {
@@ -5396,16 +5810,6 @@
    "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3790",
    "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux ausnutzen, um Sicherheitsvorkehrungen zu umgehen, Daten zu manipulieren und einen Denial-of-Service-Zustand auszulösen.",
    "published": "2026-11-04T11:39:30+00:00",
-   "first_seen": "2026-11-04T19:44:38+00:00",
-   "cves": []
-  },
-  {
-   "id": "6ee787cc5164791f",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] IBM SPSS: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3791",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in IBM SPSS ausnutzen, um einen Denial of Service Angriff durchzuführen, um Informationen offenzulegen und um Dateien zu manipulieren.",
-   "published": "2026-11-04T11:39:29+00:00",
    "first_seen": "2026-11-04T19:44:38+00:00",
    "cves": []
   },
@@ -5507,16 +5911,6 @@
    "summary": "Rilevate molteplici vulnerabilità, di cui 3 con gravità “critica” e 27 con gravità “alta”, nei prodotti HPE Fabric Composer e Virtual Intranet Access (VIA). Tali vulnerabilità potrebbero consentire a un attaccante, in alcuni casi non autenticato, di eludere i meccanismi di autenticazione, eseguire codice arbitrario, accedere a informazioni sensibili, ottenere privilegi elevati o compromettere la…",
    "published": "2026-11-04T11:16:32+00:00",
    "first_seen": "2026-11-04T19:44:38+00:00",
-   "cves": []
-  },
-  {
-   "id": "17cb975a71861220",
-   "source": "cert-bund",
-   "title": "[NEU] [mittel] IBM WebSphere Application Server Liberty: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4314",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in IBM WebSphere Application Server Liberty ausnutzen, um einen Denial of Service Angriff durchzuführen, um falsche Informationen darzustellen und um Informationen offenzulegen.",
-   "published": "2026-11-04T10:24:01+00:00",
-   "first_seen": "2026-11-04T10:54:28+00:00",
    "cves": []
   },
   {
@@ -6223,16 +6617,6 @@
    "cves": []
   },
   {
-   "id": "00f7b363633f391f",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] Red Hat Enterprise Linux (PyJWT): Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4264",
-   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Red Hat Enterprise Linux (PyJWT) ausnutzen, um Sicherheitsvorkehrungen zu umgehen.",
-   "published": "2026-11-03T14:14:27+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
    "id": "6ca5647ce90c499c",
    "source": "cert-bund",
    "title": "[NEU] [mittel] Red Hat Enterprise Linux (libXi, ghostscript): Mehrere Schwachstellen",
@@ -6698,26 +7082,6 @@
    "cves": []
   },
   {
-   "id": "94d7f95d78cee110",
-   "source": "cert-bund",
-   "title": "[NEU] [mittel] IBM Storage Scale: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4293",
-   "summary": "Ein lokaler Angreifer kann eine Schwachstelle in IBM Storage Scale und IBM Storage Scale System ausnutzen, um Sicherheitsvorkehrungen zu umgehen.",
-   "published": "2026-11-03T11:47:34+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
-   "id": "9ba5fc435df2f347",
-   "source": "cert-bund",
-   "title": "[NEU] [niedrig] IBM i: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen und Denial of Service",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4291",
-   "summary": "Ein lokaler Angreifer kann eine Schwachstelle in IBM i ausnutzen, um Sicherheitsvorkehrungen zu umgehen, und um einen Denial of Service Angriff durchzuführen.",
-   "published": "2026-11-03T11:47:34+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
    "id": "848a7b5b1fe32ebd",
    "source": "cert-bund",
    "title": "[NEU] [hoch] QT: Schwachstelle ermöglicht Denial of Service",
@@ -7154,16 +7518,6 @@
    "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3489",
    "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Red Hat Enterprise Linux (OpenEXR) ausnutzen, um beliebigen Programmcode auszuführen, und um einen Denial of Service Angriff durchzuführen.",
    "published": "2026-11-03T10:24:19+00:00",
-   "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
-   "id": "178f8bdf8f8b364a",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Atlassian Bamboo, Bitbucket, Confluence, Fisheye/Crucible, Jira Software und Jira Service Management: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3376",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Atlassian Bamboo, Bitbucket, Confluence, Fisheye/Crucible, Jira Software und Jira Service Management ausnutzen, um beliebigen Programmcode auszuführen, Sicherheitsmaßnahmen zu umgehen, serverseitige Request-Forgery-Angriffe (SSRF) durchzuführen, Cross-Site-Scripting-Angriffe zu starten, sensible Informationen offenzulegen, Daten zu manipulieren oder De…",
-   "published": "2026-11-03T10:24:16+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
    "cves": []
   },
