@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T17:02:23+00:00",
+ "updated": "2026-11-10T23:19:51+00:00",
  "sources": {
   "csirt-it": {
    "name": "CSIRT Italia (ACN)",
@@ -94,6 +94,80 @@
   }
  },
  "items": [
+  {
+   "id": "f3f00e4e369f01e6",
+   "source": "ncsc-nl",
+   "title": "NCSC-2026-0353 [1.03] [M/H] Kwetsbaarheden verholpen in Microsoft Windows",
+   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0353",
+   "summary": "Microsoft heeft meerdere kwetsbaarheden verholpen in Windows. Een kwaadwillende kan de kwetsbaarheden misbruiken om aanvallen uit te voeren die kunnen leiden tot de categorieën schade, zoals genoemd in onderstaande tabel. Microsoft heeft voor Windows meerdere kwetsbaarheden verholpen. De 32 ernstigste kwetsbaarheden bevinden zich in meerdere Windows componenten en hebben een CVSS score van 9.0 en…",
+   "published": "2026-11-10T20:24:10+00:00",
+   "first_seen": "2026-11-10T23:19:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "f8e0e69b0eeaed67",
+   "source": "ncsc-nl",
+   "title": "NCSC-2026-0477 [1.00] [M/H] Kwetsbaarheden verholpen in Microsoft Exchange server",
+   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0477",
+   "summary": "Microsoft heeft 9 kwetsbaarheden verholpen in Exchange Server. Een kwaadwillende kan de kwetsbaarheden misbruiken om zich voor te doen als andere gebruiker, zich verhoogde rechten toe te kennen en willekeurige code uit te voeren met rechten van het proces. ``` Microsoft Exchange Server: |------------------|------|-------------------------------------| | CVE-ID | CVSS | Impact | |-----------------…",
+   "published": "2026-11-10T20:04:46+00:00",
+   "first_seen": "2026-11-10T23:19:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "aacc4c594500d7a9",
+   "source": "ncsc-nl",
+   "title": "NCSC-2026-0476 [1.00] [M/H] Kwetsbaarheden verholpen in Microsoft SQL Server",
+   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0476",
+   "summary": "Microsoft heeft 55 kwetsbaarheden verholpen in diverse componenten van SQL Server. Een kwaadwillende kan de kwetsbaarheden misbruiken om aanvallen uit te voeren die kunnen leiden tot de categorieën schade zoals benoemd in onderstaande tabel. De kwetsbaarheid met kenmerk CVE-2026-116945, heeft een CVSS-score van 9.8 en betreft een heap-based buffer overflow in Microsoft SQL Server. Een ongeautoris…",
+   "published": "2026-11-10T20:03:16+00:00",
+   "first_seen": "2026-11-10T23:19:51+00:00",
+   "cves": [
+    "CVE-2026-116945"
+   ]
+  },
+  {
+   "id": "5024d9fc3122a3ab",
+   "source": "ncsc-nl",
+   "title": "NCSC-2026-0475 [1.00] [M/H] Kwetsbaarheden verholpen in Microsoft Azure",
+   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0475",
+   "summary": "Microsoft heeft meerdere kwetsbaarheden verholpen in diverse Azure componenten. Een kwaadwillende kan de kwetsbaarheden misbruiken om aanvallen uit te voeren die kunnen leiden tot de categorieën schade, zoals genoemd in onderstaande tabel. De kwetsbaarheid met kenmerk CVE-2026-119990, met een CVSS-score van 9.8 betreft ontbrekende authenticatie voor een kritieke functie in Azure OpenAI. Een ongea…",
+   "published": "2026-11-10T19:59:23+00:00",
+   "first_seen": "2026-11-10T23:19:51+00:00",
+   "cves": [
+    "CVE-2026-119990"
+   ]
+  },
+  {
+   "id": "636c92b4e53ec0bd",
+   "source": "ncsc-nl",
+   "title": "NCSC-2026-0474 [1.00] [M/H] Kwetsbaarheden verholpen in Microsoft Office",
+   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0474",
+   "summary": "Microsoft heeft kwetsbaarheden verholpen in diverse Office producten. Een kwaadwillende kan de kwetsbaarheden misbruiken om aanvallen uit te voeren die kunnen leiden tot de categorieën schade, zoals genoemd in onderstaande tabellen. Microsoft heeft voor Office meerdere kwetsbaarheden verholpen. De 2 ernstigste kwetsbaarheden bevinden zich in Sharepoint en hebben een CVSS score van 9.0 en 9.9 toeg…",
+   "published": "2026-11-10T19:46:26+00:00",
+   "first_seen": "2026-11-10T23:19:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "75f9d0d4e6a2d23d",
+   "source": "ncsc-nl",
+   "title": "NCSC-2026-0473 [1.00] [M/H] Kwetsbaarheden verholpen in Microsoft Developer Tools",
+   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0473",
+   "summary": "Microsoft heeft kwetsbaarheden verholpen in diverse Developer Tools. Een kwaadwillende kan de kwetsbaarheden misbruiken om aanvallen uit te voeren die kunnen leiden tot de categorieën schade zoals benoemd in onderstaande tabel. De vereiste voorwaarden voor succesvol misbruik verschillen per kwetsbaarheid. Afhankelijk van de kwetsbaarheid kan misbruik gebruikersinteractie vereisen, zoals het opene…",
+   "published": "2026-11-10T19:38:38+00:00",
+   "first_seen": "2026-11-10T23:19:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "2c3e015869a3753d",
+   "source": "ncsc-nl",
+   "title": "NCSC-2026-0472 [1.00] [M/H] Kwetsbaarheden verholpen in Microsoft Windows",
+   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0472",
+   "summary": "Microsoft heeft kwetsbaarheden verholpen in Windows. Een kwaadwillende kan de kwetsbaarheden mogelijk misbruiken om beveiligingsmaatregelen te omzeilen, privileges te verhogen, willekeurige code uit te voeren en/of toegang te verkrijgen tot gevoelige informatie. De 13 ernstigste kwetsbaarheden bevinden zich in verschillende Windows-componenten en hebben een CVSS-score van 9,0 of hoger. Afhankelij…",
+   "published": "2026-11-10T19:23:18+00:00",
+   "first_seen": "2026-11-10T23:19:51+00:00",
+   "cves": []
+  },
   {
    "id": "f88e448a607f9167",
    "source": "csirt-it",
@@ -1603,6 +1677,20 @@
    "published": "2026-11-10T12:02:15+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
    "cves": []
+  },
+  {
+   "id": "54186d86b72e1874",
+   "source": "cisa",
+   "title": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+   "summary": "CISA has added six new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-20320 Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability CVE-2026-111560 Barracuda Networks Multiple Products OS Command Injection Vulnerability CVE-2026-111793 Openwave Messaging Limited Webtop Media Transcoder Incorrec…",
+   "published": "2026-11-10T12:00:00+00:00",
+   "first_seen": "2026-11-10T23:19:51+00:00",
+   "cves": [
+    "CVE-2026-111560",
+    "CVE-2026-111793",
+    "CVE-2026-20320"
+   ]
   },
   {
    "id": "8385ea8aa683b5d0",

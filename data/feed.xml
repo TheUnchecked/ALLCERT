@@ -3,12 +3,68 @@
   <title>ALLCERT - Segnalazioni dei CERT</title>
   <subtitle>Segnalazioni e notizie dei CERT, dei CSIRT e delle agenzie di cybersicurezza</subtitle>
   <id>https://theunchecked.github.io/ALLCERT/</id>
-  <updated>2026-11-10T17:02:23+00:00</updated>
+  <updated>2026-11-10T23:19:51+00:00</updated>
   <link href="https://theunchecked.github.io/ALLCERT/" />
   <link href="https://theunchecked.github.io/ALLCERT/data/feed.xml" rel="self" />
   <author>
     <name>ALLCERT</name>
   </author>
+  <entry>
+    <title>[NL] NCSC-2026-0353 [1.03] [M/H] Kwetsbaarheden verholpen in Microsoft Windows</title>
+    <link href="https://advisories.ncsc.nl/advisory?id=NCSC-2026-0353" />
+    <id>urn:allcert:f3f00e4e369f01e6</id>
+    <updated>2026-11-10T20:24:10+00:00</updated>
+    <category term="NCSC-NL - Avvisi" />
+    <summary>Fonte: NCSC-NL - Avvisi. Microsoft heeft meerdere kwetsbaarheden verholpen in Windows. Een kwaadwillende kan de kwetsbaarheden misbruiken om aanvallen uit te voeren die kunnen leiden tot de categorieën schade, zoals genoemd in onderstaande tabel. Microsoft heeft voor Windows meerdere kwetsbaarheden verholpen. De 32 ernstigste kwetsbaarheden bevinden zich in meerdere Windows componenten en hebben een CVSS score van 9.0 en…</summary>
+  </entry>
+  <entry>
+    <title>[NL] NCSC-2026-0477 [1.00] [M/H] Kwetsbaarheden verholpen in Microsoft Exchange server</title>
+    <link href="https://advisories.ncsc.nl/advisory?id=NCSC-2026-0477" />
+    <id>urn:allcert:f8e0e69b0eeaed67</id>
+    <updated>2026-11-10T20:04:46+00:00</updated>
+    <category term="NCSC-NL - Avvisi" />
+    <summary>Fonte: NCSC-NL - Avvisi. Microsoft heeft 9 kwetsbaarheden verholpen in Exchange Server. Een kwaadwillende kan de kwetsbaarheden misbruiken om zich voor te doen als andere gebruiker, zich verhoogde rechten toe te kennen en willekeurige code uit te voeren met rechten van het proces. ``` Microsoft Exchange Server: |------------------|------|-------------------------------------| | CVE-ID | CVSS | Impact | |-----------------…</summary>
+  </entry>
+  <entry>
+    <title>[NL] NCSC-2026-0476 [1.00] [M/H] Kwetsbaarheden verholpen in Microsoft SQL Server</title>
+    <link href="https://advisories.ncsc.nl/advisory?id=NCSC-2026-0476" />
+    <id>urn:allcert:aacc4c594500d7a9</id>
+    <updated>2026-11-10T20:03:16+00:00</updated>
+    <category term="NCSC-NL - Avvisi" />
+    <summary>Fonte: NCSC-NL - Avvisi. Microsoft heeft 55 kwetsbaarheden verholpen in diverse componenten van SQL Server. Een kwaadwillende kan de kwetsbaarheden misbruiken om aanvallen uit te voeren die kunnen leiden tot de categorieën schade zoals benoemd in onderstaande tabel. De kwetsbaarheid met kenmerk CVE-2026-116945, heeft een CVSS-score van 9.8 en betreft een heap-based buffer overflow in Microsoft SQL Server. Een ongeautoris…</summary>
+  </entry>
+  <entry>
+    <title>[NL] NCSC-2026-0475 [1.00] [M/H] Kwetsbaarheden verholpen in Microsoft Azure</title>
+    <link href="https://advisories.ncsc.nl/advisory?id=NCSC-2026-0475" />
+    <id>urn:allcert:5024d9fc3122a3ab</id>
+    <updated>2026-11-10T19:59:23+00:00</updated>
+    <category term="NCSC-NL - Avvisi" />
+    <summary>Fonte: NCSC-NL - Avvisi. Microsoft heeft meerdere kwetsbaarheden verholpen in diverse Azure componenten. Een kwaadwillende kan de kwetsbaarheden misbruiken om aanvallen uit te voeren die kunnen leiden tot de categorieën schade, zoals genoemd in onderstaande tabel. De kwetsbaarheid met kenmerk CVE-2026-119990, met een CVSS-score van 9.8 betreft ontbrekende authenticatie voor een kritieke functie in Azure OpenAI. Een ongea…</summary>
+  </entry>
+  <entry>
+    <title>[NL] NCSC-2026-0474 [1.00] [M/H] Kwetsbaarheden verholpen in Microsoft Office</title>
+    <link href="https://advisories.ncsc.nl/advisory?id=NCSC-2026-0474" />
+    <id>urn:allcert:636c92b4e53ec0bd</id>
+    <updated>2026-11-10T19:46:26+00:00</updated>
+    <category term="NCSC-NL - Avvisi" />
+    <summary>Fonte: NCSC-NL - Avvisi. Microsoft heeft kwetsbaarheden verholpen in diverse Office producten. Een kwaadwillende kan de kwetsbaarheden misbruiken om aanvallen uit te voeren die kunnen leiden tot de categorieën schade, zoals genoemd in onderstaande tabellen. Microsoft heeft voor Office meerdere kwetsbaarheden verholpen. De 2 ernstigste kwetsbaarheden bevinden zich in Sharepoint en hebben een CVSS score van 9.0 en 9.9 toeg…</summary>
+  </entry>
+  <entry>
+    <title>[NL] NCSC-2026-0473 [1.00] [M/H] Kwetsbaarheden verholpen in Microsoft Developer Tools</title>
+    <link href="https://advisories.ncsc.nl/advisory?id=NCSC-2026-0473" />
+    <id>urn:allcert:75f9d0d4e6a2d23d</id>
+    <updated>2026-11-10T19:38:38+00:00</updated>
+    <category term="NCSC-NL - Avvisi" />
+    <summary>Fonte: NCSC-NL - Avvisi. Microsoft heeft kwetsbaarheden verholpen in diverse Developer Tools. Een kwaadwillende kan de kwetsbaarheden misbruiken om aanvallen uit te voeren die kunnen leiden tot de categorieën schade zoals benoemd in onderstaande tabel. De vereiste voorwaarden voor succesvol misbruik verschillen per kwetsbaarheid. Afhankelijk van de kwetsbaarheid kan misbruik gebruikersinteractie vereisen, zoals het opene…</summary>
+  </entry>
+  <entry>
+    <title>[NL] NCSC-2026-0472 [1.00] [M/H] Kwetsbaarheden verholpen in Microsoft Windows</title>
+    <link href="https://advisories.ncsc.nl/advisory?id=NCSC-2026-0472" />
+    <id>urn:allcert:2c3e015869a3753d</id>
+    <updated>2026-11-10T19:23:18+00:00</updated>
+    <category term="NCSC-NL - Avvisi" />
+    <summary>Fonte: NCSC-NL - Avvisi. Microsoft heeft kwetsbaarheden verholpen in Windows. Een kwaadwillende kan de kwetsbaarheden mogelijk misbruiken om beveiligingsmaatregelen te omzeilen, privileges te verhogen, willekeurige code uit te voeren en/of toegang te verkrijgen tot gevoelige informatie. De 13 ernstigste kwetsbaarheden bevinden zich in verschillende Windows-componenten en hebben een CVSS-score van 9,0 of hoger. Afhankelij…</summary>
+  </entry>
   <entry>
     <title>[IT] Rilevate vulnerabilità in prodotti Siemens</title>
     <link href="https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-siemens" />
@@ -506,6 +562,14 @@
     <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen, darunter möglicherweise die Ausführung von beliebigem Code, die Offenlegung von Informationen, die Manipulation von Daten oder Denial-of-Service-Zustände.</summary>
   </entry>
   <entry>
+    <title>[US] CISA Adds Six Known Exploited Vulnerabilities to Catalog</title>
+    <link href="https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog" />
+    <id>urn:allcert:54186d86b72e1874</id>
+    <updated>2026-11-10T12:00:00+00:00</updated>
+    <category term="CISA - Avvisi" />
+    <summary>Fonte: CISA - Avvisi. CISA has added six new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-20320 Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability CVE-2026-111560 Barracuda Networks Multiple Products OS Command Injection Vulnerability CVE-2026-111793 Openwave Messaging Limited Webtop Media Transcoder Incorrec…</summary>
+  </entry>
+  <entry>
     <title>[DE] [UPDATE] [mittel] GNU libc: Schwachstelle ermöglicht nicht spezifizierten Angriff</title>
     <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3063" />
     <id>urn:allcert:a9dbfb3d92cbd2b7</id>
@@ -744,69 +808,5 @@
     <updated>2026-11-10T11:04:51+00:00</updated>
     <category term="CERT-Bund - Avvisi di sicurezza" />
     <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein Angreifer kann mehrere Schwachstellen in libxml2 ausnutzen, um Sicherheitsvorkehrungen zu umgehen, um Daten zu manipulieren oder offenzulegen und um einen Denial of Service herbeizuführen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [mittel] vllm: Schwachstelle ermöglicht Denial of Service</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3187" />
-    <id>urn:allcert:d22793c49b46ab83</id>
-    <updated>2026-11-10T11:04:51+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer Angreifer kann eine Schwachstelle in vllm ausnutzen, um einen Denial of Service Angriff durchzuführen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [mittel] rsyslog: Schwachstelle ermöglicht Denial of Service</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3094" />
-    <id>urn:allcert:e4697a4e874e144f</id>
-    <updated>2026-11-10T11:04:50+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer Angreifer kann eine Schwachstelle in rsyslog ausnutzen, um einen Denial of Service Angriff durchzuführen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [hoch] RPM: Schwachstelle ermöglicht Codeausführung</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3159" />
-    <id>urn:allcert:635b2f52bf529291</id>
-    <updated>2026-11-10T11:04:50+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer Angreifer kann eine Schwachstelle in RPM ausnutzen, um beliebigen Programmcode auszuführen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [hoch] Apache Tomcat: Mehrere Schwachstellen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3007" />
-    <id>urn:allcert:9aaad23a444db6a3</id>
-    <updated>2026-11-10T11:04:27+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein Angreifer kann mehrere Schwachstellen in Apache Tomcat ausnutzen, um Sicherheitsmaßnahmen zu umgehen, Berechtigungen zu erweitern, Daten zu manipulieren oder offenzulegen oder Denial-of-Service-Zustände zu verursachen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [mittel] RPM: Schwachstelle ermöglicht Ausführen von beliebigem Programmcode mit Benutzerrechten</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2980" />
-    <id>urn:allcert:9b9c00c9d404fe08</id>
-    <updated>2026-11-10T11:04:26+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein lokaler Angreifer kann eine Schwachstelle in RPM ausnutzen, um beliebigen Programmcode mit Benutzerrechten auszuführen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [mittel] expat: Schwachstelle ermöglicht Denial of Service</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2906" />
-    <id>urn:allcert:e187d703eef4b4f2</id>
-    <updated>2026-11-10T11:04:24+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein Angreifer kann eine Schwachstelle in expat ausnutzen, um einen Denial of Service Angriff durchzuführen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [hoch] vllm: Mehrere Schwachstellen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2842" />
-    <id>urn:allcert:1db843bae3d0d69c</id>
-    <updated>2026-11-10T11:04:21+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein Angreifer kann mehrere Schwachstellen in vllm ausnutzen, um Informationen offenzulegen, Daten zu manipulieren, Sicherheitsmaßnahmen zu umgehen oder einen Denial-of-Service-Zustand herbeizuführen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [mittel] OpenSSL: Schwachstelle ermöglicht Denial of Service</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2843" />
-    <id>urn:allcert:0493ee5cfccc0e35</id>
-    <updated>2026-11-10T11:04:20+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer Angreifer kann eine Schwachstelle in OpenSSL ausnutzen, um einen Denial of Service Angriff durchzuführen.</summary>
   </entry>
 </feed>
