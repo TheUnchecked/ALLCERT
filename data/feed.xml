@@ -3,12 +3,92 @@
   <title>ALLCERT - Segnalazioni dei CERT</title>
   <subtitle>Segnalazioni e notizie dei CERT, dei CSIRT e delle agenzie di cybersicurezza</subtitle>
   <id>https://theunchecked.github.io/ALLCERT/</id>
-  <updated>2026-11-12T17:35:42+00:00</updated>
+  <updated>2026-11-12T23:38:23+00:00</updated>
   <link href="https://theunchecked.github.io/ALLCERT/" />
   <link href="https://theunchecked.github.io/ALLCERT/data/feed.xml" rel="self" />
   <author>
     <name>ALLCERT</name>
   </author>
+  <entry>
+    <title>[CA] Microsoft security advisory – November 2026 monthly rollup (AV26-1142) – Update 1</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/microsoft-security-advisory-november-2026-monthly-rollup-av26-1142" />
+    <id>urn:allcert:bf27e85d3adad474</id>
+    <updated>2026-11-12T20:42:34+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
+  <entry>
+    <title>[CA] Google security advisory (AV26-1157)</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/google-security-advisory-av26-1157" />
+    <id>urn:allcert:8d7e6cab73b187d1</id>
+    <updated>2026-11-12T20:39:53+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
+  <entry>
+    <title>[CA] Nodejs security advisory (AV26-1156)</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/nodejs-security-advisory-av26-1156" />
+    <id>urn:allcert:67de2b40635e5ad7</id>
+    <updated>2026-11-12T20:35:04+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
+  <entry>
+    <title>[CA] AMD security advisory (AV26-1155)</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/amd-security-advisory-av26-1155" />
+    <id>urn:allcert:6e284ce71825845c</id>
+    <updated>2026-11-12T20:24:57+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
+  <entry>
+    <title>[CA] Check Point security advisory (AV26-1154)</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/check-point-security-advisory-av26-1154" />
+    <id>urn:allcert:693f85d6c548c82d</id>
+    <updated>2026-11-12T19:08:09+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
+  <entry>
+    <title>[CA] Docker security advisory (AV26-1153)</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/docker-security-advisory-av26-1153" />
+    <id>urn:allcert:9aba7eabf4a5216e</id>
+    <updated>2026-11-12T18:58:56+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
+  <entry>
+    <title>[CA] React security advisory (AV26-1152)</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/react-security-advisory-av26-1152" />
+    <id>urn:allcert:683aaecb08096278</id>
+    <updated>2026-11-12T18:51:10+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
+  <entry>
+    <title>[CA] MongoDB security advisory (AV26-1151)</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/mongodb-security-advisory-av26-1151" />
+    <id>urn:allcert:ac3edd3371797fc2</id>
+    <updated>2026-11-12T18:43:52+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
+  <entry>
+    <title>[CA] Citrix security advisory (AV26-1150)</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/citrix-security-advisory-av26-1150" />
+    <id>urn:allcert:c909709f13cfd465</id>
+    <updated>2026-11-12T18:37:14+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
+  <entry>
+    <title>[CA] Apple security advisory (AV26-1149)</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/apple-security-advisory-av26-1149" />
+    <id>urn:allcert:8b4641445dc76008</id>
+    <updated>2026-11-12T18:35:43+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
   <entry>
     <title>[EU] 2026-020: Critical Vulnerabilities in Citrix NetScaler ADC and NetScaler Gateway</title>
     <link href="https://cert.europa.eu/publications/security-advisories/2026-020/" />
@@ -30,14 +110,6 @@
     <link href="https://cyber.gc.ca/en/alerts-advisories/progress-software-security-advisory-av26-1148" />
     <id>urn:allcert:55ff5124c3d94ce5</id>
     <updated>2026-11-12T17:01:14+00:00</updated>
-    <category term="Cyber Centre Canada - Avvisi" />
-    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
-  </entry>
-  <entry>
-    <title>[CA] Citrix security advisory (AV26-1150)</title>
-    <link href="https://cyber.gc.ca/en/alerts-advisories/citrix-security-advisory-av26-1150" />
-    <id>urn:allcert:c909709f13cfd465</id>
-    <updated>2026-11-12T16:17:02+00:00</updated>
     <category term="Cyber Centre Canada - Avvisi" />
     <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
   </entry>
@@ -104,14 +176,6 @@
     <updated>2026-11-12T14:32:09+00:00</updated>
     <category term="NCSC-NL - Avvisi" />
     <summary>Fonte: NCSC-NL - Avvisi. Ivanti heeft twee kwetsbaarheden in Ivanti Endpoint Manager verholpen, die betrekking hebben op de Core- en Agent-componenten. De eerste kwetsbaarheid (CVE-2026-121653) betreft een SQL-injectie in de Core van Ivanti Endpoint Manager-versies vóór 2024 SU8. Hierdoor kan een externe, niet-geauthenticeerde aanvaller kwaadaardige SQL-commando's injecteren, wat kan leiden tot het uitvoeren van willekeu…</summary>
-  </entry>
-  <entry>
-    <title>[CA] Microsoft security advisory – November 2026 monthly rollup (AV26-1142)</title>
-    <link href="https://cyber.gc.ca/en/alerts-advisories/microsoft-security-advisory-november-2026-monthly-rollup-av26-1142" />
-    <id>urn:allcert:bf27e85d3adad474</id>
-    <updated>2026-11-12T14:31:09+00:00</updated>
-    <category term="Cyber Centre Canada - Avvisi" />
-    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
   </entry>
   <entry>
     <title>[CA] Google security advisory (AV26-1140) - Update 1</title>
@@ -744,69 +808,5 @@
     <updated>2026-11-12T11:12:03+00:00</updated>
     <category term="CERT-Bund - Avvisi di sicurezza" />
     <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein Angreifer kann eine Schwachstelle in cURL ausnutzen, um einen Denial of Service Angriff durchzuführen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [mittel] zlib: Schwachstelle ermöglicht nicht spezifizierten Angriff</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2023-2663" />
-    <id>urn:allcert:495f530d29a468ca</id>
-    <updated>2026-11-12T11:12:03+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein lokaler Angreifer kann eine Schwachstelle in zlib ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [hoch] zlib: Schwachstelle ermöglicht nicht spezifizierten Angriff</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2022-0929" />
-    <id>urn:allcert:3c7bf3004ff36b97</id>
-    <updated>2026-11-12T11:12:02+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer Angreifer kann eine Schwachstelle in zlib ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [mittel] IBM Java: Mehrere Schwachstellen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2022-0028" />
-    <id>urn:allcert:87605b7150acee30</id>
-    <updated>2026-11-12T11:12:02+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in IBM Java ausnutzen, um die Integrität und die Verfügbarkeit zu gefährden.</summary>
-  </entry>
-  <entry>
-    <title>[DE] Google Chrome: Mehrere Schwachstellen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/buergercert/details?uuid=4cb2bc16-5e76-45ff-a943-82a1c02fbb1d" />
-    <id>urn:allcert:ec756efaae6689dc</id>
-    <updated>2026-11-12T11:12:02+00:00</updated>
-    <category term="CERT-Bund - Avvisi per i cittadini" />
-    <summary>Fonte: CERT-Bund - Avvisi per i cittadini. Ein Angreifer kann mehrere Schwachstellen in Google Chrome ausnutzen, um möglicherweise Schadcode auszuführen, Berechtigungen zu erweitern, Sicherheitsmaßnahmen zu umgehen, Daten offenzulegen oder zu manipulieren, einen Programmabsturz auszulösen, den Benutzer zu täuschen oder andere, nicht näher spezifizierte Angriffe auszuführen. Zur Ausnutzung genügt es, eine bösartig gestaltete Webseite zu la…</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [mittel] IBM Java: Mehrere Schwachstellen ermöglichen Offenlegung von Informationen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2022-0674" />
-    <id>urn:allcert:c5b34bac8d07b1be</id>
-    <updated>2026-11-12T11:12:01+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in IBM Java ausnutzen, um Informationen offenzulegen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [hoch] Oracle Java SE: Mehrere Schwachstellen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2022-0196" />
-    <id>urn:allcert:004b25571207cfdb</id>
-    <updated>2026-11-12T11:12:01+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Oracle Java SE ausnutzen, um die Vertraulichkeit, Integrität und Verfügbarkeit zu gefährden.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [NEU] [hoch] Fortinet Produkte: Mehrere Schwachstellen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4519" />
-    <id>urn:allcert:eeac858913ffe36a</id>
-    <updated>2026-11-12T11:12:01+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein Angreifer kann mehrere Schwachstellen in Fortinet FortiOS, Fortinet FortiManager, Fortinet FortiMail, Fortinet FortiAnalyzer und Fortinet FortiAuthenticator ausnutzen, um beliebigen Programmcode auszuführen, um Sicherheitsmechanismen zu umgehen, seine Berechtigungen zu erweitern, um Daten zu manipulieren und um einen Denial of Service herbezizuführen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [NEU] [hoch] Google Chrome: Mehrere Schwachstellen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4518" />
-    <id>urn:allcert:78003d1eed959949</id>
-    <updated>2026-11-12T11:12:00+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein Angreifer kann mehrere Schwachstellen in Google Chrome ausnutzen, um möglicherweise beliebigen Code auszuführen, Berechtigungen zu erweitern, Sicherheitsmaßnahmen zu umgehen, Daten offenzulegen oder zu manipulieren, einen Denial-of-Service-Zustand auszulösen, Spoofing-Angriffe durchzuführen oder andere, nicht näher spezifizierte Angriffe auszuführen.</summary>
   </entry>
 </feed>

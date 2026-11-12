@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T17:35:42+00:00",
+ "updated": "2026-11-12T23:38:23+00:00",
  "sources": {
   "csirt-it": {
    "name": "CSIRT Italia (ACN)",
@@ -95,6 +95,106 @@
  },
  "items": [
   {
+   "id": "bf27e85d3adad474",
+   "source": "cccs-alerts",
+   "title": "Microsoft security advisory – November 2026 monthly rollup (AV26-1142) – Update 1",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/microsoft-security-advisory-november-2026-monthly-rollup-av26-1142",
+   "summary": "",
+   "published": "2026-11-12T20:42:34+00:00",
+   "first_seen": "2026-11-12T17:35:42+00:00",
+   "cves": []
+  },
+  {
+   "id": "8d7e6cab73b187d1",
+   "source": "cccs-alerts",
+   "title": "Google security advisory (AV26-1157)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/google-security-advisory-av26-1157",
+   "summary": "",
+   "published": "2026-11-12T20:39:53+00:00",
+   "first_seen": "2026-11-12T23:38:23+00:00",
+   "cves": []
+  },
+  {
+   "id": "67de2b40635e5ad7",
+   "source": "cccs-alerts",
+   "title": "Nodejs security advisory (AV26-1156)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/nodejs-security-advisory-av26-1156",
+   "summary": "",
+   "published": "2026-11-12T20:35:04+00:00",
+   "first_seen": "2026-11-12T23:38:23+00:00",
+   "cves": []
+  },
+  {
+   "id": "6e284ce71825845c",
+   "source": "cccs-alerts",
+   "title": "AMD security advisory (AV26-1155)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/amd-security-advisory-av26-1155",
+   "summary": "",
+   "published": "2026-11-12T20:24:57+00:00",
+   "first_seen": "2026-11-12T23:38:23+00:00",
+   "cves": []
+  },
+  {
+   "id": "693f85d6c548c82d",
+   "source": "cccs-alerts",
+   "title": "Check Point security advisory (AV26-1154)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/check-point-security-advisory-av26-1154",
+   "summary": "",
+   "published": "2026-11-12T19:08:09+00:00",
+   "first_seen": "2026-11-12T23:38:23+00:00",
+   "cves": []
+  },
+  {
+   "id": "9aba7eabf4a5216e",
+   "source": "cccs-alerts",
+   "title": "Docker security advisory (AV26-1153)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/docker-security-advisory-av26-1153",
+   "summary": "",
+   "published": "2026-11-12T18:58:56+00:00",
+   "first_seen": "2026-11-12T23:38:23+00:00",
+   "cves": []
+  },
+  {
+   "id": "683aaecb08096278",
+   "source": "cccs-alerts",
+   "title": "React security advisory (AV26-1152)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/react-security-advisory-av26-1152",
+   "summary": "",
+   "published": "2026-11-12T18:51:10+00:00",
+   "first_seen": "2026-11-12T23:38:23+00:00",
+   "cves": []
+  },
+  {
+   "id": "ac3edd3371797fc2",
+   "source": "cccs-alerts",
+   "title": "MongoDB security advisory (AV26-1151)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/mongodb-security-advisory-av26-1151",
+   "summary": "",
+   "published": "2026-11-12T18:43:52+00:00",
+   "first_seen": "2026-11-12T23:38:23+00:00",
+   "cves": []
+  },
+  {
+   "id": "c909709f13cfd465",
+   "source": "cccs-alerts",
+   "title": "Citrix security advisory (AV26-1150)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/citrix-security-advisory-av26-1150",
+   "summary": "",
+   "published": "2026-11-12T18:37:14+00:00",
+   "first_seen": "2026-11-12T17:35:42+00:00",
+   "cves": []
+  },
+  {
+   "id": "8b4641445dc76008",
+   "source": "cccs-alerts",
+   "title": "Apple security advisory (AV26-1149)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/apple-security-advisory-av26-1149",
+   "summary": "",
+   "published": "2026-11-12T18:35:43+00:00",
+   "first_seen": "2026-11-12T23:38:23+00:00",
+   "cves": []
+  },
+  {
    "id": "8d6bcb352bdfc4f6",
    "source": "cert-eu",
    "title": "2026-020: Critical Vulnerabilities in Citrix NetScaler ADC and NetScaler Gateway",
@@ -123,16 +223,6 @@
    "link": "https://cyber.gc.ca/en/alerts-advisories/progress-software-security-advisory-av26-1148",
    "summary": "",
    "published": "2026-11-12T17:01:14+00:00",
-   "first_seen": "2026-11-12T17:35:42+00:00",
-   "cves": []
-  },
-  {
-   "id": "c909709f13cfd465",
-   "source": "cccs-alerts",
-   "title": "Citrix security advisory (AV26-1150)",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/citrix-security-advisory-av26-1150",
-   "summary": "",
-   "published": "2026-11-12T16:17:02+00:00",
    "first_seen": "2026-11-12T17:35:42+00:00",
    "cves": []
   },
@@ -217,16 +307,6 @@
    "cves": [
     "CVE-2026-121653"
    ]
-  },
-  {
-   "id": "bf27e85d3adad474",
-   "source": "cccs-alerts",
-   "title": "Microsoft security advisory – November 2026 monthly rollup (AV26-1142)",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/microsoft-security-advisory-november-2026-monthly-rollup-av26-1142",
-   "summary": "",
-   "published": "2026-11-12T14:31:09+00:00",
-   "first_seen": "2026-11-12T17:35:42+00:00",
-   "cves": []
   },
   {
    "id": "bcef5f9b26e596be",
