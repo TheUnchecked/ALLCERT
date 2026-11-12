@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T21:57:11+00:00",
+ "updated": "2026-11-12T07:08:45+00:00",
  "sources": {
   "csirt-it": {
    "name": "CSIRT Italia (ACN)",
@@ -94,6 +94,16 @@
   }
  },
  "items": [
+  {
+   "id": "c58cb414f54ea0f7",
+   "source": "cert-bund",
+   "title": "[NEU] [hoch] Contao: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4516",
+   "summary": "Ein entfernter Angreifer kann mehrere Schwachstellen in Contao ausnutzen, um Sicherheitsmaßnahmen zu umgehen, Informationen zu erlangen, Dateien zu manipulieren oder Cross-site-scripting auszuführen.",
+   "published": "2026-11-12T06:12:05+00:00",
+   "first_seen": "2026-11-12T07:08:45+00:00",
+   "cves": []
+  },
   {
    "id": "e095d65d134f6517",
    "source": "cert-bund",
