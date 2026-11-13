@@ -3,12 +3,28 @@
   <title>ALLCERT - Segnalazioni dei CERT</title>
   <subtitle>Segnalazioni e notizie dei CERT, dei CSIRT e delle agenzie di cybersicurezza</subtitle>
   <id>https://theunchecked.github.io/ALLCERT/</id>
-  <updated>2026-11-13T17:12:27+00:00</updated>
+  <updated>2026-11-13T23:32:09+00:00</updated>
   <link href="https://theunchecked.github.io/ALLCERT/" />
   <link href="https://theunchecked.github.io/ALLCERT/data/feed.xml" rel="self" />
   <author>
     <name>ALLCERT</name>
   </author>
+  <entry>
+    <title>[CA] Check Point security advisory (AV26-1154) – Update 1</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/check-point-security-advisory-av26-1154" />
+    <id>urn:allcert:693f85d6c548c82d</id>
+    <updated>2026-11-13T18:59:00+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
+  <entry>
+    <title>[IT] N-Able: rilevate due ulteriori catene di exploit denominate "Agent2Shell" e "4EverAble2Shell"</title>
+    <link href="https://www.acn.gov.it/portale/w/n-able-rilevate-due-ulteriori-catene-di-exploit-denominate-agent2shell-e-4everable2shell-" />
+    <id>urn:allcert:7e3d2e29a15e9bcb</id>
+    <updated>2026-11-13T18:15:54+00:00</updated>
+    <category term="CSIRT Italia (ACN)" />
+    <summary>Fonte: CSIRT Italia (ACN). Rilevate due ulteriori catene di exploit, denominate "Agent2Shell" e "4EverAble2Shell", per lo sfruttamento di vulnerabilità zero-day in N-central, piattaforma di monitoraggio e gestione remota degli ambienti informatici. Entrambe le catene sono considerate un'estensione della precedente serie di vulnerabilità nota come "Able2Shell", già trattate nell'ambito dell'alert AL07/261110/CSIRT-ITA.</summary>
+  </entry>
   <entry>
     <title>[IT] Rilevate vulnerabilità in prodotti Dell</title>
     <link href="https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-dell-3" />
@@ -626,6 +642,14 @@
     <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Citrix Systems NetScaler ausnutzen, um Sicherheitsvorkehrungen zu umgehen.</summary>
   </entry>
   <entry>
+    <title>[US] CISA Adds Two Known Exploited Vulnerabilities to Catalog</title>
+    <link href="https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog" />
+    <id>urn:allcert:5678795735b4faed</id>
+    <updated>2026-11-13T12:00:00+00:00</updated>
+    <category term="CISA - Avvisi" />
+    <summary>Fonte: CISA - Avvisi. CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-114713 UnrealIRCd Improper Neutralization of Delimiters Vulnerability CVE-2026-123039 Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability These types of vulnerabilities are a frequent attack vector for malici…</summary>
+  </entry>
+  <entry>
     <title>[IT] Rilevate vulnerabilità in prodotti Check Point</title>
     <link href="https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-check-point" />
     <id>urn:allcert:0b0f4908a2ce2a54</id>
@@ -784,29 +808,5 @@
     <updated>2026-11-13T10:38:00+00:00</updated>
     <category term="CERT-Bund - Avvisi di sicurezza" />
     <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Wireshark ausnutzen, um einen Denial of Service herbeizuführen und potenziell um beliebigen Programmcode auszuführen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [hoch] RPM: Mehrere Schwachstellen ermöglichen Codeausführung</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3567" />
-    <id>urn:allcert:ff38252a578e3a3e</id>
-    <updated>2026-11-13T10:38:00+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein Angreifer kann mehrere Schwachstellen in RPM ausnutzen, um beliebigen Programmcode auszuführen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [hoch] Red Hat Ansible Automation Platform (automation-controller): Mehrere Schwachstellen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3555" />
-    <id>urn:allcert:ed15f127813abf5e</id>
-    <updated>2026-11-13T10:37:59+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein Angreifer kann mehrere Schwachstellen in Red Hat Ansible Automation Platform ausnutzen, um seine Privilegien zu erhöhen, beliebigen Code auszuführen, Sicherheitsmaßnahmen zu umgehen, Daten zu manipulieren oder offenzulegen und einen Denial-of-Service-Zustand herbeizuführen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [mittel] sudo: Schwachstelle ermöglicht Codeausführung</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3551" />
-    <id>urn:allcert:575187d4fbeddf72</id>
-    <updated>2026-11-13T10:37:59+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein lokaler Angreifer kann eine Schwachstelle in sudo ausnutzen, um beliebigen Programmcode auszuführen.</summary>
   </entry>
 </feed>
