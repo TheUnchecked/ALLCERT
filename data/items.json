@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T15:58:57+00:00",
+ "updated": "2026-11-18T00:57:50+00:00",
  "sources": {
   "csirt-it": {
    "name": "CSIRT Italia (ACN)",
@@ -94,6 +94,60 @@
   }
  },
  "items": [
+  {
+   "id": "67265aec6fa9379b",
+   "source": "cccs-alerts",
+   "title": "AL26-029 - Critical vulnerability impacting Oracle Java - CVE-2026-114938",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/al26-029-critical-vulnerability-impacting-oracle-java-cve-2026-114938",
+   "summary": "",
+   "published": "2026-11-17T23:30:00+00:00",
+   "first_seen": "2026-11-18T00:57:50+00:00",
+   "cves": [
+    "CVE-2026-114938"
+   ]
+  },
+  {
+   "id": "b5b1339f7b9075d7",
+   "source": "ncsc-nl",
+   "title": "NCSC-2026-0495 [1.00] [M/H] Kwetsbaarheden verholpen in Oracle Java",
+   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0495",
+   "summary": "Oracle heeft meerdere kwetsbaarheden verholpen in Oracle Java. In dit beveiligingsadvies gaan we uitsluitend in op CVE-2026-114938, de rest van de kwetsbaarheden zal hierin later worden aangevuld. De kwetsbaarheid zit in de compiler, het onderdeel dat Java-code optimaliseert en uitvoert. Een aanvaller kan die zonder authenticatie op afstand misbruiken door speciaal gemaakte gegevens naar een dien…",
+   "published": "2026-11-17T21:55:30+00:00",
+   "first_seen": "2026-11-18T00:57:50+00:00",
+   "cves": [
+    "CVE-2026-114938"
+   ]
+  },
+  {
+   "id": "b04111eacf025c5e",
+   "source": "cccs-alerts",
+   "title": "[Control systems] CODESYS security advisory (AV26-1169)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/control-systems-codesys-security-advisory-av26-1169",
+   "summary": "",
+   "published": "2026-11-17T19:17:56+00:00",
+   "first_seen": "2026-11-18T00:57:50+00:00",
+   "cves": []
+  },
+  {
+   "id": "319ef835e33187dd",
+   "source": "cccs-alerts",
+   "title": "GitLab security advisory (AV26-1168)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/gitlab-security-advisory-av26-1168",
+   "summary": "",
+   "published": "2026-11-17T16:42:08+00:00",
+   "first_seen": "2026-11-18T00:57:50+00:00",
+   "cves": []
+  },
+  {
+   "id": "17882786d553ca4f",
+   "source": "cccs-alerts",
+   "title": "Zyxel security advisory (AV26-1167)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/zyxel-security-advisory-av26-1167",
+   "summary": "",
+   "published": "2026-11-17T16:20:00+00:00",
+   "first_seen": "2026-11-18T00:57:50+00:00",
+   "cves": []
+  },
   {
    "id": "5bf97d40df32f1e1",
    "source": "cccs-alerts",
@@ -205,6 +259,148 @@
    "summary": "Ein Angreifer kann mehrere Schwachstellen in N-able N-Central ausnutzen, um beliebigen Programmcode mit Administratorrechten auszuführen, Sicherheitsmaßnahmen zu umgehen, vertrauliche Informationen offenzulegen, Daten zu manipulieren oder Berechtigungen zu erweitern.",
    "published": "2026-11-17T12:02:00+00:00",
    "first_seen": "2026-11-17T15:58:57+00:00",
+   "cves": []
+  },
+  {
+   "id": "549812219ed7eb23",
+   "source": "cisa",
+   "title": "Siemens ROS#",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-06",
+   "summary": "View CSAF Summary ROS# before version 2.3.1 contains a code injection vulnerability that could allow an attacker that is able to pass a crafted message definition file to the user to inject arbitrary code into the generated program. Siemens has released a new version for ROS# and recommends to update to the latest version. The following versions of Siemens ROS# are affected: ROS# vers:intdot/<2.3…",
+   "published": "2026-11-17T12:00:00+00:00",
+   "first_seen": "2026-11-18T00:57:50+00:00",
+   "cves": []
+  },
+  {
+   "id": "505c6b86b9706a07",
+   "source": "cisa",
+   "title": "Dorsett Controls InfoScan",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-01",
+   "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to retrieve sensitive system information, access application data without authorization, recover stored credentials, or intercept and manipulate network communications. The following versions of Dorsett Controls InfoScan are affected: InfoScan <=1.45.0 (CVE-2026-117659, CVE-2026-120157, CVE-2026-120255, CVE…",
+   "published": "2026-11-17T12:00:00+00:00",
+   "first_seen": "2026-11-18T00:57:50+00:00",
+   "cves": [
+    "CVE-2026-117659",
+    "CVE-2026-120157",
+    "CVE-2026-120255"
+   ]
+  },
+  {
+   "id": "49197d65acf8a661",
+   "source": "cisa",
+   "title": "Siemens Mendix Studio Pro",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-05",
+   "summary": "View CSAF Summary Mendix Studio Pro contains multiple vulnerabilities in the MCP Server, that could allow an attacker with network access to interact with the server remotely or trick a user's browser into sending unauthorized requests, potentially leading to unauthorized data access, tool execution, or system compromise. Siemens has released new versions for the affected products and recommends…",
+   "published": "2026-11-17T12:00:00+00:00",
+   "first_seen": "2026-11-18T00:57:50+00:00",
+   "cves": []
+  },
+  {
+   "id": "485e8907189e9ca2",
+   "source": "cisa",
+   "title": "Siemens .NET Client Library for SIMATIC S7 Webserver API",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-02",
+   "summary": "View CSAF Summary .NET Client Library for SIMATIC S7 Webserver API contains multiple vulnerabilities that could allow an attacker to obtain sensitive information or write arbitrary files outside the intended download directory. Siemens has released a new version for .NET Client Library for SIMATIC S7 Webserver API and recommends to update to the latest version. The following versions of Siemens .…",
+   "published": "2026-11-17T12:00:00+00:00",
+   "first_seen": "2026-11-18T00:57:50+00:00",
+   "cves": []
+  },
+  {
+   "id": "652098f88c0f18e3",
+   "source": "cisa",
+   "title": "Critical Java Vulnerability Requires Immediate Patching",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching",
+   "summary": "Purpose CISA strongly urges organizations to immediately patch the recently disclosed Oracle Java vulnerability CVE-2026-114938 . This critical memory-corruption vulnerability, known as “Java4Shell,” affects the Base64 decoder of the x86-64 HotSpot Java Virtual Machine (JVM), which is part of the Java Development Kit (JDK). Specially crafted Base64 input could crash the JVM and allow for unauthen…",
+   "published": "2026-11-17T12:00:00+00:00",
+   "first_seen": "2026-11-18T00:57:50+00:00",
+   "cves": [
+    "CVE-2026-114938"
+   ]
+  },
+  {
+   "id": "f840754a4abe5b78",
+   "source": "cisa",
+   "title": "Siemens Industrial Software Products",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04",
+   "summary": "View CSAF Summary On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remote attacker to cause memory corruption and potentially execute arbitrary code. This advisory covers…",
+   "published": "2026-11-17T12:00:00+00:00",
+   "first_seen": "2026-11-18T00:57:50+00:00",
+   "cves": [
+    "CVE-2026-111497"
+   ]
+  },
+  {
+   "id": "5574af8fbf4b3970",
+   "source": "cisa",
+   "title": "Siemens Simcenter Femap",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-10",
+   "summary": "View CSAF Summary Simcenter Femap is affected by an out of bounds read vulnerability that could be triggered when the application reads files in X_T format. This could allow an attacker to crash the application or execute arbitrary code. Siemens has released a new version for Simcenter Femap and recommends to update to the latest version. The following versions of Siemens Simcenter Femap are affe…",
+   "published": "2026-11-17T12:00:00+00:00",
+   "first_seen": "2026-11-18T00:57:50+00:00",
+   "cves": []
+  },
+  {
+   "id": "27265540ebff374a",
+   "source": "cisa",
+   "title": "Siemens SIMATIC",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-08",
+   "summary": "View CSAF Summary The products listed below contain an authentication bypass vulnerability that could allow an on-path attacker to take over the session of a legitimate user and execute arbitrary code with the privileges of the victim user. Siemens is preparing fixes and recommends specific mitigations for products where fixes are not or not yet available. The following versions of Siemens SIMATI…",
+   "published": "2026-11-17T12:00:00+00:00",
+   "first_seen": "2026-11-18T00:57:50+00:00",
+   "cves": []
+  },
+  {
+   "id": "231fa1ad637b30b5",
+   "source": "cisa",
+   "title": "Siemens Industrial Automation Software Products",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-03",
+   "summary": "View CSAF Summary On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remote attacker to cause memory corruption and potentially execute arbitrary code. This advisory covers…",
+   "published": "2026-11-17T12:00:00+00:00",
+   "first_seen": "2026-11-18T00:57:50+00:00",
+   "cves": [
+    "CVE-2026-111497"
+   ]
+  },
+  {
+   "id": "b093c6c6fde83429",
+   "source": "cisa",
+   "title": "Siemens RUGGEDCOM APE1808",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07",
+   "summary": "View CSAF Summary Fortinet has published information on a Double Free vulnerability in FortiOS. This advisory lists the related Siemens Industrial products. Siemens recommends to update Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure. Contact customer support to receive detailed information The following versions of Siemens RUGGEDCOM APE1808 are affected: RU…",
+   "published": "2026-11-17T12:00:00+00:00",
+   "first_seen": "2026-11-18T00:57:50+00:00",
+   "cves": []
+  },
+  {
+   "id": "c3883f57e79f57c8",
+   "source": "cisa",
+   "title": "Siemens SIMATIC WinCC",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-09",
+   "summary": "View CSAF Summary Graphics Designer of SIMATIC WinCC before V8.2 contains an implicit active content execution vulnerability upon opening files, which could allow an attacker to cause arbitrary code execution on the device. Siemens is preparing fixes and recommends specific mitigations for products where fixes are not or not yet available. The following versions of Siemens SIMATIC WinCC are affec…",
+   "published": "2026-11-17T12:00:00+00:00",
+   "first_seen": "2026-11-18T00:57:50+00:00",
+   "cves": []
+  },
+  {
+   "id": "23fc05228dcc3fbe",
+   "source": "cisa",
+   "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog",
+   "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-115731 Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 2…",
+   "published": "2026-11-17T12:00:00+00:00",
+   "first_seen": "2026-11-18T00:57:50+00:00",
+   "cves": [
+    "CVE-2026-115731"
+   ]
+  },
+  {
+   "id": "86fd75ddb77ecc8f",
+   "source": "cisa",
+   "title": "Siemens meta-iot2050",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-11",
+   "summary": "View CSAF Summary meta-iot2050 (https://github.com/siemens/meta-iot2050) from V01.03.01 contains a Command Injection vulnerability in the firmware update tool that could allow an attacker which is able to manipulate a configuration file to have arbitrary commands run as root. Siemens is preparing fixes and recommends mitigations for products where fixes are not or not yet available. The following…",
+   "published": "2026-11-17T12:00:00+00:00",
+   "first_seen": "2026-11-18T00:57:50+00:00",
    "cves": []
   },
   {
