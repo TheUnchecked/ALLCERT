@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T11:40:30+00:00",
+ "updated": "2026-11-18T20:30:20+00:00",
  "sources": {
   "csirt-it": {
    "name": "CSIRT Italia (ACN)",
@@ -94,6 +94,435 @@
   }
  },
  "items": [
+  {
+   "id": "83a43e23bcd9406a",
+   "source": "cccs-alerts",
+   "title": "Cisco security advisory (AV26-1175)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/cisco-security-advisory-av26-1175",
+   "summary": "",
+   "published": "2026-11-18T19:14:56+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "51ff6283403f3b3c",
+   "source": "cccs-alerts",
+   "title": "F5 security advisory (AV26-1174)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/f5-security-advisory-av26-1174",
+   "summary": "",
+   "published": "2026-11-18T19:02:27+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "f484d740d51f5f06",
+   "source": "ncsc-nl",
+   "title": "NCSC-2026-0507 [1.00] [M/H] Kwetsbaarheden verholpen in Drupal core",
+   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0507",
+   "summary": "Drupal heeft kwetsbaarheden verholpen in Drupal core. De eerste kwetsbaarheid betreft een potentiële gadget chain gerelateerd aan onveilige deserialisatie binnen Drupal core. Deze kwetsbaarheid is op zichzelf niet direct exploiteerbaar, maar kan worden misbruikt in combinatie met een andere fout die het mogelijk maakt onveilige input te deserialiseren, wat kan leiden tot remote code execution. De…",
+   "published": "2026-11-18T19:01:09+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "b0d7b1756271cf51",
+   "source": "cert-eu",
+   "title": "2026-022: Critical vulnerabilities in Nginx",
+   "link": "https://cert.europa.eu/publications/security-advisories/2026-022/",
+   "summary": "On 18 November 2026, F5 published an advisory addressing five vulnerabilities in NGINX that allow an unauthenticated remote attacker to execute code with the privileges of the NGINX worker process. While researchers managed to successfully demonstrate the use of CVE-2026-123007, no exploitation in the wild has been reported yet. It is recommended to swiftly update NGINX as soon as possible, prior…",
+   "published": "2026-11-18T18:30:42+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": [
+    "CVE-2026-123007"
+   ]
+  },
+  {
+   "id": "337eee2ee24430d2",
+   "source": "ncsc-nl",
+   "title": "NCSC-2026-0506 [1.00] [H/H] Kwetsbaarheden verholpen in NGINX door F5 Networks",
+   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0506",
+   "summary": "F5 Networks heeft meerdere kwetsbaarheden verholpen in NGINX Plus en NGINX Open Source. De kwetsbaarheden betreffen verschillende onderdelen en configuraties van NGINX. De belangrijkste kwetsbaarheid met kenmerk CVE-2026-123007 stelt kwaadwillenden in staat om willekeurige code uit te voeren op het onderliggende systeem. Het NCSC verwacht dat er op korte termijn proof of concept code beschikbaar…",
+   "published": "2026-11-18T16:07:19+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": [
+    "CVE-2026-123007"
+   ]
+  },
+  {
+   "id": "f6cf6cb0580da354",
+   "source": "cccs-alerts",
+   "title": "GNU security advisory (AV26-1173)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/gnu-security-advisory-av26-1173",
+   "summary": "",
+   "published": "2026-11-18T15:37:12+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "b25b4e72b79573b2",
+   "source": "ncsc-nl",
+   "title": "NCSC-2026-0505 [1.00] [M/H] Kwetsbaarheden verholpen in Oracle E-Business Suite",
+   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0505",
+   "summary": "Oracle heeft 71 kwetsbaarheden verholpen in Oracle E-Business Suite, waarvan er 19 zonder authenticatie op afstand via het netwerk kunnen worden misbruikt. De kwetsbaarheden bevinden zich onder meer in Oracle Applications Framework, Oracle Application Object Library, Oracle Universal Work Queue, Oracle Mobile Field Service en Document Management and Collaboration. Oracle heeft zes van de 71 kwets…",
+   "published": "2026-11-18T15:36:00+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "b5b1339f7b9075d7",
+   "source": "ncsc-nl",
+   "title": "NCSC-2026-0495 [1.01] [M/H] Kwetsbaarheden verholpen in Oracle Java SE en GraalVM",
+   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0495",
+   "summary": "Oracle heeft meerdere kwetsbaarheden verholpen in Java SE, Oracle GraalVM voor JDK en Oracle GraalVM Enterprise Edition. In Oracle Java SE en GraalVM producten zijn diverse kwetsbaarheden aanwezig in de compiler component, JSSE component en API-handling mechanismen. Deze kwetsbaarheden maken het mogelijk voor ongeauthenticeerde netwerkaanvallers om via speciaal vervaardigde data of API-aanroepen…",
+   "published": "2026-11-18T14:59:11+00:00",
+   "first_seen": "2026-11-18T00:57:50+00:00",
+   "cves": []
+  },
+  {
+   "id": "cc376d91aa6a019d",
+   "source": "ncsc-nl",
+   "title": "NCSC-2026-0504 [1.00] [M/H] Kwetsbaarheden verholpen in Oracle PeopleSoft Enterprise",
+   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0504",
+   "summary": "Oracle heeft meerdere kwetsbaarheden verholpen in Oracle PeopleSoft Enterprise PeopleTools en gerelateerde componenten, waaronder Application Server, Integration Broker en Report Distribution, specifiek in versies 8.61 tot en met 8.63. De kwetsbaarheden in Oracle PeopleSoft Enterprise PeopleTools en de gerelateerde componenten stellen een aanvaller in staat om via HTTP-netwerktoegang zonder of me…",
+   "published": "2026-11-18T14:58:13+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "11a21a876da2701b",
+   "source": "ncsc-nl",
+   "title": "NCSC-2026-0503 [1.00] [M/H] Kwetsbaarheden verholpen in Oracle MySQL",
+   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0503",
+   "summary": "Oracle heeft meerdere kwetsbaarheden verholpen in MySQL Server en MySQL Cluster. Meerdere van de kwetsbaarheden kunnen door ongeauthenticeerde of hooggeprivilegieerde aanvallers worden misbruikt om ongeautoriseerde toegang te verkrijgen, data te wijzigen of verwijderen, volledige servercompromis te bereiken, of een denial-of-service te veroorzaken. Daarnaast zijn kwetsbaarheden in dependencies zo…",
+   "published": "2026-11-18T14:52:28+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "431f774d68a457ab",
+   "source": "ncsc-nl",
+   "title": "NCSC-2026-0502 [1.00] [M/H] Kwetsbaarheden verholpen in Oracle Analytics",
+   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0502",
+   "summary": "Oracle heeft meerdere kwetsbaarheden verholpen in Oracle Analytics en Business Intelligence Enterprise Edition (versies 8.2.0.0.0 tot en met 26.01.0.0.0) en aanverwante componenten zoals BI Publisher en Visual Analyzer. De kwetsbaarheden stellen een aanvaller in staat om via HTTP of SOAP-interface zonder of met lage privileges het systeem te compromitteren. Dit kan leiden tot volledige overname v…",
+   "published": "2026-11-18T14:51:21+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "d96f5f3f3e8d9fb6",
+   "source": "ncsc-nl",
+   "title": "NCSC-2026-0501 [1.00] [M/H] Kwetsbaarheden verholpen in Oracle Fusion Middleware",
+   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0501",
+   "summary": "Oracle heeft meerdere kwetsbaarheden verholpen in verschillende Fusion Middleware producten, waaronder Oracle WebLogic Server, Oracle Access Manager, Oracle WebCenter Portal, Oracle Application Development Framework (ADF), Oracle Fusion Middleware, Oracle Service Bus, Oracle Identity Manager Connector, Oracle Business Process Management Suite, Oracle WebCenter Content, Oracle WebCenter Sites, en…",
+   "published": "2026-11-18T14:50:27+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "c66e5741b17a0d9e",
+   "source": "ncsc-nl",
+   "title": "NCSC-2026-0500 [1.00] [M/H] Kwetsbaarheden verholpen in Oracle Financial Services",
+   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0500",
+   "summary": "Oracle heeft kwetsbaarheden verholpen in Oracle Financial Services Enterprise Case Management, Oracle Financial Services Regulatory Reporting en Oracle Financial Services Customer Screening, allen versie 8.1.2.10. De kwetsbaarheden betreffen meerdere Oracle Financial Services producten en maken het mogelijk voor aanvallers met verschillende niveaus van privileges en netwerktoegang via HTTP om ong…",
+   "published": "2026-11-18T14:49:50+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "12bd0020f282d2e9",
+   "source": "ncsc-nl",
+   "title": "NCSC-2026-0499 [1.00] [M/H] Kwetsbaarheden verholpen in Oracle Enterprise Manager",
+   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0499",
+   "summary": "Oracle heeft kwetsbaarheden verholpen in Oracle Enterprise Manager Base Platform. In Oracle Enterprise Manager Base Platform (versies 13.5 en 24.1) kan een aanvaller met lage privileges en netwerktoegang via HTTP volledige systeemcompromittering bereiken. In Oracle Enterprise Manager Base Platform Agent Next Gen (versies 13.5 en 24.1) kan een aanvaller met lage infrastructuur login privileges ong…",
+   "published": "2026-11-18T14:48:47+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "2798808d23ea5d39",
+   "source": "ncsc-nl",
+   "title": "NCSC-2026-0498 [1.00] [M/H] Kwetsbaarheden verholpen in Oracle Communications",
+   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0498",
+   "summary": "Oracle heeft kwetsbaarheden verholpen in onder andere Oracle Communications Unified Assurance, Oracle Communications Billing and Revenue Management, Oracle Primavera Unifier, en Oracle Java SE. Daarnaast zijn fixes uitgebracht voor Ruby-componenten in Oracle Communication producten zoals Net::IMAP, Mail, Nokogiri, rubyzip en MessagePack, Node.js, OpenSSL, Curl, Libgcrypt, Libexpat, Puma, Containe…",
+   "published": "2026-11-18T14:42:59+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "e30253aba453e6f9",
+   "source": "ncsc-nl",
+   "title": "NCSC-2026-0497 [1.00] [M/H] Kwetsbaarheden verholpen in Oracle Commerce Platform",
+   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0497",
+   "summary": "Oracle heeft kwetsbaarheden verholpen in Oracle Commerce Platform. Een groot deel hiervan betreft kwetsbaarheden in dependencies, namelijk Apache Neethi, Apache HttpClient en Apache CXF. Oracle Commerce Platform bevat een DoS-kwetsbaarheid die ongeauthenticeerde aanvallers in staat stelt het systeem via HTTP te laten crashen. Verder zijn er in Oracle Primavera Unifier en Oracle SOA Suite vergelij…",
+   "published": "2026-11-18T14:40:32+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "524adc766a0c4774",
+   "source": "cccs-alerts",
+   "title": "GitHub security advisory (AV26-1172)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/github-security-advisory-av26-1172",
+   "summary": "",
+   "published": "2026-11-18T13:40:25+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "9f2acfc49c4f3875",
+   "source": "cccs-alerts",
+   "title": "Google security advisory (AV26-1171)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/google-security-advisory-av26-1171",
+   "summary": "",
+   "published": "2026-11-18T13:31:24+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "613a4208f6e7dcfd",
+   "source": "csirt-it",
+   "title": "Risolte vulnerabilità in Craft CMS",
+   "link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-craft-cms-5",
+   "summary": "Aggiornamenti di sicurezza sanano 6 vulnerabilità, di cui due con gravità \"critica\" e due con gravità \"alta\", in Craft CMS, noto strumento per la gestione di siti web e-commerce. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un attaccante di eseguire codice arbitrario, accedere ad informazioni sensibili o di eludere dei meccanismi di sicurezza sui sistemi interessati.",
+   "published": "2026-11-18T13:04:43+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "9ede70c08d0ad693",
+   "source": "cccs-alerts",
+   "title": "Oracle Corporation security advisory (AV26-1170)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/oracle-corporation-security-advisory-av26-1170",
+   "summary": "",
+   "published": "2026-11-18T12:51:56+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "add25113198e78e6",
+   "source": "cert-bund",
+   "title": "[NEU] [hoch] MISP: Schwachstelle ermöglicht Offenlegung von Informationen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4657",
+   "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in MISP ausnutzen, um Informationen offenzulegen.",
+   "published": "2026-11-18T12:32:00+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "770982593526930a",
+   "source": "cert-bund",
+   "title": "[NEU] [mittel] Octopus Deploy: Schwachstelle ermöglicht Offenlegung von Informationen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4656",
+   "summary": "Ein Angreifer kann eine Schwachstelle in Octopus Deploy ausnutzen, um Informationen offenzulegen.",
+   "published": "2026-11-18T12:12:01+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "c7ea9f43c5a38806",
+   "source": "cert-bund",
+   "title": "[NEU] [hoch] Linux Kernel: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4655",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Linux Kernel ausnutzen, um einen Denial of Service Angriff oder nicht spezifierte Angriffe durchzuführen.",
+   "published": "2026-11-18T12:12:01+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "3e0a7d78ed050fda",
+   "source": "cert-bund-buerger",
+   "title": "Mozilla Firefox: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/buergercert/details?uuid=200abf81-341e-4daa-a21d-2c030ad555a7",
+   "summary": "In Mozilla Firefox existieren mehrere Schwachstellen. Ein Angreifer kann diese Schwachstellen ausnutzen, um seine Berechtigungen zu erweitern oder andere, nicht näher spezifizierte Angriffe durchzuführen. Dafür sind möglicherweise bestimmte Berechtigungen, spezifische Bedingungen oder eine Benutzerinteraktion erforderlich.",
+   "published": "2026-11-18T12:07:02+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "1f8bc34deabfca2c",
+   "source": "cert-bund",
+   "title": "[NEU] [hoch] Oracle Java und GraalVM: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4624",
+   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Oracle Java und GraalVM ausnutzen, um die Vertraulichkeit, Integrität und Verfügbarkeit zu gefährden, sowie um unter bestimmten Bedingungen beliebigen Code auszuführen.",
+   "published": "2026-11-18T12:07:01+00:00",
+   "first_seen": "2026-11-18T11:40:30+00:00",
+   "cves": []
+  },
+  {
+   "id": "d2535c33d4cd062b",
+   "source": "cert-bund",
+   "title": "[NEU] [hoch] Mozilla Firefox: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4654",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Mozilla Firefox ausnutzen, um Berechtigungen zu erweitern oder andere, nicht spezifizierte Angriffe durchzuführen.",
+   "published": "2026-11-18T12:07:01+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "568b16c81397725c",
+   "source": "cert-bund",
+   "title": "[NEU] [UNGEPATCHT] [mittel] GNU libc: Mehrere Schwachstellen ermöglichen Denial of Service",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4653",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in GNU libc ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+   "published": "2026-11-18T12:07:00+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "1b456f881601acf6",
+   "source": "cert-bund",
+   "title": "[NEU] [hoch] GNU Emacs: Schwachstelle ermöglicht Codeausführung",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4652",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in GNU Emacs ausnutzen, um beliebigen Programmcode auszuführen.",
+   "published": "2026-11-18T12:02:01+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "f5f0b5a33fb69b48",
+   "source": "cert-bund",
+   "title": "[NEU] [mittel] vllm: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4651",
+   "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in vllm ausnutzen, um Sicherheitsvorkehrungen zu umgehen und Dateien zu manipulieren.",
+   "published": "2026-11-18T12:02:00+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "d5fd4d9c360c6dc8",
+   "source": "bsi-bits",
+   "title": "Version 1.0: OpenJDK - Kritische Schwachstelle \"Java4Shell\" gefährdet Java-Anwendungen",
+   "link": "https://www.bsi.bund.de/SharedDocs/Cybersicherheitswarnungen/DE/2026/2026-306673-1032_bits.html",
+   "summary": "",
+   "published": "2026-11-18T12:00:00+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "39b020024df59476",
+   "source": "cisa",
+   "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+   "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2024-10441 Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability CVE-2026-40217 BerriAI LiteLLM Unprotected Alternate Channel Vulnerability CVE-2026-90436 Apache Axis Unsafe Reflection Vulnerability CVE-2026-90817 Vanderbil…",
+   "published": "2026-11-18T12:00:00+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": [
+    "CVE-2024-10441",
+    "CVE-2026-40217",
+    "CVE-2026-90436",
+    "CVE-2026-90817"
+   ]
+  },
+  {
+   "id": "f93553f273f684e5",
+   "source": "cert-bund",
+   "title": "[NEU] [hoch] Eclipse Mosquitto: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4650",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Eclipse Mosquitto ausnutzen, um beliebigen Programmcode auszuführen, Sicherheitsmaßnahmen zu umgehen, vertrauliche Informationen offenzulegen, Daten zu manipulieren oder einen Denial-of-Service-Zustand zu verursachen.",
+   "published": "2026-11-18T11:57:01+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "a2b9f1cac482ac40",
+   "source": "cert-bund",
+   "title": "[NEU] [hoch] Snipe-IT: Schwachstelle ermöglicht Erlangen von Benutzerrechten",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4649",
+   "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in Snipe-IT ausnutzen, um Benutzerrechte bis hin zu Superuser-Rechte zu erlangen.",
+   "published": "2026-11-18T11:57:01+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "5df0f0b730f2c984",
+   "source": "cert-bund",
+   "title": "[NEU] [mittel] Bruno: Schwachstelle ermöglicht Offenlegung von Informationen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4648",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Bruno ausnutzen, um Informationen offenzulegen.",
+   "published": "2026-11-18T11:57:00+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "d67affc1b0307602",
+   "source": "cert-bund",
+   "title": "[NEU] [UNGEPATCHT] [mittel] poppler: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4647",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in poppler ausnutzen, um Sicherheitsvorkehrungen zu umgehen, Daten zu manipulieren, Cross-Site-Scripting-Angriffe durchzuführen, einen Denial-of-Service-Zustand zu verursachen oder möglicherweise den Speicher zu beschädigen.",
+   "published": "2026-11-18T11:52:01+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "87fd50b236a8d7ca",
+   "source": "cert-bund",
+   "title": "[NEU] [mittel] rsyslog: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4646",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in rsyslog ausnutzen, um Sicherheitsmaßnahmen zu umgehen, Informationen offenzulegen, Daten zu manipulieren oder einen Denial-of-Service-Zustand zu verursachen.",
+   "published": "2026-11-18T11:52:01+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "231e688b1bbee0d6",
+   "source": "cert-bund",
+   "title": "[NEU] [hoch] Apache Airflow: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4645",
+   "summary": "Ein Angreifer kann eine Schwachstelle in Apache Airflow ausnutzen, um Sicherheitsvorkehrungen zu umgehen.",
+   "published": "2026-11-18T11:52:00+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "3c360f259fa32e78",
+   "source": "cert-bund",
+   "title": "[NEU] [hoch] HCL Commerce: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4644",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in HCL Commerce ausnutzen, um Informationen offenzulegen, Dateien zu manipulieren, oder einen Denial of Service Zustand herbeizuführen.",
+   "published": "2026-11-18T11:47:01+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "c63c94ff8acd24a8",
+   "source": "cert-bund",
+   "title": "[NEU] [hoch] Microsoft GitHub Enterprise Server: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4643",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Microsoft GitHub Enterprise Server ausnutzen, um Dateien zu manipulieren, um einen Denial of Service Angriff durchzuführen, um Informationen offenzulegen, um einen Cross-Site Scripting Angriff durchzuführen, um Sicherheitsvorkehrungen zu umgehen und um beliebigen Programmcode auszuführen.",
+   "published": "2026-11-18T11:47:01+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "056cc18583542d53",
+   "source": "cert-bund",
+   "title": "[NEU] [hoch] SignalWire FreeSWITCH: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4642",
+   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in SignalWire FreeSWITCH ausnutzen, um Informationen offenzulegen, Dateien zu manipulieren oder einen Denial-of-Service-Zustand zu verursachen.",
+   "published": "2026-11-18T11:47:01+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "8d467b5d507238ff",
+   "source": "cert-bund",
+   "title": "[NEU] [kritisch] Puppet: Schwachstelle ermöglicht Ausführen von beliebigem Programmcode mit den Rechten des Dienstes",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4641",
+   "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in Puppet ausnutzen, um beliebigen Programmcode mit den Rechten des Dienstes auszuführen.",
+   "published": "2026-11-18T11:47:00+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "8a2bdac3197e28d3",
+   "source": "cert-bund",
+   "title": "[NEU] [hoch] ILIAS: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4640",
+   "summary": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in ILIAS ausnutzen, um Informationen offenzulegen oder Administratorenrechte zu erlangen.",
+   "published": "2026-11-18T11:42:00+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
   {
    "id": "f96bbc0c6215548e",
    "source": "cert-bund",
@@ -1279,6 +1708,16 @@
    "cves": []
   },
   {
+   "id": "61f2005520a04dd8",
+   "source": "ncsc-nl",
+   "title": "NCSC-2026-0491 [1.01] [M/H] Meerdere kwetsbaarheden verholpen in Citrix Secure Access Client, NetScaler ADC, NetScaler Gateway en NetScaler Console.",
+   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0491",
+   "summary": "Citrix heeft meerdere kwetsbaarheden verholpen in Citrix Secure Access Client, NetScaler ADC, NetScaler Gateway en NetScaler Console. Citrix heeft meerdere kwetsbaarheden verholpen in Citrix Secure Access Client for Windows, NetScaler ADC, NetScaler Gateway en NetScaler Console. De kwetsbaarheden hebben CVSS v4.0-scores variërend van 6.9 tot 9.5 en omvatten onder andere geheugenbeschadiging (Memo…",
+   "published": "2026-11-18T08:52:20+00:00",
+   "first_seen": "2026-11-12T17:35:42+00:00",
+   "cves": []
+  },
+  {
    "id": "18ddc98f9e0e240e",
    "source": "cert-bund",
    "title": "[NEU] [hoch] Oracle Siebel CRM: Mehrere Schwachstellen",
@@ -1799,16 +2238,6 @@
    "cves": []
   },
   {
-   "id": "1f8bc34deabfca2c",
-   "source": "cert-bund",
-   "title": "[NEU] [hoch] Oracle Java und GraalVM: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4624",
-   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Oracle Java und GraalVM ausnutzen, um die Vertraulichkeit, Integrität und Verfügbarkeit zu gefährden, sowie um unter bestimmten Bedingungen beliebigen Code auszuführen.",
-   "published": "2026-11-18T08:47:01+00:00",
-   "first_seen": "2026-11-18T11:40:30+00:00",
-   "cves": []
-  },
-  {
    "id": "e7e7d16453aef9d6",
    "source": "cert-bund",
    "title": "[NEU] [hoch] Oracle MySQL: Mehrere Schwachstellen",
@@ -2009,24 +2438,157 @@
    "cves": []
   },
   {
+   "id": "392d3b88ee427b9b",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans Oracle Java SE (18 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1562/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans Oracle Java SE. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",
+   "published": "2026-11-18T00:00:00+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "9db2541e988a2ffa",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans les produits F5 (18 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1567/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans les produits F5. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et un contournement de la politique de sécurité.",
+   "published": "2026-11-18T00:00:00+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "8f4797c62908af30",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans les produits Tenable (18 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1556/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans les produits Tenable. Elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
+   "published": "2026-11-18T00:00:00+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "b006412c9f44b740",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans Oracle Weblogic (18 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1565/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans Oracle Weblogic. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",
+   "published": "2026-11-18T00:00:00+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "ca569c7aa986cb25",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans Oracle MySQL (18 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1563/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans Oracle MySQL. Elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
+   "published": "2026-11-18T00:00:00+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "f480841e0df8c7fa",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans Google Chrome (18 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1559/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans Google Chrome. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
+   "published": "2026-11-18T00:00:00+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "a0f7c3960d8e95da",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans Oracle PeopleSoft (18 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1564/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans Oracle PeopleSoft. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
+   "published": "2026-11-18T00:00:00+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "8545c13d34eedf82",
+   "source": "cert-fr",
+   "title": "Vulnérabilité dans FreeBSD (18 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1558/",
+   "summary": "Une vulnérabilité a été découverte dans FreeBSD. Elle permet à un attaquant de provoquer une atteinte à la confidentialité des données et un déni de service.",
+   "published": "2026-11-18T00:00:00+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "eb1f461bd780907e",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans Oracle Database Server (18 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1561/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans Oracle Database Server. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",
+   "published": "2026-11-18T00:00:00+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "dfc26785fec49b5a",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans Mozilla Firefox (18 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1560/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans Mozilla Firefox. Elles permettent à un attaquant de provoquer une élévation de privilèges et un problème de sécurité non spécifié par l'éditeur.",
+   "published": "2026-11-18T00:00:00+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "b21c9a6f4de4a964",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans Oracle Virtualization (18 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1566/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans Oracle Virtualization. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",
+   "published": "2026-11-18T00:00:00+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "306d0fe2711a4890",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans Netgate pfSense (18 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1557/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans Netgate pfSense. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance.",
+   "published": "2026-11-18T00:00:00+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": []
+  },
+  {
+   "id": "955e32163c959db7",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans F5 NGINX (18 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-017/",
+   "summary": "Le 18 novembre 2026, F5 a publié deux avis de sécurité concernant les vulnérabilités CVE-2026-123633 et CVE-2026-123007. Celles-ci affectent NGINX Open Source et NGINX Plus permettent à un attaquant non authentifié d'exécuter du code à distance, en utilisant le protocole HTTP en version 2. Le...",
+   "published": "2026-11-18T00:00:00+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": [
+    "CVE-2026-123007",
+    "CVE-2026-123633"
+   ]
+  },
+  {
+   "id": "4781b12e33f7f0ab",
+   "source": "cert-fr",
+   "title": "Vulnérabilité dans Oracle Java SE (18 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-016/",
+   "summary": "Le 17 novembre 2026, Oracle a publié un avis de sécurité concernant la vulnérabilité CVE-2026-114938, surnommée *java4shell*, qui affecte le décodeur Base64 de OpenJDK sur les processeurs x86-64 supportant AVX-512 VBMI. Celle-ci permet à un attaquant de provoquer une exécution de code arbitraire...",
+   "published": "2026-11-18T00:00:00+00:00",
+   "first_seen": "2026-11-18T20:30:20+00:00",
+   "cves": [
+    "CVE-2026-114938"
+   ]
+  },
+  {
    "id": "67265aec6fa9379b",
    "source": "cccs-alerts",
    "title": "AL26-029 - Critical vulnerability impacting Oracle Java - CVE-2026-114938",
    "link": "https://cyber.gc.ca/en/alerts-advisories/al26-029-critical-vulnerability-impacting-oracle-java-cve-2026-114938",
    "summary": "",
    "published": "2026-11-17T23:30:00+00:00",
-   "first_seen": "2026-11-18T00:57:50+00:00",
-   "cves": [
-    "CVE-2026-114938"
-   ]
-  },
-  {
-   "id": "b5b1339f7b9075d7",
-   "source": "ncsc-nl",
-   "title": "NCSC-2026-0495 [1.00] [M/H] Kwetsbaarheden verholpen in Oracle Java",
-   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0495",
-   "summary": "Oracle heeft meerdere kwetsbaarheden verholpen in Oracle Java. In dit beveiligingsadvies gaan we uitsluitend in op CVE-2026-114938, de rest van de kwetsbaarheden zal hierin later worden aangevuld. De kwetsbaarheid zit in de compiler, het onderdeel dat Java-code optimaliseert en uitvoert. Een aanvaller kan die zonder authenticatie op afstand misbruiken door speciaal gemaakte gegevens naar een dien…",
-   "published": "2026-11-17T21:55:30+00:00",
    "first_seen": "2026-11-18T00:57:50+00:00",
    "cves": [
     "CVE-2026-114938"
@@ -7019,16 +7581,6 @@
    "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0492",
    "summary": "Node.js heeft meerdere kwetsbaarheden verholpen in versies 22.x, 24.x en 26.x, waaronder in de HTTP/2-implementatie, HTTPS-servermodule, TLS-handling en proxy error handling. Verschillende kwetsbaarheden in Node.js kunnen leiden tot informatielekken, geheugenfouten en serveruitval. Vooral omgevingen met HTTP/2, HTTPS en TLS worden geraakt. - Proxy-authenticatie: uitlekken van inloggegevens via fo…",
    "published": "2026-11-12T14:19:29+00:00",
-   "first_seen": "2026-11-12T17:35:42+00:00",
-   "cves": []
-  },
-  {
-   "id": "61f2005520a04dd8",
-   "source": "ncsc-nl",
-   "title": "NCSC-2026-0491 [1.00] [M/H] Meerdere kwetsbaarheden verholpen in Citrix Secure Access Client, NetScaler ADC, NetScaler Gateway en NetScaler Console.",
-   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0491",
-   "summary": "Citrix heeft meerdere kwetsbaarheden verholpen in Citrix Secure Access Client, NetScaler ADC, NetScaler Gateway en NetScaler Console. Citrix heeft meerdere kwetsbaarheden verholpen in Citrix Secure Access Client for Windows, NetScaler ADC, NetScaler Gateway en NetScaler Console. De kwetsbaarheden hebben CVSS v4.0-scores variërend van 6.9 tot 9.5 en omvatten onder andere geheugenbeschadiging (Memo…",
-   "published": "2026-11-12T14:13:25+00:00",
    "first_seen": "2026-11-12T17:35:42+00:00",
    "cves": []
   },
