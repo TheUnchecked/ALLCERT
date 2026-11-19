@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T20:30:20+00:00",
+ "updated": "2026-11-19T02:33:59+00:00",
  "sources": {
   "csirt-it": {
    "name": "CSIRT Italia (ACN)",
@@ -94,6 +94,26 @@
   }
  },
  "items": [
+  {
+   "id": "dcdb134f740cdad5",
+   "source": "cccs-alerts",
+   "title": "SmarterTools security advisory (AV26-1177)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/smartertools-security-advisory-av26-1177",
+   "summary": "",
+   "published": "2026-11-18T21:06:13+00:00",
+   "first_seen": "2026-11-19T02:33:59+00:00",
+   "cves": []
+  },
+  {
+   "id": "28d509201462da10",
+   "source": "cccs-alerts",
+   "title": "JetBrains security advisory (AV26-1176)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/jetbrains-security-advisory-av26-1176",
+   "summary": "",
+   "published": "2026-11-18T21:00:34+00:00",
+   "first_seen": "2026-11-19T02:33:59+00:00",
+   "cves": []
+  },
   {
    "id": "83a43e23bcd9406a",
    "source": "cccs-alerts",
