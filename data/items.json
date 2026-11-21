@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T02:12:40+00:00",
+ "updated": "2026-11-21T10:59:29+00:00",
  "sources": {
   "csirt-it": {
    "name": "CSIRT Italia (ACN)",
@@ -94,6 +94,16 @@
   }
  },
  "items": [
+  {
+   "id": "dc04db4ab9f53da9",
+   "source": "cccs-news",
+   "title": "Cyber threat actors increasingly use automated and AI-enabled tools in cyber attacks",
+   "link": "https://cyber.gc.ca/en/news-events/cyber-threat-actors-increasingly-use-automated-ai-enabled-tools-cyber-attacks",
+   "summary": "",
+   "published": "2026-11-21T03:17:16+00:00",
+   "first_seen": "2026-11-21T10:59:29+00:00",
+   "cves": []
+  },
   {
    "id": "64e65c7a39e18b62",
    "source": "cccs-alerts",
