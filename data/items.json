@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T10:59:29+00:00",
+ "updated": "2026-11-21T19:14:25+00:00",
  "sources": {
   "csirt-it": {
    "name": "CSIRT Italia (ACN)",
@@ -95,11 +95,21 @@
  },
  "items": [
   {
+   "id": "437fdd6529d7a3dd",
+   "source": "cccs-alerts",
+   "title": "Apache security advisory (AV26-1188)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/apache-security-advisory-av26-1188",
+   "summary": "",
+   "published": "2026-11-21T13:17:12+00:00",
+   "first_seen": "2026-11-21T19:14:25+00:00",
+   "cves": []
+  },
+  {
    "id": "dc04db4ab9f53da9",
    "source": "cccs-news",
    "title": "Cyber threat actors increasingly use automated and AI-enabled tools in cyber attacks",
    "link": "https://cyber.gc.ca/en/news-events/cyber-threat-actors-increasingly-use-automated-ai-enabled-tools-cyber-attacks",
-   "summary": "",
+   "summary": "ARTEX, CyberStrikeAI, PentAGI",
    "published": "2026-11-21T03:17:16+00:00",
    "first_seen": "2026-11-21T10:59:29+00:00",
    "cves": []

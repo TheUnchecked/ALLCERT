@@ -3,19 +3,27 @@
   <title>ALLCERT - Segnalazioni dei CERT</title>
   <subtitle>Segnalazioni e notizie dei CERT, dei CSIRT e delle agenzie di cybersicurezza</subtitle>
   <id>https://theunchecked.github.io/ALLCERT/</id>
-  <updated>2026-11-21T10:59:29+00:00</updated>
+  <updated>2026-11-21T19:14:25+00:00</updated>
   <link href="https://theunchecked.github.io/ALLCERT/" />
   <link href="https://theunchecked.github.io/ALLCERT/data/feed.xml" rel="self" />
   <author>
     <name>ALLCERT</name>
   </author>
   <entry>
+    <title>[CA] Apache security advisory (AV26-1188)</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/apache-security-advisory-av26-1188" />
+    <id>urn:allcert:437fdd6529d7a3dd</id>
+    <updated>2026-11-21T13:17:12+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
+  <entry>
     <title>[CA] Cyber threat actors increasingly use automated and AI-enabled tools in cyber attacks</title>
     <link href="https://cyber.gc.ca/en/news-events/cyber-threat-actors-increasingly-use-automated-ai-enabled-tools-cyber-attacks" />
     <id>urn:allcert:dc04db4ab9f53da9</id>
     <updated>2026-11-21T03:17:16+00:00</updated>
     <category term="Cyber Centre Canada - Notizie e guide" />
-    <summary>Fonte: Cyber Centre Canada - Notizie e guide.</summary>
+    <summary>Fonte: Cyber Centre Canada - Notizie e guide. ARTEX, CyberStrikeAI, PentAGI</summary>
   </entry>
   <entry>
     <title>[CA] VMware security advisory (AV26-1185) – Update 1</title>
@@ -800,13 +808,5 @@
     <updated>2026-11-20T12:27:42+00:00</updated>
     <category term="CERT-Bund - Avvisi di sicurezza" />
     <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux ausnutzen, um den Speicher zu beschädigen, Sicherheitsmaßnahmen zu umgehen, einen Denial-of-Service-Zustand auszulösen, beliebigen Code auszuführen, Daten zu manipulieren oder offenzulegen oder andere, nicht näher spezifizierte Angriffe durchzuführen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [mittel] QT: Mehrere Schwachstellen ermöglichen Denial of Service</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4287" />
-    <id>urn:allcert:1060bc96ddbea2fd</id>
-    <updated>2026-11-20T12:27:42+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in QT ausnutzen, um einen Denial of Service Angriff durchzuführen oder Dateien zu manipulieren.</summary>
   </entry>
 </feed>
