@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T13:41:25+00:00",
+ "updated": "2026-11-24T23:53:53+00:00",
  "sources": {
   "csirt-it": {
    "name": "CSIRT Italia (ACN)",
@@ -94,6 +94,78 @@
   }
  },
  "items": [
+  {
+   "id": "91348fa8ac8443d8",
+   "source": "cccs-alerts",
+   "title": "Erlang security advisory (AV26-1204)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/erlang-security-advisory-av26-1204",
+   "summary": "",
+   "published": "2026-11-24T19:59:34+00:00",
+   "first_seen": "2026-11-24T23:53:53+00:00",
+   "cves": []
+  },
+  {
+   "id": "84f5f1a1669a9345",
+   "source": "cccs-alerts",
+   "title": "Drupal security advisory (AV26-1186) – Update 1",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/drupal-security-advisory-av26-1186",
+   "summary": "",
+   "published": "2026-11-24T19:08:30+00:00",
+   "first_seen": "2026-11-19T20:35:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "163ed63556d45d30",
+   "source": "cccs-alerts",
+   "title": "VMware security advisory (AV26-1203)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/vmware-security-advisory-av26-1203",
+   "summary": "",
+   "published": "2026-11-24T18:43:41+00:00",
+   "first_seen": "2026-11-24T23:53:53+00:00",
+   "cves": []
+  },
+  {
+   "id": "afd974ee57571f36",
+   "source": "cccs-alerts",
+   "title": "Tanium security advisory (AV26-1202)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/tanium-security-advisory-av26-1202",
+   "summary": "",
+   "published": "2026-11-24T16:45:31+00:00",
+   "first_seen": "2026-11-24T23:53:53+00:00",
+   "cves": []
+  },
+  {
+   "id": "71665094d3c08add",
+   "source": "csirt-it",
+   "title": "Rilevato sfruttamento attivo in rete della CVE-2026-131914",
+   "link": "https://www.acn.gov.it/portale/w/rilevato-sfruttamento-attivo-in-rete-della-cve-2026-131914",
+   "summary": "Rilevato lo sfruttamento attivo in rete della vulnerabilità identificata tramite la CVE-2026-131914, con gravità \"critica\", che interessa Idunno AntiCsrf, libreria ASP.NET per la protezione delle applicazioni web da attacchi di tipo Cross-Site Request Forgery (CSRF). Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un attaccante remoto non autenticato di iniettare codice arbitrario e…",
+   "published": "2026-11-24T15:25:30+00:00",
+   "first_seen": "2026-11-24T23:53:53+00:00",
+   "cves": [
+    "CVE-2026-131914"
+   ]
+  },
+  {
+   "id": "85be4ed6d9a80970",
+   "source": "cccs-alerts",
+   "title": "Google security advisory (AV26-1201)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/google-security-advisory-av26-1201",
+   "summary": "",
+   "published": "2026-11-24T14:41:05+00:00",
+   "first_seen": "2026-11-24T23:53:53+00:00",
+   "cves": []
+  },
+  {
+   "id": "5f3ce46d49cf1320",
+   "source": "cccs-alerts",
+   "title": "n8n security advisory (AV26-1200)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/n8n-security-advisory-av26-1200",
+   "summary": "",
+   "published": "2026-11-24T14:32:25+00:00",
+   "first_seen": "2026-11-24T23:53:53+00:00",
+   "cves": []
+  },
   {
    "id": "1d47d3c8f7e67470",
    "source": "ncsc-nl",
@@ -2667,6 +2739,54 @@
    "cves": []
   },
   {
+   "id": "2a15397ca0984f92",
+   "source": "cisa",
+   "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+   "summary": "CISA has added three new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-131914 Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability CVE-2026-132165 Drupal Core Remote Code Execution Vulnerability CVE-2026-132224 Optimizely Web Experimentation External Control of Critical State Data Vulnerability These types of v…",
+   "published": "2026-11-24T12:00:00+00:00",
+   "first_seen": "2026-11-24T23:53:53+00:00",
+   "cves": [
+    "CVE-2026-131914",
+    "CVE-2026-132165",
+    "CVE-2026-132224"
+   ]
+  },
+  {
+   "id": "14788eb9860a57fd",
+   "source": "cisa",
+   "title": "Danfoss AK-SM 8xxA Series",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-03",
+   "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code with webserver privileges. The following versions of Danfoss AK-SM 8xxA Series are affected: AK-SM8xxA <=5.4.0 (CVE-2026-129713) CVSS Vendor Equipment v3 9.8 Danfoss AK-SM8xxA 1 Vulnerability Stack-based Buffer Overflow Background Critical Infrastructure Sectors: Commercial Facilities…",
+   "published": "2026-11-24T12:00:00+00:00",
+   "first_seen": "2026-11-24T23:53:53+00:00",
+   "cves": [
+    "CVE-2026-129713"
+   ]
+  },
+  {
+   "id": "e7243e96d57a4c86",
+   "source": "cisa",
+   "title": "Schneider Electric EcoStruxure Power Build Rapsody software",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-02",
+   "summary": "View CSAF Summary Schneider Electric is aware of a vulnerability in its EcoStruxure™ Power Build Rapsody product. The EcoStruxure™ Power Build Rapsody is used to enter or import the single line diagram, to get the extensive bill of material of your switchboard, including all devices, connection items, and mounting components. Failure to apply the remediations provided below may risk memory corrup…",
+   "published": "2026-11-24T12:00:00+00:00",
+   "first_seen": "2026-11-24T23:53:53+00:00",
+   "cves": []
+  },
+  {
+   "id": "3ff6d699641881d2",
+   "source": "cisa",
+   "title": "AutomationDirect C-More EA9 Programming Software",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-01",
+   "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow attackers to corrupt application memory and cause instability or a crash, potentially leading to arbitrary code execution, if a user is convinced to open a malicious file. The following versions of AutomationDirect C-More EA9 Programming Software are affected: C-More EA9 Programming Software <=V6.80 (CVE-2026-127280) CVSS…",
+   "published": "2026-11-24T12:00:00+00:00",
+   "first_seen": "2026-11-24T23:53:53+00:00",
+   "cves": [
+    "CVE-2026-127280"
+   ]
+  },
+  {
    "id": "c7dc32dc3a8c4040",
    "source": "csirt-it",
    "title": "Supply Chain Attack: installer malevolo di NoMachine Personal Edition per Windows distribuito attraverso il server ufficiale di download",
@@ -2734,6 +2854,76 @@
    "summary": "Google ha rilasciato un aggiornamento per il browser Chrome al fine di correggere una nuova vulnerabilità di sicurezza con gravità “critica”. Tale vulnerabilità, qualora sfruttata, potrebbe permettere a un attaccante remoto di eseguire codice arbitrario sui sistemi interessati.",
    "published": "2026-11-24T07:45:24+00:00",
    "first_seen": "2026-11-24T13:41:25+00:00",
+   "cves": []
+  },
+  {
+   "id": "1566a8e0713b6480",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans Postfix (24 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1610/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans Postfix. Elles permettent à un attaquant de provoquer un déni de service à distance et une atteinte à la confidentialité des données.",
+   "published": "2026-11-24T00:00:00+00:00",
+   "first_seen": "2026-11-24T23:53:53+00:00",
+   "cves": []
+  },
+  {
+   "id": "ba3c6a9b7d9b2ba5",
+   "source": "cert-fr",
+   "title": "Vulnérabilité dans Laravel (24 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1609/",
+   "summary": "Une vulnérabilité a été découverte dans Laravel. Elle permet à un attaquant de provoquer un contournement de la politique de sécurité.",
+   "published": "2026-11-24T00:00:00+00:00",
+   "first_seen": "2026-11-24T23:53:53+00:00",
+   "cves": []
+  },
+  {
+   "id": "c52dd499afadcaf3",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans les produits Elastic (24 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1614/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans les produits Elastic. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance.",
+   "published": "2026-11-24T00:00:00+00:00",
+   "first_seen": "2026-11-24T23:53:53+00:00",
+   "cves": []
+  },
+  {
+   "id": "a00c676a4404abf8",
+   "source": "cert-fr",
+   "title": "Vulnérabilité dans Google Chrome (24 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1608/",
+   "summary": "Une vulnérabilité a été découverte dans Google Chrome. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance et un contournement de la politique de sécurité.",
+   "published": "2026-11-24T00:00:00+00:00",
+   "first_seen": "2026-11-24T23:53:53+00:00",
+   "cves": []
+  },
+  {
+   "id": "342631857c6e1d8a",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans OpenSSL (24 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1613/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans OpenSSL. Elles permettent à un attaquant de provoquer un déni de service à distance.",
+   "published": "2026-11-24T00:00:00+00:00",
+   "first_seen": "2026-11-24T23:53:53+00:00",
+   "cves": []
+  },
+  {
+   "id": "a067f695a37e6ceb",
+   "source": "cert-fr",
+   "title": "Vulnérabilité dans les produits F5 (24 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1612/",
+   "summary": "Une vulnérabilité a été découverte dans les produits F5. Elle permet à un attaquant de provoquer un déni de service à distance.",
+   "published": "2026-11-24T00:00:00+00:00",
+   "first_seen": "2026-11-24T23:53:53+00:00",
+   "cves": []
+  },
+  {
+   "id": "c1137e5d6792eaac",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans Traefik (24 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1611/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans Traefik. Elle permet à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et un contournement de la politique de sécurité.",
+   "published": "2026-11-24T00:00:00+00:00",
+   "first_seen": "2026-11-24T23:53:53+00:00",
    "cves": []
   },
   {
@@ -6195,16 +6385,6 @@
    "summary": "De multiples vulnérabilités ont été découvertes dans les produits Citrix. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et un déni de service à distance.",
    "published": "2026-11-20T00:00:00+00:00",
    "first_seen": "2026-11-20T20:17:27+00:00",
-   "cves": []
-  },
-  {
-   "id": "84f5f1a1669a9345",
-   "source": "cccs-alerts",
-   "title": "Drupal security advisory (AV26-1186)",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/drupal-security-advisory-av26-1186",
-   "summary": "",
-   "published": "2026-11-19T19:29:19+00:00",
-   "first_seen": "2026-11-19T20:35:51+00:00",
    "cves": []
   },
   {

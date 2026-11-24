@@ -3,12 +3,68 @@
   <title>ALLCERT - Segnalazioni dei CERT</title>
   <subtitle>Segnalazioni e notizie dei CERT, dei CSIRT e delle agenzie di cybersicurezza</subtitle>
   <id>https://theunchecked.github.io/ALLCERT/</id>
-  <updated>2026-11-24T13:41:25+00:00</updated>
+  <updated>2026-11-24T23:53:53+00:00</updated>
   <link href="https://theunchecked.github.io/ALLCERT/" />
   <link href="https://theunchecked.github.io/ALLCERT/data/feed.xml" rel="self" />
   <author>
     <name>ALLCERT</name>
   </author>
+  <entry>
+    <title>[CA] Erlang security advisory (AV26-1204)</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/erlang-security-advisory-av26-1204" />
+    <id>urn:allcert:91348fa8ac8443d8</id>
+    <updated>2026-11-24T19:59:34+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
+  <entry>
+    <title>[CA] Drupal security advisory (AV26-1186) – Update 1</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/drupal-security-advisory-av26-1186" />
+    <id>urn:allcert:84f5f1a1669a9345</id>
+    <updated>2026-11-24T19:08:30+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
+  <entry>
+    <title>[CA] VMware security advisory (AV26-1203)</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/vmware-security-advisory-av26-1203" />
+    <id>urn:allcert:163ed63556d45d30</id>
+    <updated>2026-11-24T18:43:41+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
+  <entry>
+    <title>[CA] Tanium security advisory (AV26-1202)</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/tanium-security-advisory-av26-1202" />
+    <id>urn:allcert:afd974ee57571f36</id>
+    <updated>2026-11-24T16:45:31+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
+  <entry>
+    <title>[IT] Rilevato sfruttamento attivo in rete della CVE-2026-131914</title>
+    <link href="https://www.acn.gov.it/portale/w/rilevato-sfruttamento-attivo-in-rete-della-cve-2026-131914" />
+    <id>urn:allcert:71665094d3c08add</id>
+    <updated>2026-11-24T15:25:30+00:00</updated>
+    <category term="CSIRT Italia (ACN)" />
+    <summary>Fonte: CSIRT Italia (ACN). Rilevato lo sfruttamento attivo in rete della vulnerabilità identificata tramite la CVE-2026-131914, con gravità "critica", che interessa Idunno AntiCsrf, libreria ASP.NET per la protezione delle applicazioni web da attacchi di tipo Cross-Site Request Forgery (CSRF). Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un attaccante remoto non autenticato di iniettare codice arbitrario e…</summary>
+  </entry>
+  <entry>
+    <title>[CA] Google security advisory (AV26-1201)</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/google-security-advisory-av26-1201" />
+    <id>urn:allcert:85be4ed6d9a80970</id>
+    <updated>2026-11-24T14:41:05+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
+  <entry>
+    <title>[CA] n8n security advisory (AV26-1200)</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/n8n-security-advisory-av26-1200" />
+    <id>urn:allcert:5f3ce46d49cf1320</id>
+    <updated>2026-11-24T14:32:25+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
   <entry>
     <title>[NL] NCSC-2026-0514 [1.00] [M/H] Kwetsbaarheden verholpen in Mitel MiCollab</title>
     <link href="https://advisories.ncsc.nl/advisory?id=NCSC-2026-0514" />
@@ -752,61 +808,5 @@
     <updated>2026-11-24T12:18:12+00:00</updated>
     <category term="CERT-Bund - Avvisi di sicurezza" />
     <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein Angreifer kann mehrere Schwachstellen in verschiedenen MongoDB Treibern ausnutzen, um einen Denial of Service Angriff durchzuführen und um Daten zu manipulieren.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [mittel] X.Org X11 und Xwayland: Mehrere Schwachstellen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3787" />
-    <id>urn:allcert:5fa2124a1cc41bdd</id>
-    <updated>2026-11-24T12:18:11+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein lokaler Angreifer kann mehrere Schwachstellen in X.Org X11 und Xwayland ausnutzen, um beliebigen Programmcode auszuführen und um einen Denial of Service Zustand herbeizuführen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [hoch] CPython: Mehrere Schwachstellen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3716" />
-    <id>urn:allcert:9588d6b1192f4599</id>
-    <updated>2026-11-24T12:17:51+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein Angreifer kann mehrere Schwachstellen in Python ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen, um einen Denial of Service Angriff durchzuführen, und um Sicherheitsvorkehrungen zu umgehen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [mittel] Red Hat Enterprise Linux (sequoia-openpgp, perl-DBI): Mehrere Schwachstellen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3790" />
-    <id>urn:allcert:2f24c18e94770662</id>
-    <updated>2026-11-24T12:17:51+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux ausnutzen, um Sicherheitsvorkehrungen zu umgehen, Daten zu manipulieren und einen Denial-of-Service-Zustand auszulösen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [mittel] MediaWiki: Mehrere Schwachstellen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3709" />
-    <id>urn:allcert:8398252ff398c83d</id>
-    <updated>2026-11-24T12:17:51+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein Angreifer kann mehrere Schwachstellen in MediaWiki ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen, um Sicherheitsvorkehrungen zu umgehen und um Informationen offenzulegen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [hoch] Apache HTTP Server: Mehrere Schwachstellen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3703" />
-    <id>urn:allcert:2edff0bc3539f610</id>
-    <updated>2026-11-24T12:17:50+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein Angreifer kann mehrere Schwachstellen in Apache HTTP Server ausnutzen, um beliebigen Programmcode auszuführen, die Authentifizierung zu umgehen, vertrauliche Informationen offenzulegen, Daten zu manipulieren oder Denial-of-Service-Zustände zu verursachen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [hoch] Red Hat Enterprise Linux (gvfs): Mehrere Schwachstellen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3692" />
-    <id>urn:allcert:53f837db57d98107</id>
-    <updated>2026-11-24T12:17:50+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux (gvfs) ausnutzen, um beliebigen Programmcode auszuführen oder seine Rechte zu erweitern.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [mittel] Ghostscript: Schwachstelle ermöglicht Manipulation von Dateien und DoS</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3684" />
-    <id>urn:allcert:449bc60fcfd795c8</id>
-    <updated>2026-11-24T12:17:50+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Ghostscript ausnutzen, um möglicherweise Daten offenzulegen oder zu manipulieren oder einen Denial-of-Service-Zustand herbeizuführen.</summary>
   </entry>
 </feed>
