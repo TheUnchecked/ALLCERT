@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T12:36:46+00:00",
+ "updated": "2026-11-24T02:12:51+00:00",
  "sources": {
   "csirt-it": {
    "name": "CSIRT Italia (ACN)",
@@ -95,6 +95,276 @@
  },
  "items": [
   {
+   "id": "784de9cb7eec3344",
+   "source": "csirt-it",
+   "title": "Impiego di agenti di IA in campagne di compromissione automatizzate",
+   "link": "https://www.acn.gov.it/portale/w/impiego-di-agenti-di-ia-in-campagne-di-compromissione-automatizzate",
+   "summary": "Lo CSIRT Italia ha rilevato, nel contesto nazionale, campagne di compromissione massiva condotte mediante agenti autonomi orchestrati tramite intelligenza artificiale. L’impiego di tale tecnologia consente di estendere la portata e la frequenza delle azioni offensive contro le infrastrutture connesse, elevando drasticamente il livello di rischio per i sistemi esposti e riducendo il tempo a dispos…",
+   "published": "2026-11-23T20:45:58+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "feda7b07e8d24ef0",
+   "source": "cccs-alerts",
+   "title": "MISP security advisory (AV26-1197)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/misp-security-advisory-av26-1197",
+   "summary": "",
+   "published": "2026-11-23T18:14:44+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "0eb939275559fdbe",
+   "source": "cccs-alerts",
+   "title": "Splunk security advisory (AV26-1196)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/splunk-security-advisory-av26-1196",
+   "summary": "",
+   "published": "2026-11-23T15:52:16+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "7791c2b472de9935",
+   "source": "cccs-alerts",
+   "title": "Spring security advisory (AV26-1195)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/spring-security-advisory-av26-1195",
+   "summary": "",
+   "published": "2026-11-23T15:41:08+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "f838b27db28cbaeb",
+   "source": "cccs-alerts",
+   "title": "Apache security advisory (AV26-1194)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/apache-security-advisory-av26-1194",
+   "summary": "",
+   "published": "2026-11-23T15:34:03+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "adf38dcf05dc3887",
+   "source": "cccs-alerts",
+   "title": "Synology security advisory (AV26-1193)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/synology-security-advisory-av26-1193",
+   "summary": "",
+   "published": "2026-11-23T15:23:24+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "115aed48cc28fde0",
+   "source": "cccs-alerts",
+   "title": "JetBrains security advisory (AV26-1192)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/jetbrains-security-advisory-av26-1192",
+   "summary": "",
+   "published": "2026-11-23T15:11:22+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "aa17ef3e40f70ae5",
+   "source": "cccs-alerts",
+   "title": "N-able security advisory (AV26-1191) - Update 1",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/n-able-security-advisory-av26-1191",
+   "summary": "",
+   "published": "2026-11-23T14:51:33+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "cf2336042a0c8634",
+   "source": "cccs-alerts",
+   "title": "Red Hat security advisory (AV26-1190)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/red-hat-security-advisory-av26-1190",
+   "summary": "",
+   "published": "2026-11-23T14:40:09+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "fe5f7e0e988224f3",
+   "source": "cccs-news",
+   "title": "Cyber security and privacy risk management: A lifecycle approach",
+   "link": "https://cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management",
+   "summary": "",
+   "published": "2026-11-23T14:31:59+00:00",
+   "first_seen": "2026-11-04T07:13:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "f383d80e362add08",
+   "source": "csirt-it",
+   "title": "Rilevata nuova vulnerabilità in GPGME",
+   "link": "https://www.acn.gov.it/portale/w/rilevata-nuova-vulnerabilita-in-gpgme",
+   "summary": "GnuPG ha rilasciato aggiornamenti di sicurezza che sanano una vulnerabilità con gravità \"critica\" in GPGME, libreria open source per integrare le operazioni crittografiche basate su GnuPG nelle applicazioni software. Tale vulnerabilità, qualora sfruttata, potrebbe permettere a un utente malintenzionato remoto di eseguire codice arbitrario sui sistemi interessati.",
+   "published": "2026-11-23T14:30:11+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "3aea8b37faf2c4e7",
+   "source": "csirt-it",
+   "title": "Rilevate vulnerabilità in Portainer",
+   "link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-portainer-1",
+   "summary": "Rilevate due vulnerabilità di sicurezza, di cui una con gravità “alta”, in Portainer, nota piattaforma open-source per la gestione di ambienti containerizzati. Tale vulnerabilità, qualora sfruttata, potrebbe consentire a un utente malevolo autenticato di eludere dei meccanismi di sicurezza, accedere ad informazioni riservate ed elevare i propri privilegi sui sistemi interessati.",
+   "published": "2026-11-23T13:55:25+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "f3ad9749194f5a97",
+   "source": "cccs-news",
+   "title": "Protect your organization from malicious macros - ITSAP.00.200",
+   "link": "https://cyber.gc.ca/en/guidance/protect-your-organization-malicious-macros-itsap00200",
+   "summary": "",
+   "published": "2026-11-23T13:53:19+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "1aaeb91680b4880c",
+   "source": "cccs-alerts",
+   "title": "IBM security advisory (AV26-1189)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/ibm-security-advisory-av26-1189",
+   "summary": "",
+   "published": "2026-11-23T13:38:52+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "8bf329e1af9d36e0",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Red Hat JBoss Enterprise Application Platform: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4715",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Red Hat JBoss Enterprise Application Platform ausnutzen, um Sicherheitsvorkehrungen zu umgehen, um einen Denial of Service Angriff durchzuführen, um Informationen offenzulegen, um Daten zu manipulieren und um beliebigen Programmcode auszuführen.",
+   "published": "2026-11-23T12:37:03+00:00",
+   "first_seen": "2026-11-20T20:17:27+00:00",
+   "cves": []
+  },
+  {
+   "id": "b428b568b7e5f1a3",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Eclipse Jetty: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3992",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Eclipse Jetty ausnutzen, um Dateien zu manipulieren, um Informationen offenzulegen und um Sicherheitsvorkehrungen zu umgehen.",
+   "published": "2026-11-23T12:37:03+00:00",
+   "first_seen": "2026-11-06T19:24:04+00:00",
+   "cves": []
+  },
+  {
+   "id": "fbbc9f3704be5f32",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Netty: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3477",
+   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Netty ausnutzen, um Sicherheitsvorkehrungen zu umgehen, Daten zu manipulieren, vertrauliche Informationen offenzulegen oder einen Denial-of-Service-Zustand herbeizuführen.",
+   "published": "2026-11-23T12:37:03+00:00",
+   "first_seen": "2026-11-05T10:54:48+00:00",
+   "cves": []
+  },
+  {
+   "id": "63e23b72337e0a66",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Eclipse Jetty: Schwachstelle ermöglicht Darstellen falscher Informationen und Offenlegung",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3434",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Eclipse Jetty ausnutzen, um falsche Informationen darzustellen und Informationen offenzulegen.",
+   "published": "2026-11-23T12:37:03+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "d580ee58e56a03ba",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Apache ActiveMQ Artemis: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3289",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Apache ActiveMQ Artemis ausnutzen, um Sicherheitsvorkehrungen zu umgehen, authentifizierte Sitzungen zu kapern, Daten zu manipulieren oder offenzulegen oder Denial-of-Service-Zustände herbeizuführen.",
+   "published": "2026-11-23T12:37:02+00:00",
+   "first_seen": "2026-11-12T17:35:42+00:00",
+   "cves": []
+  },
+  {
+   "id": "05d90dae6661400f",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Netty: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3291",
+   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Netty ausnutzen, um Denial-of-Service-Zustände zu verursachen, Sicherheitsmaßnahmen zu umgehen, Request- oder Response-Smuggling durchzuführen sowie Daten offenzulegen oder zu manipulieren.",
+   "published": "2026-11-23T12:37:02+00:00",
+   "first_seen": "2026-11-04T19:44:38+00:00",
+   "cves": []
+  },
+  {
+   "id": "1a6b7c178c226c63",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Jolokia: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3148",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Jolokia ausnutzen, um Sicherheitsvorkehrungen zu umgehen.",
+   "published": "2026-11-23T12:37:02+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "3116ca2baf687a51",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Red Hat Enterprise Linux (nodejs:24): Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2816",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux ausnutzen, um SSRF-Angriffe durchzuführen, Sicherheitsmaßnahmen zu umgehen, Daten offenzulegen oder zu manipulieren, möglicherweise beliebigen Code auszuführen oder einen Denial-of-Service-Zustand herbeizuführen.",
+   "published": "2026-11-23T12:37:01+00:00",
+   "first_seen": "2026-11-09T11:29:36+00:00",
+   "cves": []
+  },
+  {
+   "id": "90f012e8e262f362",
+   "source": "cert-bund",
+   "title": "[UPDATE] [mittel] Red Hat Enterprise Linux (brace-expansion): Schwachstelle ermöglicht Denial of Service",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2725",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Red Hat Enterprise Linux ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+   "published": "2026-11-23T12:37:01+00:00",
+   "first_seen": "2026-11-09T22:20:55+00:00",
+   "cves": []
+  },
+  {
+   "id": "66339771310a56c6",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Bouncy Castle: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2622",
+   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Bouncy Castle ausnutzen, um Sicherheitsvorkehrungen zu umgehen, Daten zu manipulieren, sensible Informationen offenzulegen oder einen Denial-of-Service-Zustand auszulösen.",
+   "published": "2026-11-23T12:37:01+00:00",
+   "first_seen": "2026-11-04T19:44:38+00:00",
+   "cves": []
+  },
+  {
+   "id": "0ca6c4f761b369bd",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Red Hat JBoss Fuse: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4745",
+   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Red Hat JBoss Fuse ausnutzen, um beliebigen Code auszuführen, einen Denial-of-Service Zustand herbeizuführen, Cross-Site-Scripting-Angriffe durchzuführen, Sicherheitsmechanismen und Kryptographie zu umgehen oder Daten offenzulegen und zu manipulieren.",
+   "published": "2026-11-23T12:37:01+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "19f369310a1895c8",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Atlassian Produkte (Bamboo, Bitbucket, Confluence, Crucible, Fisheye und Jira): Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4634",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Atlassian Bamboo, Atlassian Bitbucket, Atlassian Confluence, Atlassian Crucible, Atlassian Fisheye und Atlassian Jira ausnutzen, um beliebigen Programmcode auszuführen, um seine Privilegien zu erhöhen, um einen Denial of Service Angriff durchzuführen, um Informationen offenzulegen, um Dateien zu manipulieren, um einen Cross-Site Scripting Angriff durch…",
+   "published": "2026-11-23T12:32:31+00:00",
+   "first_seen": "2026-11-18T11:40:30+00:00",
+   "cves": []
+  },
+  {
+   "id": "2ef1d4b8b89fa9d4",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Red Hat Enterprise Linux: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4542",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux ausnutzen, um erweiterte Berechtigungen zu erlangen, beliebigen Code auszuführen, Sicherheitsmaßnahmen zu umgehen, Daten zu manipulieren und offenzulegen sowie einen Denial-of-Service-Zustand auszulösen.",
+   "published": "2026-11-23T12:32:31+00:00",
+   "first_seen": "2026-11-12T17:35:42+00:00",
+   "cves": []
+  },
+  {
    "id": "13e4d7991a5a28ce",
    "source": "cert-bund-buerger",
    "title": "Microsoft PowerPoint: Schwachstelle ermöglicht Ausführen von beliebigem Programmcode mit Benutzerrechten",
@@ -102,6 +372,46 @@
    "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Microsoft PowerPoint ausnutzen, um schädliche Befehle mit den Rechten des angemeldeten Benutzers auszuführen.",
    "published": "2026-11-23T12:32:02+00:00",
    "first_seen": "2026-11-23T12:36:46+00:00",
+   "cves": []
+  },
+  {
+   "id": "6b2b3ea7dc7296a5",
+   "source": "cert-bund",
+   "title": "[NEU] [mittel] Microsoft PowerPoint: Schwachstelle ermöglicht Ausführen von beliebigem Programmcode mit Benutzerrechten",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4744",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Microsoft PowerPoint ausnutzen, um beliebigen Programmcode mit Benutzerrechten auszuführen.",
+   "published": "2026-11-23T12:32:01+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "c6de7f2ff9584bc4",
+   "source": "cert-bund",
+   "title": "[NEU] [hoch] Microsoft Azure: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4743",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Microsoft Azure, Microsoft Azure Linux, Microsoft Entra und Microsoft PowerShell ausnutzen, um seine Privilegien zu erhöhen, beliebigen Code auszuführen, vertrauliche Informationen offenzulegen oder Spoofing-Angriffe durchzuführen.",
+   "published": "2026-11-23T12:32:01+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "8df8b416882b5e68",
+   "source": "cert-bund",
+   "title": "[NEU] [hoch] Microsoft SharePoint: Schwachstelle ermöglicht Codeausführung",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4742",
+   "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in Microsoft SharePoint ausnutzen, um beliebigen Programmcode auszuführen.",
+   "published": "2026-11-23T12:32:01+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "fa223d74370ef399",
+   "source": "cert-bund",
+   "title": "[NEU] [hoch] Microsoft 365 Copilot: Schwachstelle ermöglicht Privilegieneskalation",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4741",
+   "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in Microsoft 365 Copilot ausnutzen, um seine Privilegien zu erhöhen.",
+   "published": "2026-11-23T12:32:01+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
    "cves": []
   },
   {
@@ -343,6 +653,19 @@
    "published": "2026-11-23T12:02:03+00:00",
    "first_seen": "2026-11-23T12:36:46+00:00",
    "cves": []
+  },
+  {
+   "id": "92a908b84a9fcba9",
+   "source": "cisa",
+   "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+   "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-133968 Project MONAI MONAI Label Path Traversal Vulnerability CVE-2026-134624 N-able Mail Assure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pos…",
+   "published": "2026-11-23T12:00:00+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": [
+    "CVE-2026-133968",
+    "CVE-2026-134624"
+   ]
   },
   {
    "id": "a34f5313a0f48929",
@@ -1427,16 +1750,6 @@
    "cves": []
   },
   {
-   "id": "19f369310a1895c8",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Atlassian Produkte (Bamboo, Bitbucket, Confluence, Crucible, Fisheye und Jira): Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4634",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Atlassian Bamboo, Atlassian Bitbucket, Atlassian Confluence, Atlassian Crucible, Atlassian Fisheye und Atlassian Jira ausnutzen, um beliebigen Programmcode auszuführen, um seine Privilegien zu erhöhen, um einen Denial of Service Angriff durchzuführen, um Informationen offenzulegen, um Dateien zu manipulieren, um einen Cross-Site Scripting Angriff durch…",
-   "published": "2026-11-23T10:00:02+00:00",
-   "first_seen": "2026-11-18T11:40:30+00:00",
-   "cves": []
-  },
-  {
    "id": "0f2beb639b4b96ca",
    "source": "cert-bund",
    "title": "[UPDATE] [hoch] Red Hat Quay: Mehrere Schwachstellen",
@@ -1484,16 +1797,6 @@
    "summary": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in Microsoft Azure, Microsoft Azure DevOps Server, Microsoft PowerShell, Microsoft ASP.NET, Microsoft .NET, Microsoft 365 Apps, Microsoft Visual Studio 2022, Microsoft Visual Studio 2026 und Microsoft Visual Studio Code ausnutzen, um seine Privilegien zu erhöhen, um Code auszuführen, um Informationen offenzulegen, um Sicherheit…",
    "published": "2026-11-23T09:59:39+00:00",
    "first_seen": "2026-11-11T14:32:10+00:00",
-   "cves": []
-  },
-  {
-   "id": "2ef1d4b8b89fa9d4",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Red Hat Enterprise Linux: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4542",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux ausnutzen, um erweiterte Berechtigungen zu erlangen, beliebigen Code auszuführen, Sicherheitsmaßnahmen zu umgehen, Daten zu manipulieren und offenzulegen sowie einen Denial-of-Service-Zustand auszulösen.",
-   "published": "2026-11-23T09:59:39+00:00",
-   "first_seen": "2026-11-12T17:35:42+00:00",
    "cves": []
   },
   {
@@ -2699,6 +3002,106 @@
    "cves": []
   },
   {
+   "id": "c8da1fc5a7cbb04e",
+   "source": "cert-fr",
+   "title": "Bulletin d'actualité CERTFR-2026-ACT-049 (23 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-049/",
+   "summary": "Ce bulletin d'actualité du CERT-FR revient sur les vulnérabilités significatives de la semaine passée pour souligner leurs criticités. Il ne remplace pas l'analyse de l'ensemble des avis et alertes publiés par le CERT-FR dans le cadre d'une analyse de risques pour prioriser l'application des...",
+   "published": "2026-11-23T00:00:00+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "9b0adcb03c2f5e12",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans SPIP (23 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1599/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans SPIP. Elles permettent à un attaquant de provoquer une injection de code indirecte à distance (XSS) et une injection de requêtes illégitimes par rebond (CSRF).",
+   "published": "2026-11-23T00:00:00+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "653f259914908bce",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans MongoDB (23 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1606/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans MongoDB. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
+   "published": "2026-11-23T00:00:00+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "31d75692ff4369c3",
+   "source": "cert-fr",
+   "title": "Vulnérabilité dans Microsoft Office (23 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1604/",
+   "summary": "Une vulnérabilité a été découverte dans Microsoft Office. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance.",
+   "published": "2026-11-23T00:00:00+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "6148636ba95cbf50",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans les produits Palo Alto Networks (23 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1600/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans les produits Palo Alto Networks. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et un déni de service à distance.",
+   "published": "2026-11-23T00:00:00+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "df1afb714e088170",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans Microsoft Edge (23 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1603/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans Microsoft Edge. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
+   "published": "2026-11-23T00:00:00+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "824f46cc85c440f9",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans Roundcube Webmail (23 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1602/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans Roundcube Webmail. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",
+   "published": "2026-11-23T00:00:00+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "a4638e15a693a51b",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans les produits Synology (23 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1607/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans les produits Synology. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",
+   "published": "2026-11-23T00:00:00+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "c7ca918988b2a0ae",
+   "source": "cert-fr",
+   "title": "Vulnérabilité dans Laravel (23 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1601/",
+   "summary": "Une vulnérabilité a été découverte dans Laravel. Elle permet à un attaquant de provoquer un déni de service à distance.",
+   "published": "2026-11-23T00:00:00+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "0277c20c4844f520",
+   "source": "cert-fr",
+   "title": "Vulnérabilité dans Mattermost Server (23 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1605/",
+   "summary": "Une vulnérabilité a été découverte dans Mattermost Server. Elle permet à un attaquant de provoquer une atteinte à la confidentialité des données.",
+   "published": "2026-11-23T00:00:00+00:00",
+   "first_seen": "2026-11-24T02:12:51+00:00",
+   "cves": []
+  },
+  {
    "id": "437fdd6529d7a3dd",
    "source": "cccs-alerts",
    "title": "Apache security advisory (AV26-1188)",
@@ -3215,16 +3618,6 @@
    "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4717",
    "summary": "Ein Angreifer kann mehrere Schwachstellen in VMware Cloud Foundation, VMware vSphere, VMware vCenter Server und VMware Tools ausnutzen, um Berechtigungen zu erweitern – einschließlich Root-Rechte –, die Authentifizierung zu umgehen, beliebigen Code auszuführen sowie Daten zu manipulieren oder offenzulegen.",
    "published": "2026-11-20T12:47:26+00:00",
-   "first_seen": "2026-11-20T20:17:27+00:00",
-   "cves": []
-  },
-  {
-   "id": "8bf329e1af9d36e0",
-   "source": "cert-bund",
-   "title": "[NEU] [hoch] Red Hat JBoss Enterprise Application Platform: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4715",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Red Hat JBoss Enterprise Application Platform ausnutzen, um Sicherheitsvorkehrungen zu umgehen, um einen Denial of Service Angriff durchzuführen, um Informationen offenzulegen, um Daten zu manipulieren und um beliebigen Programmcode auszuführen.",
-   "published": "2026-11-20T12:47:25+00:00",
    "first_seen": "2026-11-20T20:17:27+00:00",
    "cves": []
   },
@@ -3750,26 +4143,6 @@
    "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Red Hat Enterprise Linux (rhc) ausnutzen, um einen Denial of Service Angriff durchzuführen.",
    "published": "2026-11-20T09:27:32+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
-   "id": "3116ca2baf687a51",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Red Hat Enterprise Linux (nodejs:24): Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2816",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux ausnutzen, um SSRF-Angriffe durchzuführen, Sicherheitsmaßnahmen zu umgehen, Daten offenzulegen oder zu manipulieren, möglicherweise beliebigen Code auszuführen oder einen Denial-of-Service-Zustand herbeizuführen.",
-   "published": "2026-11-20T09:27:30+00:00",
-   "first_seen": "2026-11-09T11:29:36+00:00",
-   "cves": []
-  },
-  {
-   "id": "90f012e8e262f362",
-   "source": "cert-bund",
-   "title": "[UPDATE] [mittel] Red Hat Enterprise Linux (brace-expansion): Schwachstelle ermöglicht Denial of Service",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2725",
-   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Red Hat Enterprise Linux ausnutzen, um einen Denial of Service Angriff durchzuführen.",
-   "published": "2026-11-20T09:27:29+00:00",
-   "first_seen": "2026-11-09T22:20:55+00:00",
    "cves": []
   },
   {
@@ -7127,16 +7500,6 @@
    "summary": "Ein Angreifer kann mehrere Schwachstellen in Microsoft .NET Framework, Microsoft .NET, Microsoft ASP.NET, Microsoft Visual Studio 2022, Microsoft Visual Studio 2026, Microsoft Visual Studio Code, Microsoft SysInternals und Microsoft PowerShell ausnutzen, um seine Privilegien zu erhöhen, um Code auszuführen, um Informationen offenzulegen, um Sicherheitsmechanismen zu umgehen und um einen Denial of…",
    "published": "2026-11-18T08:47:27+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
-   "id": "b428b568b7e5f1a3",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Eclipse Jetty: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3992",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Eclipse Jetty ausnutzen, um Dateien zu manipulieren, um Informationen offenzulegen und um Sicherheitsvorkehrungen zu umgehen.",
-   "published": "2026-11-18T08:47:27+00:00",
-   "first_seen": "2026-11-06T19:24:04+00:00",
    "cves": []
   },
   {
@@ -11507,16 +11870,6 @@
    "cves": []
   },
   {
-   "id": "d580ee58e56a03ba",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Apache ActiveMQ Artemis: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3289",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Apache ActiveMQ Artemis ausnutzen, um Sicherheitsvorkehrungen zu umgehen, authentifizierte Sitzungen zu kapern, Daten zu manipulieren oder offenzulegen oder Denial-of-Service-Zustände herbeizuführen.",
-   "published": "2026-11-12T10:09:43+00:00",
-   "first_seen": "2026-11-12T17:35:42+00:00",
-   "cves": []
-  },
-  {
    "id": "8f7ea4832fa7c83b",
    "source": "cert-bund",
    "title": "[UPDATE] [hoch] Red Hat Enterprise Linux (lxml): Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
@@ -11553,16 +11906,6 @@
    "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2682",
    "summary": "Ein Angreifer kann mehrere Schwachstellen in Apache CXF ausnutzen, um beliebigen Programmcode auszuführen, um seine Privilegien zu erhöhen, um einen Denial of Service Angriff durchzuführen, und um Sicherheitsvorkehrungen zu umgehen.",
    "published": "2026-11-12T10:08:56+00:00",
-   "first_seen": "2026-11-04T19:44:38+00:00",
-   "cves": []
-  },
-  {
-   "id": "66339771310a56c6",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Bouncy Castle: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2622",
-   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Bouncy Castle ausnutzen, um Sicherheitsvorkehrungen zu umgehen, Daten zu manipulieren, sensible Informationen offenzulegen oder einen Denial-of-Service-Zustand auszulösen.",
-   "published": "2026-11-12T10:08:55+00:00",
    "first_seen": "2026-11-04T19:44:38+00:00",
    "cves": []
   },
@@ -15262,16 +15605,6 @@
    "cves": []
   },
   {
-   "id": "fbbc9f3704be5f32",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Netty: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3477",
-   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Netty ausnutzen, um Sicherheitsvorkehrungen zu umgehen, Daten zu manipulieren, vertrauliche Informationen offenzulegen oder einen Denial-of-Service-Zustand herbeizuführen.",
-   "published": "2026-11-09T11:13:19+00:00",
-   "first_seen": "2026-11-05T10:54:48+00:00",
-   "cves": []
-  },
-  {
    "id": "adf31d5f242ad16a",
    "source": "cert-bund",
    "title": "[UPDATE] [mittel] Keycloak: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
@@ -15289,16 +15622,6 @@
    "summary": "Ein Angreifer kann mehrere Schwachstellen in Mozilla Firefox, Firefox ESR und Thunderbird ausnutzen, um seine Privilegien zu erhöhen, Sicherheitsmaßnahmen zu umgehen, Daten offenzulegen oder zu manipulieren, den Speicher zu beschädigen, Denial-of-Service-Zustände zu verursachen oder andere, nicht näher spezifizierte Angriffe durchzuführen.",
    "published": "2026-11-09T11:13:15+00:00",
    "first_seen": "2026-11-09T11:29:36+00:00",
-   "cves": []
-  },
-  {
-   "id": "05d90dae6661400f",
-   "source": "cert-bund",
-   "title": "[UPDATE] [hoch] Netty: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3291",
-   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Netty ausnutzen, um Denial-of-Service-Zustände zu verursachen, Sicherheitsmaßnahmen zu umgehen, Request- oder Response-Smuggling durchzuführen sowie Daten offenzulegen oder zu manipulieren.",
-   "published": "2026-11-09T11:12:51+00:00",
-   "first_seen": "2026-11-04T19:44:38+00:00",
    "cves": []
   },
   {
@@ -19456,16 +19779,6 @@
    "summary": "Rilasciati aggiornamenti di sicurezza per risolvere 5 vulnerabilità, di cui tre con gravità “alta”, presenti in Grafana, nota applicazione web per la visualizzazione e l’analisi interattiva di dati. Tali vulnerabilità, qualora sfruttate e in presenza di specifiche condizioni, potrebbero consentire a un utente malintenzionato l'elusione dei meccanismi di sicurezza, l'accesso a informazioni sensibi…",
    "published": "2026-10-29T13:42:22+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
-   "id": "fe5f7e0e988224f3",
-   "source": "cccs-news",
-   "title": "Cyber security and privacy risk management: A lifecycle approach",
-   "link": "https://cyber.gc.ca/en/guidance/cyber-security-privacy-risk-management",
-   "summary": "",
-   "published": "2026-10-29T13:10:21+00:00",
-   "first_seen": "2026-11-04T07:13:15+00:00",
    "cves": []
   },
   {
