@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T23:53:53+00:00",
+ "updated": "2026-11-25T08:31:14+00:00",
  "sources": {
   "csirt-it": {
    "name": "CSIRT Italia (ACN)",
@@ -94,6 +94,36 @@
   }
  },
  "items": [
+  {
+   "id": "6bc3a5e5ed99d76f",
+   "source": "csirt-it",
+   "title": "Risolte vulnerabilità in prodotti Mozilla",
+   "link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-mozilla-16",
+   "summary": "Aggiornamenti di sicurezza sanano numerose vulnerabilità di sicurezza, di cui una con gravità “critica” e 64 con gravità “alta”, nei prodotti Firefox, Firefox ESR e Thunderbird.",
+   "published": "2026-11-25T08:03:24+00:00",
+   "first_seen": "2026-11-25T08:31:14+00:00",
+   "cves": []
+  },
+  {
+   "id": "a6bf3e3886621017",
+   "source": "csirt-it",
+   "title": "Adobe: aggiornamenti di sicurezza",
+   "link": "https://www.acn.gov.it/portale/w/adobe-aggiornamenti-di-sicurezza-28",
+   "summary": "Adobe ha rilasciato aggiornamenti di sicurezza per risolvere 113 vulnerabilità, di cui 15 con gravità “critica” e 4 con gravità “alta” nei prodotti Experience Manager e Campaign Classic.",
+   "published": "2026-11-25T07:55:58+00:00",
+   "first_seen": "2026-11-25T08:31:14+00:00",
+   "cves": []
+  },
+  {
+   "id": "405bf2f940c5070c",
+   "source": "ncsc-nl",
+   "title": "NCSC-2026-0515 [1.00] [M/H] Kwetsbaarheid verholpen in OTRS",
+   "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0515",
+   "summary": "OTRS heeft een kwetsbaarheid verholpen in de Survey endpoint van versies 2024.3.1 tot en met 2026.8.1. De kwetsbaarheid betreft een SQL-injectie in de Survey endpoint, waardoor ongeauthenticeerde externe aanvallers willekeurige SQL-queries kunnen injecteren. Dit gebeurt zonder dat authenticatie of een geldige survey key vereist is. Door misbruik van deze kwetsbaarheid kan een aanvaller ticketinfo…",
+   "published": "2026-11-25T07:50:18+00:00",
+   "first_seen": "2026-11-25T08:31:14+00:00",
+   "cves": []
+  },
   {
    "id": "91348fa8ac8443d8",
    "source": "cccs-alerts",
@@ -6974,10 +7004,12 @@
    "source": "csirt-it",
    "title": "Rilevate vulnerabilità in Drupal",
    "link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-drupal-1",
-   "summary": "Rilevate 2 vulnerabilità in Drupal, noto Content Management System (CMS) open source. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un utente malintenzionato remoto di eseguire codice arbitrario sui sistemi interessati.",
+   "summary": "Rilevate 2 vulnerabilità in Drupal, noto Content Management System (CMS) open source. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un utente malintenzionato remoto di eseguire codice arbitrario sui sistemi interessati. Tra queste si evidenzia la CVE-2026-132165, per la quale è stato rilevato lo sfruttamento attivo in rete.",
    "published": "2026-11-19T10:30:01+00:00",
    "first_seen": "2026-11-19T11:38:31+00:00",
-   "cves": []
+   "cves": [
+    "CVE-2026-132165"
+   ]
   },
   {
    "id": "bf3805270f2b8731",
@@ -12359,6 +12391,16 @@
    "summary": "Google ha rilasciato un aggiornamento per il browser Chrome al fine di correggere 83 nuove vulnerabilità di sicurezza, di cui 5 con gravità “critica” e 78 con gravità “alta”.",
    "published": "2026-11-12T13:06:03+00:00",
    "first_seen": "2026-11-12T17:35:42+00:00",
+   "cves": []
+  },
+  {
+   "id": "b0c35ca4958fd97e",
+   "source": "csirt-it",
+   "title": "Node.js: rilevate vulnerabilità",
+   "link": "https://www.acn.gov.it/portale/w/node.js-rilevate-vulnerabilita",
+   "summary": "Rilevate molteplici vulnerabilità, di cui 7 con gravità “alta”, in Node.js, noto software open source per l’esecuzione di codice JavaScript. Tali vulnerabilità potrebbero consentire a un attaccante remoto non autenticato di eludere i meccanismi di sicurezza e di autenticazione, compromettere la disponibilità del servizio, accedere ad informazioni sensibili e, nei casi più gravi, eseguire codice a…",
+   "published": "2026-11-12T12:53:00+00:00",
+   "first_seen": "2026-11-25T08:31:14+00:00",
    "cves": []
   },
   {

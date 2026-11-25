@@ -3,12 +3,36 @@
   <title>ALLCERT - Segnalazioni dei CERT</title>
   <subtitle>Segnalazioni e notizie dei CERT, dei CSIRT e delle agenzie di cybersicurezza</subtitle>
   <id>https://theunchecked.github.io/ALLCERT/</id>
-  <updated>2026-11-24T23:53:53+00:00</updated>
+  <updated>2026-11-25T08:31:14+00:00</updated>
   <link href="https://theunchecked.github.io/ALLCERT/" />
   <link href="https://theunchecked.github.io/ALLCERT/data/feed.xml" rel="self" />
   <author>
     <name>ALLCERT</name>
   </author>
+  <entry>
+    <title>[IT] Risolte vulnerabilità in prodotti Mozilla</title>
+    <link href="https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-mozilla-16" />
+    <id>urn:allcert:6bc3a5e5ed99d76f</id>
+    <updated>2026-11-25T08:03:24+00:00</updated>
+    <category term="CSIRT Italia (ACN)" />
+    <summary>Fonte: CSIRT Italia (ACN). Aggiornamenti di sicurezza sanano numerose vulnerabilità di sicurezza, di cui una con gravità “critica” e 64 con gravità “alta”, nei prodotti Firefox, Firefox ESR e Thunderbird.</summary>
+  </entry>
+  <entry>
+    <title>[IT] Adobe: aggiornamenti di sicurezza</title>
+    <link href="https://www.acn.gov.it/portale/w/adobe-aggiornamenti-di-sicurezza-28" />
+    <id>urn:allcert:a6bf3e3886621017</id>
+    <updated>2026-11-25T07:55:58+00:00</updated>
+    <category term="CSIRT Italia (ACN)" />
+    <summary>Fonte: CSIRT Italia (ACN). Adobe ha rilasciato aggiornamenti di sicurezza per risolvere 113 vulnerabilità, di cui 15 con gravità “critica” e 4 con gravità “alta” nei prodotti Experience Manager e Campaign Classic.</summary>
+  </entry>
+  <entry>
+    <title>[NL] NCSC-2026-0515 [1.00] [M/H] Kwetsbaarheid verholpen in OTRS</title>
+    <link href="https://advisories.ncsc.nl/advisory?id=NCSC-2026-0515" />
+    <id>urn:allcert:405bf2f940c5070c</id>
+    <updated>2026-11-25T07:50:18+00:00</updated>
+    <category term="NCSC-NL - Avvisi" />
+    <summary>Fonte: NCSC-NL - Avvisi. OTRS heeft een kwetsbaarheid verholpen in de Survey endpoint van versies 2024.3.1 tot en met 2026.8.1. De kwetsbaarheid betreft een SQL-injectie in de Survey endpoint, waardoor ongeauthenticeerde externe aanvallers willekeurige SQL-queries kunnen injecteren. Dit gebeurt zonder dat authenticatie of een geldige survey key vereist is. Door misbruik van deze kwetsbaarheid kan een aanvaller ticketinfo…</summary>
+  </entry>
   <entry>
     <title>[CA] Erlang security advisory (AV26-1204)</title>
     <link href="https://cyber.gc.ca/en/alerts-advisories/erlang-security-advisory-av26-1204" />
@@ -784,29 +808,5 @@
     <updated>2026-11-24T12:18:13+00:00</updated>
     <category term="CERT-Bund - Avvisi di sicurezza" />
     <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux ausnutzen, um Administratorrechte zu erlangen, beliebigen Code auszuführen, Daten zu manipulieren oder beliebige Dateien auf dem Host zu schreiben oder zu überschreiben, was möglicherweise zur vollständigen Kompromittierung des Systems führen kann.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [hoch] expat: Schwachstelle ermöglicht Offenlegung von Informationen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3796" />
-    <id>urn:allcert:efcb01bfe08b9cba</id>
-    <updated>2026-11-24T12:18:12+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer Angreifer kann eine Schwachstelle in expat ausnutzen, um Informationen offenzulegen, was möglicherweise weitere Angriffe ermöglicht.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [hoch] Argo CD: Mehrere Schwachstellen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3802" />
-    <id>urn:allcert:f4b7d164cd82ed15</id>
-    <updated>2026-11-24T12:18:12+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein Angreifer kann mehrere Schwachstellen in Argo CD ausnutzen, um beliebigen Programmcode auszuführen, vertrauliche Informationen und Zugangsdaten auszulesen, Zugriffsbeschränkungen zu umgehen oder einen Denial of Service zu verursachen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [hoch] MongoDB Treiber: Mehrere Schwachstellen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3830" />
-    <id>urn:allcert:32346de8b226728f</id>
-    <updated>2026-11-24T12:18:12+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein Angreifer kann mehrere Schwachstellen in verschiedenen MongoDB Treibern ausnutzen, um einen Denial of Service Angriff durchzuführen und um Daten zu manipulieren.</summary>
   </entry>
 </feed>
