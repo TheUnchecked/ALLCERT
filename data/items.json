@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T19:14:52+00:00",
+ "updated": "2026-11-26T03:33:55+00:00",
  "sources": {
   "csirt-it": {
    "name": "CSIRT Italia (ACN)",
@@ -94,6 +94,36 @@
   }
  },
  "items": [
+  {
+   "id": "dd58989c29264d0e",
+   "source": "cccs-alerts",
+   "title": "Mitel security advisory (AV26-1184) – Update 1",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/mitel-security-advisory-av26-1184",
+   "summary": "",
+   "published": "2026-11-25T21:08:17+00:00",
+   "first_seen": "2026-11-19T20:35:51+00:00",
+   "cves": []
+  },
+  {
+   "id": "acfbc03a56c372dd",
+   "source": "cccs-alerts",
+   "title": "GitLab security advisory (AV26-1210)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/gitlab-security-advisory-av26-1210",
+   "summary": "",
+   "published": "2026-11-25T21:06:40+00:00",
+   "first_seen": "2026-11-26T03:33:55+00:00",
+   "cves": []
+  },
+  {
+   "id": "21dd8d47b55a4985",
+   "source": "cccs-alerts",
+   "title": "Drupal security advisory (AV26-1209)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/drupal-security-advisory-av26-1209",
+   "summary": "",
+   "published": "2026-11-25T19:21:44+00:00",
+   "first_seen": "2026-11-26T03:33:55+00:00",
+   "cves": []
+  },
   {
    "id": "15afbaafce211782",
    "source": "cccs-alerts",
@@ -513,6 +543,21 @@
    "published": "2026-11-25T12:02:00+00:00",
    "first_seen": "2026-11-25T19:14:52+00:00",
    "cves": []
+  },
+  {
+   "id": "1dfe3d376e1f04c2",
+   "source": "cisa",
+   "title": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
+   "summary": "CISA has added 10 new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2023-25914 Danfoss AK-SM 800A Series Path Traversal Vulnerability CVE-2023-25915 Danfoss AK-SM 800A Series Improper Input Validation Vulnerability CVE-2025-41450 Danfoss AK-SM 800A Series Improper Authentication Vulnerability CVE-2026-103406 Hewlett Packard En…",
+   "published": "2026-11-25T12:00:00+00:00",
+   "first_seen": "2026-11-26T03:33:55+00:00",
+   "cves": [
+    "CVE-2023-25914",
+    "CVE-2023-25915",
+    "CVE-2025-41450",
+    "CVE-2026-103406"
+   ]
   },
   {
    "id": "d5ac37f250577657",
@@ -7479,16 +7524,6 @@
    "summary": "De multiples vulnérabilités ont été découvertes dans les produits Citrix. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et un déni de service à distance.",
    "published": "2026-11-20T00:00:00+00:00",
    "first_seen": "2026-11-20T20:17:27+00:00",
-   "cves": []
-  },
-  {
-   "id": "dd58989c29264d0e",
-   "source": "cccs-alerts",
-   "title": "Mitel security advisory (AV26-1184)",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/mitel-security-advisory-av26-1184",
-   "summary": "",
-   "published": "2026-11-19T18:51:37+00:00",
-   "first_seen": "2026-11-19T20:35:51+00:00",
    "cves": []
   },
   {

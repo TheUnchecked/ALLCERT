@@ -3,12 +3,36 @@
   <title>ALLCERT - Segnalazioni dei CERT</title>
   <subtitle>Segnalazioni e notizie dei CERT, dei CSIRT e delle agenzie di cybersicurezza</subtitle>
   <id>https://theunchecked.github.io/ALLCERT/</id>
-  <updated>2026-11-25T19:14:52+00:00</updated>
+  <updated>2026-11-26T03:33:55+00:00</updated>
   <link href="https://theunchecked.github.io/ALLCERT/" />
   <link href="https://theunchecked.github.io/ALLCERT/data/feed.xml" rel="self" />
   <author>
     <name>ALLCERT</name>
   </author>
+  <entry>
+    <title>[CA] Mitel security advisory (AV26-1184) – Update 1</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/mitel-security-advisory-av26-1184" />
+    <id>urn:allcert:dd58989c29264d0e</id>
+    <updated>2026-11-25T21:08:17+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
+  <entry>
+    <title>[CA] GitLab security advisory (AV26-1210)</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/gitlab-security-advisory-av26-1210" />
+    <id>urn:allcert:acfbc03a56c372dd</id>
+    <updated>2026-11-25T21:06:40+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
+  <entry>
+    <title>[CA] Drupal security advisory (AV26-1209)</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/drupal-security-advisory-av26-1209" />
+    <id>urn:allcert:21dd8d47b55a4985</id>
+    <updated>2026-11-25T19:21:44+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
   <entry>
     <title>[CA] [Control systems] Hitachi security advisory (AV26-1208)</title>
     <link href="https://cyber.gc.ca/en/alerts-advisories/control-systems-hitachi-security-advisory-av26-1208" />
@@ -296,6 +320,14 @@
     <updated>2026-11-25T12:02:00+00:00</updated>
     <category term="CERT-Bund - Avvisi di sicurezza" />
     <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer Angreifer kann eine Schwachstelle in rsyslog ausnutzen, um Informationen offenzulegen.</summary>
+  </entry>
+  <entry>
+    <title>[US] CISA Adds 10 Known Exploited Vulnerabilities to Catalog</title>
+    <link href="https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog" />
+    <id>urn:allcert:1dfe3d376e1f04c2</id>
+    <updated>2026-11-25T12:00:00+00:00</updated>
+    <category term="CISA - Avvisi" />
+    <summary>Fonte: CISA - Avvisi. CISA has added 10 new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2023-25914 Danfoss AK-SM 800A Series Path Traversal Vulnerability CVE-2023-25915 Danfoss AK-SM 800A Series Improper Input Validation Vulnerability CVE-2025-41450 Danfoss AK-SM 800A Series Improper Authentication Vulnerability CVE-2026-103406 Hewlett Packard En…</summary>
   </entry>
   <entry>
     <title>[DE] [NEU] [mittel] LiteLLM: Mehrere Schwachstellen</title>
@@ -776,37 +808,5 @@
     <updated>2026-11-25T11:50:58+00:00</updated>
     <category term="CERT-Bund - Avvisi di sicurezza" />
     <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Red Hat Quay und Red Hat Enterprise Linux ausnutzen, um einen Denial of Service Angriff durchzuführen oder Sicherheitsmaßnahmen zu umgehen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [mittel] Erlang/OTP: Mehrere Schwachstellen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3964" />
-    <id>urn:allcert:c15827c18a2b647f</id>
-    <updated>2026-11-25T11:50:58+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein Angreifer kann mehrere Schwachstellen in Erlang/OTP ausnutzen, um Sicherheitsvorkehrungen zu umgehen oder einen Denial of Service zu verursachen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [hoch] Vercel Next.js: Mehrere Schwachstellen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3973" />
-    <id>urn:allcert:80a4990bf4b43e81</id>
-    <updated>2026-11-25T11:50:57+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein Angreifer kann mehrere Schwachstellen in Vercel Next.js ausnutzen, um beliebigen Programmcode auszuführen, und um einen Denial of Service Angriff durchzuführen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [mittel] Red Hat Enterprise Linux (lrzsz): Mehrere Schwachstellen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3978" />
-    <id>urn:allcert:8d8baf2c861f78c3</id>
-    <updated>2026-11-25T11:50:57+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux (lrzsz) ausnutzen, um Dateien zu manipulieren oder beliebigen Programmcode mit Benutzerrechten auszuführen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [hoch] Red Hat Enterprise Linux (libsoup): Mehrere Schwachstellen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3952" />
-    <id>urn:allcert:28300435fbfba54c</id>
-    <updated>2026-11-25T11:50:36+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux ausnutzen, um eine Heap-Beschädigung oder einen Denial-of-Service-Zustand auszulösen.</summary>
   </entry>
 </feed>
