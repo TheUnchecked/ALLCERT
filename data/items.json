@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T12:17:15+00:00",
+ "updated": "2026-11-27T23:26:50+00:00",
  "sources": {
   "csirt-it": {
    "name": "CSIRT Italia (ACN)",
@@ -94,6 +94,80 @@
   }
  },
  "items": [
+  {
+   "id": "21dd8d47b55a4985",
+   "source": "cccs-alerts",
+   "title": "Drupal security advisory (AV26-1209) – Update 1",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/drupal-security-advisory-av26-1209",
+   "summary": "",
+   "published": "2026-11-27T18:42:19+00:00",
+   "first_seen": "2026-11-26T03:33:55+00:00",
+   "cves": []
+  },
+  {
+   "id": "a066e789deddeed1",
+   "source": "cccs-alerts",
+   "title": "GeoServer security advisory (AV26-1207) – Update 1",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/geoserver-security-advisory-av26-1207",
+   "summary": "",
+   "published": "2026-11-27T18:36:34+00:00",
+   "first_seen": "2026-11-25T19:14:52+00:00",
+   "cves": []
+  },
+  {
+   "id": "6a68f84ab33879e0",
+   "source": "csirt-it",
+   "title": "Rilevate vulnerabilità in prodotti Dell",
+   "link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-dell-5",
+   "summary": "Aggiornamenti di sicurezza sanano numerose vulnerabilità, di cui 72 con gravità \"alta\", in Dell Secure Connect Gateway Virtual Edition, soluzione per il monitoraggio remoto, la gestione proattiva e l'assistenza automatizzata dei sistemi Dell.",
+   "published": "2026-11-27T15:52:11+00:00",
+   "first_seen": "2026-11-27T23:26:50+00:00",
+   "cves": []
+  },
+  {
+   "id": "346aa1991ab25c4e",
+   "source": "cccs-alerts",
+   "title": "Mitel security advisory (AV26-1212)",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/mitel-security-advisory-av26-1212",
+   "summary": "",
+   "published": "2026-11-27T13:36:37+00:00",
+   "first_seen": "2026-11-27T23:26:50+00:00",
+   "cves": []
+  },
+  {
+   "id": "371278dcfcc02a18",
+   "source": "cert-bund",
+   "title": "[NEU] [hoch] Dell Secure Connect Gateway: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4842",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Dell Secure Connect Gateway ausnutzen, um Informationen offenzulegen, Dateien zu manipulieren, Sicherheitsvorkehrungen zu umgehen, Benutzerrechte zu erlangen, beliebigen Programmcode auszuführen oder einen Denial-of-Service-Zustand herbeizuführen.",
+   "published": "2026-11-27T12:20:46+00:00",
+   "first_seen": "2026-11-27T12:17:15+00:00",
+   "cves": []
+  },
+  {
+   "id": "e7e7d16453aef9d6",
+   "source": "cert-bund",
+   "title": "[UPDATE] [hoch] Oracle MySQL: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4623",
+   "summary": "Ein entfernter, anonymer oder authentisierter Angreifer kann mehrere Schwachstellen in Oracle MySQL ausnutzen, um die Vertraulichkeit, Integrität und Verfügbarkeit zu gefährden.",
+   "published": "2026-11-27T12:20:46+00:00",
+   "first_seen": "2026-11-18T11:40:30+00:00",
+   "cves": []
+  },
+  {
+   "id": "c50fb019e17b16db",
+   "source": "cisa",
+   "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/11/27/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+   "summary": "CISA has added three new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-120705 OSGeo GeoServer XML Injection Vulnerability CVE-2026-129243 OSGeo GeoServer Incorrect Authorization Vulnerability CVE-2026-136716 Drupal Core Improper Check for Unusual or Exceptional Conditions Vulnerability These types of vulnerabilities are a…",
+   "published": "2026-11-27T12:00:00+00:00",
+   "first_seen": "2026-11-27T23:26:50+00:00",
+   "cves": [
+    "CVE-2026-120705",
+    "CVE-2026-129243",
+    "CVE-2026-136716"
+   ]
+  },
   {
    "id": "6b936d39a2735ffc",
    "source": "cert-bund",
@@ -322,16 +396,6 @@
    "summary": "Ein Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen, darunter möglicherweise die Auslösung eines Denial-of-Service-Angriffs, die Manipulation oder Offenlegung von Daten, die Ausführung von beliebigem Code, die Erlangung erweiterter Berechtigungen oder die Umgehung von Sicherheitsmaßnahmen.",
    "published": "2026-11-27T11:25:46+00:00",
    "first_seen": "2026-11-03T20:07:28+00:00",
-   "cves": []
-  },
-  {
-   "id": "371278dcfcc02a18",
-   "source": "cert-bund",
-   "title": "[NEU] [hoch] Dell Secure Connect Gateway: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4842",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Dell Secure Connect Gateway ausnutzen, um Informationen offenzulegen, Dateien zu manipulieren, Sicherheitsvorkehrungen zu umgehen, Benutzerrechte zu erlangen, beliebigen Programmcode auszuführen oder einen Denial-of-Service-Zustand herbeizuführen.",
-   "published": "2026-11-27T11:25:46+00:00",
-   "first_seen": "2026-11-27T12:17:15+00:00",
    "cves": []
   },
   {
@@ -2207,6 +2271,116 @@
    "cves": []
   },
   {
+   "id": "69ede193fd40e36b",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans Xen (27 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1631/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans Xen. Certaines d'entre elles permettent à un attaquant de provoquer une élévation de privilèges, un déni de service à distance et une atteinte à la confidentialité des données.",
+   "published": "2026-11-27T00:00:00+00:00",
+   "first_seen": "2026-11-27T23:26:50+00:00",
+   "cves": []
+  },
+  {
+   "id": "868eee2b4305e1f7",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans les produits IBM (27 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1640/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",
+   "published": "2026-11-27T00:00:00+00:00",
+   "first_seen": "2026-11-27T23:26:50+00:00",
+   "cves": []
+  },
+  {
+   "id": "2f6aa4f1fe93d51e",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans le noyau Linux de Debian (27 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1638/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de Debian. Certaines d'entre elles permettent à un attaquant de provoquer une élévation de privilèges, un déni de service à distance et une atteinte à l'intégrité des données.",
+   "published": "2026-11-27T00:00:00+00:00",
+   "first_seen": "2026-11-27T23:26:50+00:00",
+   "cves": []
+  },
+  {
+   "id": "a1906d419e9a82b8",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans FreeRADIUS (27 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1632/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans FreeRADIUS. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",
+   "published": "2026-11-27T00:00:00+00:00",
+   "first_seen": "2026-11-27T23:26:50+00:00",
+   "cves": []
+  },
+  {
+   "id": "ead72ef277a10699",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans le noyau Linux de Debian LTS (27 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1639/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de Debian LTS. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance.",
+   "published": "2026-11-27T00:00:00+00:00",
+   "first_seen": "2026-11-27T23:26:50+00:00",
+   "cves": []
+  },
+  {
+   "id": "9d24993d235bb4e4",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans le noyau Linux de Red Hat (27 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1636/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance.",
+   "published": "2026-11-27T00:00:00+00:00",
+   "first_seen": "2026-11-27T23:26:50+00:00",
+   "cves": []
+  },
+  {
+   "id": "56c3d9ccb102e4a3",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans Synology DSM et DSM Enterprise (27 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1630/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans Synology DSM et DSM Enterprise. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance.",
+   "published": "2026-11-27T00:00:00+00:00",
+   "first_seen": "2026-11-27T23:26:50+00:00",
+   "cves": []
+  },
+  {
+   "id": "bdcd2898eaa351ee",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans MongoDB (27 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1633/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans MongoDB. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une élévation de privilèges et une atteinte à la confidentialité des données.",
+   "published": "2026-11-27T00:00:00+00:00",
+   "first_seen": "2026-11-27T23:26:50+00:00",
+   "cves": []
+  },
+  {
+   "id": "30b84c5b08048d83",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans le noyau Linux de SUSE (27 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1637/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance.",
+   "published": "2026-11-27T00:00:00+00:00",
+   "first_seen": "2026-11-27T23:26:50+00:00",
+   "cves": []
+  },
+  {
+   "id": "3691e4361c5d5511",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans SPIP (27 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1635/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans SPIP. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une atteinte à la confidentialité des données et une falsification de requêtes côté serveur (SSRF).",
+   "published": "2026-11-27T00:00:00+00:00",
+   "first_seen": "2026-11-27T23:26:50+00:00",
+   "cves": []
+  },
+  {
+   "id": "e4a44507b2ac44ea",
+   "source": "cert-fr",
+   "title": "Multiples vulnérabilités dans SolarWinds Serv-U (27 novembre 2026)",
+   "link": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1634/",
+   "summary": "De multiples vulnérabilités ont été découvertes dans SolarWinds Serv-U. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance.",
+   "published": "2026-11-27T00:00:00+00:00",
+   "first_seen": "2026-11-27T23:26:50+00:00",
+   "cves": []
+  },
+  {
    "id": "0e0672f11c63fb2e",
    "source": "csirt-it",
    "title": "FreeRDP: disponibile un PoC per lo sfruttamento della CVE-2026-137077",
@@ -4043,16 +4217,6 @@
    "cves": []
   },
   {
-   "id": "21dd8d47b55a4985",
-   "source": "cccs-alerts",
-   "title": "Drupal security advisory (AV26-1209)",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/drupal-security-advisory-av26-1209",
-   "summary": "",
-   "published": "2026-11-25T19:21:44+00:00",
-   "first_seen": "2026-11-26T03:33:55+00:00",
-   "cves": []
-  },
-  {
    "id": "15afbaafce211782",
    "source": "cccs-alerts",
    "title": "[Control systems] Hitachi security advisory (AV26-1208)",
@@ -4070,16 +4234,6 @@
    "summary": "",
    "published": "2026-11-25T15:32:26+00:00",
    "first_seen": "2026-11-04T07:13:15+00:00",
-   "cves": []
-  },
-  {
-   "id": "a066e789deddeed1",
-   "source": "cccs-alerts",
-   "title": "GeoServer security advisory (AV26-1207)",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/geoserver-security-advisory-av26-1207",
-   "summary": "",
-   "published": "2026-11-25T15:29:23+00:00",
-   "first_seen": "2026-11-25T19:14:52+00:00",
    "cves": []
   },
   {
@@ -11204,7 +11358,7 @@
    "source": "csirt-it",
    "title": "Java4Shell: Critical Security Patch Update di Oracle",
    "link": "https://www.acn.gov.it/portale/w/java4shell-critical-security-patch-update-di-oracle",
-   "summary": "Disponibile un Proof of Concept (PoC) per lo sfruttamento della CVE-2026-114938, nota come \"Java4Shell\", che interessa i prodotti Oracle Java SE, Oracle GraalVM for JDK e Oracle GraalVM Enterprise Edition. La vulnerabilità è stata corretta nell'ambito del Critical Security Patch Update di novembre 2026 che ha risolto complessivamente 581 vulnerabilità su più prodotti Oracle, di cui 50 con gravità…",
+   "summary": "Rilevato lo sfruttamento attivo in rete della CVE-2026-114938, nota come \"Java4Shell\" e per la quale era già disponibile pubblicamente un Proof of Concept (PoC), che interessa i prodotti Oracle Java SE, Oracle GraalVM for JDK e Oracle GraalVM Enterprise Edition. La vulnerabilità è stata corretta nell'ambito del Critical Security Patch Update di novembre 2026 che ha risolto complessivamente 581 vu…",
    "published": "2026-11-18T10:59:49+00:00",
    "first_seen": "2026-11-18T11:40:30+00:00",
    "cves": [
@@ -11599,16 +11753,6 @@
    "title": "[NEU] [mittel] Oracle JD Edwards: Schwachstelle gefährdet Vertraulichkeit",
    "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4625",
    "summary": "Ein lokaler Angreifer kann eine Schwachstelle in Oracle JD Edwards ausnutzen, um die Vertraulichkeit zu gefährden.",
-   "published": "2026-11-18T08:47:01+00:00",
-   "first_seen": "2026-11-18T11:40:30+00:00",
-   "cves": []
-  },
-  {
-   "id": "e7e7d16453aef9d6",
-   "source": "cert-bund",
-   "title": "[NEU] [hoch] Oracle MySQL: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4623",
-   "summary": "Ein entfernter, anonymer oder authentisierter Angreifer kann mehrere Schwachstellen in Oracle MySQL ausnutzen, um die Vertraulichkeit, Integrität und Verfügbarkeit zu gefährden.",
    "published": "2026-11-18T08:47:01+00:00",
    "first_seen": "2026-11-18T11:40:30+00:00",
    "cves": []

@@ -3,12 +3,68 @@
   <title>ALLCERT - Segnalazioni dei CERT</title>
   <subtitle>Segnalazioni e notizie dei CERT, dei CSIRT e delle agenzie di cybersicurezza</subtitle>
   <id>https://theunchecked.github.io/ALLCERT/</id>
-  <updated>2026-11-27T12:17:15+00:00</updated>
+  <updated>2026-11-27T23:26:50+00:00</updated>
   <link href="https://theunchecked.github.io/ALLCERT/" />
   <link href="https://theunchecked.github.io/ALLCERT/data/feed.xml" rel="self" />
   <author>
     <name>ALLCERT</name>
   </author>
+  <entry>
+    <title>[CA] Drupal security advisory (AV26-1209) – Update 1</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/drupal-security-advisory-av26-1209" />
+    <id>urn:allcert:21dd8d47b55a4985</id>
+    <updated>2026-11-27T18:42:19+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
+  <entry>
+    <title>[CA] GeoServer security advisory (AV26-1207) – Update 1</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/geoserver-security-advisory-av26-1207" />
+    <id>urn:allcert:a066e789deddeed1</id>
+    <updated>2026-11-27T18:36:34+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
+  <entry>
+    <title>[IT] Rilevate vulnerabilità in prodotti Dell</title>
+    <link href="https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-dell-5" />
+    <id>urn:allcert:6a68f84ab33879e0</id>
+    <updated>2026-11-27T15:52:11+00:00</updated>
+    <category term="CSIRT Italia (ACN)" />
+    <summary>Fonte: CSIRT Italia (ACN). Aggiornamenti di sicurezza sanano numerose vulnerabilità, di cui 72 con gravità "alta", in Dell Secure Connect Gateway Virtual Edition, soluzione per il monitoraggio remoto, la gestione proattiva e l'assistenza automatizzata dei sistemi Dell.</summary>
+  </entry>
+  <entry>
+    <title>[CA] Mitel security advisory (AV26-1212)</title>
+    <link href="https://cyber.gc.ca/en/alerts-advisories/mitel-security-advisory-av26-1212" />
+    <id>urn:allcert:346aa1991ab25c4e</id>
+    <updated>2026-11-27T13:36:37+00:00</updated>
+    <category term="Cyber Centre Canada - Avvisi" />
+    <summary>Fonte: Cyber Centre Canada - Avvisi.</summary>
+  </entry>
+  <entry>
+    <title>[DE] [NEU] [hoch] Dell Secure Connect Gateway: Mehrere Schwachstellen</title>
+    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4842" />
+    <id>urn:allcert:371278dcfcc02a18</id>
+    <updated>2026-11-27T12:20:46+00:00</updated>
+    <category term="CERT-Bund - Avvisi di sicurezza" />
+    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein Angreifer kann mehrere Schwachstellen in Dell Secure Connect Gateway ausnutzen, um Informationen offenzulegen, Dateien zu manipulieren, Sicherheitsvorkehrungen zu umgehen, Benutzerrechte zu erlangen, beliebigen Programmcode auszuführen oder einen Denial-of-Service-Zustand herbeizuführen.</summary>
+  </entry>
+  <entry>
+    <title>[DE] [UPDATE] [hoch] Oracle MySQL: Mehrere Schwachstellen</title>
+    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4623" />
+    <id>urn:allcert:e7e7d16453aef9d6</id>
+    <updated>2026-11-27T12:20:46+00:00</updated>
+    <category term="CERT-Bund - Avvisi di sicurezza" />
+    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer oder authentisierter Angreifer kann mehrere Schwachstellen in Oracle MySQL ausnutzen, um die Vertraulichkeit, Integrität und Verfügbarkeit zu gefährden.</summary>
+  </entry>
+  <entry>
+    <title>[US] CISA Adds Three Known Exploited Vulnerabilities to Catalog</title>
+    <link href="https://www.cisa.gov/news-events/alerts/2026/11/27/cisa-adds-three-known-exploited-vulnerabilities-catalog" />
+    <id>urn:allcert:c50fb019e17b16db</id>
+    <updated>2026-11-27T12:00:00+00:00</updated>
+    <category term="CISA - Avvisi" />
+    <summary>Fonte: CISA - Avvisi. CISA has added three new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-120705 OSGeo GeoServer XML Injection Vulnerability CVE-2026-129243 OSGeo GeoServer Incorrect Authorization Vulnerability CVE-2026-136716 Drupal Core Improper Check for Unusual or Exceptional Conditions Vulnerability These types of vulnerabilities are a…</summary>
+  </entry>
   <entry>
     <title>[DE] [UPDATE] [hoch] Linux Kernel: Mehrere Schwachstellen</title>
     <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2852" />
@@ -64,14 +120,6 @@
     <updated>2026-11-27T11:25:46+00:00</updated>
     <category term="CERT-Bund - Avvisi di sicurezza" />
     <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Ruby ausnutzen, um beliebigen Programmcode auszuführen, einen Denial-of-Service-Zustand auszulösen, vertrauliche Informationen offenzulegen oder eine Speicherbeschädigung herbeizuführen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [NEU] [hoch] Dell Secure Connect Gateway: Mehrere Schwachstellen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4842" />
-    <id>urn:allcert:371278dcfcc02a18</id>
-    <updated>2026-11-27T11:25:46+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein Angreifer kann mehrere Schwachstellen in Dell Secure Connect Gateway ausnutzen, um Informationen offenzulegen, Dateien zu manipulieren, Sicherheitsvorkehrungen zu umgehen, Benutzerrechte zu erlangen, beliebigen Programmcode auszuführen oder einen Denial-of-Service-Zustand herbeizuführen.</summary>
   </entry>
   <entry>
     <title>[DE] [NEU] [UNGEPATCHT] [kritisch] Cacti: Schwachstelle ermöglicht Codeausführung</title>
@@ -714,14 +762,6 @@
     <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer Angreifer kann eine Schwachstelle in expat ausnutzen, um einen Denial of Service Angriff durchzuführen.</summary>
   </entry>
   <entry>
-    <title>[DE] [UPDATE] [hoch] Oracle MySQL: Mehrere Schwachstellen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4081" />
-    <id>urn:allcert:bdebba531ddffcca</id>
-    <updated>2026-11-27T08:25:24+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer oder authentisierter Angreifer kann mehrere Schwachstellen in Oracle MySQL ausnutzen, um die Vertraulichkeit, Integrität und Verfügbarkeit zu gefährden.</summary>
-  </entry>
-  <entry>
     <title>[DE] [UPDATE] [hoch] Apache Tomcat: Mehrere Schwachstellen</title>
     <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4066" />
     <id>urn:allcert:89637a851c0d5638</id>
@@ -768,45 +808,5 @@
     <updated>2026-11-27T08:25:19+00:00</updated>
     <category term="CERT-Bund - Avvisi di sicurezza" />
     <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in MIT Kerberos ausnutzen, um einen Denial of Service Angriff durchzuführen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [hoch] expat: Schwachstelle ermöglicht Offenlegung von Informationen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3796" />
-    <id>urn:allcert:efcb01bfe08b9cba</id>
-    <updated>2026-11-27T08:25:17+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer Angreifer kann eine Schwachstelle in expat ausnutzen, um Informationen offenzulegen, was möglicherweise weitere Angriffe ermöglicht.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [mittel] OpenSSH: Mehrere Schwachstellen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3785" />
-    <id>urn:allcert:c36dc439a65586f7</id>
-    <updated>2026-11-27T08:24:56+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in OpenSSH ausnutzen, um Sicherheitsvorkehrungen zu umgehen, um einen Denial of Service herbeizufürhen oder seine Rechte auszuweiten.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [mittel] Red Hat Enterprise Linux (sequoia-openpgp, perl-DBI): Mehrere Schwachstellen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3790" />
-    <id>urn:allcert:2f24c18e94770662</id>
-    <updated>2026-11-27T08:24:55+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux ausnutzen, um Sicherheitsvorkehrungen zu umgehen, Daten zu manipulieren und einen Denial-of-Service-Zustand auszulösen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [mittel] Ghostscript: Schwachstelle ermöglicht Manipulation von Dateien und DoS</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3684" />
-    <id>urn:allcert:449bc60fcfd795c8</id>
-    <updated>2026-11-27T08:24:54+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Ghostscript ausnutzen, um möglicherweise Daten offenzulegen oder zu manipulieren oder einen Denial-of-Service-Zustand herbeizuführen.</summary>
-  </entry>
-  <entry>
-    <title>[DE] [UPDATE] [hoch] Apache HTTP Server: Mehrere Schwachstellen</title>
-    <link href="https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3703" />
-    <id>urn:allcert:2edff0bc3539f610</id>
-    <updated>2026-11-27T08:24:54+00:00</updated>
-    <category term="CERT-Bund - Avvisi di sicurezza" />
-    <summary>Fonte: CERT-Bund - Avvisi di sicurezza. Ein Angreifer kann mehrere Schwachstellen in Apache HTTP Server ausnutzen, um beliebigen Programmcode auszuführen, die Authentifizierung zu umgehen, vertrauliche Informationen offenzulegen, Daten zu manipulieren oder Denial-of-Service-Zustände zu verursachen.</summary>
   </entry>
 </feed>
